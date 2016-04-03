@@ -79,7 +79,7 @@ just the boolean files.
 
 ```typescript
 import { NG2_BOOLEAN_PIPES } from 'angular-pipes/build/boolean';
-import { SplitPipe } from 'ng2-pipes/build/string';
+import { SplitPipe } from 'angular-pipes/build/string';
 ```
 
 Same thing for the other categories.
@@ -87,7 +87,7 @@ Same thing for the other categories.
 And if you want to only include one file:
 
 ```typescript
-import { HeadPipe } from 'ng2-pipes/build/array/head.pipe';
+import { HeadPipe } from 'angular-pipes/build/array/head.pipe';
 ```
 
 The boolean pipes are only in two files, the types are in `types.pipe.ts` and the

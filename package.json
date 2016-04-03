@@ -1,0 +1,76 @@
+{
+  "name": "ng2-pipes",
+  "version": "1.0.0",
+  "description": "Angular 2 pipes library",
+  "main": "index.ts",
+  "scripts": {
+    "lite": "node_modules/.bin/lite-server",
+    "jspm": "node_modules/.bin/jspm",
+    "tsc": "node_modules/.bin/tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Florian Knop",
+  "license": "MIT",
+  "devDependencies": {
+    "jasmine-core": "^2.4.1",
+    "jspm": "^0.17.0-beta.12",
+    "lite-server": "^2.1.0",
+    "typescript": "^1.8.9"
+  },
+  "jspm": {
+    "devDependencies": {
+      "angular2": "npm:angular2@^2.0.0-beta.13",
+      "plugin-typescript": "github:frankwallis/plugin-typescript@^4.0.5"
+    },
+    "peerDependencies": {
+      "os": "github:jspm/nodelibs-os@^0.2.0-alpha",
+      "process": "github:jspm/nodelibs-process@^0.2.0-alpha",
+      "reflect-metadata": "npm:reflect-metadata@0.1.2",
+      "rxjs": "npm:rxjs@^5.0.0-beta.2",
+      "zone.js": "npm:zone.js@^0.6.6"
+    },
+    "overrides": {
+      "npm:angular2@2.0.0-beta.13": {
+        "main": false,
+        "dependencies": {
+          "reflect-metadata": "npm:reflect-metadata@0.1.2",
+          "rxjs": "npm:rxjs@^5.0.0-beta.2",
+          "zone.js": "npm:zone.js@^0.6.6"
+        },
+        "peerDependencies": {
+          "reflect-metadata": "npm:reflect-metadata@0.1.2",
+          "rxjs": "npm:rxjs@^5.0.0-beta.2",
+          "zone.js": "npm:zone.js@^0.6.6"
+        },
+        "jspmNodeConversion": false,
+        "map": {
+          "crypto": "@empty"
+        },
+        "meta": {
+          "src/*.js": {
+            "deps": [
+              "reflect-metadata",
+              "zone.js"
+            ]
+          }
+        }
+      },
+      "npm:reflect-metadata@0.1.2": {
+        "map": {
+          "crypto": "@empty"
+        }
+      },
+      "npm:typescript@1.8.9": {
+        "browser": {},
+        "map": {
+          "buffer": "@empty",
+          "child_process": "@empty",
+          "fs": "@empty",
+          "path": "@empty",
+          "process": "@empty",
+          "readline": "@empty"
+        }
+      }
+    }
+  }
+}

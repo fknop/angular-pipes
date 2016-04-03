@@ -2,6 +2,7 @@
     "compilerOptions": {
         "target": "es5",
         "module": "system",
+        "outDir": "build",
         "moduleResolution": "node",
         "sourceMap": true,
         "emitDecoratorMetadata": true,
@@ -12,6 +13,7 @@
     },
     "exclude": [
         "node_modules",
-        "jspm_packages"
+        "jspm_packages",
+        "test"
     ]
 }

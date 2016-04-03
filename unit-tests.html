@@ -13,13 +13,39 @@
         
         <!--<script src="node_modules/es6-shim/es6-shim.min.js"></script>-->
         <!--<script src="node_modules/systemjs/dist/system-polyfills.js"></script>-->
-        <script src="jspm_packages/npm/angular2@2.0.0-beta.13/bundles/angular2-polyfills.js"></script>
-        <script src="jspm_packages/npm/angular2@2.0.0-beta.13/es6/dev/src/testing/shims_for_IE.js"></script>
-        <script src="jspm_packages/system.src.js"></script>
-        <script src="jspm.browser.js"></script>
-        <script src="jspm.config.js"></script>
+        <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+        <script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
+        <script src="node_modules/systemjs/dist/system.src.js"></script>
+        
+        <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
         
         <script>
+            
+            System.config({
+                transpiler: 'typescript',
+                packages: {
+                    'src': {
+                        defaultExtension: 'ts'
+                    },
+                    'node_modules': {
+                        defaultExtension: 'js'
+                    },
+                    '.': {
+                        defaultExtension: 'ts'
+                    },
+                    'test': {
+                        defaultExtension: 'ts'
+                    }
+                },
+                map: {
+                    'angular2': 'node_modules/angular2',
+                    'typescript': 'node_modules/typescript/lib/typescript.js',
+                    "reflect-metadata": "node_modules/reflect-metadata",
+                    "rxjs": "node_modules/rxjs",
+                    "zone.js": "node_modules/zone.js"
+                }
+            });
+            
             System.import('./test/main.spec.ts')
                 .then(window.onload)
                 .catch(console.error.bind(console));

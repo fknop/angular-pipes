@@ -1,3 +1,5 @@
+[![NPM Version](https://img.shields.io/npm/v/angular-pipes.svg)](https://npmjs.org/package/angular-pipes)
+
 # ng2-pipes
 
 ng2-pipes is a pipes library for `angular 2`. The project is hosted as `angular-pipes` on `npm`.

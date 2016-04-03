@@ -1,12 +1,12 @@
 {
   "name": "angular-pipes",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Angular 2 pipes library",
   "main": "build/index.js",
   "scripts": {
     "lite": "node_modules/.bin/lite-server",
     "tsc": "node_modules/.bin/tsc -p .",
-    "test": "node_modules/.bin/tsc -- test/main.spec.ts && npm run lite"
+    "test": "npm run lite"
   },
   "author": "Florian Knop",
   "repository": {
@@ -17,14 +17,13 @@
   "devDependencies": {
     "jasmine-core": "^2.4.1",
     "lite-server": "^2.1.0",
-    "typescript": "^1.8.9"
-  },
-  "dependencies": {
+    "typescript": "^1.8.9",
     "angular2": "^2.0.0-beta.13",
     "es6-shim": "^0.35.0",
     "reflect-metadata": "^0.1.2",
     "rxjs": "^5.0.0-beta.2",
     "systemjs": "^0.19.25",
     "zone.js": "^0.6.8"
-  }
+  },
+  "dependencies": {}
 }

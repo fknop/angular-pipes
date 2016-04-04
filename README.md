@@ -81,16 +81,27 @@ jspm install angular-pipes=npm:angular-pipes
 
 ## How to use
 
-For now, it only support TypeScript.
-
 ```typescript
 import { NG2_PIPES } from 'angular-pipes';
+
+@Component({
+    // ...
+    pipes: [NG2_PIPES]
+    // ...
+}}
+
 ```
 
 You can also import only one category and a string pipe.
 
 ```typescript
 import { NG2_BOOLEAN_PIPES, SplitPipe } from 'angular-pipes';
+
+@Component({
+    // ...
+    pipes: [NG2_BOOLEAN_PIPES, SplitPipe]
+    // ...
+}}
 ```
 
 But this will import all the files, you can do better by importing

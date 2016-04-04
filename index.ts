@@ -1,3 +1,5 @@
+/// <reference path="node_modules/angular2/typings/browser.d.ts" />
+
 import { NG2_BOOLEAN_PIPES } from './boolean';
 import { NG2_MATH_PIPES } from './math';
 import { NG2_ARRAY_PIPES } from './array';

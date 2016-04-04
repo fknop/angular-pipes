@@ -1,5 +1,12 @@
 import { Pipe, PipeTransform  } from 'angular2/core';
-
+import { isNull,
+         isNil,
+         isUndefined, 
+         isFunction,
+         isArray,
+         isString,
+         isObject,
+         isNumber } from '../utils/utils';
 
 @Pipe({
     name: 'null'
@@ -8,7 +15,7 @@ export class IsNullPipe implements PipeTransform {
     
     transform (value: any): boolean {
         
-        return value === null;
+        return isNull(value);
     }
 }
 
@@ -19,7 +26,18 @@ export class IsUndefinedPipe implements PipeTransform {
     
     transform (value: any): boolean {
         
-        return typeof (value) === 'undefined';
+        return isUndefined(value);
+    }
+}
+
+@Pipe({
+    name: 'nil'
+})
+export class IsNilPipe implements PipeTransform {
+    
+    transform (value: any): boolean {
+        
+        return isNil(value);
     }
 }
 
@@ -30,7 +48,7 @@ export class IsFunctionPipe implements PipeTransform {
     
     transform (value: any): boolean {
         
-        return typeof (value) === 'function';
+        return isFunction(value);
     }
 }
 
@@ -41,7 +59,7 @@ export class IsNumberPipe implements PipeTransform {
     
     transform (value: any): boolean {
         
-        return typeof (value) === 'number';
+        return isNumber(value);
     }
 }
 
@@ -52,7 +70,7 @@ export class IsStringPipe implements PipeTransform {
     
     transform (value: any): boolean {
         
-        return typeof (value) === 'string';
+        return isString(value);
     }
 }
 
@@ -64,7 +82,7 @@ export class IsArrayPipe implements PipeTransform {
     
     transform (value: any): boolean {
         
-        return Array.isArray(value);
+        return isArray(value);
     }
 }
 
@@ -75,7 +93,7 @@ export class IsObjectPipe implements PipeTransform {
     
     transform (value: any): boolean {
         
-        return typeof (value) === 'object';
+        return isObject(value);
     }
 }
 
@@ -87,7 +105,7 @@ export class IsDefinedPipe implements PipeTransform {
     
     transform (value: any): boolean {
         
-        return typeof (value) !== 'undefined';
+        return !isUndefined(value);
     }
 }
 

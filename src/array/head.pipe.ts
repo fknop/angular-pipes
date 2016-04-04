@@ -1,5 +1,6 @@
 import { Pipe, PipeTransform  } from 'angular2/core';
-
+import { isArray } from '../utils/utils';
+import { arrayError } from '../utils/error';
 
 @Pipe({
     name: 'head',
@@ -9,8 +10,8 @@ export class HeadPipe implements PipeTransform {
     
     transform (array: Array<any>): any {
         
-        if (!Array.isArray(array)) {
-            throw new TypeError('HeadPipe: value is not an array');
+        if (!isArray(array)) {
+            throw arrayError('HeadPipe');
         }
         
         // Will return undefined if length is 0

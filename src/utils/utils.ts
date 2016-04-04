@@ -39,9 +39,24 @@ export function isNil (value: any): boolean {
     return value === null || typeof (value) === 'undefined';
 }
 
+export function isString (value: any): boolean {
+    
+    return typeof value === 'string';
+}
+
+export function isObject (value: any): boolean {
+    
+    return typeof value === 'object';
+}
+
 export function isArray (value: any): boolean {
     
     return Array.isArray(value);
+}
+
+export function isFunction (value: any): boolean {
+    
+    return typeof value === 'function';
 }
 
 export function toDecimal (value: number, decimal: number): number {
@@ -133,3 +148,24 @@ export function pad (str: string, len: number = 0, ch: any = ' '): string{
     
     return str;
 }
+
+export function toArray (object: any): Array<any> {
+    
+    return isArray(object) ? object : Object.keys(object).map((key) => {
+        return object[key];
+    });
+}
+
+
+export function getProperty (value: Object, key: string): Array<any> {
+    
+    const keys = key.split('.');
+    let result = value[keys.shift()];
+    while (keys.length && (result = result[keys.shift()]));
+
+    return result;
+}
+
+// does nothing
+export function noop () {}
+

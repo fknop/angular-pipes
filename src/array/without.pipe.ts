@@ -1,5 +1,6 @@
 import { Pipe, PipeTransform  } from 'angular2/core';
-
+import { isArray } from '../utils/utils';
+import { arrayError } from '../utils/error';
 
 @Pipe({
     name: 'without',
@@ -9,8 +10,8 @@ export class WithoutPipe implements PipeTransform {
     
     transform (array: Array<any>, args: any[]): Array<any> {
         
-        if (!Array.isArray(array)) {
-            throw new TypeError('WithoutPipe: value is not an array');
+        if (!isArray(array)) {
+            throw arrayError('WithoutPipe');
         }
         
         const values: Array<any> = [];

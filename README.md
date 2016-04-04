@@ -4,65 +4,71 @@
 
 angular-pipes is a pipes library for `angular 2`. The project is hosted as `angular-pipes` on `npm`.
 
-`WARNING`: Work in progress.
+`WARNING`: Work in progress. Not many options are available for now. 
 
 ## Contribute
 
-Feel free to contribute in any way. 
+Feel free to contribute in any way. Post your own pipes, fix bugs, add options to existing pipes, etc.
 
 ## Pipes
 
 ### Collections (array)
 
-* `empty`
-* `head`
-* `initial`
-* `join`
-* `last`
-* `tail`
-* `uniq`
-* `without`
+* [`empty`](#empty)
+* [`head`](#head)
+* [`initial`](#initial)
+* [`join`](#join)
+* [`last`](#last)
+* [`tail`](#tail)
+* [`uniq`](#uniq)
+* [`without`](#without)
+* [`range`](#range) (not tested - not published yet)
+* [`map`](#map) (not tested - not published yet)
+* [`pluck`](#pluck) (not tested - not published yet)
+* [`where`](#where) (not tested - not published yet)
+
 
 ### Boolean
 
-* `greater`
-* `greaterOrEqual`
-* `less`
-* `lessOrEqual`
-* `equal`
-* `notEqual`
-* `identical`
-* `notIdentical`
-* `null`
-* `undefined`
-* `number`
-* `string`
-* `function`
-* `array`
-* `object`
-* `defined`
+* [`greater`](#greater)
+* [`greaterOrEqual`](#greaterOrEqual)
+* [`less`](#less)
+* [`lessOrEqual`](#lessOrEqual)
+* [`equal`](#equal)
+* [`notEqual`](#notEqual)
+* [`identical`](#identical)
+* [`notIdentical`](#notIdentical)
+* [`null`](#null)
+* [`undefined`](#undefined)
+* [`nil`](#nil) (not tested - not published yet)
+* [`number`](#number)
+* [`string`](#string)
+* [`function`](#function)
+* [`array`](#array)
+* [`object`](#object)
+* [`defined`](#defined)
 
 ### Math
 
-* `bytes`
-* `ceil`
-* `floor`
-* `round`
-* `min`
-* `max`
-* `mean`
-* `sum`
+* [`bytes`](#bytes)
+* [`ceil`](#ceil)
+* [`floor`](#floor)
+* [`round`](#round)
+* [`min`](#min)
+* [`max`](#max)
+* [`mean`](#mean)
+* [`sum`](#sum)
 
 ### String
 
-* `leftpad`
-* `rightpad`
-* `pad`
-* `trim`
-* `split`
-* `replace (not tested)`
-* `match (not tested)`
-* `test (not tested)`
+* [`leftpad`](#leftpad)
+* [`rightpad`](#rightpad)
+* [`pad`](#pad)
+* [`trim`](#trim)
+* [`split`](#split)
+* [`replace (not tested)`](#replace)
+* [`match (not tested)`](#match)
+* [`test (not tested)`](#test)
 
 
 ## Install
@@ -116,6 +122,10 @@ If you only use one or two pipes, it's better to include only those two files. I
 There is no bundle available, this project let you bundle as you wish.
 
 ## Documentation - `TODO`
+
+###Collections
+
+####empty
 
 ## Tests
 

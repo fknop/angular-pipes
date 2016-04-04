@@ -1,6 +1,6 @@
 {
   "name": "angular-pipes",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Angular 2 pipes library",
   "main": "pipes/index.js",
   "scripts": {
@@ -14,6 +14,16 @@
     "type": "git",
     "url": "https://github.com/fknop/ng2-pipes.git"
   },
+  "keywords": [
+    "ng2",
+    "ng",
+    "angular",
+    "angular2",
+    "angularjs",
+    "pipes",
+    "filters",
+    "library"
+  ],
   "license": "MIT",
   "devDependencies": {
     "angular2": "^2.0.0-beta.13",

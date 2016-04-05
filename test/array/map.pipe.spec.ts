@@ -1,0 +1,35 @@
+import { MapPipe } from '../../index';
+import {describe, it, beforeEach, expect} from 'angular2/testing';
+
+describe('MapPipe', () => {
+    
+    let pipe: MapPipe;
+    
+    beforeEach(() => {
+       pipe = new MapPipe(); 
+    });
+    
+    it('Should return the modified array', () => {
+       
+       const array = [0, 1, 2, 3];
+       const fn = function (item) {
+           return ++item;
+       };
+       
+       expect(pipe.transform(array, [fn])).toEqual([1, 2, 3, 4]); 
+    });
+    
+    it('Should return the original array', () => {
+       
+       // undefined to avoid typescript error
+       expect(pipe.transform([1,2], [undefined])).toEqual([1, 2]); 
+    });
+    
+    it('Should throw an error', () => {
+       
+       expect(() => {
+           pipe.transform('a')
+       }).toThrowError(TypeError); 
+    });
+    
+})

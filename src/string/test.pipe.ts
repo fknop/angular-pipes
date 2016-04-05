@@ -12,7 +12,7 @@ export class TestPipe implements PipeTransform {
             throw new TypeError('TestPipe: value must be a string');
         }
         
-        const regexp = new RegExp(pattern, flag);
+        const regexp = pattern instanceof RegExp ? pattern : new RegExp(pattern, flag);
         
         return regexp.test(value);
     }

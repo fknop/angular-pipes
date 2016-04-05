@@ -12,8 +12,7 @@ export class MatchPipe implements PipeTransform {
             throw new TypeError('MatchPipe: value must be a string');
         }
         
-        const regexp = new RegExp(pattern, flag);
-        
+        const regexp = pattern instanceof RegExp ? pattern : new RegExp(pattern, flag);
         return value.match(regexp);
     }
 }

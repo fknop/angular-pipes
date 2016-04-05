@@ -66,9 +66,9 @@ Feel free to contribute in any way. Post your own pipes, fix bugs, add options t
 * [`pad`](#pad)
 * [`trim`](#trim)
 * [`split`](#split)
-* [`replace (not tested)`](#replace)
-* [`match (not tested)`](#match)
-* [`test (not tested)`](#test)
+* [`replace`](#replace)
+* [`match`](#match)
+* [`test`](#test)
 
 
 ## Install

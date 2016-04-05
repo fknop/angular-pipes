@@ -9,10 +9,6 @@ export class RangePipe implements PipeTransform {
     
     transform (array: Array<any>, [size = 0, start = 1]): Array<any> {
         
-        if (!isArray(array)) {
-            throw arrayError('RangePipe');
-        }
-        
         if (size === 0) {
             return [];
         }

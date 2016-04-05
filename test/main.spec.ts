@@ -6,6 +6,8 @@ import './array/join.pipe.spec';
 import './array/tail.pipe.spec';
 import './array/uniq.pipe.spec';
 import './array/without.pipe.spec';
+import './array/range.pipe.spec';
+import './array/map.pipe.spec';
 
 
 import './boolean/conditions.pipe.spec';

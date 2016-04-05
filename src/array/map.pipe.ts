@@ -15,7 +15,7 @@ export class MapPipe implements PipeTransform {
         }
         
         if (!fn) {
-            fn = noop;
+            fn = function (item: any) { return item };
         }
         
         return array.map(fn);

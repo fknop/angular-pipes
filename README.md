@@ -22,8 +22,8 @@ Feel free to contribute in any way. Post your own pipes, fix bugs, add options t
 * [`tail`](#tail)
 * [`uniq`](#uniq)
 * [`without`](#without)
-* [`range`](#range) (not tested - not published yet)
-* [`map`](#map) (not tested - not published yet)
+* [`range`](#range) 
+* [`map`](#map) 
 * [`pluck`](#pluck) (not tested - not published yet)
 * [`where`](#where) (not tested - not published yet)
 

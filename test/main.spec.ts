@@ -8,6 +8,8 @@ import './array/uniq.pipe.spec';
 import './array/without.pipe.spec';
 import './array/range.pipe.spec';
 import './array/map.pipe.spec';
+import './array/pluck.pipe.spec';
+import './array/where.pipe.spec';
 
 
 import './boolean/conditions.pipe.spec';

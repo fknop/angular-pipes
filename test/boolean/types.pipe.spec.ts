@@ -5,7 +5,8 @@ import {IsNullPipe,
         IsStringPipe,
         IsArrayPipe,
         IsObjectPipe,
-        IsDefinedPipe } from '../../index';
+        IsDefinedPipe, 
+        IsNilPipe } from '../../index';
         
 import {describe, it, beforeEach, expect} from 'angular2/testing';
 
@@ -30,6 +31,31 @@ describe('IsNullPipe', () => {
     it('Should return false #2', () => {
         
         expect(pipe.transform(undefined)).toEqual(false);
+    });
+    
+});
+
+describe('IsNilPipe', () => {
+    
+    let pipe: IsNilPipe;
+    
+    beforeEach(() => {
+       pipe = new IsNilPipe(); 
+    });
+    
+    it('Should return true', () => {
+        
+        expect(pipe.transform(null)).toEqual(true);
+    });
+    
+    it('Should return false', () => {
+        
+        expect(pipe.transform(1)).toEqual(false);
+    });
+    
+    it('Should return true #2', () => {
+        
+        expect(pipe.transform(undefined)).toEqual(true);
     });
     
 });

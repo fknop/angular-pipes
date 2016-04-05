@@ -24,8 +24,8 @@ Feel free to contribute in any way. Post your own pipes, fix bugs, add options t
 * [`without`](#without)
 * [`range`](#range) 
 * [`map`](#map) 
-* [`pluck`](#pluck) (not tested - not published yet)
-* [`where`](#where) (not tested - not published yet)
+* [`pluck`](#pluck)
+* [`where`](#where)
 
 
 ### Boolean
@@ -40,7 +40,7 @@ Feel free to contribute in any way. Post your own pipes, fix bugs, add options t
 * [`notIdentical`](#notIdentical)
 * [`null`](#null)
 * [`undefined`](#undefined)
-* [`nil`](#nil) (not tested - not published yet)
+* [`nil`](#nil) 
 * [`number`](#number)
 * [`string`](#string)
 * [`function`](#function)

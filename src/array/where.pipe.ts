@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform  } from 'angular2/core';
-import { isArray, isFunction } from '../utils/utils';
+import { isArray, isFunction, getProperty } from '../utils/utils';
 import { arrayError } from '../utils/error';
 
 @Pipe({
@@ -23,7 +23,7 @@ export class WherePipe implements PipeTransform {
         }
         else if (isArray(fn)) {
             const [key, value] = fn;
-            return array.filter((item) => item[key] === value);
+            return array.filter((item) => getProperty(item, key) === value);
         }
         else if (fn) {
             return array.filter((item) => item === fn);

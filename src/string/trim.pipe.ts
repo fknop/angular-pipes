@@ -1,12 +1,17 @@
 import { Pipe, PipeTransform  } from 'angular2/core';
+import { isString } from '../utils/utils';
 
 @Pipe({
     name: 'trim'
 })
 export class TrimPipe implements PipeTransform {
     
-    transform (value: string): string {
+    transform (input: any): any {
         
-        return value.trim();
+        if (!isString(input)) {
+            return input;
+        }
+        
+        return input.trim();
     }
 }

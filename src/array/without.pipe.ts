@@ -1,6 +1,5 @@
 import { Pipe, PipeTransform  } from 'angular2/core';
 import { isArray } from '../utils/utils';
-import { arrayError } from '../utils/error';
 
 @Pipe({
     name: 'without',
@@ -8,21 +7,12 @@ import { arrayError } from '../utils/error';
 })
 export class WithoutPipe implements PipeTransform {
     
-    transform (array: Array<any>, args: any[]): Array<any> {
+    transform (input: any, args: any[]): any {
         
-        if (!isArray(array)) {
-            throw arrayError('WithoutPipe');
+        if (!isArray(input)) {
+            return input;
         }
         
-        const values: Array<any> = [];
-        
-        array.forEach((value) => {
-           
-           if (args.indexOf(value) === -1) {
-               values.push(value);
-           } 
-        });
-        
-        return values;
+        return input.filter((value: any, index: number) => args.indexOf(value) === -1);
     }
 }

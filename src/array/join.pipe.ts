@@ -1,6 +1,5 @@
 import { Pipe, PipeTransform  } from 'angular2/core';
 import { isArray } from '../utils/utils';
-import { arrayError } from '../utils/error';
 
 @Pipe({
     name: 'join',
@@ -8,13 +7,12 @@ import { arrayError } from '../utils/error';
 })
 export class JoinPipe implements PipeTransform {
     
-    transform (array: Array<any>, [character = '']): string {
+    transform (input: any, [character = '']): any {
         
-        if (!isArray(array)) {
-            throw arrayError('JoinPipe');
+        if (!isArray(input)) {
+            return input;
         }
         
-        
-        return array.join(character);
+        return input.join(character);
     }
 }

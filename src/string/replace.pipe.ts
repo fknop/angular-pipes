@@ -1,17 +1,17 @@
 import { Pipe, PipeTransform  } from 'angular2/core';
-
+import { isString } from '../utils/utils';
 
 @Pipe({
     name: 'replace'
 })
 export class ReplacePipe implements PipeTransform {
     
-    transform (value: string, [pattern, replacement]: any[]): string {
+    transform (input: any, [pattern, replacement]: any[]): any {
         
-        if (!pattern || !replacement) {
-            throw new Error(`ReplacePipe: usage: {{ value | replace: pattern : replacement }}`);
+        if (!isString(input) || !pattern || !replacement) {
+            return input;
         }
         
-        return value.replace(pattern, replacement);
+        return input.replace(pattern, replacement);
     }
 }

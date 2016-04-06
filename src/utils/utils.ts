@@ -166,6 +166,7 @@ export function getProperty (value: Object, key: string): Array<any> {
     return result;
 }
 
-// does nothing
-export function noop () {}
-
+export function sum (input: Array<number>, initial = 0): number {
+    
+    return input.reduce((previous: number, current: number) => previous + current, initial);
+}

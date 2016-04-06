@@ -1,4 +1,5 @@
 import { Pipe, PipeTransform  } from 'angular2/core';
+import { isString } from '../utils/utils';
 
 
 @Pipe({
@@ -6,12 +7,12 @@ import { Pipe, PipeTransform  } from 'angular2/core';
 })
 export class SplitPipe implements PipeTransform {
     
-    transform (value: string, [separator = ' ', limit]): Array<string> {
+    transform (input: any, [separator = ' ', limit]): any {
         
-        if (typeof value !== 'string') {
-            throw new TypeError('SplitPipe: value must be a string');
+        if (!isString(input)) {
+            return input;
         }
         
-        return value.split(separator, limit);
+        return input.split(separator, limit);
     }
 }

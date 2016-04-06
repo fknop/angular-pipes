@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform  } from 'angular2/core';
-
+import { isArray } from '../utils/utils';
 
 @Pipe({
     name: 'min',
@@ -7,20 +7,19 @@ import { Pipe, PipeTransform  } from 'angular2/core';
 })
 export class MinPipe implements PipeTransform {
     
-    transform (numbers: Array<number>): number {
+    transform (input: any): any {
         
-        
-        if (!Array.isArray(numbers)) {
-            throw new TypeError('MinPipe: value must be an array');
+        if (!isArray(input)) {
+            return input;
         }
         
-        if (numbers.length === 0) {
+        if (input.length === 0) {
             return undefined;
         }
         
-        let min = numbers[0];
+        let min = input[0];
         
-        numbers.forEach((value) => {
+        input.forEach((value: any) => {
             
             if (min > value) {
                 min = value;

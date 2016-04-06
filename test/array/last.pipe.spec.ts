@@ -26,11 +26,9 @@ describe('LastPipe', () => {
        expect(pipe.transform([])).toEqual(undefined); 
     });
     
-    it('Should throw an error', () => {
-        
-        expect(() => { 
-            pipe.transform(123)
-        }).toThrowError(TypeError);
-    })
+    it('Should return the value unchanged', () => {
+       
+       expect(pipe.transform('a')).toEqual('a'); 
+    });
     
-})
+});

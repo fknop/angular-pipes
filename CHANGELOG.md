@@ -1,3 +1,15 @@
+# 1.2.0
+
+## New pipes
+
+* `OrderByPipe`
+* `ReversePipe`
+
+## Breaking changes
+
+* When the type of the input is not valid, the input is now returned unchanged.
+
+
 # 1.1.0
 
 ## New pipes

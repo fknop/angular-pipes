@@ -1,6 +1,5 @@
 import { Pipe, PipeTransform  } from 'angular2/core';
 import { isArray } from '../utils/utils';
-import { arrayError } from '../utils/error';
 
 @Pipe({
     name: 'last',
@@ -8,17 +7,13 @@ import { arrayError } from '../utils/error';
 })
 export class LastPipe implements PipeTransform {
     
-    transform (array: Array<any>): any {
+    transform (input: any): any {
         
-        if (!isArray(array)) {
-            throw arrayError('LastPipe');
+        if (!isArray(input)) {
+            return input;
         }
         
-        const length = array.length;
-        if (array.length === 0) {
-            return undefined;
-        }
-        
-        return array[length - 1];
+        // Returns undefined if empty
+        return input[input.length - 1];
     }
 }

@@ -49,5 +49,9 @@ describe('LeftPadPipe', () => {
         expect(result).toEqual('aaa');
     });
     
+    it('Should return the value unchanged', () => {
+       
+       expect(pipe.transform(1, [null])).toEqual(1); 
+    });
    
 });

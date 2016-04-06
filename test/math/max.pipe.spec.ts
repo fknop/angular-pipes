@@ -25,11 +25,8 @@ describe('MaxPipe', () => {
         expect(pipe.transform([1,1])).toEqual(1);
     });
     
-    it('Should throw an error', () => {
-        
-        expect(() => {
-            pipe.transform(15);
-        }).toThrowError(TypeError);
+    it('Should return the value unchanged', () => {
+       
+       expect(pipe.transform(1)).toEqual(1); 
     });
-    
 });

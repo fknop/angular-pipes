@@ -31,10 +31,8 @@ describe('WithoutPipe', () => {
        expect(pipe.transform([], [1])).toEqual([]); 
     });
     
-    it('Should throw an error', () => {
+    it('Should return the value unchanged', () => {
        
-       expect(() => {
-           pipe.transform('a');
-       }).toThrowError(TypeError);
+       expect(pipe.transform('a', [null])).toEqual('a'); 
     });
 });

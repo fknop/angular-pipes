@@ -24,11 +24,9 @@ describe('JoinPipe ', () => {
        expect(pipe.transform([1, 2, 3], ['a'])).toEqual('1a2a3'); 
     });
     
-    it('Should throw an error', () => {
+    it('Should return the value unchanged', () => {
        
-       expect(() => {
-           pipe.transform('a')
-       }).toThrowError(TypeError); 
+       expect(pipe.transform('a', [''])).toEqual('a'); 
     });
     
-})
+});

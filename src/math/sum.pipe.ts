@@ -1,4 +1,5 @@
 import { Pipe, PipeTransform  } from 'angular2/core';
+import { isArray, sum } from '../utils/utils';
 
 
 @Pipe({
@@ -7,10 +8,8 @@ import { Pipe, PipeTransform  } from 'angular2/core';
 })
 export class SumPipe implements PipeTransform {
     
-    transform (numbers: Array<number>|number): number {
+    transform (input: any): any {
         
-        return !Array.isArray(numbers) ?
-               numbers : 
-               numbers.reduce((previous, current) => previous + current, 0);
+        return !isArray(input) ? input : sum(input);
     }
 }

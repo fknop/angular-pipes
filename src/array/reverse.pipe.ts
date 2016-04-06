@@ -1,11 +1,11 @@
-import { Pipe, PipeTransform  } from 'angular2/core';
+import { Pipe, PipeTransform } from 'angular2/core';
 import { isArray } from '../utils/utils';
 
 @Pipe({
-    name: 'head',
+    name: 'reverse',
     pure: false
 })
-export class HeadPipe implements PipeTransform {
+export class ReversePipe implements PipeTransform {
     
     transform (input: any): any {
         
@@ -13,7 +13,6 @@ export class HeadPipe implements PipeTransform {
             return input;
         }
         
-        // Will return undefined if length is 0
-        return input[0];
+        return input.reverse();
     }
 }

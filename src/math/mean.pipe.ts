@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform  } from 'angular2/core';
-
+import { isArray, sum } from '../utils/utils';
 
 @Pipe({
     name: 'mean',
@@ -7,25 +7,18 @@ import { Pipe, PipeTransform  } from 'angular2/core';
 })
 export class MeanPipe implements PipeTransform {
     
-    transform (numbers: Array<number>): number {
+    transform (input: any): any {
         
-        if (!Array.isArray(numbers)) {
-            throw new TypeError('MeanPipe: value must be an array');
+        if (!isArray(input)) {
+            return input;
         }
         
-        const count = numbers.length;
+        const count = input.length;
         
         if (count === 0) {
             return undefined;
         }
         
-        let total = 0;
-        
-        numbers.forEach((value) => {
-            
-            total += value;
-        });
-        
-        return (total / count);
+        return sum(input) / count;
     }
 }

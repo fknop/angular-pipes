@@ -1,6 +1,5 @@
 import { Pipe, PipeTransform  } from 'angular2/core';
-import { noop, isArray } from '../utils/utils';
-import { arrayError } from '../utils/error';
+import { isArray } from '../utils/utils';
 
 @Pipe({
     name: 'map',
@@ -8,16 +7,16 @@ import { arrayError } from '../utils/error';
 })
 export class MapPipe implements PipeTransform {
     
-    transform (array: Array<any>, [fn]): any {
+    transform (input: any, [fn]): any {
         
-        if (!isArray(array)) {
-            throw arrayError('MapPipe');
+        if (!isArray(input)) {
+            return input
         }
         
         if (!fn) {
             fn = function (item: any) { return item };
         }
         
-        return array.map(fn);
+        return input.map(fn);
     }
 }

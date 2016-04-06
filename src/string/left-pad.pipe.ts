@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform  } from 'angular2/core';
-import { leftPad } from '../utils/utils';
+import { leftPad, isString } from '../utils/utils';
 
 
 @Pipe({
@@ -7,8 +7,12 @@ import { leftPad } from '../utils/utils';
 })
 export class LeftPadPipe implements PipeTransform {
     
-    transform (value: string, [length = 0, character = ' ']: any[]): string {
+    transform (input: any, [length = 0, character = ' ']: any[]): any {
         
-        return leftPad(value, length, character);
+        if (!isString(input)) {
+            return input;
+        }
+        
+        return leftPad(input, length, character);
     }
 }

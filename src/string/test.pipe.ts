@@ -1,4 +1,5 @@
 import { Pipe, PipeTransform  } from 'angular2/core';
+import { isString } from '../utils/utils';
 
 
 @Pipe({
@@ -6,14 +7,14 @@ import { Pipe, PipeTransform  } from 'angular2/core';
 })
 export class TestPipe implements PipeTransform {
     
-    transform (value: string, [pattern, flag]: any[]): boolean {
+    transform (input: any, [pattern, flag]: any[]): any {
         
-        if (typeof value !== 'string') {
-            throw new TypeError('TestPipe: value must be a string');
+        if (!isString(input) || !pattern) {
+            return input;
         }
         
         const regexp = pattern instanceof RegExp ? pattern : new RegExp(pattern, flag);
         
-        return regexp.test(value);
+        return regexp.test(input);
     }
 }

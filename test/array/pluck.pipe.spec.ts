@@ -70,11 +70,9 @@ describe('PluckPipe', () => {
        expect(pipe.transform(array, [undefined])).toEqual(array); 
     });
     
-    it('Should throw an error', () => {
+    it('Should return the value unchanged', () => {
        
-       expect(() => {
-           pipe.transform('a')
-       }).toThrowError(TypeError); 
+       expect(pipe.transform('a', ['a'])).toEqual('a'); 
     });
     
 })

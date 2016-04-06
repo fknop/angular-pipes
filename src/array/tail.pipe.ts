@@ -1,6 +1,5 @@
 import { Pipe, PipeTransform  } from 'angular2/core';
 import { isArray } from '../utils/utils';
-import { arrayError } from '../utils/error';
 
 @Pipe({
     name: 'tail',
@@ -8,16 +7,12 @@ import { arrayError } from '../utils/error';
 })
 export class TailPipe implements PipeTransform {
     
-    transform (array: Array<any>): Array<any> {
+    transform (input: any): any {
         
-        if (!isArray(array)) {
-            throw arrayError('TailPipe');
+        if (!isArray(input)) {
+            return input;
         }
         
-        if (array.length <= 1) {
-            return [];
-        }
-        
-        return array.slice(1, array.length);
+        return input.slice(1, input.length);
     }
 }

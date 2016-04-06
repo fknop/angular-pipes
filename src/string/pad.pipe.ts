@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform  } from 'angular2/core';
-import { pad } from '../utils/utils';
+import { pad, isString } from '../utils/utils';
 
 
 @Pipe({
@@ -7,8 +7,12 @@ import { pad } from '../utils/utils';
 })
 export class PadPipe implements PipeTransform {
     
-    transform (value: string, [length = 0, character = ' ']: any[]): string {
+    transform (input: any, [length = 0, character = ' ']: any[]): any {
         
-        return pad(value, length, character);
+        if (!isString(input)) {
+            return input;
+        }
+        
+        return pad(input, length, character);
     }
 }

@@ -33,12 +33,9 @@ describe('ReplacePipe', () => {
     
     // Just use replace function ...
     
-    it ('Should throw an error', () => {
+    it('Should return the value unchanged', () => {
        
-       expect(() => {
-           pipe.transform('a')
-       }).toThrowError(Error)
-        
+       expect(pipe.transform(1, [null, null])).toEqual(1); 
     });
    
 });

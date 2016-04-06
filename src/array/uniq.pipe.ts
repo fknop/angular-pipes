@@ -1,6 +1,5 @@
 import { Pipe, PipeTransform  } from 'angular2/core';
 import { isArray } from '../utils/utils';
-import { arrayError } from '../utils/error';
 
 // Does not work with deep equal yet
 @Pipe({
@@ -9,21 +8,12 @@ import { arrayError } from '../utils/error';
 })
 export class UniqPipe implements PipeTransform {
     
-    transform (values: Array<any>): Array<any> {
+    transform (input: any): any {
 
-        if (!isArray(values)) {
-            throw arrayError('UniqPipe');
+        if (!isArray(input)) {
+            return input;
         }
         
-        const uniq: Array<any> = new Array<any>();
-        
-        values.forEach((value) => {
-            
-            if (uniq.indexOf(value) === -1) {
-                uniq.push(value);
-            }
-        });
-        
-        return uniq;
+        return input.filter((value: any, index: number) => input.indexOf(value) === index);
     }
 }

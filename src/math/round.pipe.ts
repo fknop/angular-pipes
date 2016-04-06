@@ -1,19 +1,17 @@
 import { Pipe, PipeTransform  } from 'angular2/core';
-import { createRound } from '../utils/utils';
+import { createRound, isString } from '../utils/utils';
 
 @Pipe({
     name: 'round'
 })
 export class RoundPipe implements PipeTransform {
     
-    transform (value: number, [precision = 0]: Array<any>): number {
+    transform (value: any, [precision = 0]: Array<any>): any {
         
-        if (typeof precision === 'string') {
+        if (isString(precision)) {
             precision = parseInt(precision);
         }
         
-        const round = createRound('round');
-        
-        return round(value, precision);
+        return createRound('round')(value, precision);
     }
 }

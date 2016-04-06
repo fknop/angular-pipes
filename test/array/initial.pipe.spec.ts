@@ -24,11 +24,9 @@ describe('InitialPipe', () => {
        expect(pipe.transform([1, 2, 3])).toEqual([1,2]); 
     });
     
-    it('Should throw an error', () => {
+    it('Should return the value unchanged', () => {
        
-       expect(() => {
-           pipe.transform('a')
-       }).toThrowError(TypeError); 
+       expect(pipe.transform('a')).toEqual('a'); 
     });
     
 })

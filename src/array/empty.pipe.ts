@@ -1,6 +1,5 @@
 import { Pipe, PipeTransform  } from 'angular2/core';
 import { isArray } from '../utils/utils';
-import { arrayError } from '../utils/error';
 
 
 @Pipe({
@@ -9,12 +8,12 @@ import { arrayError } from '../utils/error';
 })
 export class EmptyPipe implements PipeTransform {
     
-    transform (array: Array<any>): boolean {
+    transform (input: any): any {
         
-        if (!isArray(array)) {
-            throw arrayError('EmptyPipe');
+        if (!isArray(input)) {
+            return input;
         }
         
-        return array.length === 0;
+        return input.length === 0;
     }
 }

@@ -21,10 +21,8 @@ describe('UniqPipe', () => {
        expect(result).toEqual(['a', 1, 'b', 3, 4, 5]); 
     });
     
-    it('Should throw an error', () => {
+    it('Should return the value unchanged', () => {
        
-       expect(() => {
-           pipe.transform('a');
-       }).toThrowError(TypeError);
+       expect(pipe.transform('a')).toEqual('a'); 
     });
 });

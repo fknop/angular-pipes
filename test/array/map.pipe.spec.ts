@@ -25,11 +25,9 @@ describe('MapPipe', () => {
        expect(pipe.transform([1,2], [undefined])).toEqual([1, 2]); 
     });
     
-    it('Should throw an error', () => {
+    it('Should return the value unchanged', () => {
        
-       expect(() => {
-           pipe.transform('a')
-       }).toThrowError(TypeError); 
+       expect(pipe.transform('a', [null])).toEqual('a'); 
     });
     
 })

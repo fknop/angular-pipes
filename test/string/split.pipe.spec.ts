@@ -23,12 +23,9 @@ describe('SplitPipe', () => {
         expect(result).toEqual([]);
     });
     
-    it('Should throw an error', () => {
-        
-        expect(() => {
-            pipe.transform(2, ['b', 0]);
-        }).toThrowError(TypeError);
+    it('Should return the value unchanged', () => {
+       
+       expect(pipe.transform(1, [null])).toEqual(1); 
     });
-    
    
 });

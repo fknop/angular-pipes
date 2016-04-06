@@ -19,11 +19,9 @@ describe('HeadPipe', () => {
        expect(pipe.transform([1,2])).toEqual(false); 
     });
     
-    it('Should throw an error', () => {
+    it('Should return the value unchanged', () => {
        
-       expect(() => {
-           pipe.transform('a')
-       }).toThrowError(TypeError); 
+       expect(pipe.transform('a')).toEqual('a'); 
     });
     
-})
+});

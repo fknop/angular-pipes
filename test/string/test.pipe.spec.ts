@@ -26,20 +26,9 @@ describe('TestPipe', () => {
     
     // Just use test function ...
     
-    it ('Should throw an error', () => {
+    it('Should return the value unchanged', () => {
        
-       expect(() => {
-           pipe.transform('a')
-       }).toThrowError(Error)
-        
-    });
-    
-    it ('Should throw an error', () => {
-       
-       expect(() => {
-           pipe.transform([])
-       }).toThrowError(TypeError)
-        
+       expect(pipe.transform(1, [null, null])).toEqual(1); 
     });
    
 });

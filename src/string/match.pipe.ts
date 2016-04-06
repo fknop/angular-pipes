@@ -1,18 +1,18 @@
 import { Pipe, PipeTransform  } from 'angular2/core';
-
+import { isString } from '../utils/utils';
 
 @Pipe({
     name: 'match'
 })
 export class MatchPipe implements PipeTransform {
     
-    transform (value: string, [pattern, flag]: any[]): any {
+    transform (input: any, [pattern, flag]: any[]): any {
         
-        if (typeof value !== 'string') {
-            throw new TypeError('MatchPipe: value must be a string');
+        if (!isString(input)) {
+            return input;
         }
         
         const regexp = pattern instanceof RegExp ? pattern : new RegExp(pattern, flag);
-        return value.match(regexp);
+        return input.match(regexp);
     }
 }

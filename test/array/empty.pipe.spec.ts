@@ -1,7 +1,7 @@
 import { EmptyPipe } from '../../index';
 import {describe, it, beforeEach, expect} from 'angular2/testing';
 
-describe('HeadPipe', () => {
+describe('EmptyPipe', () => {
     
     let pipe: EmptyPipe;
     

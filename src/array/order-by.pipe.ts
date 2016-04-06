@@ -16,16 +16,16 @@ export class OrderByPipe implements PipeTransform {
             
             const lowerA = a.toLowerCase();
             const lowerB = b.toLowerCase();
-            
-            return (lowerA < lowerB) ? -1 : (lowerA > lowerB ? 1 : 0);
+            return (lowerA < lowerB) ? -1 : (lowerA > lowerB) ? 1 : 0;
         }
         else {
             
-            return (floatA < floatB) ? -1 : (floatA > floatB ? 1 : 0); 
+            return (floatA < floatB) ? -1 : (floatA > floatB) ? 1 : 0; 
         }
+        
     }
     
-    transform (input: any, [config = '+']): any {
+    transform (input: any, [config = '+']: any[]): any {
         
         if (!isArray(input)) {
             return input;
@@ -42,13 +42,13 @@ export class OrderByPipe implements PipeTransform {
 
             // Basic array (if only + or - is present)
             if (!propertyToCheck || propertyToCheck === '-' || propertyToCheck === '+') {
-                return desc ? input.sort().reverse() : input.sort();
+                return desc ? [...input].sort().reverse() : [...input].sort();
             }            
             else {
                 // If contains + or -, substring the property
                 const property = (first === '+' || desc) ? propertyToCheck.substr(1) : propertyToCheck;
                 
-                return input.sort((a: any, b: any) => {
+                return [...input].sort((a: any, b: any) => {
                    
                     const comparator = OrderByPipe._orderBy(a[property], b[property]);
                     return desc ? -comparator : comparator; 
@@ -59,7 +59,7 @@ export class OrderByPipe implements PipeTransform {
         }
         else { // Config is an array of property
             
-            return input.sort((a: any, b: any) => {
+            return [...input].sort((a: any, b: any) => {
                
                 for (let i: number = 0; i < config.length; ++i) {
                     const first = config[i].substr(0, 1);

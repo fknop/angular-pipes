@@ -26,7 +26,8 @@ Feel free to contribute in any way. Post your own pipes, fix bugs, add options t
 * [`map`](#map) 
 * [`pluck`](#pluck)
 * [`where`](#where)
-
+* [`orderBy`](#orderBy) (not yet documented)
+* [`reverse`](#reverse) (not yet documented)
 
 ### Boolean
 

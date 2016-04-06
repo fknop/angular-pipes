@@ -11,6 +11,7 @@ import './array/map.pipe.spec';
 import './array/pluck.pipe.spec';
 import './array/where.pipe.spec';
 import './array/reverse.pipe.spec';
+import './array/order-by.pipe.spec';
 
 
 import './boolean/conditions.pipe.spec';

@@ -1,7 +1,7 @@
 import { RangePipe } from '../../index';
 import {describe, it, beforeEach, expect} from 'angular2/testing';
 
-describe('HeadPipe', () => {
+describe('RangePipe', () => {
     
     let pipe: RangePipe;
     
@@ -24,4 +24,9 @@ describe('HeadPipe', () => {
        expect(pipe.transform([], [5, -2])).toEqual([-2, -1, 0, 1, 2]); 
     });
     
+    
+    it ('Should return a range from 0 to 18 with a step of 2', () => {
+       
+       expect(pipe.transform([], [10, 0, 2])).toEqual([0, 2, 4, 6, 8, 10, 12, 14, 16, 18]);
+    });
 })

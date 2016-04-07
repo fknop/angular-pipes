@@ -17,6 +17,7 @@ describe('MapPipe', () => {
        };
        
        expect(pipe.transform(array, [fn])).toEqual([1, 2, 3, 4]); 
+       expect(array).toEqual([0, 1, 2, 3]); // Check integrity
     });
     
     it('Should return the original array', () => {

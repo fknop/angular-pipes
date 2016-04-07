@@ -9,12 +9,8 @@ export class MapPipe implements PipeTransform {
     
     transform (input: any, [fn]): any {
         
-        if (!isArray(input)) {
-            return input
-        }
-        
-        if (!fn) {
-            fn = function (item: any) { return item };
+        if (!isArray(input) || !fn) {
+            return input;
         }
         
         return input.map(fn);

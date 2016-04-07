@@ -29,6 +29,7 @@ describe('OrderByPipe', () => {
        
        const result = pipe.transform(fruits, ['+']);
        expect(result).toEqual(['apple', 'banana', 'grape', 'orange', 'pear']); 
+       expect(fruits).toEqual(["orange", "apple", "pear", "grape", "banana"]); // Check integrity
     });
     
     it ('Should return the fruits in ascending order #2', () => {

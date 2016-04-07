@@ -11,7 +11,10 @@ describe('ReversePipe', () => {
     
     it('Should return the reversed array', () => {
        
-       expect(pipe.transform([1, 2, 3])).toEqual([3, 2, 1]); 
+       const value = [1, 2, 3];
+       
+       expect(pipe.transform(value)).toEqual([3, 2, 1]); 
+       expect(value).toEqual([1, 2, 3])
     });
     
     it('Should return the value unchanged', () => {

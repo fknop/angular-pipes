@@ -13,6 +13,6 @@ export class ReversePipe implements PipeTransform {
             return input;
         }
         
-        return input.reverse();
+        return [...input].reverse();
     }
 }

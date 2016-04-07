@@ -11,8 +11,10 @@ describe('WithoutPipe', () => {
     
     it('Should return values without 1', () => {
        
-       const result = pipe.transform([1, 1, 1, 2, 3, 3, 4, 5], [1])
+       const value = [1, 1, 1, 2, 3, 3, 4, 5];
+       const result = pipe.transform(value, [1])
        expect(result).toEqual([2, 3, 3, 4, 5]); 
+       expect(value).toEqual([1, 1, 1, 2, 3, 3, 4, 5]);
     });
     
     it('Should return values witout 1 and 2', () => {

@@ -11,8 +11,10 @@ describe('UniqPipe', () => {
     
     it('Should return unique values', () => {
        
-       const result = pipe.transform([1, 1, 1, 2, 3, 3, 4, 5])
+       const value = [1, 1, 1, 2, 3, 3, 4, 5];
+       const result = pipe.transform(value)
        expect(result).toEqual([1, 2, 3, 4, 5]); 
+       expect(value).toEqual([1, 1, 1, 2, 3, 3, 4, 5]); // Check integrity
     });
     
     it('Should return unique values #2', () => {

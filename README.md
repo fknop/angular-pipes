@@ -240,7 +240,7 @@ import { TailPipe } from 'angular-pipes/pipes/src/array/tail.pipe';
 
 ```html
 {{ [] | tail }} <!-- [] -->
-{{ ['a', 'b', 'c'] | last }} <!-- ['b', 'c'] -->
+{{ ['a', 'b', 'c'] | tail }} <!-- ['b', 'c'] -->
 ```
 
 
@@ -258,7 +258,7 @@ import { UniqPipe } from 'angular-pipes/pipes/src/array/uniq.pipe';
 
 ```html
 {{ [] | uniq }} <!-- [] -->
-{{ ['a', 'b', 'a'] | last }} <!-- ['a', 'b'] -->
+{{ ['a', 'b', 'a'] | uniq }} <!-- ['a', 'b'] -->
 ```
 
 ##### Todo

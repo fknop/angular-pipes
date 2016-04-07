@@ -38,7 +38,9 @@ describe('WherePipe', () => {
            return item === 1;
        } 
        
-       expect(pipe.transform([1, 2, 3, 1, 1, 4], [fn])).toEqual([1, 1, 1]);
+       const value = [1, 2, 3, 1, 1, 4];
+       expect(pipe.transform(value, [fn])).toEqual([1, 1, 1]);
+       expect(value).toEqual([1, 2, 3, 1, 1, 4]);
     });
     
     it('Should return the objects where a is 4', () => {

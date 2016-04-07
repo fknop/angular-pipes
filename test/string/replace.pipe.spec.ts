@@ -13,8 +13,10 @@ describe('ReplacePipe', () => {
     
     it('Should return the replaced string', () => {
        
-        const result = pipe.transform('aaa', ['aaa', 'bbb']);
+        const value = 'aaa';
+        const result = pipe.transform(value, ['aaa', 'bbb']);
         expect(result).toEqual('bbb');
+        expect(value).toEqual('aaa');
     });
     
     

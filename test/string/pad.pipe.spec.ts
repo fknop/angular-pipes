@@ -13,8 +13,10 @@ describe('PadPipe', () => {
     
     it('Should return pad string', () => {
        
-        const result = pipe.transform('aaa', [4]);
+        const value = 'aaa';
+        const result = pipe.transform(value, [4]);
         expect(result).toEqual(' aaa');
+        expect(value).toEqual('aaa');
     });
     
     it('Should return pad string', () => {

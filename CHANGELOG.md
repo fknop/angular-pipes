@@ -1,3 +1,20 @@
+# 1.3.0 - Not yet released
+
+## New pipes
+
+* `CountPipe` - Works for object / array / string
+* `KeysPipe`
+* `EveryPipe`
+* `SomePipe`
+* `ToArrayPipe`
+* `NewlinesPipe`
+* `DegreesPipe`
+* `RadiansPipe`
+
+## Fixes
+
+Fix immutability for pipes that were updating the original input.
+
 # 1.2.0
 
 ## New pipes

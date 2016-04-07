@@ -16,7 +16,10 @@ describe('InitialPipe', () => {
     
     it('Should return [1]', () => {
        
-       expect(pipe.transform([1,2])).toEqual([1]); 
+       const value = [1, 2];
+       
+       expect(pipe.transform(value)).toEqual([1]); 
+       expect(value).toEqual([1, 2]); // Check integrity
     });
     
     it ('Should return [1, 2]', () => {

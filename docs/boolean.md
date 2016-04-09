@@ -50,9 +50,9 @@ import { IsGreaterOrEqualPipe } from 'angular-pipes/pipes/src/boolean/conditions
 ##### Usage
 
 ```html
-{{ 0 | greater: 1 }} <!-- false -->
-{{ 1 | greater: 0 }} <!-- true -->
-{{ 1 | greater: 1 }} <!-- true -->
+{{ 0 | greaterOrEqual: 1 }} <!-- false -->
+{{ 1 | greaterOrEqual: 0 }} <!-- true -->
+{{ 1 | greaterOrEqual: 1 }} <!-- true -->
 ```
 
 ####less
@@ -68,9 +68,9 @@ import { IsLessPipe } from 'angular-pipes/pipes/src/boolean/conditions.pipe';
 ##### Usage
 
 ```html
-{{ 0 | greater: 1 }} <!-- true -->
-{{ 1 | greater: 0 }} <!-- false -->
-{{ 1 | greater: 1 }} <!-- false -->
+{{ 0 | less: 1 }} <!-- true -->
+{{ 1 | less: 0 }} <!-- false -->
+{{ 1 | less: 1 }} <!-- false -->
 ```
 
 ####lessOrEqual
@@ -86,9 +86,9 @@ import { IsLessOrEqualPipe } from 'angular-pipes/pipes/src/boolean/conditions.pi
 ##### Usage
 
 ```html
-{{ 0 | greater: 1 }} <!-- true -->
-{{ 1 | greater: 0 }} <!-- false -->
-{{ 1 | greater: 1 }} <!-- true -->
+{{ 0 | lessOrEqual: 1 }} <!-- true -->
+{{ 1 | lessOrEqual: 0 }} <!-- false -->
+{{ 1 | lessOrEqual: 1 }} <!-- true -->
 ```
 
 ####equal
@@ -104,9 +104,9 @@ import { IsEqualPipe } from 'angular-pipes/pipes/src/boolean/conditions.pipe';
 ##### Usage
 
 ```html
-{{ 0 | greater: 1 }} <!-- false -->
-{{ 1 | greater: '1' }} <!-- true -->
-{{ 1 | greater: 1 }} <!-- true -->
+{{ 0 | equal: 1 }} <!-- false -->
+{{ 1 | equal: '1' }} <!-- true -->
+{{ 1 | equal: 1 }} <!-- true -->
 ```
 
 ####notEqual
@@ -122,9 +122,9 @@ import { IsNotEqualPipe } from 'angular-pipes/pipes/src/boolean/conditions.pipe'
 ##### Usage
 
 ```html
-{{ 0 | greater: 1 }} <!-- true -->
-{{ 1 | greater: '1' }} <!-- false -->
-{{ 1 | greater: 1 }} <!-- false -->
+{{ 0 | notEqual: 1 }} <!-- true -->
+{{ 1 | notEqual: '1' }} <!-- false -->
+{{ 1 | notEqual: 1 }} <!-- false -->
 ```
 
 
@@ -141,13 +141,13 @@ import { IsIdenticalPipe } from 'angular-pipes/pipes/src/boolean/conditions.pipe
 ##### Usage
 
 ```html
-{{ 0 | greater: 1 }} <!-- false -->
-{{ 1 | greater: '1' }} <!-- false -->
-{{ 1 | greater: 1 }} <!-- true -->
+{{ 0 | identical: 1 }} <!-- false -->
+{{ 1 | identical: '1' }} <!-- false -->
+{{ 1 | identical: 1 }} <!-- true -->
 ```
 
 
-####notEqual
+####notIdentical
 
 Returns true if the value are not identical (operator `!==`).
 
@@ -160,9 +160,9 @@ import { IsNotIdenticalPipe } from 'angular-pipes/pipes/src/boolean/conditions.p
 ##### Usage
 
 ```html
-{{ 0 | greater: 1 }} <!-- true -->
-{{ 1 | greater: '1' }} <!-- true -->
-{{ 1 | greater: 1 }} <!-- false -->
+{{ 0 | notIdentical: 1 }} <!-- true -->
+{{ 1 | notIdentical: '1' }} <!-- true -->
+{{ 1 | notIdentical: 1 }} <!-- false -->
 ```
 
 
@@ -202,8 +202,8 @@ import { IsUndefinedPipe } from 'angular-pipes/pipes/src/boolean/types.pipe';
 ##### Usage
 
 ```html
-{{ a | null }} <!-- true if a does not exists -->
-{{ 1 | null }} <!-- false -->
+{{ a | undefined }} <!-- true if a does not exists -->
+{{ 1 | undefined }} <!-- false -->
 ```
 
 ##### Notes

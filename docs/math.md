@@ -142,7 +142,7 @@ import { MeanPipe } from 'angular-pipes/pipes/src/math/mean.pipe';
 ##### Usage
 
 ```html
-{{ [5, 5, 1, 9] | max }} <!-- 5 -->
+{{ [5, 5, 1, 9] | mean }} <!-- 5 -->
 ```
 
 ####sum
@@ -158,7 +158,7 @@ import { SumPipe } from 'angular-pipes/pipes/src/math/sum.pipe';
 ##### Usage
 
 ```html
-{{ [5, 5, 1, 9] | max }} <!-- 20 -->
+{{ [5, 5, 1, 9] | sum }} <!-- 20 -->
 ```
 
 

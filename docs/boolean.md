@@ -1,13 +1,13 @@
 # Boolean
 
 * [`greater`](#greater)
-* [`greaterOrEqual`](#greaterOrEqual)
+* [`greaterOrEqual`](#greaterorequal)
 * [`less`](#less)
-* [`lessOrEqual`](#lessOrEqual)
+* [`lessOrEqual`](#lessorequal)
 * [`equal`](#equal)
-* [`notEqual`](#notEqual)
+* [`notEqual`](#notequal)
 * [`identical`](#identical)
-* [`notIdentical`](#notIdentical)
+* [`notIdentical`](#notidentical)
 * [`null`](#null)
 * [`undefined`](#undefined)
 * [`nil`](#nil) 

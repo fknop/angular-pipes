@@ -157,7 +157,7 @@ this.value = 'Hello, World. \nHow are you ?';
 ```
 
 ```html
-<span [innerHTML]="value"></span>
+<span [innerHTML]="value | newlines"></span>
 
 <!-- Resulting dom
 <span>

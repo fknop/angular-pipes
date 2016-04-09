@@ -368,6 +368,7 @@ import { ReversePipe } from 'angular-pipes/pipes/src/array/reverse.pipe';
 ####count
 
 Returns the length of the collection. Useful when used with other pipes, otherwise, use the `length` property.
+Works also for object and string.
 
 ##### File
 

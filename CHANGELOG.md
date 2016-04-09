@@ -1,8 +1,8 @@
-# 1.3.0 - Not yet released
+# 1.3.0 
 
 ## New pipes
 
-* `CountPipe` - Works for object / array / string
+* `CountPipe`
 * `KeysPipe`
 * `EveryPipe`
 * `SomePipe`
@@ -14,6 +14,10 @@
 ## Fixes
 
 Fix immutability for pipes that were updating the original input.
+
+## Other
+
+* Added all the documentation in a separate `docs` folder to keep the `README.md` as clean as possible.
 
 # 1.2.0
 

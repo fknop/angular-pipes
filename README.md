@@ -27,7 +27,7 @@ You can find the documentations in the [`docs`](./docs) folder.
 * [`map`](./docs/array.md#map) 
 * [`pluck`](./docs/array.md#pluck)
 * [`where`](./docs/array.md#where)
-* [`orderBy`](./docs/array.md#orderBy) 
+* [`orderBy`](./docs/array.md#orderby) 
 * [`reverse`](./docs/array.md#reverse)
 * [`count`](./docs/array.md#count) 
 * [`some`](./docs/array.md#some) 
@@ -37,13 +37,13 @@ You can find the documentations in the [`docs`](./docs) folder.
 ### Boolean
 
 * [`greater`](./docs/boolean.md#greater)
-* [`greaterOrEqual`](./docs/boolean.md#greaterOrEqual)
+* [`greaterOrEqual`](./docs/boolean.md#greaterorequal)
 * [`less`](./docs/boolean.md#less)
-* [`lessOrEqual`](./docs/boolean.md#lessOrEqual)
+* [`lessOrEqual`](./docs/boolean.md#lessorequal)
 * [`equal`](./docs/boolean.md#equal)
-* [`notEqual`](./docs/boolean.md#notEqual)
+* [`notEqual`](./docs/boolean.md#notequal)
 * [`identical`](./docs/boolean.md#identical)
-* [`notIdentical`](./docs/boolean.md#notIdentical)
+* [`notIdentical`](./docs/boolean.md#notidentical)
 * [`null`](./docs/boolean.md#null)
 * [`undefined`](./docs/boolean.md#undefined)
 * [`nil`](./docs/boolean.md#nil) 
@@ -83,7 +83,7 @@ You can find the documentations in the [`docs`](./docs) folder.
 ### Object
 
 * [`keys`](./docs/object.md#keys)
-* [`toArray`](./docs/object.md#toArray)
+* [`toArray`](./docs/object.md#toarray)
 
 
 ## Install

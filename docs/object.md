@@ -1,7 +1,7 @@
 # Object
 
 * [`keys`](#keys)
-* [`toArray`](#toArray)
+* [`toArray`](#toarray)
 
 
 ####keys

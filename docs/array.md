@@ -12,7 +12,7 @@
 * [`map`](#map) 
 * [`pluck`](#pluck)
 * [`where`](#where)
-* [`orderBy`](#orderBy) 
+* [`orderBy`](#orderby) 
 * [`reverse`](#reverse)
 * [`count`](#count) 
 * [`some`](#some) 

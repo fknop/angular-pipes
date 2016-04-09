@@ -426,6 +426,6 @@ const predicate = function (item) {
 ```
 
 ```html
-{{ [1, 2, 3, 4] | some: predicate }} <!-- false -->
+{{ [1, 2, 3, 4] | every: predicate }} <!-- false -->
 {{ [2, 2, 2, 2] | every: predicate }} <!-- true -->
 ```

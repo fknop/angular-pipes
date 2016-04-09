@@ -6,6 +6,8 @@ import { MeanPipe } from './src/math/mean.pipe';
 import { MinPipe } from './src/math/min.pipe';
 import { RoundPipe } from './src/math/round.pipe';
 import { SumPipe } from './src/math/sum.pipe';
+import { DegreesPipe } from './src/math/degrees.pipe';
+import { RadiansPipe } from './src/math/radians.pipe';
 
 export * from './src/math/bytes.pipe';
 export * from './src/math/ceil.pipe';
@@ -15,6 +17,8 @@ export * from './src/math/mean.pipe';
 export * from './src/math/min.pipe';
 export * from './src/math/round.pipe';
 export * from './src/math/sum.pipe';
+export * from './src/math/degrees.pipe';
+export * from './src/math/radians.pipe';
 
 
 export const NG2_MATH_PIPES = [
@@ -25,5 +29,7 @@ export const NG2_MATH_PIPES = [
     MeanPipe,
     MinPipe,
     RoundPipe,
-    SumPipe
+    SumPipe,
+    DegreesPipe,
+    RadiansPipe
 ];

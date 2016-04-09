@@ -26,6 +26,8 @@ import './math/floor.pipe.spec';
 import './math/round.pipe.spec';
 import './math/mean.pipe.spec';
 import './math/bytes.pipe.spec';
+import './math/degrees.pipe.spec';
+import './math/radians.pipe.spec';
 
 
 import './string/left-pad.pipe.spec';
@@ -36,3 +38,8 @@ import './string/match.pipe.spec';
 import './string/split.pipe.spec';
 import './string/test.pipe.spec';
 import './string/trim.pipe.spec';
+import './string/newlines.pipe.spec';
+
+
+import './object/keys.pipe.spec.ts';
+import './object/to-array.pipe.spec.ts';

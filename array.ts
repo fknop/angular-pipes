@@ -12,6 +12,9 @@ import { RangePipe } from './src/array/range.pipe';
 import { PluckPipe } from './src/array/pluck.pipe';
 import { ReversePipe } from './src/array/reverse.pipe';
 import { OrderByPipe } from './src/array/order-by.pipe';
+import { CountPipe } from './src/array/count.pipe';
+import { SomePipe } from './src/array/some.pipe';
+import { EveryPipe } from './src/array/every.pipe';
 
 export * from './src/array/empty.pipe';
 export * from './src/array/head.pipe';
@@ -27,6 +30,10 @@ export * from './src/array/range.pipe';
 export * from './src/array/pluck.pipe';
 export * from './src/array/reverse.pipe';
 export * from './src/array/order-by.pipe';
+export * from './src/array/count.pipe';
+export * from './src/array/some.pipe';
+export * from './src/array/every.pipe';
+
 
 export const NG2_ARRAY_PIPES = [
     EmptyPipe,
@@ -42,5 +49,8 @@ export const NG2_ARRAY_PIPES = [
     RangePipe,
     PluckPipe,
     ReversePipe,
-    OrderByPipe
+    OrderByPipe,
+    CountPipe,
+    SomePipe,
+    EveryPipe
 ];

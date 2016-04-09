@@ -6,6 +6,7 @@ import { RightPadPipe } from './src/string/right-pad.pipe';
 import { SplitPipe } from './src/string/split.pipe';
 import { TestPipe } from './src/string/test.pipe';
 import { TrimPipe } from './src/string/trim.pipe';
+import { NewlinesPipe } from './src/string/newlines.pipe';
 
 export * from './src/string/left-pad.pipe';
 export * from './src/string/match.pipe';
@@ -15,6 +16,7 @@ export * from './src/string/right-pad.pipe';
 export * from './src/string/split.pipe';
 export * from './src/string/test.pipe';
 export * from './src/string/trim.pipe';
+export * from './src/string/newlines.pipe';
 
 export const NG2_STRING_PIPES = [
     LeftPadPipe,
@@ -24,5 +26,6 @@ export const NG2_STRING_PIPES = [
     RightPadPipe,
     SplitPipe,
     TestPipe,
-    TrimPipe  
+    TrimPipe,
+    NewlinesPipe
 ];

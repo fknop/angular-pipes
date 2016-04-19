@@ -1,7 +1,7 @@
 # Object
 
 * [`keys`](#keys)
-* [`toArray`](#toArray)
+* [`toArray`](#toarray)
 
 
 ####keys
@@ -30,7 +30,7 @@ const value = {
 {{ [1, 2, 3] | keys }} <!-- ['0', '1', '2'] -->
 ```
 
-####keys
+####toArray
 
 Transforms an object to an array
 

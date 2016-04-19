@@ -100,8 +100,8 @@ import { SplitPipe } from 'angular-pipes/pipes/src/string/split.pipe';
 
 ```html
 {{ 'Hello World' | split }} <!-- ['Hello', 'World'] -->
-{{ 'ABABA' | trim: 'B' }} <!-- ['A', 'A', 'A'] -->
-{{ 'ABABA' | trim: 'B': 2 }} <!-- ['A', 'A'] -->
+{{ 'ABABA' | split: 'B' }} <!-- ['A', 'A', 'A'] -->
+{{ 'ABABA' | split: 'B': 2 }} <!-- ['A', 'A'] -->
 ```
 
 
@@ -157,7 +157,7 @@ this.value = 'Hello, World. \nHow are you ?';
 ```
 
 ```html
-<span [innerHTML]="value"></span>
+<span [innerHTML]="value | newlines"></span>
 
 <!-- Resulting dom
 <span>

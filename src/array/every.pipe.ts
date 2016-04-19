@@ -2,14 +2,8 @@ import { Pipe, PipeTransform  } from 'angular2/core';
 import { isArray } from '../utils/utils';
 
 
-@Pipe({
-    name: 'every',
-    pure: false
-})
-export class EveryPipe implements PipeTransform {
+const every = function (input: any, predicate: Function) {
     
-    transform (input: any, [predicate]): any {
-        
         if (!isArray(input) || !predicate) {
             return input;
         }
@@ -23,5 +17,30 @@ export class EveryPipe implements PipeTransform {
         
         
         return result;
+}
+
+
+@Pipe({
+    name: 'every',
+    pure: false
+})
+export class EveryPipe implements PipeTransform {
+    
+    transform (input: any, [predicate]): any {
+        
+        return every(input, predicate);
+    }
+}
+
+
+@Pipe({
+    name: 'everyPure',
+    pure: true
+})
+export class EveryPurePipe implements PipeTransform {
+    
+    transform (input: any, [predicate]): any {
+        
+        return every(input, predicate);
     }
 }

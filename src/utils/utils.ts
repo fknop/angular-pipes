@@ -64,6 +64,11 @@ export function toDecimal (value: number, decimal: number): number {
     return Math.round(value * Math.pow(10, decimal)) / Math.pow(10, decimal);
 }
 
+export function upperFirst (value: string): string {
+    
+    return value.slice(0, 1).toUpperCase() + value.slice(1);
+}
+
 export function createRound (method: string): Function {
     const func = Math[method];
     return function (value: number, precision: number = 0) {
@@ -79,7 +84,7 @@ export function createRound (method: string): Function {
         if (precision) {
             
             let pair = `${value}e`.split('e');
-            const val = func(`${pair[0]}e` + (+pair[1] + precision));
+            const val = func( `${pair[0]}e` + (+pair[1] + precision));
             
             pair = `${val}e`.split('e');
             return +(pair[0] + 'e' + (+pair[1] - precision));

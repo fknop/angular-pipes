@@ -1,3 +1,17 @@
+# 1.4.0
+
+## New pipes
+
+* `capitalize`
+* `upperfirst`
+* `template`
+* `encodeURI`
+* `encodeURIComponent`
+* `repeat`
+* `truncate`
+* `shuffle`
+* `random`
+
 # 1.3.0 
 
 ## New pipes

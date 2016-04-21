@@ -32,6 +32,7 @@ You can find the documentations in the [`docs`](./docs) folder.
 * [`count`](./docs/array.md#count) 
 * [`some`](./docs/array.md#some) 
 * [`every`](./docs/array.md#every)
+* [`shuffle`](./docs/array.md#shuffle) (to be documented)
 
 
 ### Boolean
@@ -65,7 +66,8 @@ You can find the documentations in the [`docs`](./docs) folder.
 * [`mean`](./docs/math.md#mean)
 * [`sum`](./docs/math.md#sum)
 * [`degrees`](./docs/math.md#degrees)
-* [`radians`](./docs/math.md#degrees)
+* [`radians`](./docs/math.md#radians)
+* [`random`](./docs/math.md#random) (to be documented)
 
 ### String
 
@@ -78,6 +80,13 @@ You can find the documentations in the [`docs`](./docs) folder.
 * [`match`](./docs/string.md#match)
 * [`test`](./docs/string.md#test)
 * [`newlines`](./docs/string.md#newlines)
+* [`capitalize`](./docs/string.md#capitalize) (to be documented)
+* [`upperfirst`](./docs/string.md#upperfirst) (to be documented)
+* [`template`](./docs/string.md#template) (to be documented)
+* [`encodeURI`](./docs/string.md#encodeuri) (to be documented)
+* [`encodeURIComponent`](./docs/string.md#encodeuricomponent) (to be documented)
+* [`repeat`](./docs/string.md#repeat) (to be documented)
+* [`truncate`](./docs/string.md#truncate) (to be documented)
 
 
 ### Object

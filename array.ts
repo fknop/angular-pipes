@@ -15,6 +15,7 @@ import { OrderByPipe } from './src/array/order-by.pipe';
 import { CountPipe } from './src/array/count.pipe';
 import { SomePipe } from './src/array/some.pipe';
 import { EveryPipe } from './src/array/every.pipe';
+import { ShufflePipe } from './src/array/shuffle.pipe';
 
 export * from './src/array/empty.pipe';
 export * from './src/array/head.pipe';
@@ -33,6 +34,7 @@ export * from './src/array/order-by.pipe';
 export * from './src/array/count.pipe';
 export * from './src/array/some.pipe';
 export * from './src/array/every.pipe';
+export * from './src/array/shuffle.pipe';
 
 
 export const NG2_ARRAY_PIPES = [
@@ -52,5 +54,6 @@ export const NG2_ARRAY_PIPES = [
     OrderByPipe,
     CountPipe,
     SomePipe,
-    EveryPipe
+    EveryPipe,
+    ShufflePipe
 ];

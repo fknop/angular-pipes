@@ -14,7 +14,7 @@ export class TemplatePipe implements PipeTransform {
         
         let template = input;
         for (let i = 0; i < args.length; ++i) {
-            template = template.replace(`$${i}`, args[i]);
+            template = template.replace( `$${i + 1}`, args[i]);
         }
      
         return template;   

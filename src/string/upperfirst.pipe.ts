@@ -4,7 +4,7 @@ import { isString, upperFirst } from '../utils/utils';
 @Pipe({
     name: 'upperfirst'
 })
-export class UpperFirst implements PipeTransform {
+export class UpperFirstPipe implements PipeTransform {
     transform(input: any) : any {
         
         if (!isString(input)) {

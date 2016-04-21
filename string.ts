@@ -7,6 +7,13 @@ import { SplitPipe } from './src/string/split.pipe';
 import { TestPipe } from './src/string/test.pipe';
 import { TrimPipe } from './src/string/trim.pipe';
 import { NewlinesPipe } from './src/string/newlines.pipe';
+import { CapitalizePipe } from './src/string/capitalize.pipe';
+import { UpperFirstPipe } from './src/string/upperfirst.pipe';
+import { TemplatePipe } from './src/string/template.pipe';
+import { EncodeURIPipe } from './src/string/encode-uri.pipe';
+import { EncodeURIComponentPipe } from './src/string/encode-uri-component.pipe';
+import { TruncatePipe } from './src/string/truncate.pipe';
+import { RepeatPipe } from './src/string/repeat.pipe';
 
 export * from './src/string/left-pad.pipe';
 export * from './src/string/match.pipe';
@@ -17,6 +24,15 @@ export * from './src/string/split.pipe';
 export * from './src/string/test.pipe';
 export * from './src/string/trim.pipe';
 export * from './src/string/newlines.pipe';
+export * from './src/string/capitalize.pipe';
+export * from './src/string/upperfirst.pipe';
+export * from './src/string/template.pipe';
+export * from './src/string/encode-uri.pipe';
+export * from './src/string/encode-uri-component.pipe';
+export * from './src/string/truncate.pipe';
+export * from './src/string/repeat.pipe';
+
+
 
 export const NG2_STRING_PIPES = [
     LeftPadPipe,
@@ -27,5 +43,12 @@ export const NG2_STRING_PIPES = [
     SplitPipe,
     TestPipe,
     TrimPipe,
-    NewlinesPipe
+    NewlinesPipe,
+    CapitalizePipe,
+    UpperFirstPipe,
+    TemplatePipe,
+    EncodeURIPipe,
+    EncodeURIComponentPipe,
+    TruncatePipe,
+    RepeatPipe
 ];

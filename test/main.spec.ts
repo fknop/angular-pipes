@@ -12,6 +12,7 @@ import './array/pluck.pipe.spec';
 import './array/where.pipe.spec';
 import './array/reverse.pipe.spec';
 import './array/order-by.pipe.spec';
+import './array/shuffle.pipe.spec';
 
 
 import './boolean/conditions.pipe.spec';
@@ -28,6 +29,7 @@ import './math/mean.pipe.spec';
 import './math/bytes.pipe.spec';
 import './math/degrees.pipe.spec';
 import './math/radians.pipe.spec';
+import './math/random.pipe.spec';
 
 
 import './string/left-pad.pipe.spec';
@@ -39,6 +41,13 @@ import './string/split.pipe.spec';
 import './string/test.pipe.spec';
 import './string/trim.pipe.spec';
 import './string/newlines.pipe.spec';
+import './string/capitalize.pipe.spec';
+import './string/upperfirst.pipe.spec';
+import './string/repeat.pipe.spec';
+import './string/encode-uri.pipe.spec';
+import './string/encode-uri-component.pipe.spec';
+import './string/template.pipe.spec';
+import './string/truncate.pipe.spec';
 
 
 import './object/keys.pipe.spec.ts';

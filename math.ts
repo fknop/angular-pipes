@@ -8,6 +8,7 @@ import { RoundPipe } from './src/math/round.pipe';
 import { SumPipe } from './src/math/sum.pipe';
 import { DegreesPipe } from './src/math/degrees.pipe';
 import { RadiansPipe } from './src/math/radians.pipe';
+import { RandomPipe } from './src/math/random.pipe';
 
 export * from './src/math/bytes.pipe';
 export * from './src/math/ceil.pipe';
@@ -19,6 +20,8 @@ export * from './src/math/round.pipe';
 export * from './src/math/sum.pipe';
 export * from './src/math/degrees.pipe';
 export * from './src/math/radians.pipe';
+export * from './src/math/random.pipe';
+
 
 
 export const NG2_MATH_PIPES = [
@@ -31,5 +34,6 @@ export const NG2_MATH_PIPES = [
     RoundPipe,
     SumPipe,
     DegreesPipe,
-    RadiansPipe
+    RadiansPipe,
+    RandomPipe
 ];

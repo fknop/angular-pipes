@@ -31,6 +31,11 @@ import './math/degrees.pipe.spec';
 import './math/radians.pipe.spec';
 import './math/random.pipe.spec';
 
+import './aggregate/sum.pipe.spec';
+import './aggregate/max.pipe.spec';
+import './aggregate/min.pipe.spec';
+import './aggregate/mean.pipe.spec';
+
 
 import './string/left-pad.pipe.spec';
 import './string/right-pad.pipe.spec';

@@ -154,7 +154,7 @@ The boolean pipes are only in two files, the types are in `types.pipe.ts` and th
 conditions are in `conditions.pipe.ts`
 
 If you only use one or two pipes, it's better to include only those two files. It will be lighter.
-There is no bundle available, this project let you bundle as you wish.
+There is no bundle available (everything in one file), this project let you bundle as you wish. But the compiled JS is available.
 
 
 ## Tests

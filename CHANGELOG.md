@@ -9,8 +9,10 @@
 * `pow`
 * `sqrt`
 
-##
+## Other
 
+* Closes #6
+* Closes #7
 
 # 1.4.0
 

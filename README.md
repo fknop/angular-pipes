@@ -1,7 +1,5 @@
 [![NPM Version](https://img.shields.io/npm/v/angular-pipes.svg)](https://npmjs.org/package/angular-pipes)
 
-# NOT WORKING WITH ANGULAR2-beta.16 YET. 
-
 # angular-pipes
 
 angular-pipes is a pipes library for `angular 2`. The project is hosted as `angular-pipes` on `npm`.

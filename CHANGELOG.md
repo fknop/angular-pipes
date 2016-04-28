@@ -11,8 +11,8 @@
 
 ## Other
 
-* Closes #6
-* Closes #7
+* Closes [#6](https://github.com/fknop/angular-pipes/issues/6)
+* Closes [#7](https://github.com/fknop/angular-pipes/issues/7)
 
 # 1.4.0
 

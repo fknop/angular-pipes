@@ -18,7 +18,7 @@ export class RepeatPipe {
         }
         
         const repeated = [input];
-        for (let i = 0; i < times; ++i) {
+        for (let i = 1; i < times; ++i) {
             repeated.push(input)
         }
         

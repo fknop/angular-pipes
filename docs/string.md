@@ -9,6 +9,13 @@
 * [`match`](#match)
 * [`test`](#test)
 * [`newlines`](#newlines)
+* [`capitalize`](#capitalize) 
+* [`upperfirst`](#upperfirst) 
+* [`template`](#template) 
+* [`encodeURI`](#encodeuri) 
+* [`encodeURIComponent`](#encodeuricomponent) 
+* [`repeat`](#repeat) 
+* [`truncate`](#truncate) 
 
 
 ####leftpad
@@ -169,4 +176,117 @@ this.value = 'Hello, World. \nHow are you ?';
 Hello, World.
 How are you ?    
 -->
+```
+
+
+####capitalize
+
+Capitalize the string. If the argument is true, all the words will be capitalized.
+
+##### File
+
+```
+import { CapitalizePipe } from 'angular-pipes/pipes/src/string/capitalize.pipe';
+```
+
+##### Usage
+
+```html
+{{ 'hello world' | capitalize }} <!-- 'Hello world' -->
+{{ 'hello world' | capitalize: true }} <!-- 'Hello World' -->
+{{ 'hELLo wOrld' | capitalize: true }} <!-- 'Hello World' -->
+```
+
+
+####upperfirst
+
+Uppercase the first letter.
+
+##### File
+
+```
+import { UpperFirstPipe } from 'angular-pipes/pipes/src/string/upperfirst.pipe';
+```
+
+##### Usage
+
+```html
+{{ 'hello world' | upperfirst }} <!-- 'Hello world' -->
+```
+
+
+####template
+
+Template string.
+
+##### File
+
+```
+import { TemplatePipe } from 'angular-pipes/pipes/src/string/template.pipe';
+```
+
+##### Usage
+
+```html
+{{ "Hello $1, it's $2" | template: 'world': 'me' }} <!-- 'Hello world, it's me' -->
+```
+
+
+####encodeuri
+
+The encodeURI function.
+
+##### File
+
+```
+import { EncodeURIPipe } from 'angular-pipes/pipes/src/string/encode-uri.pipe';
+```
+
+
+####encodeuricomponent
+
+The encodeURIComponent function.
+
+##### File
+
+```
+import { EncodeURIComponentPipe } from 'angular-pipes/pipes/src/string/encode-uri-component.pipe';
+```
+
+####repeat
+
+Repeats a string.
+
+##### File
+
+```
+import { RepeatPipe } from 'angular-pipes/pipes/src/string/repeat.pipe';
+```
+
+##### Usage
+
+```html
+{{ 'a' | repeat: 2 }} <!-- 'aa' -->
+{{ 'a' | repeat: 2: 'b' }} <!-- 'aba' -->
+```
+
+####truncate
+
+Truncate a string. 
+
+Arguments: (size, suffix, preserve)
+
+##### File
+
+```
+import { TruncatePipe } from 'angular-pipes/pipes/src/string/truncate.pipe';
+```
+
+##### Usage
+
+```html
+{{ 'Hello World' | truncate: 4 }} <!-- 'Hell' -->
+{{ 'Hello World' | truncate: 4: '', true }} <!-- 'Hello' -->
+{{ 'Hello World' | truncate: 4: '...', true }} <!-- 'Hello...' -->
+{{ 'Hello World, how is it going?' | truncate: 14: '...', true }} <!-- 'Hello World, how...' -->
 ```

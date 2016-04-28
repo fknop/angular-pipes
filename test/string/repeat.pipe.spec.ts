@@ -12,17 +12,17 @@ describe('RepeatPipe', () => {
     
     it('Should do nothing', () => {
        
-       expect(pipe.transform('a', 1, '')).toEqual('aa');
+       expect(pipe.transform('a', 1, '')).toEqual('a');
     });
     
     it('Should repeat two times', () => {
        
-       expect(pipe.transform('a', 2, '')).toEqual('aaa');
+       expect(pipe.transform('a', 2, '')).toEqual('aa');
     });
     
     it('Should repeat two times with space', () => {
        
-       expect(pipe.transform('a', 2, ' ')).toEqual('a a a');
+       expect(pipe.transform('a', 2, ' ')).toEqual('a a');
     });
 
 

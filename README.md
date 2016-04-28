@@ -83,13 +83,13 @@ You can find the documentations in the [`docs`](./docs) folder.
 * [`match`](./docs/string.md#match)
 * [`test`](./docs/string.md#test)
 * [`newlines`](./docs/string.md#newlines)
-* [`capitalize`](./docs/string.md#capitalize) (to be documented)
-* [`upperfirst`](./docs/string.md#upperfirst) (to be documented)
-* [`template`](./docs/string.md#template) (to be documented)
-* [`encodeURI`](./docs/string.md#encodeuri) (to be documented)
-* [`encodeURIComponent`](./docs/string.md#encodeuricomponent) (to be documented)
-* [`repeat`](./docs/string.md#repeat) (to be documented)
-* [`truncate`](./docs/string.md#truncate) (to be documented)
+* [`capitalize`](./docs/string.md#capitalize) 
+* [`upperfirst`](./docs/string.md#upperfirst) 
+* [`template`](./docs/string.md#template) 
+* [`encodeURI`](./docs/string.md#encodeuri)
+* [`encodeURIComponent`](./docs/string.md#encodeuricomponent)
+* [`repeat`](./docs/string.md#repeat)
+* [`truncate`](./docs/string.md#truncate) 
 
 
 ### Object

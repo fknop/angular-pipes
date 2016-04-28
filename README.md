@@ -61,16 +61,18 @@ You can find the documentations in the [`docs`](./docs) folder.
 * [`ceil`](./docs/math.md#ceil)
 * [`floor`](./docs/math.md#floor)
 * [`round`](./docs/math.md#round)
-* [`min`](./docs/math.md#min)
-* [`max`](./docs/math.md#max)
-* [`mean`](./docs/math.md#mean)
-* [`sum`](./docs/math.md#sum)
 * [`degrees`](./docs/math.md#degrees)
 * [`radians`](./docs/math.md#radians)
 * [`random`](./docs/math.md#random) 
 * [`pow`](./docs/math.md#pow) 
 * [`sqrt`](./docs/math.md#sqrt)
 
+### Aggregate 
+
+* [`min`](./docs/aggregate.md#min)
+* [`max`](./docs/aggregate.md#max)
+* [`mean`](./docs/aggregate.md#mean)
+* [`sum`](./docs/aggregate.md#sum)
 
 ### String
 

@@ -19,17 +19,17 @@ describe('IsGreaterPipe', () => {
     
     it('Should return true', () => {
         
-        expect(pipe.transform(3, [2])).toEqual(true);
+        expect(pipe.transform(3, 2)).toEqual(true);
     });
     
     it('Should return false', () => {
         
-        expect(pipe.transform(1, [2])).toEqual(false);
+        expect(pipe.transform(1, 2)).toEqual(false);
     });
     
     it('Should return false #2', () => {
         
-        expect(pipe.transform(1, [1])).toEqual(false);
+        expect(pipe.transform(1, 1)).toEqual(false);
     });
     
 });
@@ -44,17 +44,17 @@ describe('IsGreaterOrEqualPipe', () => {
     
     it('Should return true', () => {
         
-        expect(pipe.transform(3, [2])).toEqual(true);
+        expect(pipe.transform(3, 2)).toEqual(true);
     });
     
     it('Should return false', () => {
         
-        expect(pipe.transform(1, [2])).toEqual(false);
+        expect(pipe.transform(1, 2)).toEqual(false);
     });
     
     it('Should return true #2', () => {
         
-        expect(pipe.transform(1, [1])).toEqual(true);
+        expect(pipe.transform(1, 1)).toEqual(true);
     });
     
 });
@@ -69,17 +69,17 @@ describe('IsLessPipe', () => {
     
     it('Should return false', () => {
         
-        expect(pipe.transform(3, [2])).toEqual(false);
+        expect(pipe.transform(3, 2)).toEqual(false);
     });
     
     it('Should return true', () => {
         
-        expect(pipe.transform(1, [2])).toEqual(true);
+        expect(pipe.transform(1, 2)).toEqual(true);
     });
     
     it('Should return false #2', () => {
         
-        expect(pipe.transform(1, [1])).toEqual(false);
+        expect(pipe.transform(1, 1)).toEqual(false);
     });
     
 });
@@ -94,17 +94,17 @@ describe('IsLessOrEqualPipe', () => {
     
     it('Should return false', () => {
         
-        expect(pipe.transform(3, [2])).toEqual(false);
+        expect(pipe.transform(3, 2)).toEqual(false);
     });
     
     it('Should return true', () => {
         
-        expect(pipe.transform(1, [2])).toEqual(true);
+        expect(pipe.transform(1, 2)).toEqual(true);
     });
     
     it('Should return true #2', () => {
         
-        expect(pipe.transform(1, [1])).toEqual(true);
+        expect(pipe.transform(1, 1)).toEqual(true);
     });
     
 });
@@ -119,17 +119,17 @@ describe('IsEqualPipe', () => {
     
     it('Should return false', () => {
         
-        expect(pipe.transform(3, [2])).toEqual(false);
+        expect(pipe.transform(3, 2)).toEqual(false);
     });
     
     it('Should return true', () => {
         
-        expect(pipe.transform(1, [1])).toEqual(true);
+        expect(pipe.transform(1, 1)).toEqual(true);
     });
     
     it('Should return true #2', () => {
         
-        expect(pipe.transform(1, ['1'])).toEqual(true);
+        expect(pipe.transform(1, '1')).toEqual(true);
     });
     
 });
@@ -145,17 +145,17 @@ describe('IsNotEqualPipe', () => {
     
     it('Should return true', () => {
         
-        expect(pipe.transform(3, [2])).toEqual(true);
+        expect(pipe.transform(3, 2)).toEqual(true);
     });
     
     it('Should return false', () => {
         
-        expect(pipe.transform(1, [1])).toEqual(false);
+        expect(pipe.transform(1, 1)).toEqual(false);
     });
     
     it('Should return false #2', () => {
         
-        expect(pipe.transform(1, ['1'])).toEqual(false);
+        expect(pipe.transform(1, '1')).toEqual(false);
     });
     
 });
@@ -171,17 +171,17 @@ describe('IsIdenticalPipe', () => {
     
     it('Should return false', () => {
         
-        expect(pipe.transform(3, [2])).toEqual(false);
+        expect(pipe.transform(3, 2)).toEqual(false);
     });
     
     it('Should return true', () => {
         
-        expect(pipe.transform(1, [1])).toEqual(true);
+        expect(pipe.transform(1, 1)).toEqual(true);
     });
     
     it('Should return false #2', () => {
         
-        expect(pipe.transform(1, ['1'])).toEqual(false);
+        expect(pipe.transform(1, '1')).toEqual(false);
     });
     
 });
@@ -196,17 +196,17 @@ describe('IsNotIdenticalPipe', () => {
     
     it('Should return true', () => {
         
-        expect(pipe.transform(3, [2])).toEqual(true);
+        expect(pipe.transform(3, 2)).toEqual(true);
     });
     
     it('Should return false', () => {
         
-        expect(pipe.transform(1, [1])).toEqual(false);
+        expect(pipe.transform(1, 1)).toEqual(false);
     });
     
     it('Should return true #2', () => {
         
-        expect(pipe.transform(1, ['1'])).toEqual(true);
+        expect(pipe.transform(1, '1')).toEqual(true);
     });
     
 });

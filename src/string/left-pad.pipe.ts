@@ -7,7 +7,7 @@ import { leftPad, isString } from '../utils/utils';
 })
 export class LeftPadPipe implements PipeTransform {
     
-    transform (input: any, [length = 0, character = ' ']: any[]): any {
+    transform (input: any, length: number = 0, character: string = ' '): any {
         
         if (!isString(input)) {
             return input;

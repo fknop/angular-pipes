@@ -7,7 +7,7 @@ import { isNumberFinite, isPositive, isInteger, toDecimal } from '../utils/utils
 })
 export class BytesPipe implements PipeTransform {
     
-    transform (input: any, [decimal = 0]): any {
+    transform (input: any, decimal: number = 0): any {
         
         const formats = [
             { name: 'B', max: 1024 },

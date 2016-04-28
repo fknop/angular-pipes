@@ -7,7 +7,7 @@ import { isArray, getProperty } from '../utils/utils';
 })
 export class PluckPipe implements PipeTransform {
     
-    transform (input: any, [key]): any {
+    transform (input: any, key: string): any {
         
         if (!isArray(input) || !key) {
             return input;

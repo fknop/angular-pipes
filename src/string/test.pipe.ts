@@ -7,7 +7,7 @@ import { isString } from '../utils/utils';
 })
 export class TestPipe implements PipeTransform {
     
-    transform (input: any, [pattern, flag]: any[]): any {
+    transform (input: any, pattern: any, flag: any): any {
         
         if (!isString(input) || !pattern) {
             return input;

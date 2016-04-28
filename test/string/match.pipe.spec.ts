@@ -13,7 +13,7 @@ describe('MatchPipe', () => {
     
     it('Should return the matched string', () => {
        
-        const result = pipe.transform('abc', [/a/g]);
+        const result = pipe.transform('abc', /a/g);
         expect(result).toEqual(['a']);
     });
     
@@ -22,7 +22,7 @@ describe('MatchPipe', () => {
     
     it('Should return the value unchanged', () => {
        
-       expect(pipe.transform(1, [null, null])).toEqual(1); 
+       expect(pipe.transform(1, null, null)).toEqual(1); 
     });
    
 });

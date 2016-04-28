@@ -10,6 +10,9 @@
 * [`sum`](#sum)
 * [`degrees`](#degrees)
 * [`radians`](#degrees)
+* [`random`](#random) 
+* [`pow`](#pow) 
+* [`sqrt`](#sqrt)
 
 
 ####bytes
@@ -197,4 +200,58 @@ import { RadiansPipe } from 'angular-pipes/pipes/src/math/radians.pipe';
 
 ```html
 {{ 180 | radians }} <!-- PI -->
+```
+
+
+####random
+
+Returns a random number between a minimum (default: 0) and a maximum (default: 1).
+The input is ignored.
+If only one argument is given, it will be the maximum.
+
+##### File
+
+```
+import { RandomPipe } from 'angular-pipes/pipes/src/math/random.pipe';
+```
+
+##### Usage
+
+```html
+{{ {} | random: 0: 1 }} <!-- Random number between 0 and 1 -->
+{{ {} | random: 0: 10 }} <!-- Random number between 0 and 10 -->
+{{ {} | random: 10 }} <!-- Random number between 0 and 10 -->
+```
+
+####sqrt
+
+Returns the square root of a number.
+
+##### File
+
+```
+import { SqrtPipe } from 'angular-pipes/pipes/src/math/sqrt.pipe';
+```
+
+##### Usage
+
+```html
+{{ 81 | sqrt }} <!-- 9 -->
+```
+
+####pow
+
+Returns the power of a number.
+
+##### File
+
+```
+import { PowPipe } from 'angular-pipes/pipes/src/math/pow.pipe';
+```
+
+##### Usage
+
+```html
+{{ 2 | pow }} <!-- 4 -->
+{{ 2 | pow: 3 }} <!-- 8 -->
 ```

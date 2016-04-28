@@ -27,26 +27,26 @@ describe('OrderByPipe', () => {
     
     it ('Should return the fruits in ascending order', () => {
        
-       const result = pipe.transform(fruits, ['+']);
+       const result = pipe.transform(fruits, '+');
        expect(result).toEqual(['apple', 'banana', 'grape', 'orange', 'pear']); 
        expect(fruits).toEqual(["orange", "apple", "pear", "grape", "banana"]); // Check integrity
     });
     
     it ('Should return the fruits in ascending order #2', () => {
        
-       const result = pipe.transform(fruits, [['+']]);
+       const result = pipe.transform(fruits, ['+']);
        expect(result).toEqual(['apple', 'banana', 'grape', 'orange', 'pear']); 
     });
     
     it ('Should return the fruits in descending order', () => {
        
-       const result = pipe.transform(fruits, ['-']);
+       const result = pipe.transform(fruits, '-');
        expect(result).toEqual(['pear', 'orange', 'grape', 'banana', 'apple']); 
     });
     
     it ('Should return the fruits in descending order #2', () => {
        
-       const result = pipe.transform(fruits, [['-']]);
+       const result = pipe.transform(fruits, ['-']);
        expect(result).toEqual(['pear', 'orange', 'grape', 'banana', 'apple']); 
     });
     
@@ -67,6 +67,24 @@ describe('OrderByPipe', () => {
     
     it ('Should return the persons ordered by last name (asc)', () => {
        
+       const result = pipe.transform(people, 'lastName');
+       expect(result).toEqual([
+           people[3], people[4], people[1], people[6], people[5], people[0], people[2]
+       ]);
+       
+    });
+    
+     it ('Should return the persons ordered by last name (desc)', () => {
+       
+       const result = pipe.transform(people, '-lastName');
+       expect(result).toEqual([
+           people[2], people[0], people[5], people[6], people[1], people[4], people[3]
+       ]);
+       
+    });
+    
+     it ('Should return the persons ordered by last name (asc) #2', () => {
+       
        const result = pipe.transform(people, ['lastName']);
        expect(result).toEqual([
            people[3], people[4], people[1], people[6], people[5], people[0], people[2]
@@ -83,27 +101,9 @@ describe('OrderByPipe', () => {
        
     });
     
-     it ('Should return the persons ordered by last name (asc) #2', () => {
-       
-       const result = pipe.transform(people, [['lastName']]);
-       expect(result).toEqual([
-           people[3], people[4], people[1], people[6], people[5], people[0], people[2]
-       ]);
-       
-    });
-    
-     it ('Should return the persons ordered by last name (desc)', () => {
-       
-       const result = pipe.transform(people, [['-lastName']]);
-       expect(result).toEqual([
-           people[2], people[0], people[5], people[6], people[1], people[4], people[3]
-       ]);
-       
-    });
-    
     it ('Should return the persons ordered by age (desc) and firstName (asc)', () => {
        
-       const result = pipe.transform(people, [['-age', 'firstName']]);
+       const result = pipe.transform(people, ['-age', 'firstName']);
        expect(result).toEqual([
            people[4], people[1], people[5], people[0], people[6], people[3], people[2]
        ]);
@@ -113,13 +113,11 @@ describe('OrderByPipe', () => {
     
     it ('Should return the persons ordered by age (desc) and firstName (asc)', () => {
        
-       const result = pipe.transform(people, [['-age', '+firstName']]);
+       const result = pipe.transform(people, ['-age', '+firstName']);
        expect(result).toEqual([
            people[4], people[1], people[5], people[0], people[6], people[3], people[2]
        ]);
        
     });
-    
-    
     
 });

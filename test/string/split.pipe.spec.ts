@@ -13,13 +13,13 @@ describe('SplitPipe', () => {
     
     it('Should return splitted string as an array', () => {
        
-        const result = pipe.transform('abc', ['b']);
+        const result = pipe.transform('abc', 'b');
         expect(result).toEqual(['a', 'c']);
     });
     
     it('Should return splitted string as an array', () => {
        
-        const result = pipe.transform('abc', ['b', 0]);
+        const result = pipe.transform('abc', 'b', 0);
         expect(result).toEqual([]);
     });
     

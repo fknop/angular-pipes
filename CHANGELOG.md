@@ -1,3 +1,17 @@
+# 1.5.0
+
+## Breaking change
+
+* Updated to angular2-beta.16. New versions will not work under a lower version than beta.16.
+
+## New pipes
+
+* `pow`
+* `sqrt`
+
+##
+
+
 # 1.4.0
 
 ## New pipes

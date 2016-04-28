@@ -26,7 +26,7 @@ const every = function (input: any, predicate: Function) {
 })
 export class EveryPipe implements PipeTransform {
     
-    transform (input: any, [predicate]): any {
+    transform (input: any, predicate: Function): any {
         
         return every(input, predicate);
     }
@@ -39,7 +39,7 @@ export class EveryPipe implements PipeTransform {
 })
 export class EveryPurePipe implements PipeTransform {
     
-    transform (input: any, [predicate]): any {
+    transform (input: any, predicate: Function): any {
         
         return every(input, predicate);
     }

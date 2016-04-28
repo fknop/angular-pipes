@@ -7,7 +7,7 @@ import { isArray } from '../utils/utils';
 })
 export class MapPipe implements PipeTransform {
     
-    transform (input: any, [fn]): any {
+    transform (input: any, fn: Function): any {
         
         if (!isArray(input) || !fn) {
             return input;

@@ -7,7 +7,7 @@ import { isArray } from '../utils/utils';
 })
 export class WithoutPipe implements PipeTransform {
     
-    transform (input: any, args: any[]): any {
+    transform (input: any, ...args: any[]): any {
         
         if (!isArray(input)) {
             return input;

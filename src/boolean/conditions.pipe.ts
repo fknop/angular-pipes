@@ -6,7 +6,7 @@ import { Pipe, PipeTransform  } from 'angular2/core';
 })
 export class IsGreaterPipe implements PipeTransform {
     
-    transform (first: any, [second]): boolean {
+    transform (first: any, second: any): boolean {
         
         return first > second;
     }
@@ -17,7 +17,7 @@ export class IsGreaterPipe implements PipeTransform {
 })
 export class IsGreaterOrEqualPipe implements PipeTransform {
     
-    transform (first: any, [second]): boolean {
+    transform (first: any, second: any): boolean {
         
         return first >= second;
     }
@@ -28,7 +28,7 @@ export class IsGreaterOrEqualPipe implements PipeTransform {
 })
 export class IsLessPipe implements PipeTransform {
     
-    transform (first: any, [second]): boolean {
+    transform (first: any, second: any): boolean {
         
         return first < second;
     }
@@ -39,7 +39,7 @@ export class IsLessPipe implements PipeTransform {
 })
 export class IsLessOrEqualPipe implements PipeTransform {
     
-    transform (first: any, [second]): boolean {
+    transform (first: any, second: any): boolean {
         
         return first <= second;
     }
@@ -50,7 +50,7 @@ export class IsLessOrEqualPipe implements PipeTransform {
 })
 export class IsEqualPipe implements PipeTransform {
     
-    transform (first: any, [second]): boolean {
+    transform (first: any, second: any): boolean {
         
         return first == second;
     }
@@ -61,7 +61,7 @@ export class IsEqualPipe implements PipeTransform {
 })
 export class IsNotEqualPipe implements PipeTransform {
     
-    transform (first: any, [second]): boolean {
+    transform (first: any, second: any): boolean {
         
         return first != second;
     }
@@ -72,7 +72,7 @@ export class IsNotEqualPipe implements PipeTransform {
 })
 export class IsIdenticalPipe implements PipeTransform {
     
-    transform (first: any, [second]): boolean {
+    transform (first: any, second: any): boolean {
         
         return first === second;
     }
@@ -83,7 +83,7 @@ export class IsIdenticalPipe implements PipeTransform {
 })
 export class IsNotIdenticalPipe implements PipeTransform {
     
-    transform (first: any, [second]): boolean {
+    transform (first: any, second: any): boolean {
         
         return first !== second;
     }

@@ -13,45 +13,45 @@ describe('LeftPadPipe', () => {
     
     it('Should return left pad string', () => {
        
-        const result = pipe.transform('aaa', [4]);
+        const result = pipe.transform('aaa', 4);
         expect(result).toEqual(' aaa');
     });
     
     it('Should return left pad string', () => {
        
-        const result = pipe.transform('aaa', [5]);
+        const result = pipe.transform('aaa', 5);
         expect(result).toEqual('  aaa');
     });
     
     it('Should return left pad string', () => {
        
-        const result = pipe.transform('aaa', [5, 'b']);
+        const result = pipe.transform('aaa', 5, 'b');
         expect(result).toEqual('bbaaa');
     });
     
     
     it('Should return left pad string', () => {
        
-        const result = pipe.transform('aaa', [5, 'bb']);
+        const result = pipe.transform('aaa', 5, 'bb');
         expect(result).toEqual('bbaaa');
     });
     
     it('Should return left pad string', () => {
        
-        const result = pipe.transform('aaa', [2]);
+        const result = pipe.transform('aaa', 2);
         expect(result).toEqual('aaa');
     });
     
     
     it('Should return left pad string', () => {
        
-        const result = pipe.transform('aaa', [4, 'bbb']);
+        const result = pipe.transform('aaa', 4, 'bbb');
         expect(result).toEqual('aaa');
     });
     
     it('Should return the value unchanged', () => {
        
-       expect(pipe.transform(1, [null])).toEqual(1); 
+       expect(pipe.transform(1, null)).toEqual(1); 
     });
    
 });

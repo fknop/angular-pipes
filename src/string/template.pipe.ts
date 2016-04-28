@@ -6,7 +6,7 @@ import { isString } from '../utils/utils';
 })
 export class TemplatePipe implements PipeTransform {
     
-    transform (input: any, args: any[] = []): any {
+    transform (input: any, ...args: any[]): any {
         
         if (!isString(input) || args.length === 0) {
             return input;

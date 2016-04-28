@@ -6,7 +6,7 @@ import { createRound, isString } from '../utils/utils';
 })
 export class CeilPipe implements PipeTransform {
     
-    transform (value: any, [precision = 0]: Array<any>): any {
+    transform (value: any, precision: any = 0): any {
         
         if (isString(precision)) {
             precision = parseInt(precision);

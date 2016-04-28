@@ -11,7 +11,7 @@ export class WherePipe implements PipeTransform {
     /** 
      * Support a function or a value or the shorthand ['key', value] like the lodash shorthand.
      */
-    transform (input: any, [fn]): any {
+    transform (input: any, fn: any): any {
         
         if (!isArray(input)) {
             return input

@@ -8,7 +8,7 @@ import { isArray } from '../utils/utils';
 })
 export class SomePipe implements PipeTransform {
     
-    transform (input: any, [predicate]): any {
+    transform (input: any, predicate: Function): any {
         
         if (!isArray(input) || !predicate) {
             return input;

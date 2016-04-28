@@ -6,7 +6,7 @@ import { isString } from '../utils/utils';
 })
 export class ReplacePipe implements PipeTransform {
     
-    transform (input: any, [pattern, replacement]: any[]): any {
+    transform (input: any, pattern: any, replacement: any): any {
         
         if (!isString(input) || !pattern || !replacement) {
             return input;

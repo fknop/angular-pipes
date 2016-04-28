@@ -39,7 +39,7 @@ describe('WherePipe', () => {
        } 
        
        const value = [1, 2, 3, 1, 1, 4];
-       expect(pipe.transform(value, [fn])).toEqual([1, 1, 1]);
+       expect(pipe.transform(value, fn)).toEqual([1, 1, 1]);
        expect(value).toEqual([1, 2, 3, 1, 1, 4]);
     });
     
@@ -49,7 +49,7 @@ describe('WherePipe', () => {
            return item.a === 4;
        };
        
-       expect(pipe.transform(array, [fn]))
+       expect(pipe.transform(array, fn))
             .toEqual([{
                 a: 4,
                 b: 3,
@@ -65,7 +65,7 @@ describe('WherePipe', () => {
     
     it('Should return the objects where a is 4', () => {
 
-       expect(pipe.transform(array, [['a', 4]]))
+       expect(pipe.transform(array, ['a', 4]))
             .toEqual([{
                 a: 4,
                 b: 3,
@@ -81,7 +81,7 @@ describe('WherePipe', () => {
     
     it('Should return the objects where d.e is 4', () => {
 
-       expect(pipe.transform(array, [['d.e', 4]]))
+       expect(pipe.transform(array, ['d.e', 4]))
             .toEqual([{
                 a: 2,
                 b: 3,
@@ -98,7 +98,7 @@ describe('WherePipe', () => {
     
     it('Should return the value unchanged', () => {
        
-       expect(pipe.transform('a', [null])).toEqual('a'); 
+       expect(pipe.transform('a', null)).toEqual('a'); 
     });
     
 });

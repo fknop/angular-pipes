@@ -32,7 +32,7 @@ You can find the documentations in the [`docs`](./docs) folder.
 * [`count`](./docs/array.md#count) 
 * [`some`](./docs/array.md#some) 
 * [`every`](./docs/array.md#every)
-* [`shuffle`](./docs/array.md#shuffle) (to be documented)
+* [`shuffle`](./docs/array.md#shuffle) 
 
 
 ### Boolean
@@ -67,7 +67,10 @@ You can find the documentations in the [`docs`](./docs) folder.
 * [`sum`](./docs/math.md#sum)
 * [`degrees`](./docs/math.md#degrees)
 * [`radians`](./docs/math.md#radians)
-* [`random`](./docs/math.md#random) (to be documented)
+* [`random`](./docs/math.md#random) 
+* [`pow`](./docs/math.md#pow) 
+* [`sqrt`](./docs/math.md#sqrt)
+
 
 ### String
 

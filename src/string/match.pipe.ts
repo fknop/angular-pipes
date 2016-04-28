@@ -6,7 +6,7 @@ import { isString } from '../utils/utils';
 })
 export class MatchPipe implements PipeTransform {
     
-    transform (input: any, [pattern, flag]: any[]): any {
+    transform (input: any, pattern: any, flag: any): any {
         
         if (!isString(input)) {
             return input;

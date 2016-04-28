@@ -5,7 +5,8 @@ import { isString, upperFirst } from '../utils/utils';
     name: 'upperfirst'
 })
 export class UpperFirstPipe implements PipeTransform {
-    transform(input: any) : any {
+    
+    transform(input: any): any {
         
         if (!isString(input)) {
             return input;

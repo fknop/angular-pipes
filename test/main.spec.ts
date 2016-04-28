@@ -30,6 +30,8 @@ import './math/bytes.pipe.spec';
 import './math/degrees.pipe.spec';
 import './math/radians.pipe.spec';
 import './math/random.pipe.spec';
+import './math/sqrt.pipe.spec';
+import './math/pow.pipe.spec';
 
 import './aggregate/sum.pipe.spec';
 import './aggregate/max.pipe.spec';

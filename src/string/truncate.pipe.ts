@@ -8,7 +8,7 @@ import { isString, isUndefined } from '../utils/utils';
 })
 export class TruncatePipe implements PipeTransform {
     
-    transform (input: any, [length, suffix, preserve]): any {
+    transform (input: any, length?: number, suffix?: string, preserve?: boolean): any {
         
         
         if (!isString(input)) {

@@ -5,7 +5,7 @@ import { isString, upperFirst } from '../utils/utils';
     name: 'capitalize'
 })
 export class CapitalizePipe implements PipeTransform {
-    transform(input: any, [all = false]) : any {
+    transform(input: any, all: boolean = false) : any {
         
         if (!isString(input)) {
             return input;

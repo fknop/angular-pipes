@@ -17,6 +17,7 @@
 * [`count`](#count) 
 * [`some`](#some) 
 * [`every`](#every)
+* [`shuffle`](#shuffle)
 
 
 ####empty
@@ -428,4 +429,20 @@ const predicate = function (item) {
 ```html
 {{ [1, 2, 3, 4] | every: predicate }} <!-- false -->
 {{ [2, 2, 2, 2] | every: predicate }} <!-- true -->
+```
+
+####shuffle
+
+Shuffles a collection.
+
+##### File
+
+```
+import { ShufflePipe } from 'angular-pipes/pipes/src/array/shuffle.pipe';
+```
+
+##### Usage
+
+```html
+{{ [1, 2, 3] | shuffle }} <!-- random order... -->
 ```

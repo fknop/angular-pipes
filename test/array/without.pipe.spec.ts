@@ -1,12 +1,14 @@
-import { WithoutPipe } from '../../index';
+import { WithoutPipe, DeepPipe } from '../../index';
 import {describe, it, beforeEach, expect} from 'angular2/testing';
 
 describe('WithoutPipe', () => {
     
     let pipe: WithoutPipe;
+    let deepPipe: DeepPipe;
     
     beforeEach(() => {
        pipe = new WithoutPipe(); 
+       deepPipe = new DeepPipe();
     });
     
     it('Should return values without 1', () => {
@@ -31,6 +33,24 @@ describe('WithoutPipe', () => {
     it('Should return an empty array', () => {
        
        expect(pipe.transform([], 1)).toEqual([]); 
+    });
+    
+    it('Should return the values without ... with deep equal', () => {
+        
+        const collection = [
+            { a: 1, b: { c: 2 } },
+            { a: 2, b: { c: 3 } },
+            { a: 2, b: { c: 5 } },
+            { a: 1, b: { c: 4 } }
+        ];
+        
+        const deep = deepPipe.transform(collection);
+        
+        expect(pipe.transform(deep, { a: 2, b: { c: 5 }}, { a: 1, b: { c: 4 }})).toEqual([
+            { a: 1, b: { c: 2 } },
+            { a: 2, b: { c: 3 } }
+        ]);
+        
     });
     
     it('Should return the value unchanged', () => {

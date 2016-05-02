@@ -20,7 +20,7 @@ export class WithoutPipe implements PipeTransform {
             }
             
             return unwrappedInput.filter((value: any, index: number) => 
-                deepIndexOf(unwrappedInput, value) === -1
+                deepIndexOf(args, value) === -1
             );
         }
         

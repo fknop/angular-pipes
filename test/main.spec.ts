@@ -13,6 +13,8 @@ import './array/where.pipe.spec';
 import './array/reverse.pipe.spec';
 import './array/order-by.pipe.spec';
 import './array/shuffle.pipe.spec';
+import './array/take.pipe.spec';
+import './array/drop.pipe.spec';
 
 
 import './boolean/conditions.pipe.spec';

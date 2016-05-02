@@ -33,6 +33,8 @@ You can find the documentations in the [`docs`](./docs) folder.
 * [`some`](./docs/array.md#some) 
 * [`every`](./docs/array.md#every)
 * [`shuffle`](./docs/array.md#shuffle) 
+* [`take`](./docs/array.md#take) 
+* [`drop`](./docs/array.md#drop) 
 
 
 ### Boolean

@@ -18,6 +18,8 @@
 * [`some`](#some) 
 * [`every`](#every)
 * [`shuffle`](#shuffle)
+* [`take`](#take)
+* [`drop`](#drop)
 
 
 ####empty
@@ -445,4 +447,38 @@ import { ShufflePipe } from 'angular-pipes/pipes/src/array/shuffle.pipe';
 
 ```html
 {{ [1, 2, 3] | shuffle }} <!-- random order... -->
+```
+
+####take
+
+Take the top `n` items of an array.
+
+##### File
+
+```
+import { TakePipe from 'angular-pipes/pipes/src/array/take.pipe';
+```
+
+##### Usage
+
+```html
+{{ [1, 2, 3, 4] | take }} <!-- [1] -->
+{{ [1, 2, 3, 4] | take: 2 }} <!-- [1, 2] -->
+```
+
+####drop
+
+Drop the last `n` items of an array.
+
+##### File
+
+```
+import { DropPipe from 'angular-pipes/pipes/src/array/drop.pipe';
+```
+
+##### Usage
+
+```html
+{{ [1, 2, 3, 4] | drop }} <!-- [2, 3, 4] -->
+{{ [1, 2, 3, 4] | drop: 2 }} <!-- [3, 4] -->
 ```

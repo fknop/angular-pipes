@@ -43,6 +43,7 @@ $ npm run prepublish
 
 ## Submitting changes
 
+* Fork the repository
 * Checkout a new branch based on `master` and name it with the new feature / fix you want to do.
     + `$ git checkout -b BRANCH_NAME`
     + Use one branch per fix / feature
@@ -50,3 +51,6 @@ $ npm run prepublish
     + Make sure you have correctly exported the pipe
     + Make sure to provide unit tests
     + Run your tests with `npm test`
+* Commit (explicit message)
+* Push to the forked repository
+* Make a pull request

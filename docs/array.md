@@ -20,6 +20,7 @@
 * [`shuffle`](#shuffle)
 * [`take`](#take)
 * [`drop`](#drop)
+* [`deep`](#deep)
 
 
 ####empty
@@ -146,11 +147,6 @@ import { UniqPipe } from 'angular-pipes/pipes/src/array/uniq.pipe';
 {{ ['a', 'b', 'a'] | uniq }} <!-- ['a', 'b'] -->
 ```
 
-##### Todo
-
-* Need deep equal
-
-
 ####without
 
 Returns the collection without the specified elements.
@@ -166,11 +162,6 @@ import { WithoutPipe } from 'angular-pipes/pipes/src/array/without.pipe';
 ```html
 {{ [1, 2, 3] | without: [1, 3] }} <!-- [2] -->
 ```
-
-##### Todo
-
-* Need deep equal
-
 
 ####range
 
@@ -481,4 +472,33 @@ import { DropPipe } from 'angular-pipes/pipes/src/array/drop.pipe';
 ```html
 {{ [1, 2, 3, 4] | drop }} <!-- [2, 3, 4] -->
 {{ [1, 2, 3, 4] | drop: 2 }} <!-- [3, 4] -->
+```
+
+
+####deep
+
+The `deep` pipe is different from other pipes, it doesn't return new data. It wraps data for other pipes to work 
+with deep comparaisons.
+
+##### File
+
+```
+import { DeepPipe } from 'angular-pipes/pipes/src/array/deep.pipe';
+```
+
+##### Usage
+
+```javascript
+
+collection: any[] = [
+    { a: 1, b: { c: 2 } },    
+    { a: 1, b: { c: 2 } },    
+    { a: 1, b: { c: 3 } },    
+];
+
+```
+
+```html
+{{ collection | uniq }} <!-- The all collection (deep equal not working) -->
+{{ collection | deep | uniq }} <!-- [{ a: 1, b: { c: 3 } }] -->
 ```

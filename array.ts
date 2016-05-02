@@ -4,6 +4,7 @@ import { InitialPipe } from './src/array/initial.pipe';
 import { LastPipe } from './src/array/last.pipe';
 import { JoinPipe } from './src/array/join.pipe';
 import { TailPipe } from './src/array/tail.pipe';
+import { TakePipe } from './src/array/take.pipe';
 import { UniqPipe } from './src/array/uniq.pipe';
 import { WithoutPipe } from './src/array/without.pipe';
 import { MapPipe } from './src/array/map.pipe';
@@ -23,6 +24,7 @@ export * from './src/array/initial.pipe';
 export * from './src/array/last.pipe';
 export * from './src/array/join.pipe';
 export * from './src/array/tail.pipe';
+export * from './src/array/take.pipe';
 export * from './src/array/uniq.pipe';
 export * from './src/array/without.pipe';
 export * from './src/array/map.pipe';
@@ -44,6 +46,7 @@ export const NG2_ARRAY_PIPES = [
     LastPipe,
     JoinPipe,
     TailPipe,
+    TakePipe,
     UniqPipe,
     WithoutPipe,
     MapPipe,

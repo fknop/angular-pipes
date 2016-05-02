@@ -456,7 +456,7 @@ Take the top `n` items of an array.
 ##### File
 
 ```
-import { TakePipe from 'angular-pipes/pipes/src/array/take.pipe';
+import { TakePipe } from 'angular-pipes/pipes/src/array/take.pipe';
 ```
 
 ##### Usage
@@ -473,7 +473,7 @@ Drop the last `n` items of an array.
 ##### File
 
 ```
-import { DropPipe from 'angular-pipes/pipes/src/array/drop.pipe';
+import { DropPipe } from 'angular-pipes/pipes/src/array/drop.pipe';
 ```
 
 ##### Usage

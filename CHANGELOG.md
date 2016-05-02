@@ -1,3 +1,22 @@
+# 1.6.0 
+
+## New pipes
+
+* `take`
+* `drop`
+* `deep`
+
+The deep pipe has to be used with other pipes that can work with deep comparaisons.
+The pipes working with deep comparaisons (for now) are:
+* `uniq`
+* `without`
+
+If you need to use deep equal, you can use it like this:
+
+```
+{{ collection | deep | uniq }}
+```
+
 
 # 1.5.0
 

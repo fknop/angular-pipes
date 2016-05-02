@@ -35,6 +35,7 @@ You can find the documentations in the [`docs`](./docs) folder.
 * [`shuffle`](./docs/array.md#shuffle) 
 * [`take`](./docs/array.md#take) 
 * [`drop`](./docs/array.md#drop) 
+* [`deep`](./docs/array.md#deep) 
 
 
 ### Boolean

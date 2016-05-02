@@ -4,7 +4,6 @@ import { InitialPipe } from './src/array/initial.pipe';
 import { LastPipe } from './src/array/last.pipe';
 import { JoinPipe } from './src/array/join.pipe';
 import { TailPipe } from './src/array/tail.pipe';
-import { TakePipe } from './src/array/take.pipe';
 import { UniqPipe } from './src/array/uniq.pipe';
 import { WithoutPipe } from './src/array/without.pipe';
 import { MapPipe } from './src/array/map.pipe';
@@ -17,6 +16,7 @@ import { CountPipe } from './src/array/count.pipe';
 import { SomePipe } from './src/array/some.pipe';
 import { EveryPipe } from './src/array/every.pipe';
 import { ShufflePipe } from './src/array/shuffle.pipe';
+import { TakePipe } from './src/array/take.pipe';
 
 export * from './src/array/empty.pipe';
 export * from './src/array/head.pipe';
@@ -24,7 +24,6 @@ export * from './src/array/initial.pipe';
 export * from './src/array/last.pipe';
 export * from './src/array/join.pipe';
 export * from './src/array/tail.pipe';
-export * from './src/array/take.pipe';
 export * from './src/array/uniq.pipe';
 export * from './src/array/without.pipe';
 export * from './src/array/map.pipe';
@@ -37,6 +36,7 @@ export * from './src/array/count.pipe';
 export * from './src/array/some.pipe';
 export * from './src/array/every.pipe';
 export * from './src/array/shuffle.pipe';
+export * from './src/array/take.pipe';
 
 
 export const NG2_ARRAY_PIPES = [
@@ -46,7 +46,6 @@ export const NG2_ARRAY_PIPES = [
     LastPipe,
     JoinPipe,
     TailPipe,
-    TakePipe,
     UniqPipe,
     WithoutPipe,
     MapPipe,
@@ -58,5 +57,6 @@ export const NG2_ARRAY_PIPES = [
     CountPipe,
     SomePipe,
     EveryPipe,
-    ShufflePipe
+    ShufflePipe,
+    TakePipe,
 ];

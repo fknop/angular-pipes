@@ -7,7 +7,7 @@ angular-pipes is a pipes library for `angular 2`. The project is hosted as `angu
 
 ## Contribute
 
-Read the [`Contributing Guide`](./contributing.md)
+Read the [`Contributing Guide`](./CONTRIBUTING.md)
 
 ## Pipes
 

@@ -1,7 +1,3 @@
-// const keys = function (object: Object) {
-//     return Object.keys(object);
-// };
-
 export function isUndefined (value: any): boolean {
     
     return typeof value === 'undefined';
@@ -174,4 +170,104 @@ export function getProperty (value: Object, key: string): Array<any> {
 export function sum (input: Array<number>, initial = 0): number {
     
     return input.reduce((previous: number, current: number) => previous + current, initial);
+}
+
+// http://stackoverflow.com/questions/6274339/how-can-i-shuffle-an-array-in-javascript
+export function shuffle (input: any): any {
+    
+    if (!isArray(input)) {
+        return input;
+    }
+    
+    const copy = [...input];
+    
+    for (let i = copy.length; i; --i) {
+        const j = Math.floor(Math.random() * i);
+        const x = copy[i - 1];
+        copy[i - 1] = copy[j];
+        copy[j] = x;
+    }
+    
+    return copy;
+}
+
+export function deepIndexOf (collection: any[], value: any) {
+    
+    let index = -1;
+    const length = collection.length;
+    
+    while (++index < length) {
+        if (deepEqual(value, collection[index])) {
+            return index;
+        }
+    }
+    
+    return -1;
+}
+
+export function deepIncludes (collection: any[], value: any) {
+    
+    let index = -1;
+    const length = collection.length;
+    
+    while (++index < length) {
+        if (deepEqual(value, collection[index])) {
+            return true;
+        }
+    }
+    
+    return false;
+}
+
+export function deepEqual (a: any, b: any) {
+    
+    if (a === b) {
+        return true;
+    }
+    
+    if (!(typeof a === 'object' && typeof b === 'object')) {
+        return a === b;
+    }
+
+    const keysA = Object.keys(a);
+    const keysB = Object.keys(b);
+
+    if (keysA.length !== keysB.length) {
+        return false;
+    }
+
+    // Test for A's keys different from B.
+    var hasOwn = Object.prototype.hasOwnProperty;
+    for (let i = 0; i < keysA.length; i++) {
+        const key = keysA[i];
+        if (!hasOwn.call(b, keysA[i]) || !deepEqual(a[key], b[key])) {
+            return false;
+        }
+    }
+    
+    return true;
+}
+
+export function isDeepObject (object: any) {
+    
+    return object instanceof DeepWrapper;
+}
+
+export function wrapDeep (object: any) {
+    
+    return new DeepWrapper(object);
+}
+
+export function unwrapDeep (object: any) {
+    
+    if (isDeepObject(object)) {
+        return object.data;
+    }
+    
+    return object;
+}
+
+export class DeepWrapper {
+    
+    constructor (public data: any) {}
 }

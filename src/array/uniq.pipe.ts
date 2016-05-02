@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform  } from 'angular2/core';
-import { isArray } from '../utils/utils';
+import { isArray, isDeepObject, unwrapDeep, deepIndexOf } from '../utils/utils';
 
 // Does not work with deep equal yet
 @Pipe({
@@ -10,8 +10,19 @@ export class UniqPipe implements PipeTransform {
     
     transform (input: any): any {
 
-        if (!isArray(input)) {
+        if (!isArray(input) && !isDeepObject(input)) {
             return input;
+        }
+        
+        if (isDeepObject(input)) {
+            const unwrappedInput = unwrapDeep(input);
+            if (!isArray(unwrappedInput)) {
+                return unwrappedInput;
+            }
+            
+            return unwrappedInput.filter((value: any, index: number) => 
+                deepIndexOf(unwrappedInput, value) === index
+            );
         }
         
         return input.filter((value: any, index: number) => input.indexOf(value) === index);

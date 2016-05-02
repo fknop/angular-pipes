@@ -1,12 +1,14 @@
-import { UniqPipe } from '../../index';
+import { UniqPipe, DeepPipe } from '../../index';
 import {describe, it, beforeEach, expect} from 'angular2/testing';
 
 describe('UniqPipe', () => {
     
     let pipe: UniqPipe;
+    let deepPipe: DeepPipe;
     
     beforeEach(() => {
-       pipe = new UniqPipe(); 
+       pipe = new UniqPipe();
+       deepPipe = new DeepPipe(); 
     });
     
     it('Should return unique values', () => {
@@ -26,5 +28,22 @@ describe('UniqPipe', () => {
     it('Should return the value unchanged', () => {
        
        expect(pipe.transform('a')).toEqual('a'); 
+    });
+    
+    it ('Should return unique values with deep equal', () => {
+        
+        const collection = [
+            { a: 1, b: { c: 2 } },
+            { a: 2, b: { c: 3 } },
+            { a: 2, b: { c: 3 } },
+            { a: 1, b: { c: 2 } }
+        ];
+        
+        const deep = deepPipe.transform(collection);
+        
+        expect(pipe.transform(deep)).toEqual([
+            { a: 1, b: { c: 2 } },
+            { a: 2, b: { c: 3 } }
+        ]);
     });
 });

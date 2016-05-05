@@ -1,5 +1,5 @@
 import { OrderByPipe } from '../../index';
-import {describe, it, beforeEach, expect} from 'angular2/testing';
+import {describe, it, beforeEach, expect} from '@angular/testing';
 
 class Person { 
     constructor (public firstName: string, public lastName: string, public age: number) {}

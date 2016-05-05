@@ -1,6 +1,6 @@
 import { UpperFirstPipe } from '../../index';
         
-import {describe, it, beforeEach, expect} from 'angular2/testing';
+import {describe, it, beforeEach, expect} from '@angular/testing';
 
 describe('UpperFirstPipe', () => {
     
@@ -22,7 +22,7 @@ describe('UpperFirstPipe', () => {
 
     it('Should return the value unchanged', () => {
        
-       expect(pipe.transform(1, [null])).toEqual(1); 
+       expect(pipe.transform(1)).toEqual(1); 
     });
    
 });

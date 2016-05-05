@@ -4,6 +4,7 @@
   "description": "Angular 2 pipes library",
   "main": "pipes/index.js",
   "scripts": {
+    "postinstall": "node_modules/.bin/typings install",
     "prepublish": "node_modules/.bin/gulp clean && npm run tsc",
     "lite": "node_modules/.bin/lite-server",
     "tsc": "node_modules/.bin/tsc -p .",
@@ -26,7 +27,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "angular2": "^2.0.0-beta.16",
+    "@angular/core": "^2.0.0-rc.1",
     "es6-shim": "^0.35.0",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
@@ -37,6 +38,7 @@
     "symbol-observable": "^0.2.4",
     "systemjs": "^0.19.25",
     "typescript": "^1.8.9",
+    "typings": "^0.8.1",
     "zone.js": "^0.6.12"
   },
   "dependencies": {}

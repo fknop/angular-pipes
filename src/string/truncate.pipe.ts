@@ -1,6 +1,6 @@
 // Inspired from https://github.com/a8m/angular-filter/blob/master/src/_filter/string/truncate.js
 
-import { Pipe, PipeTransform  } from 'angular2/core';
+import { Pipe, PipeTransform  } from '@angular/core';
 import { isString, isUndefined } from '../utils/utils';
 
 @Pipe({

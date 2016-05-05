@@ -7,7 +7,7 @@ import {IsGreaterPipe,
         IsIdenticalPipe,
         IsNotIdenticalPipe } from '../../index';
         
-import {describe, it, beforeEach, expect} from 'angular2/testing';
+import {describe, it, beforeEach, expect} from '@angular/testing';
 
 describe('IsGreaterPipe', () => {
     

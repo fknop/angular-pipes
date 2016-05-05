@@ -1,6 +1,7 @@
 node_modules
 jspm_packages
 *.log
+typings
 
-# Dist file
+# Dist folder
 pipes

@@ -1,4 +1,4 @@
-import { Pipe, PipeTransform  } from 'angular2/core';
+import { Pipe, PipeTransform  } from '@angular/core';
 import { isArray, isObject, isString } from '../utils/utils';
 
 const count = function (input: any): any {

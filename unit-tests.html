@@ -11,13 +11,12 @@
         <script src="node_modules/jasmine-core/lib/jasmine-core/jasmine-html.js"></script>
         <script src="node_modules/jasmine-core/lib/jasmine-core/boot.js"></script>
         
-        <!--<script src="node_modules/es6-shim/es6-shim.min.js"></script>-->
-        <!--<script src="node_modules/systemjs/dist/system-polyfills.js"></script>-->
-        <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
-        <script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
+        <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+        <script src="node_modules/zone.js/dist/zone.js"></script>
+        <script src="node_modules/reflect-metadata/Reflect.js"></script>
         <script src="node_modules/systemjs/dist/system.src.js"></script>
         
-        <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+        
         
         <script>
             
@@ -38,11 +37,10 @@
                     }
                 },
                 map: {
-                    'angular2': 'node_modules/angular2',
+                    '@angular/core': 'node_modules/@angular/core/index.js',
+                    '@angular/testing': 'node_modules/@angular/core/testing.js',
                     'typescript': 'node_modules/typescript/lib/typescript.js',
-                    "reflect-metadata": "node_modules/reflect-metadata",
                     "rxjs": "node_modules/rxjs",
-                    "zone.js": "node_modules/zone.js",
                     "symbol-observable": "node_modules/symbol-observable/index.js"
                 }
             });

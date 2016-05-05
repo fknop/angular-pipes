@@ -1,4 +1,4 @@
-/// <reference path="node_modules/angular2/typings/browser.d.ts" />
+/// <reference path="node_modules/@angular/core/index.d.ts" />
 
 import { NG2_BOOLEAN_PIPES } from './boolean';
 import { NG2_MATH_PIPES } from './math';

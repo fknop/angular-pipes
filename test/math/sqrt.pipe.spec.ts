@@ -17,7 +17,7 @@ describe('SqrtPipe', () => {
     
     it('Should return 9', () => {
        
-        expect(pipe.transform(81)).toEqual(9)); 
+        expect(pipe.transform(81)).toEqual(9); 
     });
   
 });

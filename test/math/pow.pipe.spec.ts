@@ -17,7 +17,7 @@ describe('PowPipe', () => {
     
     it('Should return 8', () => {
        
-        expect(pipe.transform(2, 3)).toEqual(8)); 
+        expect(pipe.transform(2, 3)).toEqual(8); 
     });
   
 });

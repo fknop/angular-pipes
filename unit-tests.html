@@ -17,34 +17,9 @@
         <script src="node_modules/systemjs/dist/system.src.js"></script>
         
         
+        <script src="system.config.js"></script>
         
         <script>
-            
-            System.config({
-                transpiler: 'typescript',
-                packages: {
-                    'src': {
-                        defaultExtension: 'ts'
-                    },
-                    'node_modules': {
-                        defaultExtension: 'js'
-                    },
-                    '.': {
-                        defaultExtension: 'ts'
-                    },
-                    'test': {
-                        defaultExtension: 'ts'
-                    }
-                },
-                map: {
-                    '@angular/core': 'node_modules/@angular/core/index.js',
-                    '@angular/testing': 'node_modules/@angular/core/testing.js',
-                    'typescript': 'node_modules/typescript/lib/typescript.js',
-                    "rxjs": "node_modules/rxjs",
-                    "symbol-observable": "node_modules/symbol-observable/index.js"
-                }
-            });
-            
             System.import('./test/main.spec.ts')
                 .then(window.onload)
                 .catch(console.error.bind(console));

@@ -1,14 +1,14 @@
 {
-  "name": "angular-pipes",
   "version": "1.6.0",
   "description": "Angular 2 pipes library",
   "main": "pipes/index.js",
   "scripts": {
+    "jspm": "node_modules/.bin/jspm",
     "postinstall": "node_modules/.bin/typings install",
     "prepublish": "node_modules/.bin/gulp clean && npm run tsc",
     "lite": "node_modules/.bin/lite-server",
     "tsc": "node_modules/.bin/tsc -p .",
-    "test": "npm run lite"
+    "test": "node_modules/.bin/karma start karma.conf.js"
   },
   "author": "Florian Knop",
   "repository": {
@@ -32,14 +32,58 @@
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
     "jasmine-core": "^2.4.1",
+    "jspm": "^0.17.0-beta.14",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-jasmine": "^1.0.2",
+    "karma-jspm": "^2.1.0",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "karma-spec-reporter": "0.0.26",
     "lite-server": "^2.1.0",
-    "reflect-metadata": "^0.1.2",
+    "phantomjs-prebuilt": "^2.1.7",
     "rxjs": "^5.0.0-beta.6",
     "symbol-observable": "^0.2.4",
     "systemjs": "^0.19.25",
     "typescript": "^1.8.9",
-    "typings": "^0.8.1",
-    "zone.js": "^0.6.12"
+    "typings": "^0.8.1"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "jspm": {
+    "dependencies": {
+      "@angular/core": "npm:@angular/core@^2.0.0-rc.1",
+      "es6-shim": "github:es-shims/es6-shim@^0.35.0",
+      "reflect-metadata": "npm:reflect-metadata@^0.1.3"
+    },
+    "devDependencies": {
+      "os": "github:jspm/nodelibs-os@^0.2.0-alpha",
+      "plugin-typescript": "github:frankwallis/plugin-typescript@^4.0.9"
+    },
+    "peerDependencies": {
+      "process": "github:jspm/nodelibs-process@^0.2.0-alpha",
+      "rxjs": "npm:rxjs@5.0.0-beta.6",
+      "zone.js": "npm:zone.js@^0.6.12"
+    },
+    "overrides": {
+      "npm:reflect-metadata@0.1.3": {
+        "jspmNodeConversion": false,
+        "map": {
+          "crypto": {
+            "node": "@node/crypto",
+            "default": "@empty"
+          }
+        }
+      },
+      "npm:typescript@1.8.10": {
+        "browser": {},
+        "map": {
+          "buffer": "@empty",
+          "child_process": "@empty",
+          "fs": "@empty",
+          "path": "@empty",
+          "process": "@empty",
+          "readline": "@empty"
+        }
+      }
+    }
+  }
 }

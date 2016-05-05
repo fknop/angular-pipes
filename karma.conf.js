@@ -45,8 +45,7 @@ module.exports = function (config) {
             'karma-jspm',
             'karma-jasmine',
             'karma-spec-reporter',
-            'karma-chrome-launcher',
-            'karma-phantomjs-shim'
+            'karma-chrome-launcher'
         ],
         
         reporters: ['spec'],

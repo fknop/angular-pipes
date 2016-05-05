@@ -6,7 +6,6 @@
     "jspm": "node_modules/.bin/jspm",
     "postinstall": "node_modules/.bin/typings install",
     "prepublish": "node_modules/.bin/gulp clean && npm run tsc",
-    "lite": "node_modules/.bin/lite-server",
     "tsc": "node_modules/.bin/tsc -p .",
     "test": "node_modules/.bin/karma start karma.conf.js"
   },
@@ -39,7 +38,6 @@
     "karma-jspm": "^2.1.0",
     "karma-phantomjs-launcher": "^1.0.0",
     "karma-spec-reporter": "0.0.26",
-    "lite-server": "^2.1.0",
     "phantomjs-prebuilt": "^2.1.7",
     "rxjs": "^5.0.0-beta.6",
     "symbol-observable": "^0.2.4",

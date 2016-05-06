@@ -2,8 +2,7 @@ import { Pipe, PipeTransform  } from '@angular/core';
 import { isArray } from '../utils/utils';
 
 @Pipe({
-    name: 'head',
-    pure: false
+    name: 'head'
 })
 export class HeadPipe implements PipeTransform {
     

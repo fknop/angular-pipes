@@ -2,8 +2,7 @@ import { Pipe, PipeTransform  } from '@angular/core';
 import { isArray, getProperty } from '../utils/utils';
 
 @Pipe({
-    name: 'pluck',
-    pure: false
+    name: 'pluck'
 })
 export class PluckPipe implements PipeTransform {
     

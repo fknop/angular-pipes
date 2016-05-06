@@ -2,8 +2,7 @@ import { Pipe, PipeTransform  } from '@angular/core';
 import { isArray, isFunction, getProperty } from '../utils/utils';
 
 @Pipe({
-    name: 'where',
-    pure: false
+    name: 'where'
 })
 export class WherePipe implements PipeTransform {
     

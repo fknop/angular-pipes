@@ -3,8 +3,7 @@ import { isArray } from '../utils/utils';
 
 
 @Pipe({
-    name: 'some',
-    pure: false
+    name: 'some'
 })
 export class SomePipe implements PipeTransform {
     

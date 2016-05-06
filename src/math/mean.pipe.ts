@@ -2,8 +2,7 @@ import { Pipe, PipeTransform  } from '@angular/core';
 import { isArray, sum } from '../utils/utils';
 
 @Pipe({
-    name: 'mean',
-    pure: false
+    name: 'mean'
 })
 export class MeanPipe implements PipeTransform {
     

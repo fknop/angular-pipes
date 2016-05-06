@@ -2,8 +2,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { isArray } from '../utils/utils';
 
 @Pipe({
-    name: 'reverse',
-    pure: false
+    name: 'reverse'
 })
 export class ReversePipe implements PipeTransform {
     

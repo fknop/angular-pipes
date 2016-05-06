@@ -271,3 +271,42 @@ export class DeepWrapper {
     
     constructor (public data: any) {}
 }
+
+export function count (input: any): any {
+    
+    if (!isArray(input) || !isObject(input) || !isString(input)) {
+        return input;
+    }
+    
+    if (isObject(input)) {
+        return Object.keys(input).map((value) => input[value]).length;
+    }
+    
+    return input.length;
+}
+
+export function empty (input: any): any {
+    
+    if (!isArray(input)) {
+        return input;
+    }
+        
+    return input.length === 0;
+}
+
+export function every (input: any, predicate: Function) {
+    
+    if (!isArray(input) || !predicate) {
+        return input;
+    }
+    
+    let result = true;
+    let i = -1;
+    
+    while (++i < input.length && result) {
+        result = predicate(input[i], i, input);
+    }
+    
+    
+    return result;
+}

@@ -2,8 +2,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { isString } from '../utils/utils';
 
 @Pipe({
-    name: 'repeat',
-    pure: true
+    name: 'repeat'
 })
 export class RepeatPipe {
     

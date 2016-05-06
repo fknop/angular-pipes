@@ -1,33 +1,10 @@
 import { Pipe, PipeTransform  } from '@angular/core';
-import { isArray } from '../utils/utils';
-
-
-const empty = function (input: any): any {
-    
-    if (!isArray(input)) {
-        return input;
-    }
-        
-    return input.length === 0;
-}
+import { empty } from '../utils/utils';
 
 @Pipe({
-    name: 'empty',
-    pure: false
+    name: 'empty'
 })
 export class EmptyPipe implements PipeTransform {
-    
-    transform (input: any): any {
-        
-        return empty(input);
-    }
-}
-
-@Pipe({
-    name: 'emptyPure',
-    pure: true
-})
-export class EmptyPurePipe implements PipeTransform {
     
     transform (input: any): any {
         

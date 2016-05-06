@@ -1,10 +1,7 @@
 import { Pipe, PipeTransform  } from '@angular/core';
 import { isArray } from '../utils/utils';
 
-@Pipe({
-    name: 'min',
-    pure: false
-})
+@Pipe({ name: 'min' })
 export class MinPipe implements PipeTransform {
     
     transform (input: any): any {

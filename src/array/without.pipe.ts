@@ -2,8 +2,7 @@ import { Pipe, PipeTransform  } from '@angular/core';
 import { isArray, isDeepObject, unwrapDeep, deepIndexOf } from '../utils/utils';
 
 @Pipe({
-    name: 'without',
-    pure: false
+    name: 'without'
 })
 export class WithoutPipe implements PipeTransform {
     

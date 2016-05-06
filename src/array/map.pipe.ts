@@ -2,8 +2,7 @@ import { Pipe, PipeTransform  } from '@angular/core';
 import { isArray } from '../utils/utils';
 
 @Pipe({
-    name: 'map',
-    pure: false
+    name: 'map'
 })
 export class MapPipe implements PipeTransform {
     

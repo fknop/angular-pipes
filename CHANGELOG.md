@@ -1,3 +1,19 @@
+# 2.0.0
+
+2.0.0 is mainly an update to angular release candidate with some **breaking changes**.
+
+## Travis CI
+
+* The project now has a Travis CI. It's now easier to contribute with build made for every PR.
+
+## Breaking changes
+
+* Updated to angular 2 RC.
+* Moved categories files to src folder, this means:
+    + To import a category you now have to do: `import { NG2_STRING_PIPES } from 'angular-pipes/pipes/src/string'` instead of 
+     `import { NG2_STRING_PIPES } from 'angular-pipes/pipes/string'`
+* All the pipes are now PURES. This mean you have to use `immutability` to update the pipe value. This is a design choice that may be discussed in the future. 
+
 # 1.6.0 
 
 ## New pipes

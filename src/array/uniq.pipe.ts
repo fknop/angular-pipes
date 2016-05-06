@@ -3,8 +3,7 @@ import { isArray, isDeepObject, unwrapDeep, deepIndexOf } from '../utils/utils';
 
 // Does not work with deep equal yet
 @Pipe({
-    name: 'uniq',
-    pure: false
+    name: 'uniq'
 })
 export class UniqPipe implements PipeTransform {
     

@@ -2,10 +2,7 @@ import { Pipe, PipeTransform  } from '@angular/core';
 import { isObject } from '../utils/utils';
 
 
-@Pipe({
-    name: 'toArray',
-    pure: false
-})
+@Pipe({ name: 'toArray' })
 export class ToArrayPipe implements PipeTransform {
     
     transform (input: any): any {

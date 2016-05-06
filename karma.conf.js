@@ -1,6 +1,9 @@
 module.exports = function (config) {
     
     config.set({
+        
+        basePath: './',
+        
         files: [
             'jspm_packages/npm/zone.js@0.6.12/dist/zone.js',
             'jspm_packages/npm/reflect-metadata@0.1.3/Reflect.js'
@@ -33,26 +36,23 @@ module.exports = function (config) {
             ],
             packages: 'jspm_packages',
             config: 'jspm.config.js',
-            browser: 'jspm.browser.js',
-            paths: {
-                "@angular/testing": "jspm_packages/npm/@angular/core@2.0.0-rc.1/testing.js",
-            }
+            browser: 'jspm.browser.js'
         },
         
         frameworks: ['jspm', 'jasmine'],
-        browsers: ['Chrome'],
+        browsers: ['Firefox'],
         plugins: [
             'karma-jspm',
             'karma-jasmine',
             'karma-spec-reporter',
-            'karma-chrome-launcher'
+            'karma-firefox-launcher'
         ],
         
         reporters: ['spec'],
         singleRun: true,
         autoWatch: false,
         colors: true,
-        logLevel: config.LOG_DEBUG
+        logLevel: config.LOG_INFO
     })
     
 }

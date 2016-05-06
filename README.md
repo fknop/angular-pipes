@@ -1,5 +1,5 @@
 [![NPM Version](https://img.shields.io/npm/v/angular-pipes.svg)](https://npmjs.org/package/angular-pipes)
-
+[![Build Status](https://travis-ci.org/fknop/angular-pipes.svg?branch=master)](https://travis-ci.org/fknop/angular-pipes)
 # angular-pipes
 
 angular-pipes is a pipes library for `angular 2`. The project is hosted as `angular-pipes` on `npm`.

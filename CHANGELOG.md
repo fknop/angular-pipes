@@ -12,7 +12,7 @@
 * Moved categories files to src folder, this means:
     + To import a category you now have to do: `import { NG2_STRING_PIPES } from 'angular-pipes/pipes/src/string'` instead of 
      `import { NG2_STRING_PIPES } from 'angular-pipes/pipes/string'`
-* All the pipes are now PURE. This mean you have to use `immutability` to update the pipe value. This is a design choice that may be discussed in the future. 
+* All the pipes are now **PURE**. This means you have to use `immutability` to update the pipe value. This is a design choice that may be discussed in the future. 
 
 # 1.6.0 
 

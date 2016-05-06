@@ -1,6 +1,5 @@
 test
-unit-tests.html
+jspm_packages
 gulpfile.js
 .gitignore
 tsconfig.json
-bs-config.json

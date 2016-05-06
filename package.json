@@ -4,7 +4,10 @@
   "main": "pipes/index.js",
   "scripts": {
     "jspm": "node_modules/.bin/jspm",
-    "postinstall": "node_modules/.bin/typings install",
+    "typings": "node_modules/.bin/typings",
+    "typings-install": "npm run typings install",
+    "jspm-install": "npm run jspm install",
+    "postinstall": "npm run jspm-install && npm run typings-install",
     "prepublish": "node_modules/.bin/gulp clean && npm run tsc",
     "tsc": "node_modules/.bin/tsc -p .",
     "test": "node_modules/.bin/karma start karma.conf.js"

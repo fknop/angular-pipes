@@ -1,4 +1,5 @@
 {
+  "name": "angular-pipes",
   "version": "2.0.0",
   "description": "Angular 2 pipes library",
   "main": "pipes/index.js",

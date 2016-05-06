@@ -1,4 +1,3 @@
-/// <reference path="node_modules/@angular/core/index.d.ts" />
 
 import { NG2_BOOLEAN_PIPES } from './src/boolean';
 import { NG2_MATH_PIPES } from './src/math';

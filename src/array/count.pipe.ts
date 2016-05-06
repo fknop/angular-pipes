@@ -3,7 +3,7 @@ import { count } from '../utils/utils';
 
 
 @Pipe({ name: 'count' })
-export class CountPurePipe implements PipeTransform {
+export class CountPipe implements PipeTransform {
     
     transform (input: any): any {
         

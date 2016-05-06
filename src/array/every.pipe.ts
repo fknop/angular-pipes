@@ -6,7 +6,7 @@ import { every } from '../utils/utils';
 @Pipe({
     name: 'every'
 })
-export class EveryPurePipe implements PipeTransform {
+export class EveryPipe implements PipeTransform {
     
     transform (input: any, predicate: Function): any {
         

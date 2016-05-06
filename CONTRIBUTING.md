@@ -26,8 +26,7 @@ $ npm install
 
 ## Testing
 
-The tests are run with `jasmine` and a simple web page for now. If someone wants to take the time
-to do automated tests with `Karma`, I'll be glad to accept a PR.
+The tests are run with `jasmine` and `karma`. 
 
 ```
 $ npm test

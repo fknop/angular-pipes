@@ -8,7 +8,7 @@
     "typings": "node_modules/.bin/typings",
     "typings-install": "npm run typings install",
     "jspm-install": "npm run jspm install",
-    "prepublish": "node_modules/.bin/gulp clean && npm run tsc",
+    "prepublish": "node_modules/.bin/gulp clean && npm run typings-install && npm run tsc",
     "tsc": "node_modules/.bin/tsc -p .",
     "test": "node_modules/.bin/karma start karma.conf.js"
   },

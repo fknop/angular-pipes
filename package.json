@@ -1,6 +1,6 @@
 {
   "name": "angular-pipes",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Angular 2 pipes library",
   "main": "pipes/index.js",
   "scripts": {
@@ -8,7 +8,6 @@
     "typings": "node_modules/.bin/typings",
     "typings-install": "npm run typings install",
     "jspm-install": "npm run jspm install",
-    "postinstall": "npm run jspm-install && npm run typings-install",
     "prepublish": "node_modules/.bin/gulp clean && npm run tsc",
     "tsc": "node_modules/.bin/tsc -p .",
     "test": "node_modules/.bin/karma start karma.conf.js"

@@ -1,6 +1,6 @@
 {
   "name": "angular-pipes",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "Angular 2 pipes library",
   "main": "pipes/index.js",
   "scripts": {
@@ -59,9 +59,7 @@
       "os": "github:jspm/nodelibs-os@^0.2.0-alpha",
       "plugin-typescript": "github:frankwallis/plugin-typescript@^4.0.9",
       "rxjs": "npm:rxjs@5.0.0-beta.6",
-      "zone.js": "npm:zone.js@^0.6.12"
-    },
-    "peerDependencies": {
+      "zone.js": "npm:zone.js@^0.6.12",
       "process": "github:jspm/nodelibs-process@^0.2.0-alpha"
     },
     "overrides": {
@@ -87,4 +85,5 @@
       }
     }
   }
-}
+}
+

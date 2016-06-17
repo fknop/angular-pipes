@@ -1,11 +1,11 @@
 SystemJS.config({
   baseURL: "/",
   paths: {
-    "github:*": "jspm_packages/github/*",
-    "npm:*": "jspm_packages/npm/*",
-    "app": "src"
+    "app": "src",
+    "github:": "jspm_packages/github/",
+    "npm:": "jspm_packages/npm/"
   },
   map: {
-    "@angular/testing": "jspm_packages/npm/@angular/core@2.0.0-rc.1/testing.js"
+    "@angular/testing": "jspm_packages/npm/@angular/core@2.0.0-rc.2/testing.js"
   }
 });

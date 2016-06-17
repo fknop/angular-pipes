@@ -1,4 +1,28 @@
 SystemJS.config({
+  devConfig: {
+    "map": {
+      "@angular/core": "npm:@angular/core@2.0.0-rc.2",
+      "es6-shim": "github:es-shims/es6-shim@0.35.0",
+      "os": "github:jspm/nodelibs-os@0.2.0-alpha",
+      "plugin-typescript": "github:frankwallis/plugin-typescript@4.0.9",
+      "process": "github:jspm/nodelibs-process@0.2.0-alpha",
+      "reflect-metadata": "npm:reflect-metadata@0.1.3",
+      "rxjs": "npm:rxjs@5.0.0-beta.6",
+      "zone.js": "npm:zone.js@0.6.12"
+    },
+    "packages": {
+      "github:frankwallis/plugin-typescript@4.0.9": {
+        "map": {
+          "typescript": "npm:typescript@1.8.10"
+        }
+      },
+      "github:jspm/nodelibs-os@0.2.0-alpha": {
+        "map": {
+          "os-browserify": "npm:os-browserify@0.2.1"
+        }
+      }
+    }
+  },
   transpiler: "plugin-typescript",
   typescriptOptions: {
     "tsconfig": true
@@ -17,26 +41,6 @@ SystemJS.config({
     "npm:*.json",
     "github:*/*.json"
   ],
-  map: {
-    "@angular/core": "npm:@angular/core@2.0.0-rc.1",
-    "es6-shim": "github:es-shims/es6-shim@0.35.0",
-    "os": "github:jspm/nodelibs-os@0.2.0-alpha",
-    "plugin-typescript": "github:frankwallis/plugin-typescript@4.0.9",
-    "process": "github:jspm/nodelibs-process@0.2.0-alpha",
-    "reflect-metadata": "npm:reflect-metadata@0.1.3",
-    "rxjs": "npm:rxjs@5.0.0-beta.6",
-    "zone.js": "npm:zone.js@0.6.12"
-  },
-  packages: {
-    "github:frankwallis/plugin-typescript@4.0.9": {
-      "map": {
-        "typescript": "npm:typescript@1.8.10"
-      }
-    },
-    "github:jspm/nodelibs-os@0.2.0-alpha": {
-      "map": {
-        "os-browserify": "npm:os-browserify@0.2.1"
-      }
-    }
-  }
+  map: {},
+  packages: {}
 });

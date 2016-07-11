@@ -8,6 +8,10 @@ export class OrderByPipe implements PipeTransform {
     
     private static _orderBy (a: any, b: any): number {
         
+        if (a instanceof Date && b instanceof Date) {
+            return a < b ? -1 : a > b ? 1 : 0;
+        }
+
         const floatA = parseFloat(a);
         const floatB = parseFloat(b);
         

@@ -24,6 +24,22 @@ describe('OrderByPipe', () => {
     beforeEach(() => {
        pipe = new OrderByPipe(); 
     });
+
+    it ('Should return dates in ascending order', () => {
+
+        const a = new Date();
+        const b = new Date();
+        const result = pipe.transform([a, b], '+');
+        expect(result).toEqual([a, b]);
+    });
+
+    it ('Should return dates in descending order', () => {
+
+        const a = new Date();
+        const b = new Date();
+        const result = pipe.transform([a, b], '-');
+        expect(result).toEqual([b, a]);
+    });
     
     it ('Should return the fruits in ascending order', () => {
        

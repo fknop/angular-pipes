@@ -6,6 +6,6 @@ SystemJS.config({
     "npm:": "jspm_packages/npm/"
   },
   map: {
-    "@angular/testing": "jspm_packages/npm/@angular/core@2.0.0-rc.4/testing.js"
+    "@angular/testing": "jspm_packages/npm/@angular/core@2.0.0-rc.5/testing.js"
   }
 });

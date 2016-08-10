@@ -6,11 +6,9 @@
 
 angular-pipes is a pipes library for `angular 2`. The project is hosted as `angular-pipes` on `npm`.
 
-# v2.0.0
+# rc.5 support !
 
-## **WARNING**
-
-`2.0.0` brings some breaking changes, make sure to check the [CHANGELOG](./CHANGELOG.md).
+Read the changelog for more information
 
 ## Contribute
 

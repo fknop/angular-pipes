@@ -1,5 +1,5 @@
 import { TakePipe } from '../../index';
-import {describe, it, beforeEach, expect} from '@angular/testing';
+
 
 describe('TakePipe', () => {
     

@@ -1,6 +1,6 @@
 import { EncodeURIComponentPipe } from '../../index';
         
-import {describe, it, beforeEach, expect} from '@angular/testing';
+
 
 describe('EncodeURIComponentPipe', () => {
     

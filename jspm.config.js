@@ -1,7 +1,7 @@
 SystemJS.config({
   devConfig: {
     "map": {
-      "@angular/core": "npm:@angular/core@2.0.0-rc.4",
+      "@angular/core": "npm:@angular/core@2.0.0-rc.5",
       "es6-shim": "github:es-shims/es6-shim@0.35.0",
       "os": "github:jspm/nodelibs-os@0.2.0-alpha",
       "plugin-typescript": "github:frankwallis/plugin-typescript@4.0.9",

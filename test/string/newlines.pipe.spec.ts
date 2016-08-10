@@ -1,6 +1,6 @@
 import { NewlinesPipe } from '../../index';
         
-import {describe, it, beforeEach, expect} from '@angular/testing';
+
 
 describe('NewlinesPipe', () => {
     

@@ -1,6 +1,3 @@
-/// <reference path="../typings/browser.d.ts" />
-/// <reference path="../node_modules/@angular/testing/index.d.ts" />
-
 import './array/head.pipe.spec';
 import './array/last.pipe.spec';
 import './array/empty.pipe.spec';

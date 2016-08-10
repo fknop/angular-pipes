@@ -1,5 +1,5 @@
 import { UniqPipe, DeepPipe } from '../../index';
-import {describe, it, beforeEach, expect} from '@angular/testing';
+
 
 describe('UniqPipe', () => {
     

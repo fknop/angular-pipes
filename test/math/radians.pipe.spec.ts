@@ -1,6 +1,6 @@
 import { RadiansPipe } from '../../index';
         
-import {describe, it, beforeEach, expect} from '@angular/testing';
+
 
 describe('RadiansPipe', () => {
     

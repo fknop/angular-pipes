@@ -1,3 +1,17 @@
+# 2.1.0 
+
+* Update Angular to RC.5
+* Add support for `NgModule`
+    + Ng2ArrayPipesModule
+    + Ng2MathPipesModule
+    + Ng2BooleanPipesModule
+    + Ng2StringPipesModule
+    + Ng2ObjectPipesModule
+    + Ng2AggregatePipesModule
+    + Ng2PipesModule (imports all the module above)
++ The old token `NG2_PIPES` and the tokens for the categories will be removed for `rc.6` to allow people to migrate easily.
++ The library will keep exporting invidual pipes as we may not need the all category in our application.
+
 # 2.0.0
 
 2.0.0 is mainly an update to angular release candidate with some **breaking changes**.

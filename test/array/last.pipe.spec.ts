@@ -1,5 +1,5 @@
 import { LastPipe } from '../../index';
-import {describe, it, beforeEach, expect} from '@angular/testing';
+
 
 describe('LastPipe', () => {
     

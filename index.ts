@@ -48,12 +48,12 @@ export class Ng2AggregatePipesModule {}
 
 @NgModule({
     exports: [
-        NG2_ARRAY_PIPES,
-        NG2_MATH_PIPES,
-        NG2_BOOLEAN_PIPES,
-        NG2_STRING_PIPES,
-        NG2_OBJECT_PIPES,
-        NG2_AGGREGATE_PIPES
+        Ng2ArrayPipesModule,
+        Ng2MathPipesModule,
+        Ng2BooleanPipesModule,
+        Ng2StringPipesModule,
+        Ng2ObjectPipesModule,
+        Ng2AggregatePipesModule
     ]
 })
 export class Ng2PipesModule {}

@@ -6,16 +6,14 @@ import { isArray } from '../utils/utils';
 })
 export class ChunkPipe implements PipeTransform {
 
-  transform(input: any, size?: number): any {
+  transform(input: any, size = 1): any {
 
     if (!isArray(input)) {
       return input;
     }
 
-    let chunkSize = size || 1;
-
     return [].concat.apply([], input.map((elem: any, i: number) => {
-        return i % chunkSize ? [] : [input.slice(i, i + chunkSize)];
+        return i % size ? [] : [input.slice(i, i + size)];
       })
     );
   }

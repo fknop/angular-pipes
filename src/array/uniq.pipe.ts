@@ -1,7 +1,6 @@
 import { Pipe, PipeTransform  } from '@angular/core';
 import { isArray, isDeepObject, unwrapDeep, deepIndexOf } from '../utils/utils';
 
-// Does not work with deep equal yet
 @Pipe({
     name: 'uniq'
 })

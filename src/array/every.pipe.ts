@@ -1,8 +1,6 @@
 import { Pipe, PipeTransform  } from '@angular/core';
 import { every } from '../utils/utils';
 
-
-
 @Pipe({
     name: 'every'
 })

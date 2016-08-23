@@ -6,7 +6,7 @@ import { isArray } from '../utils/utils';
 })
 export class ChunkPipe implements PipeTransform {
 
-  transform(input: any, size = 1): any {
+  transform(input: any, size: number = 1): any {
 
     if (!isArray(input)) {
       return input;

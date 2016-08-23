@@ -19,6 +19,7 @@ import { ShufflePipe } from './array/shuffle.pipe';
 import { TakePipe } from './array/take.pipe';
 import { DropPipe } from './array/drop.pipe';
 import { DeepPipe } from './array/deep.pipe';
+import { ChunkPipe } from './array/chunk.pipe';
 
 export * from './array/empty.pipe';
 export * from './array/head.pipe';
@@ -41,6 +42,7 @@ export * from './array/shuffle.pipe';
 export * from './array/take.pipe';
 export * from './array/drop.pipe';
 export * from './array/deep.pipe';
+export * from './array/chunk.pipe';
 
 
 export const NG2_ARRAY_PIPES = [
@@ -64,5 +66,6 @@ export const NG2_ARRAY_PIPES = [
     ShufflePipe,
     TakePipe,
     DropPipe,
-    DeepPipe
+    DeepPipe,
+    ChunkPipe
 ];

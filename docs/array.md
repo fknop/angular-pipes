@@ -21,6 +21,7 @@
 * [`take`](#take)
 * [`drop`](#drop)
 * [`deep`](#deep)
+* [`chunk`](#chunk)
 
 
 ####empty
@@ -501,4 +502,22 @@ collection: any[] = [
 ```html
 {{ collection | uniq }} <!-- The all collection (deep equal not working) -->
 {{ collection | deep | uniq }} <!-- [{ a: 1, b: { c: 3 } }] -->
+```
+
+
+####chunk
+
+The `chunk` pipe breaks the array into multiple, smaller arrays of a given size:
+
+##### File
+
+```
+import { ChunkPipe } from 'angular-pipes/pipes/src/array/chunk.pipe';
+```
+
+##### Usage
+
+```html
+{{ [1, 2, 3, 4] | chunk }} <!-- [[1],[2], [3], [4]] -->
+{{ [1, 2, 3, 4] | chunk: 2 }} <!-- [[1, 2], [3, 4]] -->
 ```

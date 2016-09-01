@@ -109,13 +109,3 @@ export class IsDefinedPipe implements PipeTransform {
     }
 }
 
-export const NG2_TYPES_PIPES = [
-    IsNullPipe,
-    IsUndefinedPipe,
-    IsFunctionPipe,
-    IsNumberPipe,
-    IsStringPipe,
-    IsArrayPipe,
-    IsObjectPipe,
-    IsDefinedPipe
-];

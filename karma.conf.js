@@ -5,7 +5,7 @@ module.exports = function (config) {
         basePath: './',
         
         files: [
-            'jspm_packages/npm/zone.js@0.6.12/dist/zone.js',
+            'jspm_packages/npm/zone.js@0.6.17/dist/zone.js',
             'jspm_packages/npm/reflect-metadata@0.1.3/Reflect.js'
         ],
         

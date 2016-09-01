@@ -5,6 +5,7 @@
 * [`mean`](#mean)
 * [`sum`](#sum)
 
+You can check the module import [`here`](./modules.md).
 
 ####min
 

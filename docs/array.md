@@ -23,6 +23,7 @@
 * [`deep`](#deep)
 * [`chunk`](#chunk)
 
+You can check the module import [`here`](./modules.md).
 
 ####empty
 

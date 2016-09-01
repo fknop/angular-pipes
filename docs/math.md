@@ -10,6 +10,7 @@
 * [`pow`](#pow) 
 * [`sqrt`](#sqrt)
 
+You can check the module import [`here`](./modules.md).
 
 ####bytes
 

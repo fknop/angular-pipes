@@ -18,6 +18,7 @@
 * [`object`](#object)
 * [`defined`](#defined)
 
+You can check the module import [`here`](./modules.md).
 
 ####greater
 

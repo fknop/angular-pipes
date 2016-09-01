@@ -89,13 +89,3 @@ export class IsNotIdenticalPipe implements PipeTransform {
     }
 }
 
-export const NG2_CONDITIONS_PIPES = [
-    IsGreaterPipe,
-    IsGreaterOrEqualPipe,
-    IsLessPipe,
-    IsLessOrEqualPipe,
-    IsEqualPipe,
-    IsNotEqualPipe,
-    IsIdenticalPipe,
-    IsNotIdenticalPipe  
-];

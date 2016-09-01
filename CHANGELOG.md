@@ -1,3 +1,9 @@
+# 3.0.0
+
+* Update Angular to RC.6
+* Remove deprecated tokens.
+    + `NG2_PIPES`, `NG2_BOOLEAN_PIPES`, etc.
+
 # 2.2.0 
 
 * Update Angular to RC.5

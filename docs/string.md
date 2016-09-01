@@ -17,6 +17,7 @@
 * [`repeat`](#repeat) 
 * [`truncate`](#truncate) 
 
+You can check the module import [`here`](./modules.md).
 
 ####leftpad
 

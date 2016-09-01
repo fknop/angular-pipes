@@ -1,48 +1,200 @@
 import { NgModule } from '@angular/core';
 
+import { 
+    IsGreaterPipe,
+    IsGreaterOrEqualPipe,
+    IsLessPipe,
+    IsLessOrEqualPipe,
+    IsEqualPipe,
+    IsNotEqualPipe,
+    IsIdenticalPipe,
+    IsNotIdenticalPipe,
+    IsNullPipe,
+    IsUndefinedPipe,
+    IsFunctionPipe,
+    IsNumberPipe,
+    IsStringPipe,
+    IsArrayPipe,
+    IsObjectPipe,
+    IsDefinedPipe
+} from './src/boolean';
 
-import { NG2_BOOLEAN_PIPES } from './src/boolean';
-import { NG2_MATH_PIPES } from './src/math';
-import { NG2_ARRAY_PIPES } from './src/array';
-import { NG2_STRING_PIPES } from './src/string';
-import { NG2_OBJECT_PIPES } from './src/object';
-import { NG2_AGGREGATE_PIPES } from './src/aggregate';
+import {
+    BytesPipe,
+    CeilPipe,
+    FloorPipe,
+    RoundPipe,
+    DegreesPipe,
+    RadiansPipe,
+    RandomPipe,
+    SqrtPipe,
+    PowPipe
+} from './src/math';
 
-export * from './src/boolean';
-export * from './src/math';
-export * from './src/array';
-export * from './src/string';
-export * from './src/object';
-export * from './src/aggregate';
+import { 
+    MaxPipe,
+    MeanPipe,
+    MinPipe,
+    SumPipe
+} from './src/aggregate';
+
+import {
+    EmptyPipe,
+    HeadPipe,
+    InitialPipe,
+    LastPipe,
+    JoinPipe,
+    TailPipe,
+    UniqPipe,
+    WithoutPipe,
+    MapPipe,
+    WherePipe,
+    RangePipe,
+    PluckPipe,
+    ReversePipe,
+    OrderByPipe,
+    CountPipe,
+    SomePipe,
+    EveryPipe,
+    ShufflePipe,
+    TakePipe,
+    DropPipe,
+    DeepPipe,
+    ChunkPipe
+} from './src/array';
+
+import {
+    KeysPipe,
+    ToArrayPipe
+} from './src/object';
+
+
+import { 
+    LeftPadPipe,
+    MatchPipe,
+    PadPipe,
+    ReplacePipe,
+    RightPadPipe,
+    SplitPipe,
+    TestPipe,
+    TrimPipe,
+    NewlinesPipe,
+    CapitalizePipe,
+    UpperFirstPipe,
+    TemplatePipe,
+    EncodeURIPipe,
+    EncodeURIComponentPipe,
+    TruncatePipe,
+    RepeatPipe
+} from './src/string';
 
 
 @NgModule({
-    exports: [NG2_ARRAY_PIPES]
+    exports: [
+        EmptyPipe,
+        HeadPipe,
+        InitialPipe,
+        LastPipe,
+        JoinPipe,
+        TailPipe,
+        UniqPipe,
+        WithoutPipe,
+        MapPipe,
+        WherePipe,
+        RangePipe,
+        PluckPipe,
+        ReversePipe,
+        OrderByPipe,
+        CountPipe,
+        SomePipe,
+        EveryPipe,
+        ShufflePipe,
+        TakePipe,
+        DropPipe,
+        DeepPipe,
+        ChunkPipe
+    ]
 })
 export class Ng2ArrayPipesModule {}
 
 @NgModule({
-    exports: [NG2_MATH_PIPES]
+    exports: [
+        BytesPipe,
+        CeilPipe,
+        FloorPipe,
+        MaxPipe,
+        MeanPipe,
+        MinPipe,
+        RoundPipe,
+        SumPipe,
+        DegreesPipe,
+        RadiansPipe,
+        RandomPipe,
+        SqrtPipe,
+        PowPipe
+    ]
 })
 export class Ng2MathPipesModule {}
 
 @NgModule({
-    exports: [NG2_BOOLEAN_PIPES]
+    exports: [
+        IsGreaterPipe,
+        IsGreaterOrEqualPipe,
+        IsLessPipe,
+        IsLessOrEqualPipe,
+        IsEqualPipe,
+        IsNotEqualPipe,
+        IsIdenticalPipe,
+        IsNotIdenticalPipe,
+        IsNullPipe,
+        IsUndefinedPipe,
+        IsFunctionPipe,
+        IsNumberPipe,
+        IsStringPipe,
+        IsArrayPipe,
+        IsObjectPipe,
+        IsDefinedPipe
+    ]
 })
 export class Ng2BooleanPipesModule {}
 
 @NgModule({
-    exports: [NG2_STRING_PIPES]
+    exports: [
+        LeftPadPipe,
+        MatchPipe,
+        PadPipe,
+        ReplacePipe,
+        RightPadPipe,
+        SplitPipe,
+        TestPipe,
+        TrimPipe,
+        NewlinesPipe,
+        CapitalizePipe,
+        UpperFirstPipe,
+        TemplatePipe,
+        EncodeURIPipe,
+        EncodeURIComponentPipe,
+        TruncatePipe,
+        RepeatPipe
+    ]
 })
 export class Ng2StringPipesModule {}
 
 @NgModule({
-    exports: [NG2_OBJECT_PIPES]
+    exports: [
+        KeysPipe,
+        ToArrayPipe
+    ]
 })
 export class Ng2ObjectPipesModule {}
 
 @NgModule({
-    exports: [NG2_AGGREGATE_PIPES]
+    exports: [
+        MaxPipe,
+        MeanPipe,
+        MinPipe,
+        SumPipe
+    ]
 })
 export class Ng2AggregatePipesModule {}
 
@@ -58,15 +210,10 @@ export class Ng2AggregatePipesModule {}
 })
 export class Ng2PipesModule {}
 
-
-/**
- * @deprecated will be removed for RC.6
- */
-export const NG2_PIPES = [
-    ...NG2_BOOLEAN_PIPES,
-    ...NG2_MATH_PIPES,
-    ...NG2_ARRAY_PIPES,
-    ...NG2_STRING_PIPES,
-    ...NG2_OBJECT_PIPES,
-    ...NG2_AGGREGATE_PIPES
-];
+// Export individual pipes 
+export * from './src/aggregate';
+export * from './src/array';
+export * from './src/boolean';
+export * from './src/math';
+export * from './src/object';
+export * from './src/string';

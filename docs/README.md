@@ -1,5 +1,6 @@
 # Documentation
 
+* [`Modules`](./modules.md)
 * [`Collections`](./array.md)
 * [`Booleans`](./boolean.md)
 * [`Math`](./math.md)

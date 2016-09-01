@@ -3,6 +3,7 @@
 * [`keys`](#keys)
 * [`toArray`](#toarray)
 
+You can check the module import [`here`](./modules.md).
 
 ####keys
 

@@ -47,6 +47,30 @@ export * from './array/deep.pipe';
 export * from './array/chunk.pipe';
 
 @NgModule({
+    declarations: [
+        EmptyPipe,
+        HeadPipe,
+        InitialPipe,
+        LastPipe,
+        JoinPipe,
+        TailPipe,
+        UniqPipe,
+        WithoutPipe,
+        MapPipe,
+        WherePipe,
+        RangePipe,
+        PluckPipe,
+        ReversePipe,
+        OrderByPipe,
+        CountPipe,
+        SomePipe,
+        EveryPipe,
+        ShufflePipe,
+        TakePipe,
+        DropPipe,
+        DeepPipe,
+        ChunkPipe
+    ],
     exports: [
         EmptyPipe,
         HeadPipe,

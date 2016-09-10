@@ -6,6 +6,10 @@ export * from './object/keys.pipe';
 export * from './object/to-array.pipe';
 
 @NgModule({
+    declarations: [
+        KeysPipe,
+        ToArrayPipe
+    ],
     exports: [
         KeysPipe,
         ToArrayPipe

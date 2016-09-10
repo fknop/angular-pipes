@@ -11,6 +11,12 @@ export * from './math/min.pipe';
 export * from './math/sum.pipe';
 
 @NgModule({
+    declarations: [
+        MaxPipe,
+        MeanPipe,
+        MinPipe,
+        SumPipe
+    ],
     exports: [
         MaxPipe,
         MeanPipe,

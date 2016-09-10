@@ -21,6 +21,17 @@ export * from './math/sqrt.pipe';
 export * from './math/pow.pipe';
 
 @NgModule({
+    declarations: [
+        BytesPipe,
+        CeilPipe,
+        FloorPipe,
+        RoundPipe,
+        DegreesPipe,
+        RadiansPipe,
+        RandomPipe,
+        SqrtPipe,
+        PowPipe
+    ],
     exports: [
         BytesPipe,
         CeilPipe,

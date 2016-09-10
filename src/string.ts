@@ -35,6 +35,24 @@ export * from './string/truncate.pipe';
 export * from './string/repeat.pipe';
 
 @NgModule({
+    declarations: [
+        LeftPadPipe,
+        MatchPipe,
+        PadPipe,
+        ReplacePipe,
+        RightPadPipe,
+        SplitPipe,
+        TestPipe,
+        TrimPipe,
+        NewlinesPipe,
+        CapitalizePipe,
+        UpperFirstPipe,
+        TemplatePipe,
+        EncodeURIPipe,
+        EncodeURIComponentPipe,
+        TruncatePipe,
+        RepeatPipe
+    ],
     exports: [
         LeftPadPipe,
         MatchPipe,

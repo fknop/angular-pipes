@@ -23,6 +23,24 @@ import {
 } from './boolean/types.pipe';
 
 @NgModule({
+    declarations: [
+        IsGreaterPipe,
+        IsGreaterOrEqualPipe,
+        IsLessPipe,
+        IsLessOrEqualPipe,
+        IsEqualPipe,
+        IsNotEqualPipe,
+        IsIdenticalPipe,
+        IsNotIdenticalPipe,
+        IsNullPipe,
+        IsUndefinedPipe,
+        IsFunctionPipe,
+        IsNumberPipe,
+        IsStringPipe,
+        IsArrayPipe,
+        IsObjectPipe,
+        IsDefinedPipe 
+    ],
     exports: [
         IsGreaterPipe,
         IsGreaterOrEqualPipe,

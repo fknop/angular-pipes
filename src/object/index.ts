@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
-import { KeysPipe } from './object/keys.pipe';
-import { ToArrayPipe } from './object/to-array.pipe';
+import { KeysPipe } from './keys.pipe';
+import { ToArrayPipe } from './to-array.pipe';
 
-export * from './object/keys.pipe';
-export * from './object/to-array.pipe';
+export * from './keys.pipe';
+export * from './to-array.pipe';
 
 @NgModule({
     declarations: [

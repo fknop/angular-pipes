@@ -9,7 +9,7 @@ import {
     IsNotEqualPipe,
     IsIdenticalPipe,
     IsNotIdenticalPipe,
-} from './boolean/conditions.pipe';
+} from './conditions.pipe';
 
 import {
     IsNullPipe,
@@ -20,7 +20,7 @@ import {
     IsArrayPipe,
     IsObjectPipe,
     IsDefinedPipe
-} from './boolean/types.pipe';
+} from './types.pipe';
 
 @NgModule({
     declarations: [
@@ -62,6 +62,6 @@ import {
 })
 export class Ng2BooleanPipesModule {}
 
-export * from './boolean/conditions.pipe';
-export * from './boolean/types.pipe';
+export * from './conditions.pipe';
+export * from './types.pipe';
 

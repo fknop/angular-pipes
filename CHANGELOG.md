@@ -1,10 +1,31 @@
+# 5.0.0 (Not released)
+
+This is some plans for a future release.
+
+## BREAKING CHANGES
+
+* Rename modules (Remove the `2` from `Ng2...`)
+  + Angular "2" will now be angular 3 soon with semver, keeping the `2` does not make sense anymore
+* Change directory structure
+  + dist folder (pipes) should change
+  + aggregate pipes should now have their own folder instead of being in the math folder
+
+
+## Tests
+
+* Remove JSPM to keep things simple. It should be easier to contribute.
+
+# 4.0.0
+
+Support for Angular Final
+
 # 3.0.0
 
 * Update Angular to RC.6
 * Remove deprecated tokens.
     + `NG2_PIPES`, `NG2_BOOLEAN_PIPES`, etc.
 
-# 2.2.0 
+# 2.2.0
 
 * Update Angular to RC.5
 * Add support for `NgModule`
@@ -30,11 +51,11 @@
 
 * Updated to angular 2 RC.
 * Moved categories files to src folder, this means:
-    + To import a category you now have to do: `import { NG2_STRING_PIPES } from 'angular-pipes/pipes/src/string'` instead of 
+    + To import a category you now have to do: `import { NG2_STRING_PIPES } from 'angular-pipes/pipes/src/string'` instead of
      `import { NG2_STRING_PIPES } from 'angular-pipes/pipes/string'`
-* All the pipes are now **PURE**. This means you have to use `immutability` to update the pipe value. This is a design choice that may be discussed in the future. 
+* All the pipes are now **PURE**. This means you have to use `immutability` to update the pipe value. This is a design choice that may be discussed in the future.
 
-# 1.6.0 
+# 1.6.0
 
 ## New pipes
 
@@ -84,7 +105,7 @@ If you need to use deep equal, you can use it like this:
 * `shuffle`
 * `random`
 
-# 1.3.0 
+# 1.3.0
 
 ## New pipes
 
@@ -135,7 +156,7 @@ Fix immutability for pipes that were updating the original input.
 
 None.
 
-## Other 
+## Other
 
 * Added documentation
 * Added tests for

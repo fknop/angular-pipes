@@ -1,4 +1,4 @@
-import { EmptyPipe } from '../../index';
+import { EmptyPipe } from '../../src/index';
 
 
 describe('EmptyPipe', () => {

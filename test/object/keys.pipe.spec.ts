@@ -1,4 +1,4 @@
-import { KeysPipe } from '../../index';
+import { KeysPipe } from '../../src/index';
         
 
 

@@ -274,7 +274,7 @@ export class DeepWrapper {
 
 export function count (input: any): any {
     
-    if (!isArray(input) || !isObject(input) || !isString(input)) {
+    if (!isArray(input) && !isObject(input) && !isString(input)) {
         return input;
     }
     

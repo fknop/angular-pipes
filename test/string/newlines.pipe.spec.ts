@@ -1,4 +1,4 @@
-import { NewlinesPipe } from '../../index';
+import { NewlinesPipe } from '../../src/index';
         
 
 
@@ -37,7 +37,7 @@ describe('NewlinesPipe', () => {
     
     it('Should return the value unchanged', () => {
        
-       expect(pipe.transform(1, [null, null])).toEqual(1); 
+       expect((<any>pipe).transform(1, [null, null])).toEqual(1); 
     });
    
 });

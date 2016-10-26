@@ -1,4 +1,4 @@
-import { RadiansPipe } from '../../index';
+import { RadiansPipe } from '../../src/index';
         
 
 

@@ -2,19 +2,23 @@
     "compilerOptions": {
         "target": "es5",
         "module": "commonjs",
-        "outDir": "pipes",
+        "outDir": "dist",
         "moduleResolution": "node",
         "sourceMap": true,
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
         "removeComments": false,
         "noImplicitAny": true,
-        "suppressImplicitAnyIndexErrors": true
+        "suppressImplicitAnyIndexErrors": true,
+        "declaration": true,
+        "types": [
+            "core-js",
+            "jasmine"
+        ]
     },
     "exclude": [
         "node_modules",
         "jspm_packages",
-        "test",
         "typings/main",
         "typings/main.d.ts"
     ]

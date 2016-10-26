@@ -1,4 +1,4 @@
-import { EncodeURIPipe } from '../../index';
+import { EncodeURIPipe } from '../../src/index';
         
 
 

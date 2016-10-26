@@ -1,11 +1,11 @@
-import { SomePipe } from '../../index';
+import { SomePipe } from '../../src/index';
 
 
 describe('MapPipe', () => {
     
     let pipe: SomePipe;
     
-    const fn = function (item) {
+    const fn = function (item: any) {
         return item === 2;
     };
     

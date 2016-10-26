@@ -6,7 +6,7 @@ import {IsNullPipe,
         IsArrayPipe,
         IsObjectPipe,
         IsDefinedPipe, 
-        IsNilPipe } from '../../index';
+        IsNilPipe } from '../../src/index';
         
 
 

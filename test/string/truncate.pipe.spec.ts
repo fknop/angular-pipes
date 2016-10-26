@@ -1,4 +1,4 @@
-import { TruncatePipe } from '../../index';
+import { TruncatePipe } from '../../src/index';
         
 
 

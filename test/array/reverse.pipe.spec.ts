@@ -1,4 +1,4 @@
-import { ReversePipe } from '../../index';
+import { ReversePipe } from '../../src/index';
 
 
 describe('ReversePipe', () => {

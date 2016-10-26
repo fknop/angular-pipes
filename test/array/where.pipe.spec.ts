@@ -1,11 +1,11 @@
-import { WherePipe } from '../../index';
+import { WherePipe } from '../../src/index';
 
 
 describe('WherePipe', () => {
     
     let pipe: WherePipe;
     
-    const array = [
+    const array: any[] = [
         {
             a: 2,
             b: 3,
@@ -34,7 +34,7 @@ describe('WherePipe', () => {
     
     it ('Should return only the 1 values', () => {
        
-       const fn = function (item) {
+       const fn = function (item: any) {
            return item === 1;
        } 
        
@@ -45,7 +45,7 @@ describe('WherePipe', () => {
     
     it('Should return the objects where a is 4', () => {
        
-       const fn = function (item) {
+       const fn = function (item: any) {
            return item.a === 4;
        };
        

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 
-import { 
+import {
     IsGreaterPipe,
     IsGreaterOrEqualPipe,
     IsLessPipe,
@@ -13,6 +13,7 @@ import {
 
 import {
     IsNullPipe,
+    IsNilPipe,
     IsUndefinedPipe,
     IsFunctionPipe,
     IsNumberPipe,
@@ -32,6 +33,7 @@ import {
         IsNotEqualPipe,
         IsIdenticalPipe,
         IsNotIdenticalPipe,
+        IsNilPipe,
         IsNullPipe,
         IsUndefinedPipe,
         IsFunctionPipe,
@@ -39,7 +41,7 @@ import {
         IsStringPipe,
         IsArrayPipe,
         IsObjectPipe,
-        IsDefinedPipe 
+        IsDefinedPipe
     ],
     exports: [
         IsGreaterPipe,
@@ -50,6 +52,7 @@ import {
         IsNotEqualPipe,
         IsIdenticalPipe,
         IsNotIdenticalPipe,
+        IsNilPipe,
         IsNullPipe,
         IsUndefinedPipe,
         IsFunctionPipe,
@@ -60,8 +63,7 @@ import {
         IsDefinedPipe
     ]
 })
-export class Ng2BooleanPipesModule {}
+export class NgBooleanPipesModule {}
 
 export * from './conditions.pipe';
 export * from './types.pipe';
-

@@ -1,4 +1,4 @@
-import { TestPipe } from '../../index';
+import { TestPipe } from '../../src/index';
         
 
 
@@ -13,13 +13,13 @@ describe('TestPipe', () => {
     
     it('Should return true', () => {
        
-        const result = pipe.transform('abc', /a/g);
+        const result = (<any>pipe).transform('abc', /a/g);
         expect(result).toEqual(true);
     });
     
     it('Should return false', () => {
        
-        const result = pipe.transform('abc', /d/g);
+        const result = (<any>pipe).transform('abc', /d/g);
         expect(result).toEqual(false);
     });
     

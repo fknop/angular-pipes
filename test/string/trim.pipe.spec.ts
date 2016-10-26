@@ -1,4 +1,4 @@
-import { TrimPipe } from '../../index';
+import { TrimPipe } from '../../src/index';
         
 
 

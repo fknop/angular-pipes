@@ -1,4 +1,4 @@
-import { CountPipe } from '../../index';
+import { CountPipe } from '../../src/index';
 
 
 describe('CountPipe', () => {
@@ -21,9 +21,13 @@ describe('CountPipe', () => {
     
   
     
-    it('Should return the value unchanged', () => {
+    it('Should return the length of the string', () => {
        
-       expect(pipe.transform('a')).toEqual('a'); 
+       expect(pipe.transform('a')).toEqual(1); 
+    });
+
+    it('Should return the value unchanged', () => {
+        expect(pipe.transform(17)).toEqual(17);
     });
     
 });

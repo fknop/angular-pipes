@@ -1,4 +1,4 @@
-import { BytesPipe } from '../../index';
+import { BytesPipe } from '../../src/index';
         
 
 

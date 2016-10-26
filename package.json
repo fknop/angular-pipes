@@ -1,16 +1,13 @@
 {
   "name": "angular-pipes",
-  "version": "4.0.1",
+  "version": "5.0.0",
   "description": "Angular 2 pipes library",
-  "main": "pipes/index.js",
+  "main": "dist/src/index.js",
   "scripts": {
-    "jspm": "node_modules/.bin/jspm",
-    "typings": "node_modules/.bin/typings",
-    "typings-install": "npm run typings install",
-    "jspm-install": "npm run jspm install",
-    "prepublish": "node_modules/.bin/gulp clean && npm run typings-install && npm run tsc",
+    "prepublish": "node_modules/.bin/gulp clean && npm run tsc",
     "tsc": "node_modules/.bin/tsc -p .",
-    "test": "node_modules/.bin/karma start karma.conf.js"
+    "karma": "node_modules/.bin/karma start karma.conf.js",
+    "test": "npm run tsc && npm run karma"
   },
   "author": "Florian Knop",
   "repository": {
@@ -30,86 +27,27 @@
   "license": "MIT",
   "devDependencies": {
     "@angular/core": "^2.1.0",
-    "es6-shim": "^0.35.0",
+    "@types/core-js": "^0.9.34",
+    "@types/jasmine": "^2.5.37",
+    "core-js": "^2.4.1",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
     "jasmine-core": "^2.4.1",
-    "jspm": "^0.17.0-beta.14",
     "karma": "^0.13.22",
     "karma-chrome-launcher": "^1.0.1",
     "karma-firefox-launcher": "^1.0.0",
     "karma-jasmine": "^1.0.2",
-    "karma-jspm": "^2.1.0",
     "karma-phantomjs-launcher": "^1.0.0",
     "karma-spec-reporter": "0.0.26",
+    "karma-webpack": "^1.8.0",
     "phantomjs-prebuilt": "^2.1.7",
+    "reflect-metadata": "^0.1.8",
     "rxjs": "^5.0.0-beta.11",
     "symbol-observable": "^0.2.4",
-    "systemjs": "^0.19.25",
-    "typescript": "^1.8.9",
-    "typings": "^0.8.1"
+    "typescript": "^2.0.8",
+    "typings": "^0.8.1",
+    "webpack": "^1.13.3",
+    "zone.js": "^0.6.26"
   },
-  "dependencies": {},
-  "jspm": {
-    "dependencies": {},
-    "devDependencies": {
-      "@angular/core": "npm:@angular/core@^2.1.0",
-      "assert": "github:jspm/nodelibs-assert@^0.2.0-alpha",
-      "buffer": "github:jspm/nodelibs-buffer@^0.2.0-alpha",
-      "constants": "github:jspm/nodelibs-constants@^0.2.0-alpha",
-      "crypto": "github:jspm/nodelibs-crypto@^0.2.0-alpha",
-      "events": "github:jspm/nodelibs-events@^0.2.0-alpha",
-      "fs": "github:jspm/nodelibs-fs@^0.2.0-alpha",
-      "path": "github:jspm/nodelibs-path@^0.2.0-alpha",
-      "reflect-metadata": "npm:reflect-metadata@^0.1.8",
-      "es6-shim": "github:es-shims/es6-shim@^0.35.0",
-      "os": "github:jspm/nodelibs-os@^0.2.0-alpha",
-      "plugin-typescript": "github:frankwallis/plugin-typescript@^4.0.9",
-      "rxjs": "npm:rxjs@5.0.0-beta.12",
-      "stream": "github:jspm/nodelibs-stream@^0.2.0-alpha",
-      "string_decoder": "github:jspm/nodelibs-string_decoder@^0.2.0-alpha",
-      "timers": "github:jspm/nodelibs-timers@^0.2.0-alpha",
-      "util": "github:jspm/nodelibs-util@^0.2.0-alpha",
-      "vm": "github:jspm/nodelibs-vm@^0.2.0-alpha",
-      "zone.js": "npm:zone.js@^0.6.18",
-      "process": "github:jspm/nodelibs-process@^0.2.0-alpha"
-    },
-    "overrides": {
-      "npm:@angular/core@2.1.0": {
-        "meta": {
-          "src/*.js": {
-            "deps": [
-              "reflect-metadata",
-              "zone.js"
-            ]
-          }
-        }
-      },
-      "npm:inherits@2.0.3": {
-        "ignore": [
-          "test.js"
-        ]
-      },
-      "npm:reflect-metadata@0.1.8": {
-        "jspmNodeConversion": false,
-        "map": {
-          "crypto": {
-            "node": "@node/crypto",
-            "default": "@empty"
-          }
-        }
-      },
-      "npm:typescript@1.8.10": {
-        "browser": {},
-        "map": {
-          "buffer": "@empty",
-          "child_process": "@empty",
-          "fs": "@empty",
-          "path": "@empty",
-          "process": "@empty",
-          "readline": "@empty"
-        }
-      }
-    }
-  }
+  "dependencies": {}
 }

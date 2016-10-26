@@ -15,4 +15,4 @@ export * from './to-array.pipe';
         ToArrayPipe
     ]
 })
-export class Ng2ObjectPipesModule {}
+export class NgObjectPipesModule {}

@@ -1,4 +1,4 @@
-import { WithoutPipe, DeepPipe } from '../../index';
+import { WithoutPipe, DeepPipe } from '../../src/index';
 
 
 describe('WithoutPipe', () => {

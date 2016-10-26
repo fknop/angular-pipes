@@ -1,5 +1,5 @@
-import { HeadPipe } from '../../index';
-// 
+import { HeadPipe } from '../../src/index';
+
 
 describe('HeadPipe', () => {
     

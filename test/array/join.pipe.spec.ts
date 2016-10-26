@@ -1,4 +1,4 @@
-import { JoinPipe } from '../../index';
+import { JoinPipe } from '../../src/index';
 
 
 describe('JoinPipe ', () => {

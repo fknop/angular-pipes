@@ -1,4 +1,4 @@
-import { UniqPipe, DeepPipe } from '../../index';
+import { UniqPipe, DeepPipe } from '../../src/index';
 
 
 describe('UniqPipe', () => {

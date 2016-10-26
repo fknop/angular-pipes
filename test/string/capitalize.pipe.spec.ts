@@ -1,4 +1,4 @@
-import { CapitalizePipe } from '../../index';
+import { CapitalizePipe } from '../../src/index';
         
 
 

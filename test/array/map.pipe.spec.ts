@@ -1,4 +1,4 @@
-import { MapPipe } from '../../index';
+import { MapPipe } from '../../src/index';
 
 
 describe('MapPipe', () => {
@@ -12,7 +12,7 @@ describe('MapPipe', () => {
     it('Should return the modified array', () => {
        
        const array = [0, 1, 2, 3];
-       const fn = function (item) {
+       const fn = function (item: any) {
            return ++item;
        };
        

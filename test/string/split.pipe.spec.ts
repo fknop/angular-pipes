@@ -1,4 +1,4 @@
-import { SplitPipe } from '../../index';
+import { SplitPipe } from '../../src/index';
         
 
 
@@ -25,7 +25,7 @@ describe('SplitPipe', () => {
     
     it('Should return the value unchanged', () => {
        
-       expect(pipe.transform(1, [null])).toEqual(1); 
+       expect((<any>pipe).transform(1, [null])).toEqual(1); 
     });
    
 });

@@ -1,4 +1,4 @@
-import { MeanPipe } from '../../index';
+import { MeanPipe } from '../../src/index';
         
 
 

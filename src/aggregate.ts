@@ -24,4 +24,4 @@ export * from './math/sum.pipe';
         SumPipe
     ]
 })
-export class Ng2AggregatePipesModule {}
+export class NgAggregatePipesModule {}

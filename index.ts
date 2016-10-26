@@ -1,24 +1,24 @@
 import { NgModule } from '@angular/core';
 
-import { Ng2AggregatePipesModule } from './src/aggregate';
-import { Ng2ArrayPipesModule } from './src/array';
-import { Ng2BooleanPipesModule } from './src/boolean';
-import { Ng2MathPipesModule } from './src/math';
-import { Ng2ObjectPipesModule } from './src/object';
-import { Ng2StringPipesModule } from './src/string';
+import { NgAggregatePipesModule } from './src/aggregate';
+import { NgArrayPipesModule } from './src/array';
+import { NgBooleanPipesModule } from './src/boolean';
+import { NgMathPipesModule } from './src/math';
+import { NgObjectPipesModule } from './src/object';
+import { NgStringPipesModule } from './src/string';
 
 
 @NgModule({
     exports: [
-        Ng2ArrayPipesModule,
-        Ng2MathPipesModule,
-        Ng2BooleanPipesModule,
-        Ng2StringPipesModule,
-        Ng2ObjectPipesModule,
-        Ng2AggregatePipesModule
+        NgArrayPipesModule,
+        NgMathPipesModule,
+        NgBooleanPipesModule,
+        NgStringPipesModule,
+        NgObjectPipesModule,
+        NgAggregatePipesModule
     ]
 })
-export class Ng2PipesModule {}
+export class NgPipesModule {}
 
 // Export individual pipes and modules
 export * from './src/aggregate';

@@ -96,4 +96,4 @@ export * from './chunk.pipe';
         ChunkPipe
     ]
 })
-export class Ng2ArrayPipesModule {}
+export class NgArrayPipesModule {}

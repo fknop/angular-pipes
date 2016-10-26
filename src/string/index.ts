@@ -72,4 +72,4 @@ export * from './repeat.pipe';
         RepeatPipe
     ]
 })
-export class Ng2StringPipesModule {}
+export class NgStringPipesModule {}

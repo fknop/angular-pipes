@@ -1,4 +1,4 @@
-import { CeilPipe } from '../../index';
+import { CeilPipe } from '../../src/index';
         
 
 

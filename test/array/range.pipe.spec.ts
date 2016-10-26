@@ -1,4 +1,4 @@
-import { RangePipe } from '../../index';
+import { RangePipe } from '../../src/index';
 
 
 describe('RangePipe', () => {

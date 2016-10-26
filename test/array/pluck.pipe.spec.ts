@@ -1,10 +1,10 @@
-import { PluckPipe } from '../../index';
+import { PluckPipe } from '../../src/index';
 
 
 describe('PluckPipe', () => {
     
     let pipe: PluckPipe;
-    let array;
+    let array: any[];
     
     beforeEach(() => {
        pipe = new PluckPipe(); 

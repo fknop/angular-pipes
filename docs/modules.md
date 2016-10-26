@@ -6,13 +6,13 @@ Since version `2.2.0` you can take advantage of these modules.
 
 Each category of pipes has an exported module. And one module imports all these modules.
 
-* Ng2AggregatePipesModule
-* Ng2ArrayPipesModule
-* Ng2BooleanPipesModule
-* Ng2MathPipesModule
-* Ng2ObjectPipesModule
-* Ng2StringPipesModule
-* Ng2PipesModule (imports all the module above)
+* NgAggregatePipesModule
+* NgArrayPipesModule
+* NgBooleanPipesModule
+* NgMathPipesModule
+* NgObjectPipesModule
+* NgStringPipesModule
+* NgPipesModule (imports all the module above)
 
 
 ## Example
@@ -20,12 +20,12 @@ Each category of pipes has an exported module. And one module imports all these 
 ```typescript
 import { NgModule } from '@angular/core';
 
-import { Ng2ArrayPipesModule, Ng2StringPipesModule } from 'angular-pipes';
+import { NgArrayPipesModule, NgStringPipesModule } from 'angular-pipes';
 
 @NgModule({
     imports: [
-        Ng2ArrayPipesModule,
-        Ng2StringPipesModule
+        NgArrayPipesModule,
+        NgStringPipesModule
     ]
 })
 export class MyApplicationModule {}

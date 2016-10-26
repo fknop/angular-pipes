@@ -1,4 +1,4 @@
-import { PadPipe } from '../../index';
+import { PadPipe } from '../../src/index';
         
 
 

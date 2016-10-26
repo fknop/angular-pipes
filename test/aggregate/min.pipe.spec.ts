@@ -1,4 +1,4 @@
-import { MinPipe } from '../../index';
+import { MinPipe } from '../../src/index';
         
 
 

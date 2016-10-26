@@ -1,4 +1,4 @@
-import { DegreesPipe } from '../../index';
+import { DegreesPipe } from '../../src/index';
         
 
 

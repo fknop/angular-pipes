@@ -1,4 +1,4 @@
-import { MatchPipe } from '../../index';
+import { MatchPipe } from '../../src/index';
         
 
 
@@ -13,7 +13,7 @@ describe('MatchPipe', () => {
     
     it('Should return the matched string', () => {
        
-        const result = pipe.transform('abc', /a/g);
+        const result = (<any>pipe).transform('abc', /a/g);
         expect(result).toEqual(['a']);
     });
     

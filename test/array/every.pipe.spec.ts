@@ -1,16 +1,16 @@
-import { SomePipe } from '../../index';
+import { EveryPipe } from '../../src/index';
 
 
 describe('MapPipe', () => {
     
-    let pipe: SomePipe;
+    let pipe: EveryPipe;
     
-    const fn = function (item) {
+    const fn = function (item: any) {
         return item === 2;
     };
     
     beforeEach(() => {
-       pipe = new SomePipe(); 
+       pipe = new EveryPipe(); 
     });
     
     it('Should return false', () => {

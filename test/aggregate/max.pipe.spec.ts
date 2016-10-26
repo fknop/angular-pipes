@@ -1,4 +1,4 @@
-import { MaxPipe } from '../../index';
+import { MaxPipe } from '../../src/index';
         
 
 

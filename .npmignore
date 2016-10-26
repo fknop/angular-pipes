@@ -1,5 +1,4 @@
+dist/test
 test
-jspm_packages
 gulpfile.js
 .gitignore
-tsconfig.json

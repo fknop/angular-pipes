@@ -1,4 +1,4 @@
-import { RandomPipe } from '../../index';
+import { RandomPipe } from '../../src/index';
         
 
 
@@ -37,7 +37,7 @@ describe('RandomPipe', () => {
     
     it ('Should return the value unchanged', () => {
        
-       expect(pipe.transform(0, 'a', 1)).toEqual(0); 
+       expect((<any>pipe).transform(0, 'a', 1)).toEqual(0); 
     });
     
     

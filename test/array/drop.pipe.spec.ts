@@ -1,4 +1,4 @@
-import { DropPipe } from '../../index';
+import { DropPipe } from '../../src/index';
 
 
 describe('DropPipe', () => {

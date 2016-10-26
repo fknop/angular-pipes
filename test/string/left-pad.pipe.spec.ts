@@ -1,4 +1,4 @@
-import { LeftPadPipe } from '../../index';
+import { LeftPadPipe } from '../../src/index';
         
 
 

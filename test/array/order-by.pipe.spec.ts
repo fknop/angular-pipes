@@ -1,4 +1,4 @@
-import { OrderByPipe } from '../../index';
+import { OrderByPipe } from '../../src/index';
 
 
 class Person { 

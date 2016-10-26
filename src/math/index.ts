@@ -44,4 +44,4 @@ export * from './pow.pipe';
         PowPipe
     ]
 })
-export class Ng2MathPipesModule {}
+export class NgMathPipesModule {}

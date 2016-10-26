@@ -1,4 +1,4 @@
-import { FloorPipe } from '../../index';
+import { FloorPipe } from '../../src/index';
         
 
 

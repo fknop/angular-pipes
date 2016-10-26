@@ -1,4 +1,4 @@
-import { LastPipe } from '../../index';
+import { LastPipe } from '../../src/index';
 
 
 describe('LastPipe', () => {

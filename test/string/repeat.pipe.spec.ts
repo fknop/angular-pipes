@@ -1,4 +1,4 @@
-import { RepeatPipe } from '../../index';
+import { RepeatPipe } from '../../src/index';
         
 
 

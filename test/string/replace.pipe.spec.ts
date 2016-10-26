@@ -1,4 +1,4 @@
-import { ReplacePipe } from '../../index';
+import { ReplacePipe } from '../../src/index';
         
 
 

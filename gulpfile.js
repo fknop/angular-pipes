@@ -5,5 +5,5 @@ const clean = require('gulp-clean');
 
 gulp.task('clean', function () {
    
-   return gulp.src('pipes').pipe(clean()); 
+   return gulp.src('dist').pipe(clean()); 
 });

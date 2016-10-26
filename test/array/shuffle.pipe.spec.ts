@@ -1,4 +1,4 @@
-import { ShufflePipe } from '../../index';
+import { ShufflePipe } from '../../src/index';
 
 
 describe('ShufflePipe', () => {

@@ -1,4 +1,4 @@
-import { TailPipe } from '../../index';
+import { TailPipe } from '../../src/index';
 
 
 describe('TailPipe', () => {

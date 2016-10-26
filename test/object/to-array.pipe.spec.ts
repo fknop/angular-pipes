@@ -1,4 +1,4 @@
-import { ToArrayPipe } from '../../index';
+import { ToArrayPipe } from '../../src/index';
         
 
 

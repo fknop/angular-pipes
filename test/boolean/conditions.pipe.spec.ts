@@ -5,7 +5,7 @@ import {IsGreaterPipe,
         IsEqualPipe,
         IsNotEqualPipe,
         IsIdenticalPipe,
-        IsNotIdenticalPipe } from '../../index';
+        IsNotIdenticalPipe } from '../../src/index';
         
 
 

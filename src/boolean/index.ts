@@ -20,7 +20,8 @@ import {
     IsStringPipe,
     IsArrayPipe,
     IsObjectPipe,
-    IsDefinedPipe
+    IsDefinedPipe,
+    IsNilPipe
 } from './types.pipe';
 
 @NgModule({
@@ -41,7 +42,8 @@ import {
         IsStringPipe,
         IsArrayPipe,
         IsObjectPipe,
-        IsDefinedPipe
+        IsDefinedPipe,
+        IsNilPipe
     ],
     exports: [
         IsGreaterPipe,
@@ -60,7 +62,8 @@ import {
         IsStringPipe,
         IsArrayPipe,
         IsObjectPipe,
-        IsDefinedPipe
+        IsDefinedPipe,
+        IsNilPipe
     ]
 })
 export class NgBooleanPipesModule {}

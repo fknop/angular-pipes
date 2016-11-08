@@ -1,19 +1,24 @@
-# 5.0.0 (Not released)
+# 5.0.0
 
-This is some plans for a future release.
+## Fixes 
+
+* Fix CountPipe
+* Fix EveryPipe test
+* Add IsNilPipe to boolean module
 
 ## BREAKING CHANGES
 
 * Rename modules (Remove the `2` from `Ng2...`)
   + Angular "2" will now be angular 3 soon with semver, keeping the `2` does not make sense anymore
 * Change directory structure
-  + dist folder (pipes) should change
-  + aggregate pipes should now have their own folder instead of being in the math folder
+  + The dist folder has been renamed from `pipes` to `dist`. If you have any import to the `pipes` folder, you will need to change it.
+  + Aggregate pipes are now in their own folder instead of being in the math folder (import change, see docs).
 
 
 ## Tests
 
-* Remove JSPM to keep things simple. It should be easier to contribute.
+* Removed JSPM to keep things simple. It should be easier to contribute.
+    + It now use Karma with a simple webpack preprocessor.
 
 # 4.0.0
 

@@ -5,11 +5,6 @@ import { MeanPipe } from './mean.pipe';
 import { MinPipe } from './min.pipe';
 import { SumPipe } from './sum.pipe';
 
-export * from './max.pipe';
-export * from './mean.pipe';
-export * from './min.pipe';
-export * from './sum.pipe';
-
 @NgModule({
     declarations: [
         MaxPipe,
@@ -25,3 +20,9 @@ export * from './sum.pipe';
     ]
 })
 export class NgAggregatePipesModule {}
+
+
+export * from './max.pipe';
+export * from './mean.pipe';
+export * from './min.pipe';
+export * from './sum.pipe';

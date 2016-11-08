@@ -7,10 +7,10 @@ module.exports = function (config) {
         files: [
             { pattern: 'node_modules/zone.js/dist/zone.js', watched: false },
             { pattern: 'node_modules/reflect-metadata/Reflect.js', watched: false },
-            { pattern: 'dist/test/**/*.js', watched: false }
+            { pattern: 'test/**/*.js', watched: false }
         ],
         preprocessors: {
-            'dist/test/**/*.js': ['webpack']
+            'test/**/*.js': ['webpack']
         },
 
         webpack: {
@@ -24,7 +24,6 @@ module.exports = function (config) {
         browsers: ['Firefox'],
         plugins: [
             'karma-webpack',
-            'karma-coverage',
             'karma-jasmine',
             'karma-spec-reporter',
             'karma-firefox-launcher'

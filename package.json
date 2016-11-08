@@ -7,7 +7,7 @@
     "prepublish": "node_modules/.bin/gulp clean && npm run tsc",
     "tsc": "node_modules/.bin/tsc -p .",
     "karma": "node_modules/.bin/karma start karma.conf.js",
-    "test": "npm run tsc && npm run karma",
+    "test": "npm run ngc && npm run karma",
     "ngc": "node_modules/.bin/ngc -p tsconfig.json"
   },
   "author": "Florian Knop",

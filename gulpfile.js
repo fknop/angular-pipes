@@ -9,7 +9,10 @@ gulp.task('clean', function () {
      'src/**/*.ngfactory.ts',
      'src/**/*.js',
      'src/**/*.d.ts',
-     'src/**/*.metadata.json'
+     'src/**/*.metadata.json',
+     'test/**/*.js',
+     'test/**/*.map',
+     'test/**/*.d.ts'
    ]).pipe(clean()); 
 });
 

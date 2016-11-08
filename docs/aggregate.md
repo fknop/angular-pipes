@@ -14,7 +14,7 @@ Returns the minimum of the given array.
 ##### File
 
 ```
-import { MinPipe } from 'angular-pipes/dist/src/aggregate/min.pipe';
+import { MinPipe } from 'angular-pipes/src/aggregate/min.pipe';
 ```
 
 ##### Usage
@@ -31,7 +31,7 @@ Returns the maximum of the given array.
 ##### File
 
 ```
-import { MaxPipe } from 'angular-pipes/dist/src/aggregate/max.pipe';
+import { MaxPipe } from 'angular-pipes/src/aggregate/max.pipe';
 ```
 
 ##### Usage
@@ -48,7 +48,7 @@ Returns the mean of the given array.
 ##### File
 
 ```
-import { MeanPipe } from 'angular-pipes/dist/src/aggregate/mean.pipe';
+import { MeanPipe } from 'angular-pipes/src/aggregate/mean.pipe';
 ```
 
 ##### Usage
@@ -64,7 +64,7 @@ Returns the sum of the given array.
 ##### File
 
 ```
-import { SumPipe } from 'angular-pipes/dist/src/aggregate/sum.pipe';
+import { SumPipe } from 'angular-pipes/src/aggregate/sum.pipe';
 ```
 
 ##### Usage

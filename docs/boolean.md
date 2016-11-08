@@ -27,7 +27,7 @@ Returns true if the first value is greater than the second value.
 ##### File
 
 ```
-import { IsGreaterPipe } from 'angular-pipes/dist/src/boolean/conditions.pipe';
+import { IsGreaterPipe } from 'angular-pipes/src/boolean/conditions.pipe';
 ```
 
 ##### Usage
@@ -45,7 +45,7 @@ Returns true if the first value is greater or equal to the second value.
 ##### File
 
 ```
-import { IsGreaterOrEqualPipe } from 'angular-pipes/dist/src/boolean/conditions.pipe';
+import { IsGreaterOrEqualPipe } from 'angular-pipes/src/boolean/conditions.pipe';
 ```
 
 ##### Usage
@@ -63,7 +63,7 @@ Returns true if the first value is less than the second value.
 ##### File
 
 ```
-import { IsLessPipe } from 'angular-pipes/dist/src/boolean/conditions.pipe';
+import { IsLessPipe } from 'angular-pipes/src/boolean/conditions.pipe';
 ```
 
 ##### Usage
@@ -81,7 +81,7 @@ Returns true if the first value is less or equal to the second value.
 ##### File
 
 ```
-import { IsLessOrEqualPipe } from 'angular-pipes/dist/src/boolean/conditions.pipe';
+import { IsLessOrEqualPipe } from 'angular-pipes/src/boolean/conditions.pipe';
 ```
 
 ##### Usage
@@ -99,7 +99,7 @@ Returns true if the value are equal (operator `==`).
 ##### File
 
 ```
-import { IsEqualPipe } from 'angular-pipes/dist/src/boolean/conditions.pipe';
+import { IsEqualPipe } from 'angular-pipes/src/boolean/conditions.pipe';
 ```
 
 ##### Usage
@@ -117,7 +117,7 @@ Returns true if the value are not equal (operator `!=`).
 ##### File
 
 ```
-import { IsNotEqualPipe } from 'angular-pipes/dist/src/boolean/conditions.pipe';
+import { IsNotEqualPipe } from 'angular-pipes/src/boolean/conditions.pipe';
 ```
 
 ##### Usage
@@ -136,7 +136,7 @@ Returns true if the value are identical (operator `===`).
 ##### File
 
 ```
-import { IsIdenticalPipe } from 'angular-pipes/dist/src/boolean/conditions.pipe';
+import { IsIdenticalPipe } from 'angular-pipes/src/boolean/conditions.pipe';
 ```
 
 ##### Usage
@@ -155,7 +155,7 @@ Returns true if the value are not identical (operator `!==`).
 ##### File
 
 ```
-import { IsNotIdenticalPipe } from 'angular-pipes/dist/src/boolean/conditions.pipe';
+import { IsNotIdenticalPipe } from 'angular-pipes/src/boolean/conditions.pipe';
 ```
 
 ##### Usage
@@ -174,7 +174,7 @@ Returns true if the value if null.
 ##### File
 
 ```
-import { IsNullPipe } from 'angular-pipes/dist/src/boolean/types.pipe';
+import { IsNullPipe } from 'angular-pipes/src/boolean/types.pipe';
 ```
 
 ##### Usage
@@ -197,7 +197,7 @@ Returns true if the value if undefined.
 ##### File
 
 ```
-import { IsUndefinedPipe } from 'angular-pipes/dist/src/boolean/types.pipe';
+import { IsUndefinedPipe } from 'angular-pipes/src/boolean/types.pipe';
 ```
 
 ##### Usage
@@ -220,7 +220,7 @@ Returns true if the value if null or undefined.
 ##### File
 
 ```
-import { IsNilPipe } from 'angular-pipes/dist/src/boolean/types.pipe';
+import { IsNilPipe } from 'angular-pipes/src/boolean/types.pipe';
 ```
 
 ##### Usage
@@ -239,7 +239,7 @@ Returns true if the value is a number.
 ##### File
 
 ```
-import { IsNumberPipe } from 'angular-pipes/dist/src/boolean/types.pipe';
+import { IsNumberPipe } from 'angular-pipes/src/boolean/types.pipe';
 ```
 
 ##### Usage
@@ -256,7 +256,7 @@ Returns true if the value is a string.
 ##### File
 
 ```
-import { IsStringPipe } from 'angular-pipes/dist/src/boolean/types.pipe';
+import { IsStringPipe } from 'angular-pipes/src/boolean/types.pipe';
 ```
 
 ##### Usage
@@ -274,7 +274,7 @@ Returns true if the value is a function.
 ##### File
 
 ```
-import { IsFunctionPipe } from 'angular-pipes/dist/src/boolean/types.pipe';
+import { IsFunctionPipe } from 'angular-pipes/src/boolean/types.pipe';
 ```
 
 ##### Usage
@@ -298,7 +298,7 @@ Returns true if the value is an array.
 ##### File
 
 ```
-import { IsArrayPipe } from 'angular-pipes/dist/src/boolean/types.pipe';
+import { IsArrayPipe } from 'angular-pipes/src/boolean/types.pipe';
 ```
 
 ##### Usage
@@ -317,7 +317,7 @@ Returns true if the value is an object.
 ##### File
 
 ```
-import { IsObjectPipe } from 'angular-pipes/dist/src/boolean/types.pipe';
+import { IsObjectPipe } from 'angular-pipes/src/boolean/types.pipe';
 ```
 
 ##### Usage
@@ -336,7 +336,7 @@ Returns true if the value is defined (nor null nor undefined).
 ##### File
 
 ```
-import { IsDefinedPipe } from 'angular-pipes/dist/src/boolean/types.pipe';
+import { IsDefinedPipe } from 'angular-pipes/src/boolean/types.pipe';
 ```
 
 ##### Usage

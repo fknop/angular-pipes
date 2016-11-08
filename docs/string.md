@@ -26,7 +26,7 @@ Returns a left-padded string.
 ##### File
 
 ```
-import { LeftPadPipe } from 'angular-pipes/dist/src/string/left-pad.pipe';
+import { LeftPadPipe } from 'angular-pipes/src/string/left-pad.pipe';
 ```
 
 ##### Usage
@@ -45,7 +45,7 @@ Returns a right-padded string.
 ##### File
 
 ```
-import { RightPadPipe } from 'angular-pipes/dist/src/string/right-pad.pipe';
+import { RightPadPipe } from 'angular-pipes/src/string/right-pad.pipe';
 ```
 
 ##### Usage
@@ -63,7 +63,7 @@ Returns a padded string. It starts with left and then right.
 ##### File
 
 ```
-import { PadPipe } from 'angular-pipes/dist/src/string/pad.pipe';
+import { PadPipe } from 'angular-pipes/src/string/pad.pipe';
 ```
 
 ##### Usage
@@ -82,7 +82,7 @@ Trims the string.
 ##### File
 
 ```
-import { TrimPipe } from 'angular-pipes/dist/src/string/trim.pipe';
+import { TrimPipe } from 'angular-pipes/src/string/trim.pipe';
 ```
 
 ##### Usage
@@ -101,7 +101,7 @@ Split a string into an array.
 ##### File
 
 ```
-import { SplitPipe } from 'angular-pipes/dist/src/string/split.pipe';
+import { SplitPipe } from 'angular-pipes/src/string/split.pipe';
 ```
 
 ##### Usage
@@ -120,7 +120,7 @@ This is the `String#replace()` function, if you want to know more about the argu
 ##### File
 
 ```
-import { ReplacePipe } from 'angular-pipes/dist/src/string/replace.pipe';
+import { ReplacePipe } from 'angular-pipes/src/string/replace.pipe';
 ```
 
 
@@ -131,7 +131,7 @@ This is the `String#match()` function, if you want to know more about the argume
 ##### File
 
 ```
-import { MatchPipe } from 'angular-pipes/dist/src/string/match.pipe';
+import { MatchPipe } from 'angular-pipes/src/string/match.pipe';
 ```
 
 
@@ -142,7 +142,7 @@ This is the `String#test()` function, if you want to know more about the argumen
 ##### File
 
 ```
-import { TestPipe } from 'angular-pipes/dist/src/string/test.pipe';
+import { TestPipe } from 'angular-pipes/src/string/test.pipe';
 ```
 
 
@@ -154,7 +154,7 @@ with the `[innerHTML]` binding.
 ##### File
 
 ```
-import { NewlinesPipe } from 'angular-pipes/dist/src/string/newlines.pipe';
+import { NewlinesPipe } from 'angular-pipes/src/string/newlines.pipe';
 ```
 
 
@@ -187,7 +187,7 @@ Capitalize the string. If the argument is true, all the words will be capitalize
 ##### File
 
 ```
-import { CapitalizePipe } from 'angular-pipes/dist/src/string/capitalize.pipe';
+import { CapitalizePipe } from 'angular-pipes/src/string/capitalize.pipe';
 ```
 
 ##### Usage
@@ -206,7 +206,7 @@ Uppercase the first letter.
 ##### File
 
 ```
-import { UpperFirstPipe } from 'angular-pipes/dist/src/string/upperfirst.pipe';
+import { UpperFirstPipe } from 'angular-pipes/src/string/upperfirst.pipe';
 ```
 
 ##### Usage
@@ -223,7 +223,7 @@ Template string.
 ##### File
 
 ```
-import { TemplatePipe } from 'angular-pipes/dist/src/string/template.pipe';
+import { TemplatePipe } from 'angular-pipes/src/string/template.pipe';
 ```
 
 ##### Usage
@@ -240,7 +240,7 @@ The encodeURI function.
 ##### File
 
 ```
-import { EncodeURIPipe } from 'angular-pipes/dist/src/string/encode-uri.pipe';
+import { EncodeURIPipe } from 'angular-pipes/src/string/encode-uri.pipe';
 ```
 
 
@@ -251,7 +251,7 @@ The encodeURIComponent function.
 ##### File
 
 ```
-import { EncodeURIComponentPipe } from 'angular-pipes/dist/src/string/encode-uri-component.pipe';
+import { EncodeURIComponentPipe } from 'angular-pipes/src/string/encode-uri-component.pipe';
 ```
 
 ####repeat
@@ -261,7 +261,7 @@ Repeats a string.
 ##### File
 
 ```
-import { RepeatPipe } from 'angular-pipes/dist/src/string/repeat.pipe';
+import { RepeatPipe } from 'angular-pipes/src/string/repeat.pipe';
 ```
 
 ##### Usage
@@ -280,7 +280,7 @@ Arguments: (size, suffix, preserve)
 ##### File
 
 ```
-import { TruncatePipe } from 'angular-pipes/dist/src/string/truncate.pipe';
+import { TruncatePipe } from 'angular-pipes/src/string/truncate.pipe';
 ```
 
 ##### Usage

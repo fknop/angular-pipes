@@ -1,5 +1,9 @@
 # 5.0.0
 
+## AoT
+
+* The project is now compiled with `ngc` and should work with `AoT`. Create an issue if you're still having trouble.
+
 ## Fixes 
 
 * Fix CountPipe
@@ -11,7 +15,7 @@
 * Rename modules (Remove the `2` from `Ng2...`)
   + Angular "2" will now be angular 3 soon with semver, keeping the `2` does not make sense anymore
 * Change directory structure
-  + The dist folder has been renamed from `pipes` to `dist`. If you have any import to the `pipes` folder, you will need to change it.
+  + The dist folder has been removed. The compiled files are located next to their source.
   + Aggregate pipes are now in their own folder instead of being in the math folder (import change, see docs).
 
 

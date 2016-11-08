@@ -19,7 +19,7 @@ Returns the bytes to an human-readable format.
 ##### File
 
 ```
-import { BytesPipe } from 'angular-pipes/dist/src/math/bytes.pipe';
+import { BytesPipe } from 'angular-pipes/src/math/bytes.pipe';
 ```
 
 ##### Usage
@@ -43,7 +43,7 @@ Ceils a number with a given precision. Take a look at the official documentation
 ##### File
 
 ```
-import { CeilPipe } from 'angular-pipes/dist/src/math/ceil.pipe';
+import { CeilPipe } from 'angular-pipes/src/math/ceil.pipe';
 ```
 
 ##### Usage
@@ -62,7 +62,7 @@ Floor a number with a given precision. Take a look at the official documentation
 ##### File
 
 ```
-import { FloorPipe } from 'angular-pipes/dist/src/math/floor.pipe';
+import { FloorPipe } from 'angular-pipes/src/math/floor.pipe';
 ```
 
 ##### Usage
@@ -81,7 +81,7 @@ Rounds a number with a given precision. Take a look at the official documentatio
 ##### File
 
 ```
-import { RoundPipe } from 'angular-pipes/dist/src/math/round.pipe';
+import { RoundPipe } from 'angular-pipes/src/math/round.pipe';
 ```
 
 ##### Usage
@@ -102,7 +102,7 @@ Converts radians to degrees.
 ##### File
 
 ```
-import { DegreesPipe } from 'angular-pipes/dist/src/math/degrees.pipe';
+import { DegreesPipe } from 'angular-pipes/src/math/degrees.pipe';
 ```
 
 ##### Usage
@@ -123,7 +123,7 @@ Converts degrees to radians
 ##### File
 
 ```
-import { RadiansPipe } from 'angular-pipes/dist/src/math/radians.pipe';
+import { RadiansPipe } from 'angular-pipes/src/math/radians.pipe';
 ```
 
 ##### Usage
@@ -142,7 +142,7 @@ If only one argument is given, it will be the maximum.
 ##### File
 
 ```
-import { RandomPipe } from 'angular-pipes/dist/src/math/random.pipe';
+import { RandomPipe } from 'angular-pipes/src/math/random.pipe';
 ```
 
 ##### Usage
@@ -160,7 +160,7 @@ Returns the square root of a number.
 ##### File
 
 ```
-import { SqrtPipe } from 'angular-pipes/dist/src/math/sqrt.pipe';
+import { SqrtPipe } from 'angular-pipes/src/math/sqrt.pipe';
 ```
 
 ##### Usage
@@ -176,7 +176,7 @@ Returns the power of a number.
 ##### File
 
 ```
-import { PowPipe } from 'angular-pipes/dist/src/math/pow.pipe';
+import { PowPipe } from 'angular-pipes/src/math/pow.pipe';
 ```
 
 ##### Usage

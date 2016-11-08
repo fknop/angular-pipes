@@ -1,3 +1,11 @@
 node_modules
 dist
 *.log
+src/**/*.js
+src/**/*.map
+src/**/*.metadata.json
+src/**/*.d.ts
+src/**/*.ngfactory.ts
+test/**/*.js
+test/**/*.map
+test/**/*.d.ts

@@ -5,6 +5,11 @@ const clean = require('gulp-clean');
 
 gulp.task('clean', function () {
    
-   return gulp.src('dist').pipe(clean()); 
+   return gulp.src([
+     'src/**/*.ngfactory.ts',
+     'src/**/*.js',
+     'src/**/*.d.ts',
+     'src/**/*.metadata.json'
+   ]).pipe(clean()); 
 });
 

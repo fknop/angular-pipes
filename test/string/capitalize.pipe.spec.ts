@@ -1,7 +1,6 @@
 import { CapitalizePipe } from '../../src/index';
         
 
-
 describe('CapitalizePipe', () => {
     
     let pipe: CapitalizePipe;

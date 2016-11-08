@@ -66,7 +66,9 @@ export function upperFirst (value: string): string {
 }
 
 export function createRound (method: string): Function {
-    const func = Math[method];
+
+    // <any>Math to suppress error
+    const func: any = (<any>Math)[method];
     return function (value: number, precision: number = 0) {
         
         if (typeof value === 'string') {
@@ -158,10 +160,10 @@ export function toArray (object: any): Array<any> {
 }
 
 
-export function getProperty (value: Object, key: string): Array<any> {
+export function getProperty (value: { [key: string]: any}, key: string): Array<any> {
     
-    const keys = key.split('.');
-    let result = value[keys.shift()];
+    const keys: string[] = key.split('.');
+    let result: any = value[keys.shift()];
     while (keys.length && (result = result[keys.shift()]));
 
     return result;

@@ -2,14 +2,13 @@
     "compilerOptions": {
         "target": "es5",
         "module": "commonjs",
-        "outDir": "dist",
         "moduleResolution": "node",
         "sourceMap": true,
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
         "removeComments": false,
         "noImplicitAny": true,
-        "suppressImplicitAnyIndexErrors": true,
+        "suppressImplicitAnyIndexErrors": false,
         "declaration": true,
         "types": [
             "core-js",
@@ -18,6 +17,6 @@
     },
     "exclude": [
         "node_modules",
-	"index.d.ts"
+	    "index.d.ts"
     ]
 }

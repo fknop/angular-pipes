@@ -1,1 +1,1 @@
-export * from './dist/src';
+export * from './src';

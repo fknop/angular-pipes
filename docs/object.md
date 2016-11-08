@@ -12,7 +12,7 @@ Returns the array of keys of the given object or array.
 ##### File
 
 ```
-import { KeysPipe } from 'angular-pipes/dist/src/object/keys.pipe';
+import { KeysPipe } from 'angular-pipes/src/object/keys.pipe';
 ```
 
 ##### Usage
@@ -38,7 +38,7 @@ Transforms an object to an array
 ##### File
 
 ```
-import { ToArrayPipe } from 'angular-pipes/dist/src/object/to-array.pipe';
+import { ToArrayPipe } from 'angular-pipes/src/object/to-array.pipe';
 ```
 
 ##### Usage

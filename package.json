@@ -1,7 +1,12 @@
 {
   "name": "angular-pipes",
-  "version": "5.0.9",
+  "version": "5.0.10",
   "description": "Angular 2 pipes library",
+  "files": [
+  	"src",
+	"index.d.ts",
+	"tsconfig.json"
+  ],
   "main": "src/index.js",
   "scripts": {
     "prepublish": "node_modules/.bin/gulp clean && npm run ngc",

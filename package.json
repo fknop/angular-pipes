@@ -1,6 +1,6 @@
 {
   "name": "angular-pipes",
-  "version": "5.0.8",
+  "version": "5.0.9",
   "description": "Angular 2 pipes library",
   "main": "src/index.js",
   "scripts": {

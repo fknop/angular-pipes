@@ -34,6 +34,6 @@ module.exports = function (config) {
         autoWatch: false,
         colors: true,
         logLevel: config.LOG_INFO
-    })
+    });
     
 }

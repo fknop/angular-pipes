@@ -116,12 +116,6 @@ You can find the documentations in the [`docs`](./docs) folder.
 npm install angular-pipes --save
 ```
 
-### jspm
-
-```
-jspm install angular-pipes=npm:angular-pipes
-```
-
 ## How to use
 
 Check the [`documentation`](./docs) for how to import your pipes in your `NgModule` and how to use individual pipes.
@@ -130,10 +124,8 @@ Check the [`documentation`](./docs) for how to import your pipes in your `NgModu
 
 ```
 npm install
-jspm install
+npm test
 ```
-
-* TODO: Rework tests to remove JSPM
 
 ## License
 

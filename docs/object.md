@@ -2,6 +2,7 @@
 
 * [`keys`](#keys)
 * [`toArray`](#toarray)
+* [`defaults`](#defaults)
 
 You can check the module import [`here`](./modules.md).
 
@@ -54,4 +55,45 @@ const value = {
 
 ```html
 {{ value | toArray }} <!-- [1, 2, 3] -->
+```
+
+
+####defaults
+
+Apply defaults value to an object or an object in an array.
+
+When applied to an array, the non object values will be left unchanged. The nulls and undefineds will be changed
+to the defaults.
+
+##### File
+
+```
+import { DefaultsPipe } from 'angular-pipes/src/object/defaults.pipe';
+```
+
+##### Usage
+
+```javascript
+const d = {
+    a: 1,
+    b: 2,
+    c: 3
+};
+
+const object = {
+    a: 2
+}
+
+const array = [
+    { a: 2 },
+    null,
+    { b: 3 },
+    undefined
+];
+
+```
+
+```html
+{{ object | defaults: d }} <!-- { a: 2, b: 2, c: 3 } -->
+{{ array | defaults: d }} <!-- [{ a: 2, b: 2, c: 3 }, { a: 1, b: 2, c: 3 }, { a: 1, b: 3, c: 3 }, { a: 1, b: 2, c: 3 }]-->
 ```

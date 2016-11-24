@@ -106,6 +106,7 @@ You can find the documentations in the [`docs`](./docs) folder.
 
 * [`keys`](./docs/object.md#keys)
 * [`toArray`](./docs/object.md#toarray)
+* [`defaults`](./docs/object.md#defaults)
 
 
 ## Install

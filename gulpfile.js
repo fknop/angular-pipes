@@ -9,6 +9,7 @@ gulp.task('clean', function () {
      'src/**/*.ngfactory.ts',
      'src/**/*.js',
      'src/**/*.d.ts',
+     'src/**/*.js.map',
      'src/**/*.metadata.json',
      'test/**/*.js',
      'test/**/*.map',

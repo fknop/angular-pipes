@@ -1,3 +1,10 @@
+# 5.1.0
+
+## New pipes
+
+* [`flatten`](./docs/array.md#flatten)
+* [`defaults`](./docs/object.md#defaults)
+
 # 5.0.0
 
 ## AoT

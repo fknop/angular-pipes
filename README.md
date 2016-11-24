@@ -41,6 +41,8 @@ You can find the documentations in the [`docs`](./docs) folder.
 * [`drop`](./docs/array.md#drop)
 * [`deep`](./docs/array.md#deep)
 * [`chunk`](./docs/array.md#chunk)
+* [`flatten`](./docs/array.md#flatten)
+
 
 
 ### Boolean

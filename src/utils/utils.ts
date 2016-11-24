@@ -159,6 +159,23 @@ export function toArray (object: any): Array<any> {
     });
 }
 
+export function flatten (input: any[], index: number = 0): any[] {
+    
+    if (index >= input.length) {
+        return input;
+    }
+
+    if (isArray(input[index])) {
+        return flatten(
+            input.slice(0, index).concat(input[index], input.slice(index + 1)), 
+            index
+        );
+    }
+
+    return flatten(input, index + 1);
+    
+}
+
 
 export function getProperty (value: { [key: string]: any}, key: string): Array<any> {
     

@@ -22,6 +22,7 @@
 * [`drop`](#drop)
 * [`deep`](#deep)
 * [`chunk`](#chunk)
+* [`flatten`](#flatten)
 
 You can check the module import [`here`](./modules.md).
 
@@ -521,4 +522,23 @@ import { ChunkPipe } from 'angular-pipes/src/array/chunk.pipe';
 ```html
 {{ [1, 2, 3, 4] | chunk }} <!-- [[1],[2], [3], [4]] -->
 {{ [1, 2, 3, 4] | chunk: 2 }} <!-- [[1, 2], [3, 4]] -->
+```
+
+
+####flatten
+
+The `flatten` flattens an array. It can be used with the `deep` pipe.
+
+##### File
+
+```
+import { FlattenPipe } from 'angular-pipes/src/array/flatten.pipe';
+```
+
+##### Usage
+
+```html
+{{ [[1, 2, 3, 4]] | flatten }} <!-- [1, 2, 3, 4] -->
+{{ [[1, 2, 3, [4]] | flatten }} <!-- [1, 2, 3, [4]] -->
+{{ [[1, 2, 3, [4]] | deep | flatten }} <!-- [1, 2, 3, 4] -->
 ```

@@ -1,6 +1,6 @@
 {
   "name": "angular-pipes",
-  "version": "5.0.10",
+  "version": "5.1.0",
   "description": "Angular 2 pipes library",
   "files": [
   	"src",

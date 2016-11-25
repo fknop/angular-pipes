@@ -45,7 +45,6 @@
     "karma": "^0.13.22",
     "karma-firefox-launcher": "^1.0.0",
     "karma-jasmine": "^1.0.2",
-    "karma-phantomjs-launcher": "^1.0.0",
     "karma-spec-reporter": "0.0.26",
     "karma-webpack": "^1.8.0",
     "reflect-metadata": "^0.1.8",

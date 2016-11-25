@@ -5,6 +5,7 @@ module.exports = function (config) {
         basePath: './',
         
         files: [
+            { pattern: 'node_modules/core-js/client/shim.min.js', watched: false },
             { pattern: 'node_modules/zone.js/dist/zone.js', watched: false },
             { pattern: 'node_modules/reflect-metadata/Reflect.js', watched: false },
             { pattern: 'test/**/*.js', watched: false }

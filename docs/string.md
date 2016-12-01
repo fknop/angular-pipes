@@ -293,20 +293,20 @@ import { TruncatePipe } from 'angular-pipes/src/string/truncate.pipe';
 {{ 'Hello World, how is it going?' | truncate: 14: '...', true }} <!-- 'Hello World, how...' -->
 ```
 
-####slugfy
+####slugify
 
-Slugfy a string. 
+Slugify a string. 
 
 Arguments: (string)
 
 ##### File
 
 ```
-import { SlugfyPipe } from 'angular-pipes/src/string/slugfy.pipe';
+import { SlugifyPipe } from 'angular-pipes/src/string/slugify.pipe';
 ```
 
 ##### Usage
 
 ```html
-{{ 'The zombie world war began' | slugfy }} <!-- 'the-zombie-world-war-began' -->
+{{ 'The zombie world war began' | slugify }} <!-- 'the-zombie-world-war-began' -->
 ```

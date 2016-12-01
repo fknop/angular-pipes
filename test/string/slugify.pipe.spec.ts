@@ -1,11 +1,11 @@
-import { SlugfyPipe } from '../../src/index';
+import { SlugifyPipe } from '../../src/index';
 
-describe('SlugfyPipe', () => {
+describe('SlugifyPipe', () => {
     
-    let pipe: SlugfyPipe;
+    let pipe: SlugifyPipe;
     
     beforeEach(() => {
-       pipe = new SlugfyPipe();
+       pipe = new SlugifyPipe();
     });
     
     it ('Must return string grouped by hyphen and lowercase', () => {

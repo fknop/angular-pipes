@@ -1,8 +1,8 @@
 import {Pipe, PipeTransform} from '@angular/core';
 import {isString} from '../utils/utils';
 
-@Pipe({ name: 'slugfy' })
-export class SlugfyPipe implements PipeTransform {
+@Pipe({ name: 'slugify' })
+export class SlugifyPipe implements PipeTransform {
     transform(input: string): string {
         if (!isString(input)) {
             return input;

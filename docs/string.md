@@ -16,6 +16,7 @@
 * [`encodeURIComponent`](#encodeuricomponent) 
 * [`repeat`](#repeat) 
 * [`truncate`](#truncate) 
+* [`slugfy`](#slugfy) 
 
 You can check the module import [`here`](./modules.md).
 
@@ -290,4 +291,22 @@ import { TruncatePipe } from 'angular-pipes/src/string/truncate.pipe';
 {{ 'Hello World' | truncate: 4: '', true }} <!-- 'Hello' -->
 {{ 'Hello World' | truncate: 4: '...', true }} <!-- 'Hello...' -->
 {{ 'Hello World, how is it going?' | truncate: 14: '...', true }} <!-- 'Hello World, how...' -->
+```
+
+####slugfy
+
+Slugfy a string. 
+
+Arguments: (string)
+
+##### File
+
+```
+import { SlugfyPipe } from 'angular-pipes/src/string/slugfy.pipe';
+```
+
+##### Usage
+
+```html
+{{ 'The zombie world war began' | slugfy }} <!-- 'the-zombie-world-war-began' -->
 ```

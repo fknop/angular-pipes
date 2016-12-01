@@ -98,6 +98,7 @@ You can find the documentations in the [`docs`](./docs) folder.
 * [`encodeURIComponent`](./docs/string.md#encodeuricomponent)
 * [`repeat`](./docs/string.md#repeat)
 * [`truncate`](./docs/string.md#truncate)
+* [`slugfy`](./docs/string.md#slugfy)
 
 
 ### Object

@@ -50,6 +50,7 @@ $ npm run prepublish
     + Make sure you have correctly exported the pipe
     + Make sure to provide unit tests
     + Run your tests with `npm test`
+    + Add docs
 * Commit (explicit message)
 * Push to the forked repository
 * Make a pull request

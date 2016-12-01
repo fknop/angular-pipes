@@ -1,3 +1,9 @@
+# 5.2.0
+
+## New pipes
+
+* [`slugify`](./docs/string.md#slugify) [#29](https://github.com/fknop/angular-pipes/pull/29)
+
 # 5.1.0
 
 ## New pipes

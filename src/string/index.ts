@@ -16,6 +16,7 @@ import { EncodeURIPipe } from './encode-uri.pipe';
 import { EncodeURIComponentPipe } from './encode-uri-component.pipe';
 import { TruncatePipe } from './truncate.pipe';
 import { RepeatPipe } from './repeat.pipe';
+import { SlugfyPipe } from './slugfy.pipe';
 
 export * from './left-pad.pipe';
 export * from './match.pipe';
@@ -33,6 +34,7 @@ export * from './encode-uri.pipe';
 export * from './encode-uri-component.pipe';
 export * from './truncate.pipe';
 export * from './repeat.pipe';
+export * from './slugfy.pipe';
 
 @NgModule({
     declarations: [
@@ -51,7 +53,8 @@ export * from './repeat.pipe';
         EncodeURIPipe,
         EncodeURIComponentPipe,
         TruncatePipe,
-        RepeatPipe
+        RepeatPipe,
+        SlugfyPipe
     ],
     exports: [
         LeftPadPipe,
@@ -69,7 +72,8 @@ export * from './repeat.pipe';
         EncodeURIPipe,
         EncodeURIComponentPipe,
         TruncatePipe,
-        RepeatPipe
+        RepeatPipe,
+        SlugfyPipe
     ]
 })
 export class NgStringPipesModule {}

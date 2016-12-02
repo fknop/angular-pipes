@@ -429,5 +429,5 @@ import { WrapPipe } from 'angular-pipes/src/string/wrap.pipe';
 
 ```html
 <p>{{ 'foo' | wrap: '/' }}</p> <!--result: /foo/ -->
-<p>{{ 'foo' | wrap: '{{': '}}' }}</p> <!--result: {{foo}} -->
+<p>{{ 'Baar' | wrap: '{{': '}}' }}</p> <!--result: {{Baar}} -->
 ```

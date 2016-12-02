@@ -101,7 +101,6 @@ You can find the documentations in the [`docs`](./docs) folder.
 * [`slugify`](./docs/string.md#slugify)
 * [`endsWith`](./docs/string.md#endsWith)
 * [`stripTags`](./docs/string.md#stripTags)
-* [`reverse`](./docs/string.md#reverse)
 * [`latinize`](./docs/string.md#latinize)
 * [`startWith`](./docs/string.md#startWith)
 * [`stringular`](./docs/string.md#stringular)

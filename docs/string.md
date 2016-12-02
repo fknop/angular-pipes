@@ -360,26 +360,6 @@ var text = '<p class="paragraph">Lorem Ipsum is simply dummy text of the printin
 <!--result: Lorem Ipsum is simply dummy text of the printing... -->
 ```
 
-####reverse
-
-Reverses a string 
-
-Arguments: ( string )
-
-##### File
-
-```
-import { ReversePipe } from 'angular-pipes/src/string/reverse.pipe';
-```
-
-##### Usage
-
-```html
-var text = 'lorem ipsum dolor sit amet';
-<p>{{ text | reverse }}</p>
-<!--result: tema tis rolod muspi merol -->
-```
-
 ####latinize
 
 Remove accents/diacritics from a string

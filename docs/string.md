@@ -18,9 +18,7 @@
 * [`truncate`](#truncate) 
 * [`slugfy`](#slugfy) 
 * [`endsWith`](#endsWith) 
-* [`stripTags`](#stripTags)
-
-* [`reverse`](#reverse)
+* [`stripTags`](#stripTags) 
 * [`latinize`](#latinize)
 * [`startWith`](#startWith)
 * [`stringular`](#stringular)

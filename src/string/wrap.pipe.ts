@@ -9,8 +9,6 @@ import {isString, isUndefined} from '../utils/utils';
 export class WrapPipe implements PipeTransform {
 
     transform(input: string, wrap: string, ends?: string): string {
-        return (!isString(input) || !isUndefined(wrap))
-            ? [wrap, input, ends || wrap].join('')
-            : input;
+        return (isString(input) && !isUndefined(wrap)) ? [wrap, input, ends || wrap].join('') : input;
     }
 }

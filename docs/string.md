@@ -17,12 +17,10 @@
 * [`repeat`](#repeat) 
 * [`truncate`](#truncate) 
 * [`slugfy`](#slugfy) 
-* [`endsWith`](#endsWith) 
-* [`stripTags`](#stripTags) 
+* [`stripTags`](#striptags) 
 * [`latinize`](#latinize)
-* [`startWith`](#startWith)
-* [`stringular`](#stringular)
 * [`wrap`](#wrap)
+* [`with`](#with)
 
 You can check the module import [`here`](./modules.md).
 
@@ -317,29 +315,10 @@ import { SlugifyPipe } from 'angular-pipes/src/string/slugfy.pipe';
 {{ 'The zombie world war began' | slugify }} <!-- 'the-zombie-world-war-began' -->
 ```
 
-####endsWith
-
-return whether string ends with the ends parameter.
-
-Arguments: ( string, ends, case-sensitive[optional] )
-
-##### File
-
-```
-import { EndsWithPipe } from 'angular-pipes/src/string/endsWith.pipe';
-```
-
-##### Usage
-
-```html
-{{ 'image.JPG' | endsWith: '.jpg' }} <!-- result: True -->
-{{ 'image.JPG' | endsWith: '.jpg': true }} <!-- result: False -->
-```
-
-####stripTags
+####striptags
 
 strip out html tags from string
-**Important: this Pipe jobs it's not to replace ng-bind-html directive, it's only for tiny plain text
+**Important: this Pipe jobs it's not to replace innerHtml directive, it's only for tiny plain text**
 
 
 Arguments: ( string, ends, case-sensitive[optional] )
@@ -375,49 +354,11 @@ import { latinize } from 'angular-pipes/src/string/latinize.pipe';
 <!-- result: Some strIng with Accents -->
 ```
 
-####startWith
-
-Return whether string starts with the starts parameter.
-   
-Arguments: ( 'start': case-sensitive[optional] )
-
-##### File
-
-```
-import { StartWith } from 'angular-pipes/src/string/start-with.pipe';
-```
-
-##### Usage
-
-```html
-{{ 'Lorem ipsum' | startsWith: 'lorem' }}<!--result:true -->
-{{ 'Lorem Ipsum' | startsWith: 'lorem': true }}<!--result:false -->
-```
-
-####stringular
-get string with {n} and replace match with enumeration values
-
-Arguments: ( string )
-
-##### File
-
-```
-import { StringularPipe } from 'angular-pipes/src/string/stringular.pipe';
-```
-
-##### Usage
-
-```html
-<p>{{ 'The {0} world {1} began' | stringular:'zombie':'war' }}</p> <!-- result: <p>The zombie world war began</p> -->
-<p>{{ '{3} {0} world {1} began' | stringular:'zombie':'war':null:'The' }}</p> <!-- result: <p>The zombie world war began</p> -->
-<p>{{ 'The {0} world war began' | stringular }}<p> <!--result: <p>The {0} world war began</p> -->
-```
-
 ####wrap
 Wrap a string with another string
 usage: string | wrap: string: string[optional]
 
-Arguments: ( string: string[optional] )
+Arguments: ( string, string, string[optional] )
 
 ##### File
 
@@ -429,5 +370,22 @@ import { WrapPipe } from 'angular-pipes/src/string/wrap.pipe';
 
 ```html
 <p>{{ 'foo' | wrap: '/' }}</p> <!--result: /foo/ -->
-<p>{{ 'Baar' | wrap: '{{': '}}' }}</p> <!--result: {{Baar}} -->
+<p>{{ 'foo' | wrap: '{{': '}}' }}</p> <!--result: {{foo}} -->
+```
+
+####with
+With pipe check string has start and/or ends
+
+Arguments: ( string, start[optional], ends[optional], case-sensitive[optional] )
+
+##### File
+
+```
+import { WithPipe } from 'angular-pipes/src/string/with.pipe';
+```
+
+##### Usage
+
+```html
+{{string | }}
 ```

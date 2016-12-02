@@ -17,13 +17,10 @@ import {EncodeURIComponentPipe} from './encode-uri-component.pipe';
 import {TruncatePipe} from './truncate.pipe';
 import {RepeatPipe} from './repeat.pipe';
 import {SlugifyPipe} from './slugify.pipe';
-
 import {StripTagsPipe} from "./strip-tags.pipe";
-import {StartsWithPipe} from "./starts-with.pipe";
-import {EndsWithPipe} from "./ends-with.pipe";
-import {StringularPipe} from "./stringular.pipe";
 import {LatinizePipe} from "./latinize.pipe";
 import {WrapPipe} from "./wrap.pipe";
+import {WithPipe} from "./with.pipe";
 
 export * from './left-pad.pipe';
 export * from './match.pipe';
@@ -43,11 +40,9 @@ export * from './truncate.pipe';
 export * from './repeat.pipe';
 export * from './slugify.pipe';
 export * from './strip-tags.pipe';
-export * from './starts-with.pipe';
-export * from './ends-with.pipe';
-export * from './stringular.pipe';
 export * from './latinize.pipe';
 export * from './wrap.pipe';
+export * from './with.pipe';
 
 
 @NgModule({
@@ -70,11 +65,9 @@ export * from './wrap.pipe';
         RepeatPipe,
         SlugifyPipe,
         StripTagsPipe,
-        StartsWithPipe,
-        EndsWithPipe,
-        StringularPipe,
         LatinizePipe,
-        WrapPipe
+        WrapPipe,
+        WithPipe
     ],
     exports: [
         LeftPadPipe,
@@ -95,11 +88,9 @@ export * from './wrap.pipe';
         RepeatPipe,
         SlugifyPipe,
         StripTagsPipe,
-        StartsWithPipe,
-        EndsWithPipe,
-        StringularPipe,
         LatinizePipe,
-        WrapPipe
+        WrapPipe,
+        WithPipe
     ]
 })
 export class NgStringPipesModule {

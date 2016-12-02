@@ -387,5 +387,18 @@ import { WithPipe } from 'angular-pipes/src/string/with.pipe';
 ##### Usage
 
 ```html
-{{string | }}
+{{'The Flash Reverse' | with: 'The',null, true}} <!-- result: true -->
+{{'The Flash Reverse' | with: 'The','Reverse',true}} <!-- result: true-->
+{{'The Flash Reverse' | with: 'The','Reverse'}} <!-- result: true-->
+{{'The Flash Reverse' | with: 'the','reverse'}} <!-- result: true-->
+{{'The Flash Reverse' | with: 'the','Reverse',true}} <!-- result: false-->
+{{'The Flash Reverse' | with: 'the','reverse',true}} <!-- result: false-->
+{{'The Flash Reverse' | with: 'Blue','Reverse',true}} <!-- result: false-->
+{{'The Flash Reverse' | with: 'The','Black',true}} <!-- result: false-->
+{{'The Flash Reverse' | with: '','Black',true}} <!-- result: false-->
+{{'The Flash Reverse' | with: '','',true}} <!-- result: 'The Flash Reverse'-->
+{{'The Flash Reverse' | with: null,null,true}} <!-- result: 'The Flash Reverse'-->
+{{'The Flash Reverse' | with: null,null}} <!-- result: 'The Flash Reverse'-->
+{{'The Flash Reverse' | with}} <!-- result: 'The Flash Reverse'-->
+...
 ```

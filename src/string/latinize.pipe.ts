@@ -119,8 +119,6 @@ export class LatinizePipe implements PipeTransform {
                 diacriticsMap[chars[j]] = replacementList[i].base;
             }
         }
-
         return input.replace(/[^\u0000-\u007e]/g, (c) => diacriticsMap[c] || c);
     }
-
 }

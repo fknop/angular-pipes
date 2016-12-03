@@ -16,7 +16,7 @@
 * [`encodeURIComponent`](#encodeuricomponent) 
 * [`repeat`](#repeat) 
 * [`truncate`](#truncate) 
-* [`slugfy`](#slugfy) 
+* [`slugify`](#slugify) 
 * [`stripTags`](#striptags) 
 * [`latinize`](#latinize)
 * [`wrap`](#wrap)
@@ -306,7 +306,7 @@ Arguments: (string)
 ##### File
 
 ```
-import { SlugifyPipe } from 'angular-pipes/src/string/slugfy.pipe';
+import { SlugifyPipe } from 'angular-pipes/src/string/slugify.pipe';
 ```
 
 ##### Usage

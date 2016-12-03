@@ -16,7 +16,7 @@
 * [`encodeURIComponent`](#encodeuricomponent) 
 * [`repeat`](#repeat) 
 * [`truncate`](#truncate) 
-* [`slugfy`](#slugfy) 
+* [`slugify`](#slugify) 
 
 You can check the module import [`here`](./modules.md).
 

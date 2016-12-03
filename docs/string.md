@@ -355,8 +355,7 @@ import { latinize } from 'angular-pipes/src/string/latinize.pipe';
 ```
 
 ####wrap
-Wrap a string with another string
-usage: string | wrap: string: string[optional]
+Wrap a string with another string 
 
 Arguments: ( string, string, string[optional] )
 

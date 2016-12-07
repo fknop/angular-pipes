@@ -99,10 +99,13 @@ You can find the documentations in the [`docs`](./docs) folder.
 * [`repeat`](./docs/string.md#repeat)
 * [`truncate`](./docs/string.md#truncate)
 * [`slugify`](./docs/string.md#slugify)
+<<<<<<< HEAD
 * [`stripTags`](./docs/string.md#striptags)
 * [`latinize`](./docs/string.md#latinize)
 * [`wrap`](./docs/string.md#wrap)
 * [`with`](./docs/string.md#with)
+=======
+>>>>>>> 6c764faf259f4d1b66910937e5fe14f608fe1ac3
 
 
 ### Object

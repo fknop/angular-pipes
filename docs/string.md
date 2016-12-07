@@ -314,7 +314,6 @@ import { SlugifyPipe } from 'angular-pipes/src/string/slugify.pipe';
 ```html
 {{ 'The zombie world war began' | slugify }} <!-- 'the-zombie-world-war-began' -->
 ```
-<<<<<<< HEAD
 
 ####striptags
 

@@ -1,22 +1,26 @@
-import { NgModule } from '@angular/core';
+import {NgModule} from '@angular/core';
 
-import { LeftPadPipe } from './left-pad.pipe';
-import { MatchPipe } from './match.pipe';
-import { PadPipe } from './pad.pipe';
-import { ReplacePipe } from './replace.pipe';
-import { RightPadPipe } from './right-pad.pipe';
-import { SplitPipe } from './split.pipe';
-import { TestPipe } from './test.pipe';
-import { TrimPipe } from './trim.pipe';
-import { NewlinesPipe } from './newlines.pipe';
-import { CapitalizePipe } from './capitalize.pipe';
-import { UpperFirstPipe } from './upperfirst.pipe';
-import { TemplatePipe } from './template.pipe';
-import { EncodeURIPipe } from './encode-uri.pipe';
-import { EncodeURIComponentPipe } from './encode-uri-component.pipe';
-import { TruncatePipe } from './truncate.pipe';
-import { RepeatPipe } from './repeat.pipe';
-import { SlugifyPipe } from './slugify.pipe';
+import {LeftPadPipe} from './left-pad.pipe';
+import {MatchPipe} from './match.pipe';
+import {PadPipe} from './pad.pipe';
+import {ReplacePipe} from './replace.pipe';
+import {RightPadPipe} from './right-pad.pipe';
+import {SplitPipe} from './split.pipe';
+import {TestPipe} from './test.pipe';
+import {TrimPipe} from './trim.pipe';
+import {NewlinesPipe} from './newlines.pipe';
+import {CapitalizePipe} from './capitalize.pipe';
+import {UpperFirstPipe} from './upperfirst.pipe';
+import {TemplatePipe} from './template.pipe';
+import {EncodeURIPipe} from './encode-uri.pipe';
+import {EncodeURIComponentPipe} from './encode-uri-component.pipe';
+import {TruncatePipe} from './truncate.pipe';
+import {RepeatPipe} from './repeat.pipe';
+import {SlugifyPipe} from './slugify.pipe';
+import {StripTagsPipe} from "./strip-tags.pipe";
+import {LatinizePipe} from "./latinize.pipe";
+import {WrapPipe} from "./wrap.pipe";
+import {WithPipe} from "./with.pipe";
 
 export * from './left-pad.pipe';
 export * from './match.pipe';
@@ -35,6 +39,10 @@ export * from './encode-uri-component.pipe';
 export * from './truncate.pipe';
 export * from './repeat.pipe';
 export * from './slugify.pipe';
+export * from './strip-tags.pipe';
+export * from './latinize.pipe';
+export * from './wrap.pipe';
+export * from './with.pipe';
 
 @NgModule({
     declarations: [
@@ -54,7 +62,11 @@ export * from './slugify.pipe';
         EncodeURIComponentPipe,
         TruncatePipe,
         RepeatPipe,
-        SlugifyPipe
+        SlugifyPipe,
+        StripTagsPipe,
+        LatinizePipe,
+        WrapPipe,
+        WithPipe
     ],
     exports: [
         LeftPadPipe,
@@ -73,7 +85,12 @@ export * from './slugify.pipe';
         EncodeURIComponentPipe,
         TruncatePipe,
         RepeatPipe,
-        SlugifyPipe
+        SlugifyPipe,
+        StripTagsPipe,
+        LatinizePipe,
+        WrapPipe,
+        WithPipe
     ]
 })
-export class NgStringPipesModule {}
+export class NgStringPipesModule {
+}

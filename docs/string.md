@@ -17,6 +17,13 @@
 * [`repeat`](#repeat) 
 * [`truncate`](#truncate) 
 * [`slugify`](#slugify) 
+<<<<<<< HEAD
+* [`stripTags`](#striptags) 
+* [`latinize`](#latinize)
+* [`wrap`](#wrap)
+* [`with`](#with)
+=======
+>>>>>>> 6c764faf259f4d1b66910937e5fe14f608fe1ac3
 
 You can check the module import [`here`](./modules.md).
 
@@ -310,3 +317,93 @@ import { SlugifyPipe } from 'angular-pipes/src/string/slugify.pipe';
 ```html
 {{ 'The zombie world war began' | slugify }} <!-- 'the-zombie-world-war-began' -->
 ```
+<<<<<<< HEAD
+
+####striptags
+
+strip out html tags from string
+**Important: this Pipe jobs it's not to replace innerHtml directive, it's only for tiny plain text**
+
+
+Arguments: ( string, ends, case-sensitive[optional] )
+
+##### File
+
+```
+import { StripTagsPipe } from 'angular-pipes/src/string/strip-tags.pipe';
+```
+
+##### Usage
+
+```html
+var text = '<p class="paragraph">Lorem Ipsum is simply dummy text of the printing...</p>';
+<p>{{ text | stripTags }}</p>
+<!--result: Lorem Ipsum is simply dummy text of the printing... -->
+```
+
+####latinize
+
+Remove accents/diacritics from a string
+
+##### File
+
+```
+import { latinize } from 'angular-pipes/src/string/latinize.pipe';
+```
+
+##### Usage
+
+```html
+ {{ 'Sòme strÏng with Âccénts' | latinize }}
+<!-- result: Some strIng with Accents -->
+```
+
+####wrap
+Wrap a string with another string 
+
+Arguments: ( string, string, string[optional] )
+
+##### File
+
+```
+import { WrapPipe } from 'angular-pipes/src/string/wrap.pipe';
+```
+
+##### Usage
+
+```html
+<p>{{ 'foo' | wrap: '/' }}</p> <!--result: /foo/ -->
+<p>{{ 'foo' | wrap: '{{': '}}' }}</p> <!--result: {{foo}} -->
+```
+
+####with
+With pipe check string has start and/or ends
+
+Arguments: ( string, start[optional], ends[optional], case-sensitive[optional] )
+
+##### File
+
+```
+import { WithPipe } from 'angular-pipes/src/string/with.pipe';
+```
+
+##### Usage
+
+```html
+{{'The Flash Reverse' | with: 'The',null, true}} <!-- result: true -->
+{{'The Flash Reverse' | with: 'The','Reverse',true}} <!-- result: true-->
+{{'The Flash Reverse' | with: 'The','Reverse'}} <!-- result: true-->
+{{'The Flash Reverse' | with: 'the','reverse'}} <!-- result: true-->
+{{'The Flash Reverse' | with: 'the','Reverse',true}} <!-- result: false-->
+{{'The Flash Reverse' | with: 'the','reverse',true}} <!-- result: false-->
+{{'The Flash Reverse' | with: 'Blue','Reverse',true}} <!-- result: false-->
+{{'The Flash Reverse' | with: 'The','Black',true}} <!-- result: false-->
+{{'The Flash Reverse' | with: '','Black',true}} <!-- result: false-->
+{{'The Flash Reverse' | with: '','',true}} <!-- result: 'The Flash Reverse'-->
+{{'The Flash Reverse' | with: null,null,true}} <!-- result: 'The Flash Reverse'-->
+{{'The Flash Reverse' | with: null,null}} <!-- result: 'The Flash Reverse'-->
+{{'The Flash Reverse' | with}} <!-- result: 'The Flash Reverse'-->
+...
+```
+=======
+>>>>>>> 6c764faf259f4d1b66910937e5fe14f608fe1ac3

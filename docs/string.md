@@ -16,14 +16,11 @@
 * [`encodeURIComponent`](#encodeuricomponent) 
 * [`repeat`](#repeat) 
 * [`truncate`](#truncate) 
-* [`slugify`](#slugify) 
-<<<<<<< HEAD
+* [`slugify`](#slugify)
 * [`stripTags`](#striptags) 
 * [`latinize`](#latinize)
 * [`wrap`](#wrap)
 * [`with`](#with)
-=======
->>>>>>> 6c764faf259f4d1b66910937e5fe14f608fe1ac3
 
 You can check the module import [`here`](./modules.md).
 
@@ -403,7 +400,4 @@ import { WithPipe } from 'angular-pipes/src/string/with.pipe';
 {{'The Flash Reverse' | with: null,null,true}} <!-- result: 'The Flash Reverse'-->
 {{'The Flash Reverse' | with: null,null}} <!-- result: 'The Flash Reverse'-->
 {{'The Flash Reverse' | with}} <!-- result: 'The Flash Reverse'-->
-...
 ```
-=======
->>>>>>> 6c764faf259f4d1b66910937e5fe14f608fe1ac3

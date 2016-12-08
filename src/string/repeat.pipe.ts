@@ -4,7 +4,7 @@ import { isString } from '../utils/utils';
 @Pipe({
     name: 'repeat'
 })
-export class RepeatPipe {
+export class RepeatPipe implements PipeTransform {
     
     transform (input: any, times: number = 1, characters: string = ''): any {
         

@@ -1,11 +1,11 @@
 {
   "name": "angular-pipes",
-  "version": "5.3.0",
+  "version": "5.4.0",
   "description": "Angular 2 pipes library",
   "files": [
-  	"src",
-	  "index.d.ts",
-	  "tsconfig.json"
+    "src",
+    "index.d.ts",
+    "tsconfig.json"
   ],
   "main": "src/index.js",
   "scripts": {

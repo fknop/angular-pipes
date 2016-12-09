@@ -1,9 +1,5 @@
 # Modules
 
-Angular RC.5 comes with `NgModule`.
-
-Since version `2.2.0` you can take advantage of these modules.
-
 Each category of pipes has an exported module. And one module imports all these modules.
 
 * NgAggregatePipesModule

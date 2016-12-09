@@ -5,9 +5,12 @@ dist
 src/**/*.js
 src/**/*.map
 src/**/*.metadata.json
+src/**/*.ngsummary.json
+
 src/**/*.d.ts
 src/**/*.ngfactory.ts
 test/**/*.js
 test/**/*.map
 test/**/*.d.ts
 .vscode
+

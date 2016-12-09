@@ -4,8 +4,8 @@
   "description": "Angular 2 pipes library",
   "files": [
   	"src",
-	"index.d.ts",
-	"tsconfig.json"
+	  "index.d.ts",
+	  "tsconfig.json"
   ],
   "main": "src/index.js",
   "scripts": {
@@ -32,10 +32,10 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "@angular/compiler": "^2.1.2",
-    "@angular/compiler-cli": "^2.1.2",
-    "@angular/core": "^2.1.0",
-    "@angular/platform-server": "^2.1.2",
+    "@angular/compiler": "^2.3.0",
+    "@angular/compiler-cli": "^2.3.0",
+    "@angular/core": "^2.3.0",
+    "@angular/platform-server": "^2.3.0",
     "@types/core-js": "^0.9.34",
     "@types/jasmine": "^2.5.37",
     "core-js": "^2.4.1",
@@ -47,12 +47,12 @@
     "karma-jasmine": "^1.0.2",
     "karma-spec-reporter": "0.0.26",
     "karma-webpack": "^1.8.0",
-    "reflect-metadata": "^0.1.8",
-    "rxjs": "^5.0.0-beta.11",
     "symbol-observable": "^0.2.4",
-    "typescript": "^2.0.8",
+    "typescript": "2.0.8",
     "webpack": "^1.13.3",
-    "zone.js": "^0.6.26"
+    "reflect-metadata": "^0.1.3",
+    "rxjs": "5.0.0-rc.4",
+    "zone.js": "^0.7.2"
   },
   "dependencies": {}
 }

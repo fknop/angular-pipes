@@ -1,3 +1,15 @@
+# 5.4.0
+
+* Update Angular to `2.3.0`. `ngc` uses a new feature called `ngsummary`.
+
+# 5.3.0
+
+## New pipes 
+
+* [`with`](./docs/string.md#with) [#31](https://github.com/fknop/angular-pipes/pull/31)
+* [`wrap`](./docs/string.md#wrap) [#31](https://github.com/fknop/angular-pipes/pull/31)
+* [`latinize`](./docs/string.md#latinize) [#31](https://github.com/fknop/angular-pipes/pull/31)
+
 # 5.2.0
 
 ## New pipes

@@ -11,6 +11,7 @@ gulp.task('clean', function () {
      'src/**/*.d.ts',
      'src/**/*.js.map',
      'src/**/*.metadata.json',
+     'src/**/*.ngsummary.json',
      'test/**/*.js',
      'test/**/*.map',
      'test/**/*.d.ts'

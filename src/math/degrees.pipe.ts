@@ -4,7 +4,7 @@ import { isNumberFinite } from '../utils/utils';
 @Pipe({
     name: 'degrees'
 })
-export class DegreesPipe {
+export class DegreesPipe implements PipeTransform{
     
     
     transform (input: any): any {

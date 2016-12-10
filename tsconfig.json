@@ -8,6 +8,7 @@
         "experimentalDecorators": true,
         "removeComments": false,
         "noImplicitAny": true,
+        "noUnusedLocals": true,        
         "suppressImplicitAnyIndexErrors": false,
         "declaration": true,
         "types": [

@@ -4,7 +4,7 @@ import { isString } from '../utils/utils';
 @Pipe({
     name: 'encodeURIComponent'
 })
-export class EncodeURIComponentPipe {
+export class EncodeURIComponentPipe implements PipeTransform {
     
     transform (input: any) {
         

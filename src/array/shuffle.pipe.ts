@@ -1,5 +1,5 @@
 import { Pipe, PipeTransform  } from '@angular/core';
-import { isArray, shuffle } from '../utils/utils';
+import { shuffle } from '../utils/utils';
 
 @Pipe({
     name: 'shuffle'

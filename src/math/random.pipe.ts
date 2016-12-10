@@ -4,7 +4,7 @@ import { isNumberFinite } from '../utils/utils';
 @Pipe({
     name: 'random'
 })
-export class RandomPipe {
+export class RandomPipe implements PipeTransform {
     
     transform (input: any, min: number = 0, max: number = 1): any {
         

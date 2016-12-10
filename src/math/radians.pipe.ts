@@ -1,10 +1,10 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { isNumberFinite, isInteger } from '../utils/utils';
+import { isNumberFinite } from '../utils/utils';
 
 @Pipe({
     name: 'radians'
 })
-export class RadiansPipe {
+export class RadiansPipe implements PipeTransform {
     
     transform (input: any): any {
         

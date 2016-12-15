@@ -1,3 +1,8 @@
+# 5.5.0 
+
+* Add noUnusedLocals to tsconfig to improve type checks ([#33](https://github.com/fknop/angular-pipes/pull/33))
+* Update Angular to `2.3.1`.
+
 # 5.4.0
 
 * Update Angular to `2.3.0`. `ngc` uses a new feature called `ngsummary`.

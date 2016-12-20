@@ -4,6 +4,7 @@
   "description": "Angular 2 pipes library",
   "files": [
     "src",
+    "!src/**/*.ngsummary.json",
     "index.d.ts",
     "tsconfig.json"
   ],

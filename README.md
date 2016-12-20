@@ -3,7 +3,7 @@
 
 # angular-pipes
 
-angular-pipes is a pipes library for `angular 2`. The project is hosted as `angular-pipes` on `npm`.
+**angular-pipes** is a pipes library for `Angular`. 
 
 ## Contribute
 

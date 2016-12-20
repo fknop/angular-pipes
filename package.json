@@ -1,7 +1,7 @@
 {
   "name": "angular-pipes",
   "version": "5.5.1",
-  "description": "Angular 2 pipes library",
+  "description": "Angular pipes library",
   "files": [
     "src",
     "!src/**/*.ngsummary.json",

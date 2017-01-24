@@ -8,6 +8,7 @@
     "tsconfig.json"
   ],
   "main": "src/index.js",
+  "types": "src/index.d.ts",
   "scripts": {
     "prepublish": "node_modules/.bin/gulp clean && npm run ngc",
     "tsc": "node_modules/.bin/tsc -p .",

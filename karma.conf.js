@@ -11,7 +11,6 @@ module.exports = function (config) {
         ],
 
         exclude: [
-            'src/**/*.ngfactory.ts',
             'src/**/*.d.ts'
         ],
 

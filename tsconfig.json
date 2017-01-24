@@ -19,5 +19,8 @@
         "node_modules",
 	    "index.d.ts",
         "**/*.spec.ts"
-    ]
+    ],
+    "angularCompilerOptions": {
+        "skipTemplateCodegen": true
+    }
 }

@@ -12,12 +12,12 @@
         "suppressImplicitAnyIndexErrors": false,
         "declaration": true,
         "types": [
-            "core-js",
-            "jasmine"
+            "core-js"
         ]
     },
     "exclude": [
         "node_modules",
-	    "index.d.ts"
+	    "index.d.ts",
+        "**/*.spec.ts"
     ]
 }

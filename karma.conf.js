@@ -5,6 +5,7 @@ module.exports = function (config) {
         basePath: './',
         
         files: [
+            { pattern: 'node_modules/reflect-metadata/Reflect.js' },
             { pattern: 'src/base.spec.ts' },
             { pattern: 'src/**/*.ts' }
         ],
@@ -24,7 +25,9 @@ module.exports = function (config) {
 
         karmaTypescriptConfig: {
             reports: {
-                text: ""
+                'text-summary': '',
+                html: 'coverage',
+                lcovonly: 'coverage'
             },
             coverageOptions: {
                 exclude: /((\.(d|spec|test|module))|index\.ts)/

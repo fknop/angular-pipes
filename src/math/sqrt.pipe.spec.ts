@@ -19,5 +19,9 @@ describe('SqrtPipe', () => {
        
         expect(pipe.transform(81)).toEqual(9); 
     });
+
+    it('Should return NaN', () => {
+        expect(pipe.transform('a')).toEqual('NaN');
+    });
   
 });

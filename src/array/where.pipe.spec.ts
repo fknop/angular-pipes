@@ -1,4 +1,4 @@
-import { WherePipe } from '../../src/index';
+import { WherePipe } from './where.pipe';
 
 
 describe('WherePipe', () => {
@@ -95,10 +95,17 @@ describe('WherePipe', () => {
         ]); 
     });
     
+    it('Should return the input', () => {
+        expect((<any>pipe).transform([1])).toEqual([1]);
+    });
     
     it('Should return the value unchanged', () => {
        
        expect(pipe.transform('a', null)).toEqual('a'); 
+    });
+
+    it('Should return the 2', () => {
+        expect(pipe.transform([1, 2, 3, 4, 2, 2], 2)).toEqual([2, 2, 2]);
     });
     
 });

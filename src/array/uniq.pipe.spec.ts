@@ -1,4 +1,5 @@
-import { UniqPipe, DeepPipe } from '../../src/index';
+import { UniqPipe } from './uniq.pipe';
+import { DeepPipe } from './deep.pipe';
 
 
 describe('UniqPipe', () => {
@@ -28,6 +29,11 @@ describe('UniqPipe', () => {
     it('Should return the value unchanged', () => {
        
        expect(pipe.transform('a')).toEqual('a'); 
+    });
+
+    it('Should return the input unwrapped', () => {
+        const wrapped = deepPipe.transform({ x: 1 });
+        expect(pipe.transform(wrapped)).toEqual({ x: 1 });
     });
     
     it ('Should return the same values with no deep equal', () => {

@@ -19,5 +19,9 @@ describe('PowPipe', () => {
        
         expect(pipe.transform(2, 3)).toEqual(8); 
     });
+
+    it('Should return NaN', () => {
+        expect(pipe.transform('a')).toEqual('NaN');
+    });
   
 });

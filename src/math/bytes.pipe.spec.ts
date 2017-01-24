@@ -79,5 +79,9 @@ describe('BytesPipe', () => {
         const result = pipe.transform(gb, 2);
         expect(result).toEqual('1059 GB');
     });
+
+    it('Should return the input', () => {
+        expect(pipe.transform('a')).toEqual('a');
+    });
     
 });

@@ -1,7 +1,5 @@
-import { TruncatePipe } from '../../src/index';
+import { TruncatePipe } from './truncate.pipe';
         
-
-
 describe('TruncatePipe', () => {
     
     let pipe: TruncatePipe;
@@ -31,11 +29,19 @@ describe('TruncatePipe', () => {
        expect(pipe.transform('Hello World, how is it going?', 14, '...', true))
         .toEqual('Hello World, how...'); 
     });
+
+    it('Should preserve word', () => {
+        expect(pipe.transform('aaaa', 2, '', true)).toEqual('aaaa');
+    });
     
    
     it('Should return the value unchanged', () => {
        
        expect(pipe.transform(1, null)).toEqual(1); 
+    });
+
+    it('Should return the input', () => {
+        expect(pipe.transform('Hello', 10)).toEqual('Hello');
     });
    
 });

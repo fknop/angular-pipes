@@ -1,4 +1,4 @@
-import { SomePipe } from '../../src/index';
+import { SomePipe } from './some.pipe';
 
 
 describe('MapPipe', () => {

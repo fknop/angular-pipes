@@ -1,4 +1,4 @@
-import { ChunkPipe } from '../../src/index';
+import { ChunkPipe } from './chunk.pipe';
 
 
 describe('ChunkPipe', () => {

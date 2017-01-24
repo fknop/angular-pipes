@@ -1,4 +1,4 @@
-import { CountPipe } from '../../src/index';
+import { CountPipe } from './count.pipe';
 
 
 describe('CountPipe', () => {

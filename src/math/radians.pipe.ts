@@ -9,7 +9,7 @@ export class RadiansPipe implements PipeTransform {
     transform (input: any): any {
         
         if (!isNumberFinite(input)) {
-            return NaN;
+            return 'NaN';
         }
         
         return (input * Math.PI) / 180;

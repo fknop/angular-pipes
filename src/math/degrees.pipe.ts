@@ -10,7 +10,7 @@ export class DegreesPipe implements PipeTransform{
     transform (input: any): any {
         
         if (!isNumberFinite(input)) {
-            return NaN;
+            return 'NaN';
         }
         
         return (input * 180) / Math.PI;

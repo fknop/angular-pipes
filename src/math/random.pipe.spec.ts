@@ -34,6 +34,14 @@ describe('RandomPipe', () => {
        expect(result).toBeLessThan(1300); 
     });
     
+    it ('Should return a random value between 0 and 10 #2', () => {
+       
+       const result = pipe.transform(0, 10);
+       
+       expect(result).toBeGreaterThan(0); 
+       expect(result).toBeLessThan(10); 
+    });
+
     
     it ('Should return the value unchanged', () => {
        

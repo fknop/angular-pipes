@@ -9,7 +9,7 @@ export class SqrtPipe implements PipeTransform {
     transform (input: any): any {
         
         if (!isNumberFinite(input)) {
-            return "NaN";
+            return 'NaN';
         }
        
         return Math.sqrt(input);

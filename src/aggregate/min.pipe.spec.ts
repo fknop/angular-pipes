@@ -1,4 +1,4 @@
-import { MinPipe } from '../../src/index';
+import { MinPipe } from './min.pipe';
         
 
 
@@ -14,6 +14,10 @@ describe('MinPipe', () => {
         
         expect(pipe.transform([1,2,3,4])).toEqual(1);
     });
+
+    it('Should return 2', () => {
+        expect(pipe.transform([4,3,2,5])).toEqual(2);
+    });
     
     it('Should return 1', () => {
         
@@ -28,5 +32,9 @@ describe('MinPipe', () => {
     it('Should return the value unchanged', () => {
        
        expect(pipe.transform(1)).toEqual(1); 
+    });
+
+    it('Should return undefined', () => {
+        expect(pipe.transform([])).toBeUndefined();
     });
 });

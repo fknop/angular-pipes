@@ -1,4 +1,4 @@
-import { MeanPipe } from '../../src/index';
+import { MeanPipe } from './mean.pipe';
         
 
 
@@ -28,5 +28,9 @@ describe('MeanPipe', () => {
     it('Should return the value unchanged', () => {
        
        expect(pipe.transform(1)).toEqual(1); 
+    });
+
+    it('Should return undefined', () => {
+        expect(pipe.transform([])).toBeUndefined();
     });
 });

@@ -1,7 +1,6 @@
 import { CeilPipe } from '../../src/index';
         
 
-
 describe('CeilPipe', () => {
     
     let pipe: CeilPipe;
@@ -34,5 +33,10 @@ describe('CeilPipe', () => {
     it('Should return 1.55', () => {
        
        expect(pipe.transform(1.5444, 2)).toEqual(1.55); 
+    });
+
+    it('Should return 1.55 #2', () => {
+       
+       expect(pipe.transform(1.5444,'2')).toEqual(1.55); 
     });
 });

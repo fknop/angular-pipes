@@ -35,4 +35,9 @@ describe('FloorPipe', () => {
        
        expect(pipe.transform(1.5444, 2)).toEqual(1.54); 
     });
+
+    it('Should return 1.54 #2', () => {
+       
+       expect(pipe.transform(1.5444, '2')).toEqual(1.54); 
+    });
 });

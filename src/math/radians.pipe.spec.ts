@@ -17,6 +17,8 @@ describe('RadiansPipe', () => {
        expect(pipe.transform(degrees)).toEqual(Math.PI);
         
     });
-    
-   
+
+    it('Should return NaN', () => {
+        expect(pipe.transform('a')).toEqual('NaN');
+    });
 });

@@ -72,11 +72,11 @@ export function createRound (method: string): Function {
     return function (value: number, precision: number = 0) {
         
         if (typeof value === 'string') {
-            throw new TypeError('number must be a number');
+            throw new TypeError('Rounding method needs a number');
         }
         
-        if (typeof precision === 'string') {
-            throw new TypeError('precision must be a number');
+        if (typeof precision !== 'number') {
+            precision = 0;
         }
         
         if (precision) {
@@ -152,13 +152,6 @@ export function pad (str: string, len: number = 0, ch: any = ' '): string{
     return str;
 }
 
-export function toArray (object: any): Array<any> {
-    
-    return isArray(object) ? object : Object.keys(object).map((key) => {
-        return object[key];
-    });
-}
-
 export function flatten (input: any[], index: number = 0): any[] {
     
     if (index >= input.length) {
@@ -224,19 +217,6 @@ export function deepIndexOf (collection: any[], value: any) {
     return -1;
 }
 
-export function deepIncludes (collection: any[], value: any) {
-    
-    let index = -1;
-    const length = collection.length;
-    
-    while (++index < length) {
-        if (deepEqual(value, collection[index])) {
-            return true;
-        }
-    }
-    
-    return false;
-}
 
 export function deepEqual (a: any, b: any) {
     
@@ -269,7 +249,7 @@ export function deepEqual (a: any, b: any) {
 
 export function isDeepObject (object: any) {
     
-    return object instanceof DeepWrapper;
+    return object.__isDeepObject__;
 }
 
 export function wrapDeep (object: any) {
@@ -287,6 +267,8 @@ export function unwrapDeep (object: any) {
 }
 
 export class DeepWrapper {
+
+    public __isDeepObject__: boolean = true;
     
     constructor (public data: any) {}
 }

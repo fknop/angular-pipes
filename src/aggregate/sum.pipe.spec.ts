@@ -1,4 +1,4 @@
-import { SumPipe } from '../../src/index';
+import { SumPipe } from './sum.pipe';
         
 
 

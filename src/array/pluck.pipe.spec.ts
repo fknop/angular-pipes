@@ -1,4 +1,4 @@
-import { PluckPipe } from '../../src/index';
+import { PluckPipe } from './pluck.pipe';
 
 
 describe('PluckPipe', () => {

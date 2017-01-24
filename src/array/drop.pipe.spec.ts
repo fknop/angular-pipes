@@ -1,5 +1,4 @@
-import { DropPipe } from '../../src/index';
-
+import { DropPipe } from './drop.pipe';
 
 describe('DropPipe', () => {
     
@@ -31,5 +30,4 @@ describe('DropPipe', () => {
        
        expect(pipe.transform('a')).toEqual('a'); 
     });
-    
-})
+});

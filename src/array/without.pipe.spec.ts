@@ -1,4 +1,5 @@
-import { WithoutPipe, DeepPipe } from '../../src/index';
+import { WithoutPipe } from './without.pipe';
+import { DeepPipe } from './deep.pipe';
 
 
 describe('WithoutPipe', () => {
@@ -23,6 +24,11 @@ describe('WithoutPipe', () => {
        
        const result = pipe.transform([1, 1, 2, 3, 4, 2, 5], 1, 2);
        expect(result).toEqual([3, 4, 5]); 
+    });
+
+    it('Should return the input unwrapped', () => {
+        const wrapped = deepPipe.transform({ x: 1 });
+        expect(pipe.transform(wrapped)).toEqual({ x: 1 });
     });
     
     it('Should return an empty array', () => {

@@ -1,4 +1,5 @@
-import { FlattenPipe, DeepPipe } from '../../src/index';
+import { FlattenPipe } from './flatten.pipe';
+import { DeepPipe }  from './deep.pipe';
 
 
 describe('FlattenPipe', () => {
@@ -48,7 +49,8 @@ describe('FlattenPipe', () => {
         expect(pipe.transform('a')).toEqual('a');
     });
 
-    
- 
-    
-})
+    it('Should return the input unwrapped', () => {
+        const wrapped = deep.transform({ x: 1 });
+        expect(pipe.transform(wrapped)).toEqual({ x: 1 });
+    });
+});

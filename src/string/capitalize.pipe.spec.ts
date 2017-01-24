@@ -1,4 +1,4 @@
-import { CapitalizePipe } from '../../src/index';
+import { CapitalizePipe } from './capitalize.pipe';
         
 
 describe('CapitalizePipe', () => {

@@ -1,4 +1,4 @@
-import { OrderByPipe } from '../../src/index';
+import { OrderByPipe } from './order-by.pipe';
 
 
 class Person { 
@@ -70,13 +70,13 @@ describe('OrderByPipe', () => {
     it ('Should return the numbers in ascending order', () => {
        
        const result = pipe.transform(numbers, ['+']);
-       expect(result).toEqual([-1, 0.214, 1234, 582, 8675309]); 
+       expect(result).toEqual([-1, 0.214, 582, 1234, 8675309]); 
     });
     
     it ('Should return the numbers in descending order', () => {
        
        const result = pipe.transform(numbers, ['-']);
-       expect(result).toEqual([8675309, 582, 1234, 0.214, -1]); 
+       expect(result).toEqual([8675309, 1234, 582, 0.214, -1]); 
     });
     
        
@@ -134,6 +134,20 @@ describe('OrderByPipe', () => {
            people[4], people[1], people[5], people[0], people[6], people[3], people[2]
        ]);
        
+    });
+
+    it('Should order by dates', () => {
+        const a = new Date(2017, 1, 10);
+        const b = new Date(2016, 1, 10);
+        
+        const values = [
+            a, b
+        ];
+        const results = [
+            b, a
+        ];
+
+        expect(pipe.transform(values, '+')).toEqual(results);
     });
     
 });

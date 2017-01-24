@@ -1,4 +1,4 @@
-import { RepeatPipe } from '../../src/index';
+import { RepeatPipe } from './repeat.pipe';
         
 
 
@@ -13,6 +13,11 @@ describe('RepeatPipe', () => {
     it('Should do nothing', () => {
        
        expect(pipe.transform('a', 1, '')).toEqual('a');
+    });
+
+    it('Should do nothing #2', () => {
+       
+       expect(pipe.transform('a', 0, '')).toEqual('a');
     });
     
     it('Should repeat two times', () => {

@@ -1,4 +1,4 @@
-import { MaxPipe } from '../../src/index';
+import { MaxPipe } from './max.pipe';
         
 
 
@@ -28,5 +28,9 @@ describe('MaxPipe', () => {
     it('Should return the value unchanged', () => {
        
        expect(pipe.transform(1)).toEqual(1); 
+    });
+
+    it('Should return undefined', () => {
+        expect(pipe.transform([])).toBeUndefined();
     });
 });

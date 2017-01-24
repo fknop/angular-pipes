@@ -9,7 +9,7 @@ export class OrderByPipe implements PipeTransform {
     private static _orderBy (a: any, b: any): number {
         
         if (a instanceof Date && b instanceof Date) {
-            return a < b ? -1 : a > b ? 1 : 0;
+            return (a < b) ? -1 : (a > b) ? 1 : 0;
         }
 
         const floatA = parseFloat(a);
@@ -45,7 +45,12 @@ export class OrderByPipe implements PipeTransform {
 
             // Basic array (if only + or - is present)
             if (!propertyToCheck || propertyToCheck === '-' || propertyToCheck === '+') {
-                return desc ? [...input].sort().reverse() : [...input].sort();
+                return [...input].sort((a: any, b: any) => {
+                    const comparator = OrderByPipe._orderBy(a, b);
+                    return desc ? -comparator : comparator; 
+                });
+
+                // return desc ? [...input].sort().reverse() : [...input].sort();
             }            
             else {
                 // If contains + or -, substring the property

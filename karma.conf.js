@@ -35,8 +35,7 @@ module.exports = function (config) {
             },
             coverageOptions: {
                 exclude: /((\.(d|spec|test|module))|index\.ts)/
-            },
-            tsconfig: './tsconfig.json'
+            }
         },
         
         reporters: ['spec', 'karma-typescript'],

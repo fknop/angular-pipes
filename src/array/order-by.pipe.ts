@@ -15,8 +15,7 @@ export class OrderByPipe implements PipeTransform {
         const floatA = parseFloat(a);
         const floatB = parseFloat(b);
         
-        if ((isNaN(floatA) || !isFinite(a)) || (isNaN(floatB)) || !isFinite(b)) {
-            
+        if (typeof a === 'string' && typeof b === 'string') {
             const lowerA = a.toLowerCase();
             const lowerB = b.toLowerCase();
             return (lowerA < lowerB) ? -1 : (lowerA > lowerB) ? 1 : 0;

@@ -150,4 +150,21 @@ describe('OrderByPipe', () => {
         expect(pipe.transform(values, '+')).toEqual(results);
     });
     
+    it('Should return the input', () => {
+        expect(pipe.transform(2)).toEqual(2);
+    });
+
+    it('Should return the same array', () => {
+        const values = [
+            { x: 1, y: 1 },
+            { x: 1, y: 1 },
+            { x: 1, y: 1 },
+            { x: 1, y: 1 },
+            { x: 1, y: 1 }
+        ];
+
+        expect(
+            pipe.transform(values, ['+x', '-y'])
+        ).toEqual(values);
+    });
 });

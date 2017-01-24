@@ -75,7 +75,7 @@ export function createRound (method: string): Function {
             throw new TypeError('Rounding method needs a number');
         }
         
-        if (typeof precision !== 'number') {
+        if (typeof precision !== 'number' || isNaN(precision)) {
             precision = 0;
         }
         

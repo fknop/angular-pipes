@@ -1,10 +1,9 @@
 {
   "name": "angular-pipes",
-  "version": "5.5.1",
-  "description": "Angular 2 pipes library",
+  "version": "5.5.2",
+  "description": "Angular pipes library",
   "files": [
     "src",
-    "!src/**/*.ngsummary.json",
     "index.d.ts",
     "tsconfig.json"
   ],
@@ -13,7 +12,7 @@
     "prepublish": "node_modules/.bin/gulp clean && npm run ngc",
     "tsc": "node_modules/.bin/tsc -p .",
     "karma": "node_modules/.bin/karma start karma.conf.js",
-    "test": "npm run ngc && npm run karma",
+    "test": "npm run karma",
     "ngc": "node_modules/.bin/ngc -p tsconfig.json"
   },
   "author": "Florian Knop",
@@ -48,6 +47,7 @@
     "karma-firefox-launcher": "^1.0.0",
     "karma-jasmine": "^1.0.2",
     "karma-spec-reporter": "0.0.26",
+    "karma-typescript": "^2.1.6",
     "karma-webpack": "^1.8.0",
     "reflect-metadata": "^0.1.3",
     "rxjs": "5.0.0-rc.4",

@@ -5,32 +5,34 @@ module.exports = function (config) {
         basePath: './',
         
         files: [
-            { pattern: 'node_modules/core-js/client/shim.min.js', watched: false },
-            { pattern: 'node_modules/zone.js/dist/zone.js', watched: false },
-            { pattern: 'node_modules/reflect-metadata/Reflect.js', watched: false },
-            { pattern: 'test/**/*.js', watched: false }
+            { pattern: 'src/base.spec.ts' },
+            { pattern: 'src/**/*.ts' }
         ],
+
         preprocessors: {
-            'test/**/*.js': ['webpack']
+            '**/*.ts': ['karma-typescript']
         },
 
-        webpack: {
-        },
-
-        webpackMiddleware: {
-            stats: 'errors-only'
-        },
-
-        frameworks: ['jasmine'],
+        frameworks: ['jasmine', 'karma-typescript'],
         browsers: ['Firefox'],
         plugins: [
-            'karma-webpack',
             'karma-jasmine',
             'karma-spec-reporter',
-            'karma-firefox-launcher'
+            'karma-firefox-launcher',
+            'karma-typescript'
         ],
+
+        karmaTypescriptConfig: {
+            reports: {
+                text: ""
+            },
+            coverageOptions: {
+                exclude: /((\.(d|spec|test|module))|index\.ts)/
+            },
+            tsconfig: './tsconfig.json'
+        },
         
-        reporters: ['spec'],
+        reporters: ['spec', 'karma-typescript'],
         singleRun: true,
         autoWatch: false,
         colors: true,

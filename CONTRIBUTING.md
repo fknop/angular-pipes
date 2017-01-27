@@ -32,6 +32,9 @@ The tests are run with `jasmine` and `karma`.
 $ npm test
 ```
 
+The `npm test` command gives you a test coverage summary in the standard output. If you wish to see a more detailed coverage report, a `html` report
+is produced in the `coverage` folder.
+
 ## Building
 
 Contributing to the project does not require compiling the code into javascript. But if you want to:
@@ -49,8 +52,9 @@ $ npm run prepublish
 * Make your changes
     + Make sure you have correctly exported the pipe
     + Make sure to provide unit tests
+    + Make sure you provided documentation for your pipe.
     + Run your tests with `npm test`
-    + Add docs
+    + Make sure the tests pass and you have `100%` coverage.
 * Commit (explicit message)
 * Push to the forked repository
 * Make a pull request

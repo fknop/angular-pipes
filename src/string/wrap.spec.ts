@@ -1,6 +1,6 @@
 // idea from https://github.com/a8m/angular-filter
 
-import {WrapPipe} from '../../src/index';
+import { WrapPipe } from './wrap.pipe';
 
 describe('WrapPipe', () => {
 

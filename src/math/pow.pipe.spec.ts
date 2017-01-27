@@ -1,4 +1,4 @@
-import { PowPipe } from '../../src/index';
+import { PowPipe } from './pow.pipe';
         
 
 

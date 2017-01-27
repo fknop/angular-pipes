@@ -1,4 +1,4 @@
-import { RandomPipe } from '../../src/index';
+import { RandomPipe } from './random.pipe';
         
 
 

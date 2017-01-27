@@ -1,4 +1,4 @@
-import { TemplatePipe } from '../../src/index';
+import { TemplatePipe } from './template.pipe';
         
 
 

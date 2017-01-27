@@ -1,4 +1,4 @@
-import { NewlinesPipe } from '../../src/index';
+import { NewlinesPipe } from './newlines.pipe';
         
 
 

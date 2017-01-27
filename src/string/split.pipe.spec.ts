@@ -1,4 +1,4 @@
-import { SplitPipe } from '../../src/index';
+import { SplitPipe } from './split.pipe';
         
 
 

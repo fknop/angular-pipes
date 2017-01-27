@@ -1,4 +1,4 @@
-import { CeilPipe } from '../../src/index';
+import { CeilPipe } from './ceil.pipe';
         
 
 describe('CeilPipe', () => {

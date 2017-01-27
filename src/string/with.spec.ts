@@ -1,6 +1,6 @@
 // idea from https://github.com/a8m/angular-filter
 
-import {WithPipe} from '../../src/index';
+import {WithPipe} from './with.pipe';
 
 describe('WithPipe', () => {
 

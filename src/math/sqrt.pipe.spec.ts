@@ -1,4 +1,4 @@
-import { SqrtPipe } from '../../src/index';
+import { SqrtPipe } from './sqrt.pipe';
         
 
 

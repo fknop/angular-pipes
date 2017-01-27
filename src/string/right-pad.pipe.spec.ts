@@ -1,4 +1,4 @@
-import { RightPadPipe } from '../../src/index';
+import { RightPadPipe } from './right-pad.pipe';
         
 
 

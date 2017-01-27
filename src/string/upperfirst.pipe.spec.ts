@@ -1,4 +1,4 @@
-import { UpperFirstPipe } from '../../src/index';
+import { UpperFirstPipe } from './upperfirst.pipe';
         
 
 

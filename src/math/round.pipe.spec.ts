@@ -1,4 +1,4 @@
-import { RoundPipe } from '../../src/index';
+import { RoundPipe } from './round.pipe';
         
 
 

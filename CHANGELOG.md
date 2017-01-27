@@ -5,7 +5,7 @@
 * `angular-pipes` now distributes UMD bundles. Click [here](./docs/bundles.md) for more information.
 * `angular-pipes` now distributes ESM files. Click [here](./docs/esm.md) for more information.
 
-If you encounter any issues related to these bundles / ESM files, please comment on the [issue](https://github.com/fknop/angular-pipes/issues/37) created for this.
+If you encounter any issues related to these bundles / ESM files, please comment on the issue [#37](https://github.com/fknop/angular-pipes/issues/37) created for this.
 
 # 5.7.0
 

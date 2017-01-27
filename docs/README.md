@@ -7,3 +7,8 @@
 * [`Aggregate`](./aggregate.md)
 * [`String`](./string.md)
 * [`Object`](./object.md)
+
+## Distribution
+
+* [`Bundles`](./bundles.md)
+* [`ESM`](./esm.md)

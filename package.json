@@ -1,6 +1,6 @@
 {
   "name": "angular-pipes",
-  "version": "5.8.0",
+  "version": "5.8.1",
   "description": "Angular pipes library",
   "main": "src/index.js",
   "jsnext:main": "esm/index.js",
@@ -34,10 +34,10 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "@angular/compiler": "^2.3.1",
-    "@angular/compiler-cli": "^2.3.1",
-    "@angular/core": "^2.3.1",
-    "@angular/platform-server": "^2.3.1",
+    "@angular/compiler": "^2.4.5",
+    "@angular/compiler-cli": "^2.4.5",
+    "@angular/core": "^2.4.5",
+    "@angular/platform-server": "^2.4.5",
     "@types/core-js": "^0.9.34",
     "@types/jasmine": "^2.5.37",
     "core-js": "^2.4.1",
@@ -54,8 +54,7 @@
     "rollup": "^0.41.4",
     "rollup-plugin-node-resolve": "^2.0.0",
     "rollup-plugin-uglify": "^1.0.1",
-    "rxjs": "5.0.0-rc.4",
-    "symbol-observable": "^0.2.4",
+    "rxjs": "^5.0.3",
     "typescript": "2.0.8",
     "zone.js": "^0.7.2"
   },

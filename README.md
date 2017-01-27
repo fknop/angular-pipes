@@ -7,7 +7,7 @@
 
 # angular-pipes
 
-**angular-pipes** is a pipes library for `Angular`. 
+**angular-pipes** is a pipes library for `Angular`.
 
 ## Contribute
 
@@ -79,6 +79,7 @@ You can find the documentations in the [`docs`](./docs) folder.
 
 ### Aggregate
 
+* [`groupBy`](./docs/aggregate.md#groupby)
 * [`min`](./docs/aggregate.md#min)
 * [`max`](./docs/aggregate.md#max)
 * [`mean`](./docs/aggregate.md#mean)
@@ -107,6 +108,7 @@ You can find the documentations in the [`docs`](./docs) folder.
 * [`latinize`](./docs/string.md#latinize)
 * [`wrap`](./docs/string.md#wrap)
 * [`with`](./docs/string.md#with)
+* [`reverseStr`](./docs/string.md#reversestr)
 
 ### Object
 

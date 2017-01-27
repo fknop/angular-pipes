@@ -14,7 +14,7 @@ export class GroupByPipe implements PipeTransform {
 
         const arr: { [key: string]: Array<any> } = {};
 
-        for(const value of input) {
+        for (const value of input) {
             const field: any = getProperty(value, prop);
 
             if (isUndefined(arr[field])) {

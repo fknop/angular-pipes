@@ -21,6 +21,7 @@ import {StripTagsPipe} from "./strip-tags.pipe";
 import {LatinizePipe} from "./latinize.pipe";
 import {WrapPipe} from "./wrap.pipe";
 import {WithPipe} from "./with.pipe";
+import {ReverseStrPipe} from "./reverse-str.pipe";
 
 export * from './left-pad.pipe';
 export * from './match.pipe';
@@ -43,6 +44,7 @@ export * from './strip-tags.pipe';
 export * from './latinize.pipe';
 export * from './wrap.pipe';
 export * from './with.pipe';
+export * from './reverse-str.pipe';
 
 @NgModule({
     declarations: [
@@ -66,7 +68,8 @@ export * from './with.pipe';
         StripTagsPipe,
         LatinizePipe,
         WrapPipe,
-        WithPipe
+        WithPipe,
+        ReverseStrPipe
     ],
     exports: [
         LeftPadPipe,
@@ -89,7 +92,8 @@ export * from './with.pipe';
         StripTagsPipe,
         LatinizePipe,
         WrapPipe,
-        WithPipe
+        WithPipe,
+        ReverseStrPipe
     ]
 })
 export class NgStringPipesModule {

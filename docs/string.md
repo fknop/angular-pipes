@@ -9,18 +9,19 @@
 * [`match`](#match)
 * [`test`](#test)
 * [`newlines`](#newlines)
-* [`capitalize`](#capitalize) 
-* [`upperfirst`](#upperfirst) 
-* [`template`](#template) 
-* [`encodeURI`](#encodeuri) 
-* [`encodeURIComponent`](#encodeuricomponent) 
-* [`repeat`](#repeat) 
-* [`truncate`](#truncate) 
+* [`capitalize`](#capitalize)
+* [`upperfirst`](#upperfirst)
+* [`template`](#template)
+* [`encodeURI`](#encodeuri)
+* [`encodeURIComponent`](#encodeuricomponent)
+* [`repeat`](#repeat)
+* [`truncate`](#truncate)
 * [`slugify`](#slugify)
-* [`stripTags`](#striptags) 
+* [`stripTags`](#striptags)
 * [`latinize`](#latinize)
 * [`wrap`](#wrap)
 * [`with`](#with)
+* [`reverseStr`](#reversestr)
 
 You can check the module import [`here`](./modules.md).
 
@@ -180,7 +181,7 @@ this.value = 'Hello, World. \nHow are you ?';
 
 <!-- Resulting display
 Hello, World.
-How are you ?    
+How are you ?
 -->
 ```
 
@@ -278,7 +279,7 @@ import { RepeatPipe } from 'angular-pipes/src/string/repeat.pipe';
 
 ####truncate
 
-Truncate a string. 
+Truncate a string.
 
 Arguments: (size, suffix, preserve)
 
@@ -299,7 +300,7 @@ import { TruncatePipe } from 'angular-pipes/src/string/truncate.pipe';
 
 ####slugify
 
-Slugify a string. 
+Slugify a string.
 
 Arguments: (string)
 
@@ -355,7 +356,7 @@ import { latinize } from 'angular-pipes/src/string/latinize.pipe';
 ```
 
 ####wrap
-Wrap a string with another string 
+Wrap a string with another string
 
 Arguments: ( string, string, string[optional] )
 
@@ -399,4 +400,20 @@ import { WithPipe } from 'angular-pipes/src/string/with.pipe';
 {{'The Flash Reverse' | with: null,null,true}} <!-- result: 'The Flash Reverse'-->
 {{'The Flash Reverse' | with: null,null}} <!-- result: 'The Flash Reverse'-->
 {{'The Flash Reverse' | with}} <!-- result: 'The Flash Reverse'-->
+```
+
+####reversestr
+
+Reverse a string.
+
+##### File
+
+```
+import { ReverseStrPipe } from 'angular-pipes/src/string/reverse-str.pipe';
+```
+
+##### Usage
+
+```html
+{{ 'hello world' | reverseStr }} <!-- 'dlrow olleh' -->
 ```

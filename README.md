@@ -79,6 +79,7 @@ You can find the documentations in the [`docs`](./docs) folder.
 
 ### Aggregate
 
+* [`groupBy`](./docs/aggregate.md#groupby)
 * [`min`](./docs/aggregate.md#min)
 * [`max`](./docs/aggregate.md#max)
 * [`mean`](./docs/aggregate.md#mean)

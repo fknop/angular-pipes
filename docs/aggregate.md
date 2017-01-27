@@ -1,11 +1,44 @@
 # Aggregate
 
+* [`groupBy`](#groupby)
 * [`min`](#min)
 * [`max`](#max)
 * [`mean`](#mean)
 * [`sum`](#sum)
 
 You can check the module import [`here`](./modules.md).
+
+####groupBy
+
+Returns the groupped data of the given array.
+
+##### File
+
+```
+import { GroupByPipe } from 'angular-pipes/src/aggregate/group-by.pipe';
+```
+
+##### Usage
+
+```javascript
+const values = [
+    { name: 'a', prop: 'foo' },
+    { name: 'b', prop: 'bar' },
+    { name: 'c', prop: 'bar' },
+    { name: 'd', prop: 'foo' }
+]
+```
+
+```html
+{{ values | groupBy: 'prop' }}
+<!--
+	[
+		{key: foo, value: Array[2]},
+		{key: bar, value: Array[2]}
+	]
+-->
+```
+
 
 ####min
 

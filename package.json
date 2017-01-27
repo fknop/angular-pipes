@@ -4,7 +4,6 @@
   "description": "Angular pipes library",
   "files": [
     "src",
-    "index.d.ts",
     "tsconfig.json"
   ],
   "main": "src/index.js",

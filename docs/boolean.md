@@ -26,7 +26,7 @@ Returns true if the first value is greater than the second value.
 
 ##### File
 
-```
+```typescript
 import { IsGreaterPipe } from 'angular-pipes/src/boolean/conditions.pipe';
 ```
 
@@ -44,7 +44,7 @@ Returns true if the first value is greater or equal to the second value.
 
 ##### File
 
-```
+```typescript
 import { IsGreaterOrEqualPipe } from 'angular-pipes/src/boolean/conditions.pipe';
 ```
 
@@ -62,7 +62,7 @@ Returns true if the first value is less than the second value.
 
 ##### File
 
-```
+```typescript
 import { IsLessPipe } from 'angular-pipes/src/boolean/conditions.pipe';
 ```
 
@@ -80,7 +80,7 @@ Returns true if the first value is less or equal to the second value.
 
 ##### File
 
-```
+```typescript
 import { IsLessOrEqualPipe } from 'angular-pipes/src/boolean/conditions.pipe';
 ```
 
@@ -98,7 +98,7 @@ Returns true if the value are equal (operator `==`).
 
 ##### File
 
-```
+```typescript
 import { IsEqualPipe } from 'angular-pipes/src/boolean/conditions.pipe';
 ```
 
@@ -116,7 +116,7 @@ Returns true if the value are not equal (operator `!=`).
 
 ##### File
 
-```
+```typescript
 import { IsNotEqualPipe } from 'angular-pipes/src/boolean/conditions.pipe';
 ```
 
@@ -135,7 +135,7 @@ Returns true if the value are identical (operator `===`).
 
 ##### File
 
-```
+```typescript
 import { IsIdenticalPipe } from 'angular-pipes/src/boolean/conditions.pipe';
 ```
 
@@ -154,7 +154,7 @@ Returns true if the value are not identical (operator `!==`).
 
 ##### File
 
-```
+```typescript
 import { IsNotIdenticalPipe } from 'angular-pipes/src/boolean/conditions.pipe';
 ```
 
@@ -173,7 +173,7 @@ Returns true if the value if null.
 
 ##### File
 
-```
+```typescript
 import { IsNullPipe } from 'angular-pipes/src/boolean/types.pipe';
 ```
 
@@ -196,7 +196,7 @@ Returns true if the value if undefined.
 
 ##### File
 
-```
+```typescript
 import { IsUndefinedPipe } from 'angular-pipes/src/boolean/types.pipe';
 ```
 
@@ -219,7 +219,7 @@ Returns true if the value if null or undefined.
 
 ##### File
 
-```
+```typescript
 import { IsNilPipe } from 'angular-pipes/src/boolean/types.pipe';
 ```
 
@@ -238,7 +238,7 @@ Returns true if the value is a number.
 
 ##### File
 
-```
+```typescript
 import { IsNumberPipe } from 'angular-pipes/src/boolean/types.pipe';
 ```
 
@@ -255,7 +255,7 @@ Returns true if the value is a string.
 
 ##### File
 
-```
+```typescript
 import { IsStringPipe } from 'angular-pipes/src/boolean/types.pipe';
 ```
 
@@ -273,7 +273,7 @@ Returns true if the value is a function.
 
 ##### File
 
-```
+```typescript
 import { IsFunctionPipe } from 'angular-pipes/src/boolean/types.pipe';
 ```
 
@@ -297,7 +297,7 @@ Returns true if the value is an array.
 
 ##### File
 
-```
+```typescript
 import { IsArrayPipe } from 'angular-pipes/src/boolean/types.pipe';
 ```
 
@@ -316,7 +316,7 @@ Returns true if the value is an object.
 
 ##### File
 
-```
+```typescript
 import { IsObjectPipe } from 'angular-pipes/src/boolean/types.pipe';
 ```
 
@@ -335,7 +335,7 @@ Returns true if the value is defined (nor null nor undefined).
 
 ##### File
 
-```
+```typescript
 import { IsDefinedPipe } from 'angular-pipes/src/boolean/types.pipe';
 ```
 

@@ -18,7 +18,7 @@ Returns the bytes to an human-readable format.
 
 ##### File
 
-```
+```typescript
 import { BytesPipe } from 'angular-pipes/src/math/bytes.pipe';
 ```
 
@@ -42,7 +42,7 @@ Ceils a number with a given precision. Take a look at the official documentation
 
 ##### File
 
-```
+```typescript
 import { CeilPipe } from 'angular-pipes/src/math/ceil.pipe';
 ```
 
@@ -61,7 +61,7 @@ Floor a number with a given precision. Take a look at the official documentation
 
 ##### File
 
-```
+```typescript
 import { FloorPipe } from 'angular-pipes/src/math/floor.pipe';
 ```
 
@@ -80,7 +80,7 @@ Rounds a number with a given precision. Take a look at the official documentatio
 
 ##### File
 
-```
+```typescript
 import { RoundPipe } from 'angular-pipes/src/math/round.pipe';
 ```
 
@@ -101,7 +101,7 @@ Converts radians to degrees.
 
 ##### File
 
-```
+```typescript
 import { DegreesPipe } from 'angular-pipes/src/math/degrees.pipe';
 ```
 
@@ -122,7 +122,7 @@ Converts degrees to radians
 
 ##### File
 
-```
+```typescript
 import { RadiansPipe } from 'angular-pipes/src/math/radians.pipe';
 ```
 
@@ -141,7 +141,7 @@ If only one argument is given, it will be the maximum.
 
 ##### File
 
-```
+```typescript
 import { RandomPipe } from 'angular-pipes/src/math/random.pipe';
 ```
 
@@ -159,7 +159,7 @@ Returns the square root of a number.
 
 ##### File
 
-```
+```typescript
 import { SqrtPipe } from 'angular-pipes/src/math/sqrt.pipe';
 ```
 
@@ -175,7 +175,7 @@ Returns the power of a number.
 
 ##### File
 
-```
+```typescript
 import { PowPipe } from 'angular-pipes/src/math/pow.pipe';
 ```
 

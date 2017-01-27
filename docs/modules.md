@@ -2,13 +2,13 @@
 
 Each category of pipes has an exported module. And one module imports all these modules.
 
-* NgAggregatePipesModule
-* NgArrayPipesModule
-* NgBooleanPipesModule
-* NgMathPipesModule
-* NgObjectPipesModule
-* NgStringPipesModule
-* NgPipesModule (imports all the module above)
+* `NgAggregatePipesModule`
+* `NgArrayPipesModule`
+* `NgBooleanPipesModule`
+* `NgMathPipesModule`
+* `NgObjectPipesModule`
+* `NgStringPipesModule`
+* `NgPipesModule` (imports all the module above)
 
 
 ## Example

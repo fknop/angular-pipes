@@ -14,7 +14,7 @@ Returns the groupped data of the given array.
 
 ##### File
 
-```
+```typescript
 import { GroupByPipe } from 'angular-pipes/src/aggregate/group-by.pipe';
 ```
 
@@ -46,7 +46,7 @@ Returns the minimum of the given array.
 
 ##### File
 
-```
+```typescript
 import { MinPipe } from 'angular-pipes/src/aggregate/min.pipe';
 ```
 
@@ -63,7 +63,7 @@ Returns the maximum of the given array.
 
 ##### File
 
-```
+```typescript
 import { MaxPipe } from 'angular-pipes/src/aggregate/max.pipe';
 ```
 
@@ -80,7 +80,7 @@ Returns the mean of the given array.
 
 ##### File
 
-```
+```typescript
 import { MeanPipe } from 'angular-pipes/src/aggregate/mean.pipe';
 ```
 
@@ -96,7 +96,7 @@ Returns the sum of the given array.
 
 ##### File
 
-```
+```typescript
 import { SumPipe } from 'angular-pipes/src/aggregate/sum.pipe';
 ```
 

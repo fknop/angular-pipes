@@ -12,7 +12,7 @@ Returns the array of keys of the given object or array.
 
 ##### File
 
-```
+```typescript
 import { KeysPipe } from 'angular-pipes/src/object/keys.pipe';
 ```
 
@@ -38,7 +38,7 @@ Transforms an object to an array
 
 ##### File
 
-```
+```typescript
 import { ToArrayPipe } from 'angular-pipes/src/object/to-array.pipe';
 ```
 
@@ -67,7 +67,7 @@ to the defaults.
 
 ##### File
 
-```
+```typescript
 import { DefaultsPipe } from 'angular-pipes/src/object/defaults.pipe';
 ```
 

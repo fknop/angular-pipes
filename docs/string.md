@@ -31,7 +31,7 @@ Returns a left-padded string.
 
 ##### File
 
-```
+```typescript
 import { LeftPadPipe } from 'angular-pipes/src/string/left-pad.pipe';
 ```
 
@@ -50,7 +50,7 @@ Returns a right-padded string.
 
 ##### File
 
-```
+```typescript
 import { RightPadPipe } from 'angular-pipes/src/string/right-pad.pipe';
 ```
 
@@ -68,7 +68,7 @@ Returns a padded string. It starts with left and then right.
 
 ##### File
 
-```
+```typescript
 import { PadPipe } from 'angular-pipes/src/string/pad.pipe';
 ```
 
@@ -87,7 +87,7 @@ Trims the string.
 
 ##### File
 
-```
+```typescript
 import { TrimPipe } from 'angular-pipes/src/string/trim.pipe';
 ```
 
@@ -106,7 +106,7 @@ Split a string into an array.
 
 ##### File
 
-```
+```typescript
 import { SplitPipe } from 'angular-pipes/src/string/split.pipe';
 ```
 
@@ -125,7 +125,7 @@ This is the `String#replace()` function, if you want to know more about the argu
 
 ##### File
 
-```
+```typescript
 import { ReplacePipe } from 'angular-pipes/src/string/replace.pipe';
 ```
 
@@ -136,7 +136,7 @@ This is the `String#match()` function, if you want to know more about the argume
 
 ##### File
 
-```
+```typescript
 import { MatchPipe } from 'angular-pipes/src/string/match.pipe';
 ```
 
@@ -147,7 +147,7 @@ This is the `String#test()` function, if you want to know more about the argumen
 
 ##### File
 
-```
+```typescript
 import { TestPipe } from 'angular-pipes/src/string/test.pipe';
 ```
 
@@ -159,7 +159,7 @@ with the `[innerHTML]` binding.
 
 ##### File
 
-```
+```typescript
 import { NewlinesPipe } from 'angular-pipes/src/string/newlines.pipe';
 ```
 
@@ -192,7 +192,7 @@ Capitalize the string. If the argument is true, all the words will be capitalize
 
 ##### File
 
-```
+```typescript
 import { CapitalizePipe } from 'angular-pipes/src/string/capitalize.pipe';
 ```
 
@@ -211,7 +211,7 @@ Uppercase the first letter.
 
 ##### File
 
-```
+```typescript
 import { UpperFirstPipe } from 'angular-pipes/src/string/upperfirst.pipe';
 ```
 
@@ -228,7 +228,7 @@ Template string.
 
 ##### File
 
-```
+```typescript
 import { TemplatePipe } from 'angular-pipes/src/string/template.pipe';
 ```
 
@@ -245,7 +245,7 @@ The encodeURI function.
 
 ##### File
 
-```
+```typescript
 import { EncodeURIPipe } from 'angular-pipes/src/string/encode-uri.pipe';
 ```
 
@@ -256,7 +256,7 @@ The encodeURIComponent function.
 
 ##### File
 
-```
+```typescript
 import { EncodeURIComponentPipe } from 'angular-pipes/src/string/encode-uri-component.pipe';
 ```
 
@@ -266,7 +266,7 @@ Repeats a string.
 
 ##### File
 
-```
+```typescript
 import { RepeatPipe } from 'angular-pipes/src/string/repeat.pipe';
 ```
 
@@ -285,7 +285,7 @@ Arguments: (size, suffix, preserve)
 
 ##### File
 
-```
+```typescript
 import { TruncatePipe } from 'angular-pipes/src/string/truncate.pipe';
 ```
 
@@ -306,7 +306,7 @@ Arguments: (string)
 
 ##### File
 
-```
+```typescript
 import { SlugifyPipe } from 'angular-pipes/src/string/slugify.pipe';
 ```
 
@@ -326,7 +326,7 @@ Arguments: ( string, ends, case-sensitive[optional] )
 
 ##### File
 
-```
+```typescript
 import { StripTagsPipe } from 'angular-pipes/src/string/strip-tags.pipe';
 ```
 
@@ -344,7 +344,7 @@ Remove accents/diacritics from a string
 
 ##### File
 
-```
+```typescript
 import { latinize } from 'angular-pipes/src/string/latinize.pipe';
 ```
 
@@ -362,7 +362,7 @@ Arguments: ( string, string, string[optional] )
 
 ##### File
 
-```
+```typescript
 import { WrapPipe } from 'angular-pipes/src/string/wrap.pipe';
 ```
 
@@ -380,7 +380,7 @@ Arguments: ( string, start[optional], ends[optional], case-sensitive[optional] )
 
 ##### File
 
-```
+```typescript
 import { WithPipe } from 'angular-pipes/src/string/with.pipe';
 ```
 
@@ -408,7 +408,7 @@ Reverse a string.
 
 ##### File
 
-```
+```typescript
 import { ReverseStrPipe } from 'angular-pipes/src/string/reverse-str.pipe';
 ```
 

@@ -1,3 +1,16 @@
+# 5.7.0
+
+## New pipes 
+
+* [`groupBy`](./docs/aggregate.md#groupby) [#38](https://github.com/fknop/angular-pipes/pull/38)
+* [`reverseStr`](./docs/string.md#reversestr) [#38](https://github.com/fknop/angular-pipes/pull/38)
+
+# 5.6.0 
+
+* Removed **ngfactory** files. Only ngsummaries are needed for AoT.
+* Switch to `karma-typscript` for testing.
+* Moved all spec files next to their source.
+
 # 5.5.0 
 
 * Add noUnusedLocals to tsconfig to improve type checks ([#33](https://github.com/fknop/angular-pipes/pull/33))

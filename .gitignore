@@ -9,3 +9,5 @@ src/**/*.ngsummary.json
 src/**/*.d.ts
 .vscode
 coverage
+bundles
+esm

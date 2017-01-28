@@ -62,7 +62,7 @@ import { RightPadPipe } from 'angular-pipes/src/string/right-pad.pipe';
 {{ 'aaa' | rightpad: 5: 'b' }} <!-- 'aaabb' -->
 ```
 
-####rightpad
+####pad
 
 Returns a padded string. It starts with left and then right.
 

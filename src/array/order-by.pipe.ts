@@ -15,16 +15,13 @@ export class OrderByPipe implements PipeTransform {
         const floatA = parseFloat(a);
         const floatB = parseFloat(b);
         
-        if (typeof a === 'string' && typeof b === 'string') {
+        if (typeof a === 'string' && typeof b === 'string' && (isNaN(floatA) || isNaN(floatB))) {
             const lowerA = a.toLowerCase();
             const lowerB = b.toLowerCase();
             return (lowerA < lowerB) ? -1 : (lowerA > lowerB) ? 1 : 0;
         }
-        else {
-            
-            return (floatA < floatB) ? -1 : (floatA > floatB) ? 1 : 0; 
-        }
-        
+
+        return (floatA < floatB) ? -1 : (floatA > floatB) ? 1 : 0; 
     }
     
     transform (input: any, config: any = '+'): any {
@@ -48,8 +45,6 @@ export class OrderByPipe implements PipeTransform {
                     const comparator = OrderByPipe._orderBy(a, b);
                     return desc ? -comparator : comparator; 
                 });
-
-                // return desc ? [...input].sort().reverse() : [...input].sort();
             }            
             else {
                 // If contains + or -, substring the property
@@ -62,7 +57,6 @@ export class OrderByPipe implements PipeTransform {
                 });
                 
             }
-            
         }
         else { // Config is an array of property
             

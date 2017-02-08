@@ -3,13 +3,13 @@ import { count } from '../utils/utils';
 
 
 @Pipe({ 
-    name: 'count' 
+  name: 'count' 
 })
 export class CountPipe implements PipeTransform {
+  
+  transform (input: any): any {
     
-    transform (input: any): any {
-        
-        return count(input);
-    }
+    return count(input);
+  }
 }
 

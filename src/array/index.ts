@@ -10,6 +10,7 @@ import { UniqPipe } from './uniq.pipe';
 import { WithoutPipe } from './without.pipe';
 import { MapPipe } from './map.pipe';
 import { WherePipe } from './where.pipe';
+import { FirstOrDefaultPipe } from './first-or-default.pipe';
 import { RangePipe } from './range.pipe';
 import { PluckPipe } from './pluck.pipe';
 import { ReversePipe } from './reverse.pipe';
@@ -34,6 +35,7 @@ export * from './uniq.pipe';
 export * from './without.pipe';
 export * from './map.pipe';
 export * from './where.pipe';
+export * from './first-or-default.pipe';
 export * from './range.pipe';
 export * from './pluck.pipe';
 export * from './reverse.pipe';
@@ -50,55 +52,57 @@ export * from './flatten.pipe';
 
 
 @NgModule({
-    declarations: [
-        EmptyPipe,
-        HeadPipe,
-        InitialPipe,
-        LastPipe,
-        JoinPipe,
-        TailPipe,
-        UniqPipe,
-        WithoutPipe,
-        MapPipe,
-        WherePipe,
-        RangePipe,
-        PluckPipe,
-        ReversePipe,
-        OrderByPipe,
-        CountPipe,
-        SomePipe,
-        EveryPipe,
-        ShufflePipe,
-        TakePipe,
-        DropPipe,
-        DeepPipe,
-        ChunkPipe,
-        FlattenPipe
-    ],
-    exports: [
-        EmptyPipe,
-        HeadPipe,
-        InitialPipe,
-        LastPipe,
-        JoinPipe,
-        TailPipe,
-        UniqPipe,
-        WithoutPipe,
-        MapPipe,
-        WherePipe,
-        RangePipe,
-        PluckPipe,
-        ReversePipe,
-        OrderByPipe,
-        CountPipe,
-        SomePipe,
-        EveryPipe,
-        ShufflePipe,
-        TakePipe,
-        DropPipe,
-        DeepPipe,
-        ChunkPipe,
-        FlattenPipe
-    ]
+  declarations: [
+    EmptyPipe,
+    HeadPipe,
+    InitialPipe,
+    LastPipe,
+    JoinPipe,
+    TailPipe,
+    UniqPipe,
+    WithoutPipe,
+    MapPipe,
+    WherePipe,
+    RangePipe,
+    PluckPipe,
+    ReversePipe,
+    OrderByPipe,
+    CountPipe,
+    SomePipe,
+    EveryPipe,
+    ShufflePipe,
+    TakePipe,
+    DropPipe,
+    DeepPipe,
+    ChunkPipe,
+    FlattenPipe,
+    FirstOrDefaultPipe
+  ],
+  exports: [
+    EmptyPipe,
+    HeadPipe,
+    InitialPipe,
+    LastPipe,
+    JoinPipe,
+    TailPipe,
+    UniqPipe,
+    WithoutPipe,
+    MapPipe,
+    WherePipe,
+    RangePipe,
+    PluckPipe,
+    ReversePipe,
+    OrderByPipe,
+    CountPipe,
+    SomePipe,
+    EveryPipe,
+    ShufflePipe,
+    TakePipe,
+    DropPipe,
+    DeepPipe,
+    ChunkPipe,
+    FlattenPipe,
+    FirstOrDefaultPipe
+  ]
 })
 export class NgArrayPipesModule {}

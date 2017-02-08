@@ -11,7 +11,7 @@ import {
 } from '../utils/utils';
 
 @Pipe({
-  name: 'null'
+  name: 'isNull'
 })
 export class IsNullPipe implements PipeTransform {
   
@@ -22,7 +22,7 @@ export class IsNullPipe implements PipeTransform {
 }
 
 @Pipe({
-  name: 'undefined'
+  name: 'isUndefined'
 })
 export class IsUndefinedPipe implements PipeTransform {
   
@@ -33,7 +33,7 @@ export class IsUndefinedPipe implements PipeTransform {
 }
 
 @Pipe({
-  name: 'nil'
+  name: 'isNil'
 })
 export class IsNilPipe implements PipeTransform {
   
@@ -44,7 +44,7 @@ export class IsNilPipe implements PipeTransform {
 }
 
 @Pipe({
-  name: 'function'
+  name: 'isFunction'
 })
 export class IsFunctionPipe implements PipeTransform {
   
@@ -55,7 +55,7 @@ export class IsFunctionPipe implements PipeTransform {
 }
 
 @Pipe({
-  name: 'number'
+  name: 'isNumber'
 })
 export class IsNumberPipe implements PipeTransform {
   
@@ -66,7 +66,7 @@ export class IsNumberPipe implements PipeTransform {
 }
 
 @Pipe({
-  name: 'string'
+  name: 'isString'
 })
 export class IsStringPipe implements PipeTransform {
   
@@ -78,7 +78,7 @@ export class IsStringPipe implements PipeTransform {
 
 
 @Pipe({
-  name: 'array'
+  name: 'isArray'
 })
 export class IsArrayPipe implements PipeTransform {
   
@@ -89,7 +89,7 @@ export class IsArrayPipe implements PipeTransform {
 }
 
 @Pipe({
-  name: 'object'
+  name: 'isObject'
 })
 export class IsObjectPipe implements PipeTransform {
   
@@ -101,7 +101,7 @@ export class IsObjectPipe implements PipeTransform {
 
 
 @Pipe({
-  name: 'defined'
+  name: 'isDefined'
 })
 export class IsDefinedPipe implements PipeTransform {
   

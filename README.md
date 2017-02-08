@@ -35,6 +35,7 @@ You can find the documentations in the [`docs`](./docs) folder.
 * [`map`](./docs/array.md#map)
 * [`pluck`](./docs/array.md#pluck)
 * [`where`](./docs/array.md#where)
+* [`firstOrDefault`](./docs/array.md#firstordefault)
 * [`orderBy`](./docs/array.md#orderby)
 * [`reverse`](./docs/array.md#reverse)
 * [`count`](./docs/array.md#count)

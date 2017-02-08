@@ -9,14 +9,14 @@ import { NgStringPipesModule } from './string';
 
 
 @NgModule({
-    exports: [
-        NgArrayPipesModule,
-        NgMathPipesModule,
-        NgBooleanPipesModule,
-        NgStringPipesModule,
-        NgObjectPipesModule,
-        NgAggregatePipesModule
-    ]
+  exports: [
+    NgArrayPipesModule,
+    NgMathPipesModule,
+    NgBooleanPipesModule,
+    NgStringPipesModule,
+    NgObjectPipesModule,
+    NgAggregatePipesModule
+  ]
 })
 export class NgPipesModule {}
 

@@ -7,20 +7,20 @@ import { MinPipe } from './min.pipe';
 import { SumPipe } from './sum.pipe';
 
 @NgModule({
-    declarations: [
-        GroupByPipe,
-        MaxPipe,
-        MeanPipe,
-        MinPipe,
-        SumPipe
-    ],
-    exports: [
-        GroupByPipe,
-        MaxPipe,
-        MeanPipe,
-        MinPipe,
-        SumPipe
-    ]
+  declarations: [
+    GroupByPipe,
+    MaxPipe,
+    MeanPipe,
+    MinPipe,
+    SumPipe
+  ],
+  exports: [
+    GroupByPipe,
+    MaxPipe,
+    MeanPipe,
+    MinPipe,
+    SumPipe
+  ]
 })
 export class NgAggregatePipesModule {}
 

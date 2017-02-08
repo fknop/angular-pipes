@@ -12,6 +12,7 @@
 * [`map`](#map) 
 * [`pluck`](#pluck)
 * [`where`](#where)
+* [`firstOrDefault`](#firstordefault)
 * [`orderBy`](#orderby) 
 * [`reverse`](#reverse)
 * [`count`](#count) 
@@ -308,6 +309,60 @@ aEqualsOne(item) {
 {{ values | where: ['a', 1] }}   <!-- [{ a: 1, c: { d: 3, e: { f: 4 } }] -->
 {{ values | where: ['c.e.f', 4] }}   <!-- [{ a: 1, c: { d: 3, e: { f: 4 } }] -->
 {{ numbers | where: 1 }}   <!-- [1, 1] -->
+```
+
+###firstordefault 
+
+This pipe behaves exactly like `where` but only return the first element when is found. A default value can be provided if no 
+such element exists.
+
+
+##### File
+
+```typescript
+import { FirstOrDefaultPipe } from 'angular-pipes/src/array/first-or-default.pipe';
+```
+
+##### Usage
+
+```javascript
+// ...
+
+const values = [{
+    a: 1,
+    c: {
+        d: 3,
+        e: {
+            f: 4   
+        }
+    }   
+}, {
+    a: 2,
+    c: {
+        d: 4,
+        e: {
+            f: 5   
+        }   
+    }
+}];
+
+const numbers = [1, 2, 3, 4, 1, 4];
+
+// ...
+
+aEqualsOne(item) {
+    return item.a === 1;   
+}
+
+``` 
+
+```html
+{{ values | firstOrDefault: aEqualsOne }} <!-- { a: 1, c: { d: 3, e: { f: 4 } }]-->
+{{ values | firstOrDefault: ['a', 1] }}   <!-- { a: 1, c: { d: 3, e: { f: 4 } } -->
+{{ values | firstOrDefault: ['c.e.f', 4] }}   <!-- { a: 1, c: { d: 3, e: { f: 4 } } -->
+{{ numbers | firstOrDefault: 1 }}   <!-- 1 -->
+{{ numbers | firstOrDefault: 5 : 42 }}   <!-- 42 -->
+{{ numbers | firstOrDefault: 5 }}   <!-- undefined -->
 ```
 
 ####orderBy

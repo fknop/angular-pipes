@@ -3,14 +3,19 @@ import {isString} from '../utils/utils';
 
 @Pipe({ name: 'slugify' })
 export class SlugifyPipe implements PipeTransform {
-    transform(input: string): string {
-        if (!isString(input)) {
-            return input;
-        }
 
-        let slug = input.toLowerCase().trim();
-        slug = slug.replace(/[^a-z0-9\s-]/g, ' ');
-        slug = slug.replace(/[\s-]+/g, '-');
-        return slug;
+  transform(input: string): string {
+
+    if (!isString(input)) {
+      return input;
     }
+    
+    return (
+      input
+      .toLowerCase()
+      .trim()
+      .replace(/[^a-z0-9\s-]/g, ' ')
+      .replace(/[\s-]+/g, '-')
+    );
+  }
 }

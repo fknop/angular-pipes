@@ -8,15 +8,15 @@ export * from './to-array.pipe';
 export * from './defaults.pipe';
 
 @NgModule({
-    declarations: [
-        KeysPipe,
-        ToArrayPipe,
-        DefaultsPipe
-    ],
-    exports: [
-        KeysPipe,
-        ToArrayPipe,
-        DefaultsPipe
-    ]
+  declarations: [
+    KeysPipe,
+    ToArrayPipe,
+    DefaultsPipe
+  ],
+  exports: [
+    KeysPipe,
+    ToArrayPipe,
+    DefaultsPipe
+  ]
 })
 export class NgObjectPipesModule {}

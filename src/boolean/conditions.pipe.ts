@@ -2,90 +2,90 @@ import { Pipe, PipeTransform  } from '@angular/core';
 
 
 @Pipe({
-    name: 'greater'
+  name: 'greater'
 })
 export class IsGreaterPipe implements PipeTransform {
+  
+  transform (first: any, second: any): boolean {
     
-    transform (first: any, second: any): boolean {
-        
-        return first > second;
-    }
+    return first > second;
+  }
 }
 
 @Pipe({
-    name: 'greaterOrEqual'
+  name: 'greaterOrEqual'
 })
 export class IsGreaterOrEqualPipe implements PipeTransform {
+  
+  transform (first: any, second: any): boolean {
     
-    transform (first: any, second: any): boolean {
-        
-        return first >= second;
-    }
+    return first >= second;
+  }
 }
 
 @Pipe({
-    name: 'less'
+  name: 'less'
 })
 export class IsLessPipe implements PipeTransform {
+  
+  transform (first: any, second: any): boolean {
     
-    transform (first: any, second: any): boolean {
-        
-        return first < second;
-    }
+    return first < second;
+  }
 }
 
 @Pipe({
-    name: 'lessOrEqual'
+  name: 'lessOrEqual'
 })
 export class IsLessOrEqualPipe implements PipeTransform {
+  
+  transform (first: any, second: any): boolean {
     
-    transform (first: any, second: any): boolean {
-        
-        return first <= second;
-    }
+    return first <= second;
+  }
 }
 
 @Pipe({
-    name: 'equal'
+  name: 'equal'
 })
 export class IsEqualPipe implements PipeTransform {
+  
+  transform (first: any, second: any): boolean {
     
-    transform (first: any, second: any): boolean {
-        
-        return first == second;
-    }
+    return first == second;
+  }
 }
 
 @Pipe({
-    name: 'notEqual'
+  name: 'notEqual'
 })
 export class IsNotEqualPipe implements PipeTransform {
+  
+  transform (first: any, second: any): boolean {
     
-    transform (first: any, second: any): boolean {
-        
-        return first != second;
-    }
+    return first != second;
+  }
 }
 
 @Pipe({
-    name: 'identical'
+  name: 'identical'
 })
 export class IsIdenticalPipe implements PipeTransform {
+  
+  transform (first: any, second: any): boolean {
     
-    transform (first: any, second: any): boolean {
-        
-        return first === second;
-    }
+    return first === second;
+  }
 }
 
 @Pipe({
-    name: 'notIdentical'
+  name: 'notIdentical'
 })
 export class IsNotIdenticalPipe implements PipeTransform {
+  
+  transform (first: any, second: any): boolean {
     
-    transform (first: any, second: any): boolean {
-        
-        return first !== second;
-    }
+    return first !== second;
+  }
 }
 

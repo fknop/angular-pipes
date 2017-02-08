@@ -1,111 +1,113 @@
 import { Pipe, PipeTransform  } from '@angular/core';
-import { isNull,
-         isNil,
-         isUndefined, 
-         isFunction,
-         isArray,
-         isString,
-         isObject,
-         isNumber } from '../utils/utils';
+import {
+  isNull,
+  isNil,
+  isUndefined, 
+  isFunction,
+  isArray,
+  isString,
+  isObject,
+  isNumber 
+} from '../utils/utils';
 
 @Pipe({
-    name: 'null'
+  name: 'null'
 })
 export class IsNullPipe implements PipeTransform {
+  
+  transform (value: any): boolean {
     
-    transform (value: any): boolean {
-        
-        return isNull(value);
-    }
+    return isNull(value);
+  }
 }
 
 @Pipe({
-    name: 'undefined'
+  name: 'undefined'
 })
 export class IsUndefinedPipe implements PipeTransform {
+  
+  transform (value: any): boolean {
     
-    transform (value: any): boolean {
-        
-        return isUndefined(value);
-    }
+    return isUndefined(value);
+  }
 }
 
 @Pipe({
-    name: 'nil'
+  name: 'nil'
 })
 export class IsNilPipe implements PipeTransform {
+  
+  transform (value: any): boolean {
     
-    transform (value: any): boolean {
-        
-        return isNil(value);
-    }
+    return isNil(value);
+  }
 }
 
 @Pipe({
-    name: 'function'
+  name: 'function'
 })
 export class IsFunctionPipe implements PipeTransform {
+  
+  transform (value: any): boolean {
     
-    transform (value: any): boolean {
-        
-        return isFunction(value);
-    }
+    return isFunction(value);
+  }
 }
 
 @Pipe({
-    name: 'number'
+  name: 'number'
 })
 export class IsNumberPipe implements PipeTransform {
+  
+  transform (value: any): boolean {
     
-    transform (value: any): boolean {
-        
-        return isNumber(value);
-    }
+    return isNumber(value);
+  }
 }
 
 @Pipe({
-    name: 'string'
+  name: 'string'
 })
 export class IsStringPipe implements PipeTransform {
+  
+  transform (value: any): boolean {
     
-    transform (value: any): boolean {
-        
-        return isString(value);
-    }
+    return isString(value);
+  }
 }
 
 
 @Pipe({
-    name: 'array'
+  name: 'array'
 })
 export class IsArrayPipe implements PipeTransform {
+  
+  transform (value: any): boolean {
     
-    transform (value: any): boolean {
-        
-        return isArray(value);
-    }
+    return isArray(value);
+  }
 }
 
 @Pipe({
-    name: 'object'
+  name: 'object'
 })
 export class IsObjectPipe implements PipeTransform {
+  
+  transform (value: any): boolean {
     
-    transform (value: any): boolean {
-        
-        return isObject(value);
-    }
+    return isObject(value);
+  }
 }
 
 
 @Pipe({
-    name: 'defined'
+  name: 'defined'
 })
 export class IsDefinedPipe implements PipeTransform {
+  
+  transform (value: any): boolean {
     
-    transform (value: any): boolean {
-        
-        return !isUndefined(value);
-    }
+    return !isUndefined(value);
+  }
 }
 

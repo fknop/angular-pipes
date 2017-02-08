@@ -1,3 +1,25 @@
+# 6.0.0
+
+## New pipes 
+
+* [`firstOrDefault`](./docs/array.md#firstordefault) [#41](https://github.com/fknop/angular-pipes/issues/41)
+
+## Breaking changes 
+
+* All the `types` pipes have been renamed with a `is` prefix. [#40](https://github.com/fknop/angular-pipes/issues/40)
+* The complete list is:
+  + `null` has been renamed to `isNull`
+  + `undefined` has been renamed to `isUndefined`
+  + `nil` has been renamed to `isNil`
+  + `number` has been renamed to `isNumber`
+  + `string` has been renamed to `isString`
+  + `function` has been renamed to `isFunction`
+  + `array` has been renamed to `isArray`
+  + `object` has been renamed to `isObject`
+  + `defined` has been renamed to `isDefined`
+
+* Reason: the `number` pipe was in conflict with the `Angular` built-in `number` pipe so it had to be renamed. To keep consistency between pipes, all type pipes have been renamed with the same prefix.
+
 # 5.8.0 
 
 ## Bundle distribution

@@ -25,7 +25,7 @@
 
 You can check the module import [`here`](./modules.md).
 
-####leftpad
+#### leftpad
 
 Returns a left-padded string.
 
@@ -43,8 +43,7 @@ import { LeftPadPipe } from 'angular-pipes/src/string/left-pad.pipe';
 {{ 'aaa' | leftpad: 5: 'b' }} <!-- 'bbaaa' -->
 ```
 
-
-####rightpad
+#### rightpad
 
 Returns a right-padded string.
 
@@ -62,7 +61,7 @@ import { RightPadPipe } from 'angular-pipes/src/string/right-pad.pipe';
 {{ 'aaa' | rightpad: 5: 'b' }} <!-- 'aaabb' -->
 ```
 
-####pad
+#### pad
 
 Returns a padded string. It starts with left and then right.
 
@@ -80,8 +79,7 @@ import { PadPipe } from 'angular-pipes/src/string/pad.pipe';
 {{ 'aaa' | pad: 5: 'b' }} <!-- 'baaab' -->
 ```
 
-
-####trim
+#### trim
 
 Trims the string.
 
@@ -99,8 +97,7 @@ import { TrimPipe } from 'angular-pipes/src/string/trim.pipe';
 {{ '   aaa       ' | trim }} <!-- 'aaa' -->
 ```
 
-
-####split
+#### split
 
 Split a string into an array.
 
@@ -118,8 +115,7 @@ import { SplitPipe } from 'angular-pipes/src/string/split.pipe';
 {{ 'ABABA' | split: 'B': 2 }} <!-- ['A', 'A'] -->
 ```
 
-
-####replace
+#### replace
 
 This is the `String#replace()` function, if you want to know more about the arguments, check the official documentation.
 
@@ -129,8 +125,7 @@ This is the `String#replace()` function, if you want to know more about the argu
 import { ReplacePipe } from 'angular-pipes/src/string/replace.pipe';
 ```
 
-
-####match
+#### match
 
 This is the `String#match()` function, if you want to know more about the arguments, check the official documentation.
 
@@ -140,8 +135,7 @@ This is the `String#match()` function, if you want to know more about the argume
 import { MatchPipe } from 'angular-pipes/src/string/match.pipe';
 ```
 
-
-####test
+#### test
 
 This is the `String#test()` function, if you want to know more about the arguments, check the official documentation.
 
@@ -151,10 +145,9 @@ This is the `String#test()` function, if you want to know more about the argumen
 import { TestPipe } from 'angular-pipes/src/string/test.pipe';
 ```
 
+#### newlines
 
-####newlines
-
-Replaces the `\n`, `\r` and `\r\n` into `<br />`. This function returns HTML so you need to use it
+Replaces the `\n`, `\r` and `\r\n` into `<br />`. This function returns HTML so you need to use it  
 with the `[innerHTML]` binding.
 
 ##### File
@@ -162,7 +155,6 @@ with the `[innerHTML]` binding.
 ```typescript
 import { NewlinesPipe } from 'angular-pipes/src/string/newlines.pipe';
 ```
-
 
 ##### Usage
 
@@ -185,8 +177,7 @@ How are you ?
 -->
 ```
 
-
-####capitalize
+#### capitalize
 
 Capitalize the string. If the argument is true, all the words will be capitalized.
 
@@ -204,8 +195,7 @@ import { CapitalizePipe } from 'angular-pipes/src/string/capitalize.pipe';
 {{ 'hELLo wOrld' | capitalize: true }} <!-- 'Hello World' -->
 ```
 
-
-####upperfirst
+#### upperfirst
 
 Uppercase the first letter.
 
@@ -221,8 +211,7 @@ import { UpperFirstPipe } from 'angular-pipes/src/string/upperfirst.pipe';
 {{ 'hello world' | upperfirst }} <!-- 'Hello world' -->
 ```
 
-
-####template
+#### template
 
 Template string.
 
@@ -238,8 +227,7 @@ import { TemplatePipe } from 'angular-pipes/src/string/template.pipe';
 {{ "Hello $1, it's $2" | template: 'world': 'me' }} <!-- 'Hello world, it's me' -->
 ```
 
-
-####encodeuri
+#### encodeuri
 
 The encodeURI function.
 
@@ -249,8 +237,7 @@ The encodeURI function.
 import { EncodeURIPipe } from 'angular-pipes/src/string/encode-uri.pipe';
 ```
 
-
-####encodeuricomponent
+#### encodeuricomponent
 
 The encodeURIComponent function.
 
@@ -260,7 +247,7 @@ The encodeURIComponent function.
 import { EncodeURIComponentPipe } from 'angular-pipes/src/string/encode-uri-component.pipe';
 ```
 
-####repeat
+#### repeat
 
 Repeats a string.
 
@@ -277,11 +264,11 @@ import { RepeatPipe } from 'angular-pipes/src/string/repeat.pipe';
 {{ 'a' | repeat: 2: 'b' }} <!-- 'aba' -->
 ```
 
-####truncate
+#### truncate
 
 Truncate a string.
 
-Arguments: (size, suffix, preserve)
+Arguments: \(size, suffix, preserve\)
 
 ##### File
 
@@ -298,11 +285,11 @@ import { TruncatePipe } from 'angular-pipes/src/string/truncate.pipe';
 {{ 'Hello World, how is it going?' | truncate: 14: '...', true }} <!-- 'Hello World, how...' -->
 ```
 
-####slugify
+#### slugify
 
 Slugify a string.
 
-Arguments: (string)
+Arguments: \(string\)
 
 ##### File
 
@@ -316,13 +303,12 @@ import { SlugifyPipe } from 'angular-pipes/src/string/slugify.pipe';
 {{ 'The zombie world war began' | slugify }} <!-- 'the-zombie-world-war-began' -->
 ```
 
-####striptags
+#### striptags
 
-strip out html tags from string
+strip out html tags from string  
 **Important: this Pipe jobs it's not to replace innerHtml directive, it's only for tiny plain text**
 
-
-Arguments: ( string, ends, case-sensitive[optional] )
+Arguments: \( string, ends, case-sensitive\[optional\] \)
 
 ##### File
 
@@ -338,7 +324,7 @@ var text = '<p class="paragraph">Lorem Ipsum is simply dummy text of the printin
 <!--result: Lorem Ipsum is simply dummy text of the printing... -->
 ```
 
-####latinize
+#### latinize
 
 Remove accents/diacritics from a string
 
@@ -355,10 +341,11 @@ import { latinize } from 'angular-pipes/src/string/latinize.pipe';
 <!-- result: Some strIng with Accents -->
 ```
 
-####wrap
+#### wrap
+
 Wrap a string with another string
 
-Arguments: ( string, string, string[optional] )
+Arguments: \( string, string, string\[optional\] \)
 
 ##### File
 
@@ -373,10 +360,11 @@ import { WrapPipe } from 'angular-pipes/src/string/wrap.pipe';
 <p>{{ 'foo' | wrap: '{{': '}}' }}</p> <!--result: {{foo}} -->
 ```
 
-####with
+#### with
+
 With pipe check string has start and/or ends
 
-Arguments: ( string, start[optional], ends[optional], case-sensitive[optional] )
+Arguments: \( string, start\[optional\], ends\[optional\], case-sensitive\[optional\] \)
 
 ##### File
 
@@ -402,7 +390,7 @@ import { WithPipe } from 'angular-pipes/src/string/with.pipe';
 {{'The Flash Reverse' | with}} <!-- result: 'The Flash Reverse'-->
 ```
 
-####reversestr
+#### reversestr
 
 Reverse a string.
 
@@ -417,3 +405,6 @@ import { ReverseStrPipe } from 'angular-pipes/src/string/reverse-str.pipe';
 ```html
 {{ 'hello world' | reverseStr }} <!-- 'dlrow olleh' -->
 ```
+
+
+

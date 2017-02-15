@@ -8,6 +8,7 @@
 * [`tail`](#tail)
 * [`uniq`](#uniq)
 * [`without`](#without)
+* [`intersection`](#intersection)
 * [`range`](#range) 
 * [`map`](#map) 
 * [`pluck`](#pluck)
@@ -165,6 +166,26 @@ import { WithoutPipe } from 'angular-pipes/src/array/without.pipe';
 
 ```html
 {{ [1, 2, 3] | without: [1, 3] }} <!-- [2] -->
+```
+
+####intersection 
+
+Returns the intersection of two collection, works with deep equal.
+
+##### File 
+
+```typescript
+import { IntersectionPipe } from 'angular-pipes/src/array/intersection.pipe';
+```
+
+##### Usage 
+
+```html
+{{ [1, 2, 3] | intersection: [1, 2] }} <!-- [1, 2] -->
+{{ [1, 2, 3] | intersection: [1, 2, 2] }} <!-- [1, 2] it does not take duplicates -->
+{{ [1, 2] | intersection: [3, 4] }} <!-- [] -->
+{{ [{ a: 1 }, { a: 2 }] | intersection: [{ a: 1 }, { a: 3 }] }} <!-- [] (no deep here)-->
+{{ [{ a: 1 }, { a: 2 }] | deep | intersection: [{ a: 1 }, { a: 3 }] }} <!-- [{a: 1}] -->
 ```
 
 ####range

@@ -19,7 +19,7 @@ export class UniqPipe implements PipeTransform {
       }
       
       return unwrappedInput.filter((value: any, index: number) => 
-      deepIndexOf(unwrappedInput, value) === index
+        deepIndexOf(unwrappedInput, value) === index
       );
     }
     

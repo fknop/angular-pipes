@@ -1,3 +1,9 @@
+# 6.1.0
+
+## New pipes 
+
+* [`intersection`](./docs/array.md#intersection)
+
 # 6.0.0
 
 ## New pipes 

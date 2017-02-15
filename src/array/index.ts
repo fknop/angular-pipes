@@ -24,6 +24,7 @@ import { DropPipe } from './drop.pipe';
 import { DeepPipe } from './deep.pipe';
 import { ChunkPipe } from './chunk.pipe';
 import { FlattenPipe } from './flatten.pipe';
+import { IntersectionPipe } from './intersection.pipe';
 
 export * from './empty.pipe';
 export * from './head.pipe';
@@ -49,6 +50,8 @@ export * from './drop.pipe';
 export * from './deep.pipe';
 export * from './chunk.pipe';
 export * from './flatten.pipe';
+export * from './intersection.pipe';
+
 
 
 @NgModule({
@@ -76,7 +79,8 @@ export * from './flatten.pipe';
     DeepPipe,
     ChunkPipe,
     FlattenPipe,
-    FirstOrDefaultPipe
+    FirstOrDefaultPipe,
+    IntersectionPipe
   ],
   exports: [
     EmptyPipe,
@@ -102,7 +106,8 @@ export * from './flatten.pipe';
     DeepPipe,
     ChunkPipe,
     FlattenPipe,
-    FirstOrDefaultPipe
+    FirstOrDefaultPipe,
+    IntersectionPipe
   ]
 })
 export class NgArrayPipesModule {}

@@ -8,15 +8,15 @@
 * [`notEqual`](#notequal)
 * [`identical`](#identical)
 * [`notIdentical`](#notidentical)
-* [`null`](#null)
-* [`undefined`](#undefined)
-* [`nil`](#nil) 
-* [`number`](#number)
-* [`string`](#string)
-* [`function`](#function)
-* [`array`](#array)
-* [`object`](#object)
-* [`defined`](#defined)
+* [`isNull`](#isnull)
+* [`isUndefined`](#isundefined)
+* [`isNil`](#isnil) 
+* [`isNumber`](#isnumber)
+* [`isString`](#isstring)
+* [`isFunction`](#isfunction)
+* [`isArray`](#isarray)
+* [`isObject`](#isobject)
+* [`isDefined`](#isdefined)
 
 You can check the module import [`here`](./modules.md).
 
@@ -167,7 +167,7 @@ import { IsNotIdenticalPipe } from 'angular-pipes/src/boolean/conditions.pipe';
 ```
 
 
-####null
+####isnull
 
 Returns true if the value if null.
 
@@ -180,17 +180,11 @@ import { IsNullPipe } from 'angular-pipes/src/boolean/types.pipe';
 ##### Usage
 
 ```html
-{{ null | null }} <!-- true -->
-{{ 1 | null }} <!-- false -->
+{{ null | isNull }} <!-- true -->
+{{ 1 | isNull }} <!-- false -->
 ```
 
-##### Notes
-
-I actually need to make sure that `null` is not parsed as the JS keyword instead of the pipe.
-I'll update this soon.
-
-
-####undefined
+####isundefined
 
 Returns true if the value if undefined.
 
@@ -203,17 +197,11 @@ import { IsUndefinedPipe } from 'angular-pipes/src/boolean/types.pipe';
 ##### Usage
 
 ```html
-{{ a | undefined }} <!-- true if a does not exists -->
-{{ 1 | undefined }} <!-- false -->
+{{ a | isUndefined }} <!-- true if a does not exists -->
+{{ 1 | isUndefined }} <!-- false -->
 ```
 
-##### Notes
-
-I actually need to make sure that `undefined` is not parsed as the JS variable instead of the pipe.
-I'll update this soon.
-
-
-####nil
+####isnil
 
 Returns true if the value if null or undefined.
 
@@ -226,13 +214,13 @@ import { IsNilPipe } from 'angular-pipes/src/boolean/types.pipe';
 ##### Usage
 
 ```html
-{{ a | nil }} <!-- true if a does not exists -->
-{{ null | nil }} <!-- true -->
-{{ 1 | nil }} <!-- false -->
+{{ a | isNil }} <!-- true if a does not exists -->
+{{ null | isNil }} <!-- true -->
+{{ 1 | isNil }} <!-- false -->
 ```
 
 
-####number
+####isnumber
 
 Returns true if the value is a number.
 
@@ -245,11 +233,11 @@ import { IsNumberPipe } from 'angular-pipes/src/boolean/types.pipe';
 ##### Usage
 
 ```html
-{{ 'a' | number }} <!-- false -->
-{{ 1 | number }} <!-- true -->
+{{ 'a' | isNumber }} <!-- false -->
+{{ 1 | isNumber }} <!-- true -->
 ```
 
-####string
+####isstring
 
 Returns true if the value is a string.
 
@@ -262,12 +250,12 @@ import { IsStringPipe } from 'angular-pipes/src/boolean/types.pipe';
 ##### Usage
 
 ```html
-{{ 'a' | string }} <!-- true -->
-{{ 1 | string }} <!-- false -->
+{{ 'a' | isString }} <!-- true -->
+{{ 1 | isString }} <!-- false -->
 ```
 
 
-####function
+####isfunction
 
 Returns true if the value is a function.
 
@@ -286,12 +274,12 @@ myFn() {
 ```
 
 ```html
-{{ 'a' | function }} <!-- false -->
-{{ myFn | function }} <!-- true -->
+{{ 'a' | isFunction }} <!-- false -->
+{{ myFn | isFunction }} <!-- true -->
 ```
 
 
-####array
+####isarray
 
 Returns true if the value is an array.
 
@@ -305,12 +293,12 @@ import { IsArrayPipe } from 'angular-pipes/src/boolean/types.pipe';
 
 
 ```html
-{{ 'a' | array }} <!-- false -->
-{{ [] | array }} <!-- true -->
+{{ 'a' | isArray }} <!-- false -->
+{{ [] | isArray }} <!-- true -->
 ```
 
 
-####object
+####isobject
 
 Returns true if the value is an object.
 
@@ -324,12 +312,12 @@ import { IsObjectPipe } from 'angular-pipes/src/boolean/types.pipe';
 
 
 ```html
-{{ 'a' | object }} <!-- false -->
-{{ {} | object }} <!-- true -->
+{{ 'a' | isObject }} <!-- false -->
+{{ {} | isObject }} <!-- true -->
 ```
 
 
-####defined
+####isdefined
 
 Returns true if the value is defined (nor null nor undefined).
 
@@ -343,7 +331,7 @@ import { IsDefinedPipe } from 'angular-pipes/src/boolean/types.pipe';
 
 
 ```html
-{{ 'a' | defined }} <!-- true -->
-{{ null | defined }} <!-- false -->
-{{ a | defined }} <!-- false if a does not exists -->
+{{ 'a' | isDefined }} <!-- true -->
+{{ null | isDefined }} <!-- false -->
+{{ a | isDefined }} <!-- false if a does not exists -->
 ```

@@ -8,8 +8,9 @@
         "experimentalDecorators": true,
         "removeComments": false,
         "noImplicitAny": true,
-        "noUnusedLocals": true,        
+        "noUnusedLocals": true,
         "suppressImplicitAnyIndexErrors": false,
+        "strictNullChecks": true,
         "declaration": true,
         "types": [
             "core-js"

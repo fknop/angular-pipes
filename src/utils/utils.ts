@@ -1,43 +1,43 @@
 export type CollectionPredicate = (item?: any, index?: number, collection?: any[]) => boolean;
 
-export function isUndefined (value: any): boolean {
+export function isUndefined (value: any): value is undefined {
   
   return typeof value === 'undefined';
 }
 
-export function isNull (value: any): boolean {
+export function isNull (value: any): value is null {
   
   return value === null;
 }
 
-export function isNumber (value: any): boolean {
+export function isNumber (value: any): value is number {
   
   return typeof value === 'number';
 }
 
-export function isNumberFinite (value: any): boolean {
+export function isNumberFinite (value: any): value is number {
   
   return isNumber(value) && isFinite(value);
 }
 
 // Not strict positive
-export function isPositive (value: number): boolean {
+export function isPositive (value: number): value is number {
   
   return value >= 0;
 }
 
 
-export function isInteger (value: number): boolean {
+export function isInteger (value: number): value is number {
   
   // No rest, is an integer
   return (value % 1) === 0;
 }
 
-export function isNil (value: any): boolean {
+export function isNil (value: any): value is (null|undefined) {
   return value === null || typeof (value) === 'undefined';
 }
 
-export function isString (value: any): boolean {
+export function isString (value: any): value is string {
   
   return typeof value === 'string';
 }
@@ -179,7 +179,7 @@ export function getProperty (value: { [key: string]: any}, key: string): any {
   }
   
   const keys: string[] = key.split('.');
-  let result: any = value[keys.shift()];
+  let result: any = value[keys.shift()!];
   
   for (const key of keys) {
     if (isNil(result) || !isObject(result)) {

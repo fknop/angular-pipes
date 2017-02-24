@@ -4,7 +4,7 @@ import {isString, isNull} from '../utils/utils';
 @Pipe({name: 'with'})
 export class WithPipe implements PipeTransform {
   
-  transform(input: string, start: string = null, ends: string = null, csensitive: boolean = false): any {
+  transform(input: string, start: string | null = null, ends: string | null = null, csensitive: boolean = false): any {
     
     if (!isString(input) || (isNull(start) && isNull(ends)) || (start == '') || (ends == '')) {
       return input;

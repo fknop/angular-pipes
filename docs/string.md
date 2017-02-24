@@ -14,6 +14,8 @@
 * [`template`](#template)
 * [`encodeURI`](#encodeuri)
 * [`encodeURIComponent`](#encodeuricomponent)
+* [`decodeURI`](#decodeuri)
+* [`decodeURIComponent`](#decodeuricomponent)
 * [`repeat`](#repeat)
 * [`truncate`](#truncate)
 * [`slugify`](#slugify)
@@ -245,6 +247,26 @@ The encodeURIComponent function.
 
 ```typescript
 import { EncodeURIComponentPipe } from 'angular-pipes/src/string/encode-uri-component.pipe';
+```
+
+#### decodeuri
+
+The decodeURI function.
+
+##### File
+
+```typescript
+import { DecodeURIPipe } from 'angular-pipes/src/string/decode-uri.pipe';
+```
+
+#### decodeuricomponent
+
+The decodeURIComponent function.
+
+##### File
+
+```typescript
+import { DecodeURIComponentPipe } from 'angular-pipes/src/string/decode-uri-component.pipe';
 ```
 
 #### repeat

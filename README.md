@@ -110,6 +110,8 @@ You can find the documentations in the [`docs`](./docs) folder.
 * [`template`](./docs/string.md#template)
 * [`encodeURI`](./docs/string.md#encodeuri)
 * [`encodeURIComponent`](./docs/string.md#encodeuricomponent)
+* [`decodeURI`](./docs/string.md#decodeuri)
+* [`decodeURIComponent`](./docs/string.md#decodeuricomponent)
 * [`repeat`](./docs/string.md#repeat)
 * [`truncate`](./docs/string.md#truncate)
 * [`slugify`](./docs/string.md#slugify)

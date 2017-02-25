@@ -52,7 +52,7 @@ $ npm run prepublish
 * Make your changes
     + Make sure you have correctly exported the pipe
     + Make sure to provide unit tests
-    + Make sure you provided documentation for your pipe.
+    + Make sure you provided documentation for your pipe (also add links to `README.md`).
     + Run your tests with `npm test`
     + Make sure the tests pass and you have `100%` coverage.
 * Commit (explicit message)

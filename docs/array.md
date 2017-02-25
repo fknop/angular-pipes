@@ -9,6 +9,7 @@
 * [`uniq`](#uniq)
 * [`without`](#without)
 * [`intersection`](#intersection)
+* [`union`](#union)
 * [`range`](#range) 
 * [`map`](#map) 
 * [`pluck`](#pluck)
@@ -186,6 +187,25 @@ import { IntersectionPipe } from 'angular-pipes/src/array/intersection.pipe';
 {{ [1, 2] | intersection: [3, 4] }} <!-- [] -->
 {{ [{ a: 1 }, { a: 2 }] | intersection: [{ a: 1 }, { a: 3 }] }} <!-- [] (no deep here)-->
 {{ [{ a: 1 }, { a: 2 }] | deep | intersection: [{ a: 1 }, { a: 3 }] }} <!-- [{a: 1}] -->
+```
+
+####union 
+
+Returns the union of two collection, works with deep equal.
+
+##### File 
+
+```typescript
+import { UnionPipe } from 'angular-pipes/src/array/union.pipe';
+```
+
+##### Usage 
+
+```html
+{{ [1, 2, 3] | union: [1, 2] }} <!-- [1, 2, 3] -->
+{{ [1, 2] | union: [3, 4] }} <!-- [1, 2, 3, 4] -->
+{{ [{ a: 1 }, { a: 2 }] | union: [{ a: 1 }, { a: 3 }] }} <!-- [{ a: 1 }, { a: 2 }, { a: 1 }, { a: 3 }] (no deep here)-->
+{{ [{ a: 1 }, { a: 2 }] | deep | union: [{ a: 1 }, { a: 3 }] }} <!-- [{ a: 1 }, { a: 2 }, { a: 3 }] -->
 ```
 
 ####range

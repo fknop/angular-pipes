@@ -32,6 +32,7 @@ You can find the documentations in the [`docs`](./docs) folder.
 * [`uniq`](./docs/array.md#uniq)
 * [`without`](./docs/array.md#without)
 * [`intersection`](./docs/array.md#intersection)
+* [`union`](./docs/array.md#union)
 * [`range`](./docs/array.md#range)
 * [`map`](./docs/array.md#map)
 * [`pluck`](./docs/array.md#pluck)

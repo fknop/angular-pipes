@@ -1,21 +1,21 @@
 export type CollectionPredicate = (item?: any, index?: number, collection?: any[]) => boolean;
 
-export function isUndefined (value: any): boolean {
+export function isUndefined (value: any): value is undefined {
   
   return typeof value === 'undefined';
 }
 
-export function isNull (value: any): boolean {
+export function isNull (value: any): value is null {
   
   return value === null;
 }
 
-export function isNumber (value: any): boolean {
+export function isNumber (value: any): value is number {
   
   return typeof value === 'number';
 }
 
-export function isNumberFinite (value: any): boolean {
+export function isNumberFinite (value: any): value is number {
   
   return isNumber(value) && isFinite(value);
 }
@@ -33,11 +33,11 @@ export function isInteger (value: number): boolean {
   return (value % 1) === 0;
 }
 
-export function isNil (value: any): boolean {
+export function isNil (value: any): value is (null|undefined) {
   return value === null || typeof (value) === 'undefined';
 }
 
-export function isString (value: any): boolean {
+export function isString (value: any): value is string {
   
   return typeof value === 'string';
 }

@@ -45,6 +45,8 @@ You can find the documentations in the [`docs`](./docs) folder.
 * [`every`](./docs/array.md#every)
 * [`shuffle`](./docs/array.md#shuffle)
 * [`take`](./docs/array.md#take)
+* [`takeUntil`](./docs/array.md#takeuntil)
+* [`takeWhile`](./docs/array.md#takewhile)
 * [`drop`](./docs/array.md#drop)
 * [`deep`](./docs/array.md#deep)
 * [`chunk`](./docs/array.md#chunk)

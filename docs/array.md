@@ -22,6 +22,8 @@
 * [`every`](#every)
 * [`shuffle`](#shuffle)
 * [`take`](#take)
+* [`takeUntil`](#takeuntil)
+* [`takeWhile`](#takewhile)
 * [`drop`](#drop)
 * [`deep`](#deep)
 * [`chunk`](#chunk)
@@ -555,6 +557,52 @@ import { TakePipe } from 'angular-pipes/src/array/take.pipe';
 {{ [1, 2, 3, 4] | take }} <!-- [1] -->
 {{ [1, 2, 3, 4] | take: 2 }} <!-- [1, 2] -->
 ```
+
+
+####takeuntil
+
+Take until the condition is met.
+
+##### File
+
+```typescript
+import { TakeUntilPipe } from 'angular-pipes/src/array/take-until.pipe';
+```
+
+##### Usage
+
+```typescript
+function predicate (item: any) {
+  return item >= 4;
+}
+```
+
+```html
+{{ [1, 2, 3, 4] | takeUntil: predicate }} <!-- [1, 2, 3] -->
+```
+
+####takewhile
+
+Take while the condition is met.
+
+##### File
+
+```typescript
+import { TakeWhilePipe } from 'angular-pipes/src/array/take-while.pipe';
+```
+
+##### Usage
+
+```typescript
+function predicate (item: any) {
+  return item < 4;
+}
+```
+
+```html
+{{ [1, 2, 3, 4] | takeWhile }} <!-- [1, 2, 3] -->
+```
+
 
 ####drop
 

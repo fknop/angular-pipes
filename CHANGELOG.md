@@ -1,3 +1,16 @@
+# 6.3.0 
+
+## New pipes 
+
+* [`takeWhile`](./docs/array.md#takeWhile)
+* [`takeUntil`](./docs/array.md#takeUntil)
+
+# 6.2.0
+
+## New pipes 
+
+* [`union`](./docs/array.md#union)
+
 # 6.1.0
 
 ## New pipes 

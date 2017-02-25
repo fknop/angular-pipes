@@ -308,7 +308,7 @@ export function empty (input: any): any {
   return input.length === 0;
 }
 
-export function every (input: any, predicate: Function) {
+export function every (input: any, predicate: CollectionPredicate) {
   
   if (!isArray(input) || !predicate) {
     return input;
@@ -323,4 +323,19 @@ export function every (input: any, predicate: Function) {
   
   
   return result;
+}
+
+export function takeUntil (input: any[], predicate: CollectionPredicate) {
+
+  let i = -1;
+  const result: any = [];
+  while (++i < input.length && !predicate(input[i], i, input)) {
+    result[i] = input[i];
+  }
+
+  return result;
+}
+
+export function takeWhile (input: any[], predicate: CollectionPredicate) {
+  return takeUntil(input, (item: any, index: number, collection: any[]) => !predicate(item, index, collection));
 }

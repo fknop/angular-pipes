@@ -26,6 +26,8 @@ import { ChunkPipe } from './chunk.pipe';
 import { FlattenPipe } from './flatten.pipe';
 import { IntersectionPipe } from './intersection.pipe';
 import { UnionPipe } from './union.pipe';
+import { TakeWhilePipe } from './take-while.pipe';
+import { TakeUntilPipe } from './take-until.pipe';
 
 export * from './empty.pipe';
 export * from './head.pipe';
@@ -53,7 +55,8 @@ export * from './chunk.pipe';
 export * from './flatten.pipe';
 export * from './intersection.pipe';
 export * from './union.pipe';
-
+export * from './take-while.pipe';
+export * from './take-until.pipe';
 
 
 @NgModule({
@@ -83,7 +86,9 @@ export * from './union.pipe';
     FlattenPipe,
     FirstOrDefaultPipe,
     IntersectionPipe,
-    UnionPipe
+    UnionPipe,
+    TakeWhilePipe,
+    TakeUntilPipe
   ],
   exports: [
     EmptyPipe,
@@ -111,7 +116,9 @@ export * from './union.pipe';
     FlattenPipe,
     FirstOrDefaultPipe,
     IntersectionPipe,
-    UnionPipe
+    UnionPipe,
+    TakeWhilePipe,
+    TakeUntilPipe
   ]
 })
 export class NgArrayPipesModule {}

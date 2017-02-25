@@ -1,6 +1,6 @@
 {
   "name": "angular-pipes",
-  "version": "6.2.2",
+  "version": "6.2.0",
   "description": "Angular pipes library",
   "main": "src/index.js",
   "jsnext:main": "esm/index.js",

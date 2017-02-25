@@ -354,7 +354,7 @@ aEqualsOne(item) {
 {{ numbers | where: 1 }}   <!-- [1, 1] -->
 ```
 
-###firstordefault 
+###firstOrDefault 
 
 This pipe behaves exactly like `where` but only return the first element when is found. A default value can be provided if no 
 such element exists.
@@ -559,7 +559,7 @@ import { TakePipe } from 'angular-pipes/src/array/take.pipe';
 ```
 
 
-####takeuntil
+####takeUntil
 
 Take until the condition is met.
 
@@ -581,7 +581,7 @@ function predicate (item: any) {
 {{ [1, 2, 3, 4] | takeUntil: predicate }} <!-- [1, 2, 3] -->
 ```
 
-####takewhile
+####takeWhile
 
 Take while the condition is met.
 

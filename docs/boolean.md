@@ -167,7 +167,7 @@ import { IsNotIdenticalPipe } from 'angular-pipes/src/boolean/conditions.pipe';
 ```
 
 
-####isnull
+####isNull
 
 Returns true if the value if null.
 
@@ -184,7 +184,7 @@ import { IsNullPipe } from 'angular-pipes/src/boolean/types.pipe';
 {{ 1 | isNull }} <!-- false -->
 ```
 
-####isundefined
+####isUndefined
 
 Returns true if the value if undefined.
 
@@ -201,7 +201,7 @@ import { IsUndefinedPipe } from 'angular-pipes/src/boolean/types.pipe';
 {{ 1 | isUndefined }} <!-- false -->
 ```
 
-####isnil
+####isNil
 
 Returns true if the value if null or undefined.
 
@@ -220,7 +220,7 @@ import { IsNilPipe } from 'angular-pipes/src/boolean/types.pipe';
 ```
 
 
-####isnumber
+####isNumber
 
 Returns true if the value is a number.
 
@@ -237,7 +237,7 @@ import { IsNumberPipe } from 'angular-pipes/src/boolean/types.pipe';
 {{ 1 | isNumber }} <!-- true -->
 ```
 
-####isstring
+####isString
 
 Returns true if the value is a string.
 
@@ -255,7 +255,7 @@ import { IsStringPipe } from 'angular-pipes/src/boolean/types.pipe';
 ```
 
 
-####isfunction
+####isFunction
 
 Returns true if the value is a function.
 
@@ -279,7 +279,7 @@ myFn() {
 ```
 
 
-####isarray
+####isArray
 
 Returns true if the value is an array.
 
@@ -298,7 +298,7 @@ import { IsArrayPipe } from 'angular-pipes/src/boolean/types.pipe';
 ```
 
 
-####isobject
+####isObject
 
 Returns true if the value is an object.
 
@@ -317,7 +317,7 @@ import { IsObjectPipe } from 'angular-pipes/src/boolean/types.pipe';
 ```
 
 
-####isdefined
+####isDefined
 
 Returns true if the value is defined (nor null nor undefined).
 

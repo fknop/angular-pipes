@@ -179,7 +179,7 @@ export function getProperty (value: { [key: string]: any}, key: string): any {
   }
   
   const keys: string[] = key.split('.');
-  let result: any = value[keys.shift()];
+  let result: any = value[keys.shift()!];
   
   for (const key of keys) {
     if (isNil(result) || !isObject(result)) {

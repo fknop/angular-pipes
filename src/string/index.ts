@@ -14,6 +14,8 @@ import {UpperFirstPipe} from './upperfirst.pipe';
 import {TemplatePipe} from './template.pipe';
 import {EncodeURIPipe} from './encode-uri.pipe';
 import {EncodeURIComponentPipe} from './encode-uri-component.pipe';
+import {DecodeURIPipe} from './decode-uri.pipe';
+import {DecodeURIComponentPipe} from './decode-uri-component.pipe';
 import {TruncatePipe} from './truncate.pipe';
 import {RepeatPipe} from './repeat.pipe';
 import {SlugifyPipe} from './slugify.pipe';
@@ -37,6 +39,8 @@ export * from './upperfirst.pipe';
 export * from './template.pipe';
 export * from './encode-uri.pipe';
 export * from './encode-uri-component.pipe';
+export * from './decode-uri.pipe';
+export * from './decode-uri-component.pipe';
 export * from './truncate.pipe';
 export * from './repeat.pipe';
 export * from './slugify.pipe';
@@ -62,6 +66,8 @@ export * from './reverse-str.pipe';
     TemplatePipe,
     EncodeURIPipe,
     EncodeURIComponentPipe,
+    DecodeURIPipe,
+    DecodeURIComponentPipe,
     TruncatePipe,
     RepeatPipe,
     SlugifyPipe,
@@ -86,6 +92,8 @@ export * from './reverse-str.pipe';
     TemplatePipe,
     EncodeURIPipe,
     EncodeURIComponentPipe,
+    DecodeURIPipe,
+    DecodeURIComponentPipe,
     TruncatePipe,
     RepeatPipe,
     SlugifyPipe,

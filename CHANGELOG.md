@@ -1,3 +1,14 @@
+# 6.4.0 
+
+## New pipes 
+
+* [`decodeURI`](./docs/string.md#decodeuri)
+* [`decodeURIComponent`](./docs/string.md#decodeuricomponent)
+
+## Other 
+
+* The library should work with `strictNullChecks`
+
 # 6.3.0 
 
 ## New pipes 

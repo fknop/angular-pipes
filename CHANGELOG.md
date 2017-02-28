@@ -1,3 +1,11 @@
+# 6.5.0
+
+## New feature 
+
+* Byte pipes 2.0 [`bytes`](./docs/math.md#bytes)
+  + The maximum unit is now the terabyte
+  + You can now specify a base unit for the conversion (B, KB, MB, GB, TB)
+
 # 6.4.0 
 
 ## New pipes 

@@ -28,7 +28,9 @@ import { BytesPipe } from 'angular-pipes/src/math/bytes.pipe';
 {{ 150 | bytes }} <!-- 150 B -->
 {{ 1024 | bytes }} <!-- 1 KB -->
 {{ 1048576 | bytes }} <!-- 1 MB -->
+{{ 1024 | bytes: 0 : 'KB' }} <!-- 1 MB -->
 {{ 1073741824 | bytes }} <!-- 1 GB -->
+{{ 1099511627776 | bytes }} <!-- 1 TB -->
 ```
 
 ##### Todo 

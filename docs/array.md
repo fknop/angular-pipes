@@ -436,7 +436,6 @@ const values = [
 {{ values | orderBy: '+a' }} <!-- Will order the values by a (asc)-->
 {{ values | orderBy: ['a'] }} <!-- Will order the values by a (asc)-->
 {{ values | orderBy: '-a' }} <!-- Will order the values by a (desc)-->
-{{ values | orderBy: ['-a', 'b'] }} <!-- Will order the values by a (desc)-->
 {{ values | orderBy: ['-a', 'b'] }} <!-- Will order the values by a (desc) and b (asc) -->
 {{ values | orderBy: ['-a', '+b'] }} <!-- Will order the values by a (desc) and b (asc) -->
 {{ values | orderBy: ['-a', '-b'] }} <!-- Will order the values by a (desc) and b (desc) -->

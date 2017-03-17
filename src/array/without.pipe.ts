@@ -18,12 +18,12 @@ export class WithoutPipe implements PipeTransform {
         return unwrappedInput;
       }
       
-      return unwrappedInput.filter((value: any, index: number) => 
+      return unwrappedInput.filter((value: any) => 
       deepIndexOf(args, value) === -1
       );
     }
     
     
-    return input.filter((value: any, index: number) => args.indexOf(value) === -1);
+    return input.filter((value: any) => args.indexOf(value) === -1);
   }
 }

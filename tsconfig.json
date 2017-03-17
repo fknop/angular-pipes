@@ -11,9 +11,7 @@
         "noUnusedLocals": true,        
         "suppressImplicitAnyIndexErrors": false,
         "declaration": true,
-        "types": [
-            "core-js"
-        ]
+	      "lib": ["es6", "dom"]
     },
     "exclude": [
         "node_modules",

@@ -13,7 +13,7 @@ describe('SlugifyPipe', () => {
     });
 
     it('Should return the input', () => {
-        expect(pipe.transform(<any>2)).toEqual(2);
+      expect(pipe.transform(2)).toEqual(2);
     });
    
 });

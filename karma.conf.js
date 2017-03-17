@@ -6,7 +6,6 @@ module.exports = function (config) {
         
         files: [
             { pattern: 'node_modules/reflect-metadata/Reflect.js' },
-            { pattern: 'src/base.spec.ts' },
             { pattern: 'src/**/*.ts' }
         ],
 
@@ -35,6 +34,9 @@ module.exports = function (config) {
             },
             coverageOptions: {
                 exclude: /((\.(d|spec|test|module))|index\.ts)/
+            },
+            compilerOptions: {
+              lib: ['es6', 'dom']
             }
         },
         

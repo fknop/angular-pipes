@@ -4,7 +4,7 @@ import {isString} from '../utils/utils';
 @Pipe({ name: 'slugify' })
 export class SlugifyPipe implements PipeTransform {
 
-  transform(input: string): string {
+  transform(input: any): any {
 
     if (!isString(input)) {
       return input;

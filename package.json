@@ -39,6 +39,7 @@
     "@angular/core": "^4.0.0-rc.5",
     "@angular/platform-server": "^4.0.0-rc.5",
     "@types/jasmine": "^2.5.37",
+    "core-js": "^2.4.1",
     "coveralls": "^2.11.15",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",

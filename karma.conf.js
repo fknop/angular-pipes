@@ -6,6 +6,7 @@ module.exports = function (config) {
         
         files: [
             { pattern: 'node_modules/reflect-metadata/Reflect.js' },
+            { pattern: 'src/base.spec.ts' },
             { pattern: 'src/**/*.ts' }
         ],
 

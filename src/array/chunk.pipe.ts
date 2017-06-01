@@ -12,7 +12,7 @@ export class ChunkPipe implements PipeTransform {
       return input;
     }
     
-    return [].concat.apply([], input.map((elem: any, i: number) => {
+    return [].concat.apply([], input.map((_elem: any, i: number) => {
       return i % size ? [] : [input.slice(i, i + size)];
     }));
   }

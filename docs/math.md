@@ -6,13 +6,13 @@
 * [`round`](#round)
 * [`degrees`](#degrees)
 * [`radians`](#degrees)
-* [`random`](#random) 
-* [`pow`](#pow) 
+* [`random`](#random)
+* [`pow`](#pow)
 * [`sqrt`](#sqrt)
 
 You can check the module import [`here`](./modules.md).
 
-####bytes
+#### bytes
 
 Returns the bytes to an human-readable format.
 
@@ -33,12 +33,12 @@ import { BytesPipe } from 'angular-pipes/src/math/bytes.pipe';
 {{ 1099511627776 | bytes }} <!-- 1 TB -->
 ```
 
-##### Todo 
+##### Todo
 
 * Be able to change the input unit.
 
 
-####ceil
+#### ceil
 
 Ceils a number with a given precision. Take a look at the official documentation on ceil.
 
@@ -57,7 +57,7 @@ import { CeilPipe } from 'angular-pipes/src/math/ceil.pipe';
 ```
 
 
-####floor
+#### floor
 
 Floor a number with a given precision. Take a look at the official documentation on floor.
 
@@ -76,7 +76,7 @@ import { FloorPipe } from 'angular-pipes/src/math/floor.pipe';
 ```
 
 
-####round
+#### round
 
 Rounds a number with a given precision. Take a look at the official documentation on round.
 
@@ -97,7 +97,7 @@ import { RoundPipe } from 'angular-pipes/src/math/round.pipe';
 ```
 
 
-####degrees
+#### degrees
 
 Converts radians to degrees.
 
@@ -111,14 +111,14 @@ import { DegreesPipe } from 'angular-pipes/src/math/degrees.pipe';
 
 ```javascript
 this.value = Math.PI;
-``` 
+```
 
 ```html
 {{ value | degrees }} <!-- 180 -->
 ```
 
 
-####radians
+#### radians
 
 Converts degrees to radians
 
@@ -135,7 +135,7 @@ import { RadiansPipe } from 'angular-pipes/src/math/radians.pipe';
 ```
 
 
-####random
+#### random
 
 Returns a random number between a minimum (default: 0) and a maximum (default: 1).
 The input is ignored.
@@ -155,7 +155,7 @@ import { RandomPipe } from 'angular-pipes/src/math/random.pipe';
 {{ {} | random: 10 }} <!-- Random number between 0 and 10 -->
 ```
 
-####sqrt
+#### sqrt
 
 Returns the square root of a number.
 
@@ -171,7 +171,7 @@ import { SqrtPipe } from 'angular-pipes/src/math/sqrt.pipe';
 {{ 81 | sqrt }} <!-- 9 -->
 ```
 
-####pow
+#### pow
 
 Returns the power of a number.
 

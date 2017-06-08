@@ -10,15 +10,15 @@
 * [`without`](#without)
 * [`intersection`](#intersection)
 * [`union`](#union)
-* [`range`](#range) 
-* [`map`](#map) 
+* [`range`](#range)
+* [`map`](#map)
 * [`pluck`](#pluck)
 * [`where`](#where)
 * [`firstOrDefault`](#firstordefault)
-* [`orderBy`](#orderby) 
+* [`orderBy`](#orderby)
 * [`reverse`](#reverse)
-* [`count`](#count) 
-* [`some`](#some) 
+* [`count`](#count)
+* [`some`](#some)
 * [`every`](#every)
 * [`shuffle`](#shuffle)
 * [`take`](#take)
@@ -31,7 +31,7 @@
 
 You can check the module import [`here`](./modules.md).
 
-####empty
+#### empty
 
 Returns true if the collection is empty.
 
@@ -48,7 +48,7 @@ import { EmptyPipe } from 'angular-pipes/src/array/empty.pipe';
 {{ [1, 2, 3] | empty }} <!-- false -->
 ```
 
-####head
+#### head
 
 Returns the first element of the collection, or undefined if the collection is empty.
 
@@ -65,7 +65,7 @@ import { HeadPipe } from 'angular-pipes/src/array/head.pipe';
 {{ [1, 2, 3] | head }} <!-- 1 -->
 ```
 
-####initial
+#### initial
 
 Returns every element but the last of the collection or empty array if the collection is empty.
 
@@ -83,7 +83,7 @@ import { InitialPipe } from 'angular-pipes/src/array/initial.pipe';
 ```
 
 
-####join
+#### join
 
 Joins an array into a string.
 
@@ -102,7 +102,7 @@ import { JoinPipe } from 'angular-pipes/src/array/join.pipe';
 ```
 
 
-####last
+#### last
 
 Returns the last element of the collection or undefined if the collection is empty.
 
@@ -120,7 +120,7 @@ import { LastPipe } from 'angular-pipes/src/array/last.pipe';
 ```
 
 
-####tail
+#### tail
 
 Returns every elements but the first of the collection or empty array if the collection is empty.
 
@@ -138,7 +138,7 @@ import { TailPipe } from 'angular-pipes/src/array/tail.pipe';
 ```
 
 
-####uniq
+#### uniq
 
 Returns the collection keeping only one duplicate.
 
@@ -155,7 +155,7 @@ import { UniqPipe } from 'angular-pipes/src/array/uniq.pipe';
 {{ ['a', 'b', 'a'] | uniq }} <!-- ['a', 'b'] -->
 ```
 
-####without
+#### without
 
 Returns the collection without the specified elements.
 
@@ -171,17 +171,17 @@ import { WithoutPipe } from 'angular-pipes/src/array/without.pipe';
 {{ [1, 2, 3] | without: [1, 3] }} <!-- [2] -->
 ```
 
-####intersection 
+#### intersection
 
 Returns the intersection of two collection, works with deep equal.
 
-##### File 
+##### File
 
 ```typescript
 import { IntersectionPipe } from 'angular-pipes/src/array/intersection.pipe';
 ```
 
-##### Usage 
+##### Usage
 
 ```html
 {{ [1, 2, 3] | intersection: [1, 2] }} <!-- [1, 2] -->
@@ -191,17 +191,17 @@ import { IntersectionPipe } from 'angular-pipes/src/array/intersection.pipe';
 {{ [{ a: 1 }, { a: 2 }] | deep | intersection: [{ a: 1 }, { a: 3 }] }} <!-- [{a: 1}] -->
 ```
 
-####union 
+#### union
 
 Returns the union of two collection, works with deep equal.
 
-##### File 
+##### File
 
 ```typescript
 import { UnionPipe } from 'angular-pipes/src/array/union.pipe';
 ```
 
-##### Usage 
+##### Usage
 
 ```html
 {{ [1, 2, 3] | union: [1, 2] }} <!-- [1, 2, 3] -->
@@ -210,7 +210,7 @@ import { UnionPipe } from 'angular-pipes/src/array/union.pipe';
 {{ [{ a: 1 }, { a: 2 }] | deep | union: [{ a: 1 }, { a: 3 }] }} <!-- [{ a: 1 }, { a: 2 }, { a: 3 }] -->
 ```
 
-####range
+#### range
 
 Returns a range of number with a given size (`default: 0`) and start (`default: 1`).
 
@@ -232,7 +232,7 @@ import { RangePipe } from 'angular-pipes/src/array/range.pipe';
 ```
 
 
-####map
+#### map
 
 Returns the collection that is passed through a map function.
 If no function is provided, the collection is returned unchanged.
@@ -248,8 +248,8 @@ import { MapPipe } from 'angular-pipes/src/array/map.pipe';
 ```javascript
 // ...
 addOne (item) {
-    
-    return item + 1;   
+
+    return item + 1;
 }
 // ...
 ```
@@ -259,9 +259,9 @@ addOne (item) {
 ```
 
 
-####pluck
+#### pluck
 
-Returns an array of the given property of the object in the array. 
+Returns an array of the given property of the object in the array.
 
 
 ##### File
@@ -280,21 +280,21 @@ const values = [{
     c: {
         d: 3,
         e: {
-            f: 4   
+            f: 4
         }
-    }   
+    }
 }, {
     a: 2,
     c: {
         d: 4,
         e: {
-            f: 5   
-        }   
+            f: 5
+        }
     }
 }];
 
 // ...
-``` 
+```
 
 ```html
 {{ values | pluck: 'a' }} <!-- [1, 2] -->
@@ -304,7 +304,7 @@ const values = [{
 ```
 
 
-####where
+#### where
 
 Filter an array with a given function or a property shorthand.
 
@@ -324,16 +324,16 @@ const values = [{
     c: {
         d: 3,
         e: {
-            f: 4   
+            f: 4
         }
-    }   
+    }
 }, {
     a: 2,
     c: {
         d: 4,
         e: {
-            f: 5   
-        }   
+            f: 5
+        }
     }
 }];
 
@@ -342,10 +342,10 @@ const numbers = [1, 2, 3, 4, 1, 4];
 // ...
 
 aEqualsOne(item) {
-    return item.a === 1;   
+    return item.a === 1;
 }
 
-``` 
+```
 
 ```html
 {{ values | where: aEqualsOne }} <!-- [{ a: 1, c: { d: 3, e: { f: 4 } }] -->
@@ -354,9 +354,9 @@ aEqualsOne(item) {
 {{ numbers | where: 1 }}   <!-- [1, 1] -->
 ```
 
-###firstOrDefault 
+###firstOrDefault
 
-This pipe behaves exactly like `where` but only return the first element when is found. A default value can be provided if no 
+This pipe behaves exactly like `where` but only return the first element when is found. A default value can be provided if no
 such element exists.
 
 
@@ -376,16 +376,16 @@ const values = [{
     c: {
         d: 3,
         e: {
-            f: 4   
+            f: 4
         }
-    }   
+    }
 }, {
     a: 2,
     c: {
         d: 4,
         e: {
-            f: 5   
-        }   
+            f: 5
+        }
     }
 }];
 
@@ -394,10 +394,10 @@ const numbers = [1, 2, 3, 4, 1, 4];
 // ...
 
 aEqualsOne(item) {
-    return item.a === 1;   
+    return item.a === 1;
 }
 
-``` 
+```
 
 ```html
 {{ values | firstOrDefault: aEqualsOne }} <!-- { a: 1, c: { d: 3, e: { f: 4 } }]-->
@@ -408,7 +408,7 @@ aEqualsOne(item) {
 {{ numbers | firstOrDefault: 5 }}   <!-- undefined -->
 ```
 
-####orderBy
+#### orderBy
 
 Returns a new ordered array. You can order by multiple properties, ascending and descending.
 
@@ -442,7 +442,7 @@ const values = [
 ```
 
 
-####reverse
+#### reverse
 
 Returns a reversed array.
 
@@ -459,7 +459,7 @@ import { ReversePipe } from 'angular-pipes/src/array/reverse.pipe';
 ```
 
 
-####count
+#### count
 
 Returns the length of the collection. Useful when used with other pipes, otherwise, use the `length` property.
 Works also for object and string.
@@ -477,7 +477,7 @@ import { CountPipe } from 'angular-pipes/src/array/count.pipe';
 ```
 
 
-####some
+#### some
 
 Returns true if at least one of the item in the collections pass the predicate.
 
@@ -501,7 +501,7 @@ const predicate = function (item) {
 ```
 
 
-####every
+#### every
 
 Returns true if every item in the collections pass the predicate.
 
@@ -524,7 +524,7 @@ const predicate = function (item) {
 {{ [2, 2, 2, 2] | every: predicate }} <!-- true -->
 ```
 
-####shuffle
+#### shuffle
 
 Shuffles a collection.
 
@@ -540,7 +540,7 @@ import { ShufflePipe } from 'angular-pipes/src/array/shuffle.pipe';
 {{ [1, 2, 3] | shuffle }} <!-- random order... -->
 ```
 
-####take
+#### take
 
 Take the top `n` items of an array.
 
@@ -558,7 +558,7 @@ import { TakePipe } from 'angular-pipes/src/array/take.pipe';
 ```
 
 
-####takeUntil
+#### takeUntil
 
 Take until the condition is met.
 
@@ -580,7 +580,7 @@ function predicate (item: any) {
 {{ [1, 2, 3, 4] | takeUntil: predicate }} <!-- [1, 2, 3] -->
 ```
 
-####takeWhile
+#### takeWhile
 
 Take while the condition is met.
 
@@ -603,7 +603,7 @@ function predicate (item: any) {
 ```
 
 
-####drop
+#### drop
 
 Drop the last `n` items of an array.
 
@@ -621,9 +621,9 @@ import { DropPipe } from 'angular-pipes/src/array/drop.pipe';
 ```
 
 
-####deep
+#### deep
 
-The `deep` pipe is different from other pipes, it doesn't return new data. It wraps data for other pipes to work 
+The `deep` pipe is different from other pipes, it doesn't return new data. It wraps data for other pipes to work
 with deep comparaisons.
 
 ##### File
@@ -637,9 +637,9 @@ import { DeepPipe } from 'angular-pipes/src/array/deep.pipe';
 ```javascript
 
 collection: any[] = [
-    { a: 1, b: { c: 2 } },    
-    { a: 1, b: { c: 2 } },    
-    { a: 1, b: { c: 3 } },    
+    { a: 1, b: { c: 2 } },
+    { a: 1, b: { c: 2 } },
+    { a: 1, b: { c: 3 } },
 ];
 
 ```
@@ -650,7 +650,7 @@ collection: any[] = [
 ```
 
 
-####chunk
+#### chunk
 
 The `chunk` pipe breaks the array into multiple, smaller arrays of a given size:
 
@@ -668,7 +668,7 @@ import { ChunkPipe } from 'angular-pipes/src/array/chunk.pipe';
 ```
 
 
-####flatten
+#### flatten
 
 The `flatten` flattens an array. It can be used with the `deep` pipe.
 

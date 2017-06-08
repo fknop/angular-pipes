@@ -6,7 +6,7 @@
 
 You can check the module import [`here`](./modules.md).
 
-####keys
+#### keys
 
 Returns the array of keys of the given object or array.
 
@@ -32,7 +32,7 @@ const value = {
 {{ [1, 2, 3] | keys }} <!-- ['0', '1', '2'] -->
 ```
 
-####toArray
+#### toArray
 
 Transforms an object to an array
 
@@ -58,7 +58,7 @@ const value = {
 ```
 
 
-####defaults
+#### defaults
 
 Apply defaults value to an object or an object in an array.
 

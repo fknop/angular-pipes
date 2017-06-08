@@ -10,7 +10,7 @@
 * [`notIdentical`](#notidentical)
 * [`isNull`](#isnull)
 * [`isUndefined`](#isundefined)
-* [`isNil`](#isnil) 
+* [`isNil`](#isnil)
 * [`isNumber`](#isnumber)
 * [`isString`](#isstring)
 * [`isFunction`](#isfunction)
@@ -20,7 +20,7 @@
 
 You can check the module import [`here`](./modules.md).
 
-####greater
+#### greater
 
 Returns true if the first value is greater than the second value.
 
@@ -38,7 +38,7 @@ import { IsGreaterPipe } from 'angular-pipes/src/boolean/conditions.pipe';
 {{ 1 | greater: 1 }} <!-- false -->
 ```
 
-####greaterOrEqual
+#### greaterOrEqual
 
 Returns true if the first value is greater or equal to the second value.
 
@@ -56,7 +56,7 @@ import { IsGreaterOrEqualPipe } from 'angular-pipes/src/boolean/conditions.pipe'
 {{ 1 | greaterOrEqual: 1 }} <!-- true -->
 ```
 
-####less
+#### less
 
 Returns true if the first value is less than the second value.
 
@@ -74,7 +74,7 @@ import { IsLessPipe } from 'angular-pipes/src/boolean/conditions.pipe';
 {{ 1 | less: 1 }} <!-- false -->
 ```
 
-####lessOrEqual
+#### lessOrEqual
 
 Returns true if the first value is less or equal to the second value.
 
@@ -92,7 +92,7 @@ import { IsLessOrEqualPipe } from 'angular-pipes/src/boolean/conditions.pipe';
 {{ 1 | lessOrEqual: 1 }} <!-- true -->
 ```
 
-####equal
+#### equal
 
 Returns true if the value are equal (operator `==`).
 
@@ -110,7 +110,7 @@ import { IsEqualPipe } from 'angular-pipes/src/boolean/conditions.pipe';
 {{ 1 | equal: 1 }} <!-- true -->
 ```
 
-####notEqual
+#### notEqual
 
 Returns true if the value are not equal (operator `!=`).
 
@@ -129,7 +129,7 @@ import { IsNotEqualPipe } from 'angular-pipes/src/boolean/conditions.pipe';
 ```
 
 
-####identical
+#### identical
 
 Returns true if the value are identical (operator `===`).
 
@@ -148,7 +148,7 @@ import { IsIdenticalPipe } from 'angular-pipes/src/boolean/conditions.pipe';
 ```
 
 
-####notIdentical
+#### notIdentical
 
 Returns true if the value are not identical (operator `!==`).
 
@@ -167,7 +167,7 @@ import { IsNotIdenticalPipe } from 'angular-pipes/src/boolean/conditions.pipe';
 ```
 
 
-####isNull
+#### isNull
 
 Returns true if the value if null.
 
@@ -184,7 +184,7 @@ import { IsNullPipe } from 'angular-pipes/src/boolean/types.pipe';
 {{ 1 | isNull }} <!-- false -->
 ```
 
-####isUndefined
+#### isUndefined
 
 Returns true if the value if undefined.
 
@@ -201,7 +201,7 @@ import { IsUndefinedPipe } from 'angular-pipes/src/boolean/types.pipe';
 {{ 1 | isUndefined }} <!-- false -->
 ```
 
-####isNil
+#### isNil
 
 Returns true if the value if null or undefined.
 
@@ -220,7 +220,7 @@ import { IsNilPipe } from 'angular-pipes/src/boolean/types.pipe';
 ```
 
 
-####isNumber
+#### isNumber
 
 Returns true if the value is a number.
 
@@ -237,7 +237,7 @@ import { IsNumberPipe } from 'angular-pipes/src/boolean/types.pipe';
 {{ 1 | isNumber }} <!-- true -->
 ```
 
-####isString
+#### isString
 
 Returns true if the value is a string.
 
@@ -255,7 +255,7 @@ import { IsStringPipe } from 'angular-pipes/src/boolean/types.pipe';
 ```
 
 
-####isFunction
+#### isFunction
 
 Returns true if the value is a function.
 
@@ -279,7 +279,7 @@ myFn() {
 ```
 
 
-####isArray
+#### isArray
 
 Returns true if the value is an array.
 
@@ -298,7 +298,7 @@ import { IsArrayPipe } from 'angular-pipes/src/boolean/types.pipe';
 ```
 
 
-####isObject
+#### isObject
 
 Returns true if the value is an object.
 
@@ -317,7 +317,7 @@ import { IsObjectPipe } from 'angular-pipes/src/boolean/types.pipe';
 ```
 
 
-####isDefined
+#### isDefined
 
 Returns true if the value is defined (nor null nor undefined).
 

@@ -8,7 +8,7 @@
 
 You can check the module import [`here`](./modules.md).
 
-####groupBy
+#### groupBy
 
 Returns the groupped data of the given array.
 
@@ -40,7 +40,7 @@ const values = [
 ```
 
 
-####min
+#### min
 
 Returns the minimum of the given array.
 
@@ -57,7 +57,7 @@ import { MinPipe } from 'angular-pipes/src/aggregate/min.pipe';
 ```
 
 
-####max
+#### max
 
 Returns the maximum of the given array.
 
@@ -74,7 +74,7 @@ import { MaxPipe } from 'angular-pipes/src/aggregate/max.pipe';
 ```
 
 
-####mean
+#### mean
 
 Returns the mean of the given array.
 
@@ -90,7 +90,7 @@ import { MeanPipe } from 'angular-pipes/src/aggregate/mean.pipe';
 {{ [5, 5, 1, 9] | mean }} <!-- 5 -->
 ```
 
-####sum
+#### sum
 
 Returns the sum of the given array.
 

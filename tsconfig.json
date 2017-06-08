@@ -8,7 +8,8 @@
         "experimentalDecorators": true,
         "removeComments": false,
         "noImplicitAny": true,
-        "noUnusedLocals": true,        
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
         "suppressImplicitAnyIndexErrors": false,
         "declaration": true,
 	      "lib": ["es6", "dom"]

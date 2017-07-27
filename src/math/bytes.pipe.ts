@@ -40,7 +40,7 @@ export class BytesPipe implements PipeTransform {
       const format = BytesPipe.formats[key];
       if (bytes < format.max) {
 
-        const prev = BytesPipe.formats[format.prev];
+        const prev = format.prev ? BytesPipe.formats[format.prev] : undefined;
         
         const result = prev ?
           toDecimal(bytes / prev.max, decimal) : 

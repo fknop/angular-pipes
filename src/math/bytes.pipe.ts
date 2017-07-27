@@ -31,9 +31,9 @@ export class BytesPipe implements PipeTransform {
 
     let bytes = input;
     let unit = from;
-    while (unit != 'B') {
+    while (unit !== 'B') {
       bytes *= 1024;
-      unit = BytesPipe.formats[unit].prev;
+      unit = BytesPipe.formats[unit].prev!;
     }
 
     for (const key in BytesPipe.formats) {

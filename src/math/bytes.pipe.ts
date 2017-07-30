@@ -31,16 +31,16 @@ export class BytesPipe implements PipeTransform {
 
     let bytes = input;
     let unit = from;
-    while (unit != 'B') {
+    while (unit !== 'B') {
       bytes *= 1024;
-      unit = BytesPipe.formats[unit].prev;
+      unit = BytesPipe.formats[unit].prev!;
     }
 
     for (const key in BytesPipe.formats) {
       const format = BytesPipe.formats[key];
       if (bytes < format.max) {
 
-        const prev = BytesPipe.formats[format.prev];
+        const prev = format.prev ? BytesPipe.formats[format.prev] : undefined;
         
         const result = prev ?
           toDecimal(bytes / prev.max, decimal) : 

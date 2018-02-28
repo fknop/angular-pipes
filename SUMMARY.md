@@ -15,11 +15,6 @@
 * [String](docs/string.md)
 * [Object](docs/object.md)
 
-## Build
-
-* [Bundles](docs/bundles.md)
-* [ESM](docs/esm.md)
-
 ## Other
 
 * [Contribute](CONTRIBUTING.md)

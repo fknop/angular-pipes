@@ -35,13 +35,6 @@ $ npm test
 The `npm test` command gives you a test coverage summary in the standard output. If you wish to see a more detailed coverage report, a `html` report
 is produced in the `coverage` folder.
 
-## Building
-
-Contributing to the project does not require compiling the code into javascript. But if you want to:
-
-```
-$ npm run prepublish
-```
 
 ## Submitting changes
 

@@ -1,3 +1,7 @@
+# 7.0.0
+
+* No code changes, distribution is now done via `ng-packagr` to follow the `Angular Package Format`.
+
 # 6.5.0
 
 ## New feature 

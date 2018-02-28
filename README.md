@@ -9,9 +9,9 @@
 
 **angular-pipes** is a pipes library for `Angular`.
 
-## Announcement
+## Changelog
 
-**UMD Bundles** and **ESM** code are now distributed on `npm` with the standard JS files ! Check the [changelog](./CHANGELOG.md) for more information.
+Check out the [changelog](./CHANGELOG.md) to check all the latest changes.
 
 ## Contribute
 

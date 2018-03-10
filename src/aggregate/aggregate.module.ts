@@ -25,8 +25,3 @@ import { SumPipe } from './sum.pipe';
 export class NgAggregatePipesModule {}
 
 
-export * from './group-by.pipe';
-export * from './max.pipe';
-export * from './mean.pipe';
-export * from './min.pipe';
-export * from './sum.pipe';

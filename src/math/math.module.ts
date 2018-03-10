@@ -10,16 +10,6 @@ import { RandomPipe } from './random.pipe';
 import { SqrtPipe } from './sqrt.pipe';
 import { PowPipe } from './pow.pipe';
 
-export * from './bytes.pipe';
-export * from './ceil.pipe';
-export * from './floor.pipe';
-export * from './round.pipe';
-export * from './degrees.pipe';
-export * from './radians.pipe';
-export * from './random.pipe';
-export * from './sqrt.pipe';
-export * from './pow.pipe';
-
 @NgModule({
   declarations: [
     BytesPipe,

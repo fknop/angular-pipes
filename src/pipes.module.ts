@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 
-import { NgAggregatePipesModule } from './aggregate';
-import { NgArrayPipesModule } from './array';
-import { NgBooleanPipesModule } from './boolean';
-import { NgMathPipesModule } from './math';
-import { NgObjectPipesModule } from './object';
-import { NgStringPipesModule } from './string';
+import { NgAggregatePipesModule } from './aggregate/aggregate.module';
+import { NgArrayPipesModule } from './array/array.module';
+import { NgBooleanPipesModule } from './boolean/boolean.module';
+import { NgMathPipesModule } from './math/math.module';
+import { NgObjectPipesModule } from './object/object.module';
+import { NgStringPipesModule } from './string/string.module';
 
 
 @NgModule({

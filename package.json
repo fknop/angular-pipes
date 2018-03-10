@@ -1,6 +1,6 @@
 {
   "name": "angular-pipes",
-  "version": "7.0.0",
+  "version": "7.0.3",
   "description": "Angular pipes library",
   "scripts": {
     "karma": "node_modules/.bin/karma start karma.conf.js",

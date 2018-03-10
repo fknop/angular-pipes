@@ -65,5 +65,3 @@ import {
 })
 export class NgBooleanPipesModule {}
 
-export * from './conditions.pipe';
-export * from './types.pipe';

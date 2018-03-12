@@ -19,7 +19,7 @@ Returns the bytes to an human-readable format.
 ##### File
 
 ```typescript
-import { BytesPipe } from 'angular-pipes/src/math/bytes.pipe';
+import { BytesPipe } from 'angular-pipes';
 ```
 
 ##### Usage
@@ -46,7 +46,7 @@ Ceils a number with a given precision. Take a look at the official documentation
 ##### File
 
 ```typescript
-import { CeilPipe } from 'angular-pipes/src/math/ceil.pipe';
+import { CeilPipe } from 'angular-pipes';
 ```
 
 ##### Usage
@@ -65,7 +65,7 @@ Floor a number with a given precision. Take a look at the official documentation
 ##### File
 
 ```typescript
-import { FloorPipe } from 'angular-pipes/src/math/floor.pipe';
+import { FloorPipe } from 'angular-pipes';
 ```
 
 ##### Usage
@@ -84,7 +84,7 @@ Rounds a number with a given precision. Take a look at the official documentatio
 ##### File
 
 ```typescript
-import { RoundPipe } from 'angular-pipes/src/math/round.pipe';
+import { RoundPipe } from 'angular-pipes';
 ```
 
 ##### Usage
@@ -105,7 +105,7 @@ Converts radians to degrees.
 ##### File
 
 ```typescript
-import { DegreesPipe } from 'angular-pipes/src/math/degrees.pipe';
+import { DegreesPipe } from 'angular-pipes';
 ```
 
 ##### Usage
@@ -126,7 +126,7 @@ Converts degrees to radians
 ##### File
 
 ```typescript
-import { RadiansPipe } from 'angular-pipes/src/math/radians.pipe';
+import { RadiansPipe } from 'angular-pipes';
 ```
 
 ##### Usage
@@ -145,7 +145,7 @@ If only one argument is given, it will be the maximum.
 ##### File
 
 ```typescript
-import { RandomPipe } from 'angular-pipes/src/math/random.pipe';
+import { RandomPipe } from 'angular-pipes';
 ```
 
 ##### Usage
@@ -163,7 +163,7 @@ Returns the square root of a number.
 ##### File
 
 ```typescript
-import { SqrtPipe } from 'angular-pipes/src/math/sqrt.pipe';
+import { SqrtPipe } from 'angular-pipes';
 ```
 
 ##### Usage
@@ -179,7 +179,7 @@ Returns the power of a number.
 ##### File
 
 ```typescript
-import { PowPipe } from 'angular-pipes/src/math/pow.pipe';
+import { PowPipe } from 'angular-pipes';
 ```
 
 ##### Usage

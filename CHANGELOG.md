@@ -1,6 +1,10 @@
+# 7.1.0
+
+* Fixed issues with `ng-packagr`. All individual pipes can now be exported directly from `angular-pipes` instead of full path. The full path is not available anymore.
+
 # 7.0.0
 
-* No code changes, distribution is now done via `ng-packagr` to follow the `Angular Package Format`.
+* No code changes, distribution is now done via `ng-packagr` to follow the `Angular Package Format`.%
 
 # 6.5.0
 

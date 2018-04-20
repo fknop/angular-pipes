@@ -302,9 +302,9 @@ import { TruncatePipe } from 'angular-pipes';
 
 ```html
 {{ 'Hello World' | truncate: 4 }} <!-- 'Hell' -->
-{{ 'Hello World' | truncate: 4: '', true }} <!-- 'Hello' -->
-{{ 'Hello World' | truncate: 4: '...', true }} <!-- 'Hello...' -->
-{{ 'Hello World, how is it going?' | truncate: 14: '...', true }} <!-- 'Hello World, how...' -->
+{{ 'Hello World' | truncate: 4: '': true }} <!-- 'Hello' -->
+{{ 'Hello World' | truncate: 4: '...': true }} <!-- 'Hello...' -->
+{{ 'Hello World, how is it going?' | truncate: 14: '...': true }} <!-- 'Hello World, how...' -->
 ```
 
 #### slugify

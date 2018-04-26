@@ -9,6 +9,7 @@
 * [`random`](#random)
 * [`pow`](#pow)
 * [`sqrt`](#sqrt)
+* [`abs`](#abs)
 
 You can check the module import [`here`](./modules.md).
 
@@ -187,4 +188,20 @@ import { PowPipe } from 'angular-pipes';
 ```html
 {{ 2 | pow }} <!-- 4 -->
 {{ 2 | pow: 3 }} <!-- 8 -->
+```
+
+#### abs
+
+Returns the absolute of a number.
+
+##### File
+
+```typescript
+import { AbsPipe } from 'angular-pipes';
+```
+
+##### Usage
+
+```html
+{{ -2 | abs }} <!-- 2 -->
 ```

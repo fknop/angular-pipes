@@ -78,6 +78,7 @@ export { RadiansPipe } from './math/radians.pipe';
 export { RandomPipe } from './math/random.pipe';
 export { SqrtPipe } from './math/sqrt.pipe';
 export { PowPipe } from './math/pow.pipe';
+export { AbsPipe } from './math/abs.pipe';
 
 export { KeysPipe } from './object/keys.pipe';
 export { ToArrayPipe } from './object/to-array.pipe';

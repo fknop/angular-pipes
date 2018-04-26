@@ -1,3 +1,9 @@
+# 7.2.0
+
+## New pipes
+
+* New AbsPipe inside MathModule
+
 # 7.1.0
 
 * Fixed issues with `ng-packagr`. All individual pipes can now be exported directly from `angular-pipes` instead of full path. The full path is not available anymore.

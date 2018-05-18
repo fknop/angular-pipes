@@ -1,3 +1,8 @@
+# 8.0.0
+
+* Use this version for Angular 6
+* To use this package with Angular 5, use version 7.x.x
+
 # 7.2.0
 
 ## New pipes

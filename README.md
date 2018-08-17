@@ -85,6 +85,7 @@ You can find the documentations in the [`docs`](./docs) folder or on [`GitBook`]
 * [`random`](./docs/math.md#random)
 * [`pow`](./docs/math.md#pow)
 * [`sqrt`](./docs/math.md#sqrt)
+* [`ordinal`](./docs/math.md#ordinal)
 
 ### Aggregate
 

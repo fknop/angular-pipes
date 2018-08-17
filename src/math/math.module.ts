@@ -10,6 +10,7 @@ import { RandomPipe } from './random.pipe';
 import { SqrtPipe } from './sqrt.pipe';
 import { PowPipe } from './pow.pipe';
 import { AbsPipe } from './abs.pipe';
+import { OrdinalPipe } from './ordinal.pipe';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AbsPipe } from './abs.pipe';
     RandomPipe,
     SqrtPipe,
     PowPipe,
-	AbsPipe
+    AbsPipe,
+    OrdinalPipe
   ],
   exports: [
     BytesPipe,
@@ -34,7 +36,8 @@ import { AbsPipe } from './abs.pipe';
     RandomPipe,
     SqrtPipe,
     PowPipe,
-	AbsPipe
+    AbsPipe,
+    OrdinalPipe
   ]
 })
 export class NgMathPipesModule {}

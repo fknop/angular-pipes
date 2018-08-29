@@ -8,18 +8,22 @@ export class OrdinalPipe implements PipeTransform {
   
     transform (input: any): any {
 
-    if (!isNumberFinite(input)) {
-        return 'NaN';
-    }
+        if (!isNumberFinite(input)) {
+            return 'NaN';
+        }
 
-    var cardinal = input.toString().charAt(input.toString().length - 1);
-    if (cardinal == "1")
-        return input + "st";
-    else if (cardinal == "2")
-        return input + "nd";
-    else if (cardinal == "3")
-        return input + "rd";
-    else 
-        return input + "th";
-  }
+        const cardinal = input.toString().charAt(input.toString().length - 1);
+
+        switch(cardinal) {
+            case '1':
+                return input + 'st';
+            case '2':
+                return input + 'nd';
+            case '3':
+                return input + 'rd';
+            default: 
+                return input + 'th';
+        }
+        
+    }
 }

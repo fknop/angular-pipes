@@ -44,7 +44,7 @@ export function isString (value: any): value is string {
 
 export function isObject (value: any): boolean {
   
-  return typeof value === 'object';
+  return value !== null && typeof value === 'object';
 }
 
 export function isArray (value: any): boolean {

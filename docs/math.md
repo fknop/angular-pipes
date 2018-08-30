@@ -205,3 +205,21 @@ import { AbsPipe } from 'angular-pipes';
 ```html
 {{ -2 | abs }} <!-- 2 -->
 ```
+
+#### ordinal
+
+Returns the number with a suffix indicating the ordinal.
+
+##### File
+
+```typescript
+import { OrdinalPipe } from 'angular-pipes';
+```
+
+##### Usage
+
+```html
+{{ 1 | ordinal }} <!-- 1st -->
+{{ 523 | ordinal }} <!-- 523rd -->
+{{ 15 | ordinal }} <!-- 15th -->
+```

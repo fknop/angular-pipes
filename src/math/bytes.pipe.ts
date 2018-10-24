@@ -1,7 +1,7 @@
 import { Pipe, PipeTransform } from '@angular/core';
 import { isNumberFinite, isPositive, isInteger, toDecimal } from '../utils/utils';
 
-export type ByteUnit = 'B' | 'kB' | 'MB' | 'GB' | 'TB';
+export type ByteUnit = 'B' | 'kB' | 'KB' | 'MB' | 'GB' | 'TB';
 
 
 @Pipe({
@@ -12,6 +12,7 @@ export class BytesPipe implements PipeTransform {
     static formats: { [key: string]: { max: number, prev?: ByteUnit } } = {
         'B': {max: 1024},
         'kB': {max: Math.pow(1024, 2), prev: 'B'},
+        'KB': {max: Math.pow(1024, 2), prev: 'B'}, // Backward compatible
         'MB': {max: Math.pow(1024, 3), prev: 'kB'},
         'GB': {max: Math.pow(1024, 4), prev: 'MB'},
         'TB': {max: Number.MAX_SAFE_INTEGER, prev: 'GB'}

@@ -42,6 +42,12 @@ describe('BytesPipe', () => {
         expect(result).toEqual('1 kB');
     });
 
+    it('Should return 1 kB #3', () => {
+
+        const result = pipe.transform(1, 0, 'KB');
+        expect(result).toEqual('1 kB');
+    });
+
     it('Should return 890 kB', () => {
 
         const kB = 1024 * 890;
@@ -52,6 +58,12 @@ describe('BytesPipe', () => {
     it('Should return 890 kB #2', () => {
 
         const result = pipe.transform(890, 0, 'kB');
+        expect(result).toEqual('890 kB');
+    });
+
+    it('Should return 890 kB #3', () => {
+
+        const result = pipe.transform(890, 0, 'KB');
         expect(result).toEqual('890 kB');
     });
 

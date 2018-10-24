@@ -30,37 +30,37 @@ describe('BytesPipe', () => {
     });
 
 
-    it('Should return 1 KB', () => {
+    it('Should return 1 kB', () => {
 
         const result = pipe.transform(1024, 0);
-        expect(result).toEqual('1 KB');
+        expect(result).toEqual('1 kB');
     });
 
-    it('Should return 1 KB #2', () => {
+    it('Should return 1 kB #2', () => {
 
-        const result = pipe.transform(1, 0, 'KB');
-        expect(result).toEqual('1 KB');
+        const result = pipe.transform(1, 0, 'kB');
+        expect(result).toEqual('1 kB');
     });
 
-    it('Should return 890 KB', () => {
+    it('Should return 890 kB', () => {
 
-        const kb = 1024 * 890;
-        const result = pipe.transform(kb, 0);
-        expect(result).toEqual('890 KB');
+        const kB = 1024 * 890;
+        const result = pipe.transform(kB, 0);
+        expect(result).toEqual('890 kB');
     });
 
-    it('Should return 890 KB #2', () => {
+    it('Should return 890 kB #2', () => {
 
-        const result = pipe.transform(890, 0, 'KB');
-        expect(result).toEqual('890 KB');
+        const result = pipe.transform(890, 0, 'kB');
+        expect(result).toEqual('890 kB');
     });
 
 
-    it('Should return 1023 KB', () => {
+    it('Should return 1023 kB', () => {
 
-        const kb = 1024 * 1023;
-        const result = pipe.transform(kb, 0);
-        expect(result).toEqual('1023 KB');
+        const kB = 1024 * 1023;
+        const result = pipe.transform(kB, 0);
+        expect(result).toEqual('1023 kB');
     });
 
     it('Should return 241 MB', () => {
@@ -93,8 +93,8 @@ describe('BytesPipe', () => {
 
     it('Should return 1023 MB #2', () => {
 
-        const kb = 1024 * 1023;
-        const result = pipe.transform(kb, 2, 'KB');
+        const kB = 1024 * 1023;
+        const result = pipe.transform(kB, 2, 'kB');
         expect(result).toEqual('1023 MB');
     });
 

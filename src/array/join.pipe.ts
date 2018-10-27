@@ -6,12 +6,12 @@ import { isArray } from '../utils/utils';
 })
 export class JoinPipe implements PipeTransform {
   
-  transform (input: any, character: string = ''): any {
+  transform (array: any, seperator: string): any {
     
-    if (!isArray(input)) {
-      return input;
+    if (!isArray(array)) {
+      return array;
     }
     
-    return input.join(character);
+    return input.join(seperator);
   }
 }

@@ -394,7 +394,7 @@ import { MakeSingularStringPipe } from 'angular-pipes';
 ```html
 <span>{{'Paintings' | make-singular-string}}</span> <!-- Output: "Painting" -->
 <span>{{'Paintings' | make-singular-string: 1}}</span> <!-- Output: "Painting" -->
-<span>{{'One Painting' | make-singular-string: 1}}</span> <!-- Output: "One Painting" -->
+<span>{{'One Paintings' | make-singular-string: 1}}</span> <!-- Output: "One Painting" -->
 <span>{{'Paintings' | make-singular-string: 4}}</span> <!-- Output: "Paintings" -->
 <span>{{'Four Paintings' | make-singular-string: 4}}</span> <!-- Output: "Four Paintings" -->
 ``` 

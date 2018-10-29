@@ -42,6 +42,12 @@ export function isString (value: any): value is string {
   return typeof value === 'string';
 }
 
+export function isVowel(letter: string): boolean {
+    const vowels = ["a", "e", "i", "o", "u"];
+
+    return vowels.indexOf(letter) !== -1;
+}
+
 export function isObject (value: any): boolean {
   
   return value !== null && typeof value === 'object';

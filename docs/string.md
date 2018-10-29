@@ -22,6 +22,7 @@
 * [`stripTags`](#striptags)
 * [`latinize`](#latinize)
 * [`wrap`](#wrap)
+* [`make-plural-string`](#make-plural-string)
 * [`with`](#with)
 * [`reverseStr`](#reversestr)
 
@@ -381,6 +382,28 @@ import { WrapPipe } from 'angular-pipes';
 <p>{{ 'foo' | wrap: '/' }}</p> <!--result: /foo/ -->
 <p>{{ 'foo' | wrap: '{{': '}}' }}</p> <!--result: {{foo}} -->
 ```
+
+#### make-plural-string
+
+make-plural-string pipe selectively pluralize a word or the last word in a string of words
+
+Arguments: \( string, quantity\[optional\] \)
+
+##### File
+
+```typescript
+import { MakePluralStringPipe } from 'angular-pipes';
+```
+
+##### Usage
+
+```html
+<span>{{'Painting' | make-plural-string}}</span> <!-- Output: "Paintings" -->
+<span>{{'Painting' | make-plural-string: 1}}</span> <!-- Output: "Painting" -->
+<span>{{'One Painting' | make-plural-string: 1}}</span> <!-- Output: "One Painting" -->
+<span>{{'Painting' | make-plural-string: 4}}</span> <!-- Output: "Paintings" -->
+<span>{{'Four Painting' | make-plural-string: 4}}</span> <!-- Output: "Four Paintings" -->
+``` 
 
 #### with
 

@@ -119,6 +119,7 @@ You can find the documentations in the [`docs`](./docs) folder or on [`GitBook`]
 * [`stripTags`](./docs/string.md#striptags)
 * [`latinize`](./docs/string.md#latinize)
 * [`wrap`](./docs/string.md#wrap)
+* [`a-or-an`](./docs/string.md#a-or-an)
 * [`with`](./docs/string.md#with)
 * [`reverseStr`](./docs/string.md#reversestr)
 

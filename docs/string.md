@@ -382,6 +382,25 @@ import { WrapPipe } from 'angular-pipes';
 <p>{{ 'foo' | wrap: '{{': '}}' }}</p> <!--result: {{foo}} -->
 ```
 
+#### a-or-an
+
+a-or-an pipe check if string needs to be prepended with `a` or with `an`
+
+Arguments: \( string \)
+
+##### File
+
+```typescript
+import { AorAnPipe } from 'angular-pipes';
+```
+
+##### Usage
+
+```html
+{{'egg' | a-or-an}} <!-- result: 'an egg' -->
+{{'peanut' | a-or-an}} <!-- result: 'a peanut' -->
+```
+
 #### with
 
 With pipe check string has start and/or ends

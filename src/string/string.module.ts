@@ -22,6 +22,7 @@ import {SlugifyPipe} from './slugify.pipe';
 import {StripTagsPipe} from "./strip-tags.pipe";
 import {LatinizePipe} from "./latinize.pipe";
 import {WrapPipe} from "./wrap.pipe";
+import {MakeSingularStringPipe} from "./singularize-string";
 import {WithPipe} from "./with.pipe";
 import {ReverseStrPipe} from "./reverse-str.pipe";
 
@@ -50,6 +51,7 @@ import {ReverseStrPipe} from "./reverse-str.pipe";
     StripTagsPipe,
     LatinizePipe,
     WrapPipe,
+    MakeSingularStringPipe,
     WithPipe,
     ReverseStrPipe
   ],
@@ -76,6 +78,7 @@ import {ReverseStrPipe} from "./reverse-str.pipe";
     StripTagsPipe,
     LatinizePipe,
     WrapPipe,
+    MakeSingularStringPipe,
     WithPipe,
     ReverseStrPipe
   ]

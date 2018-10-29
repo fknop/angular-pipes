@@ -22,6 +22,7 @@
 * [`stripTags`](#striptags)
 * [`latinize`](#latinize)
 * [`wrap`](#wrap)
+* [`make-singular-string`](./docs/string.md#make-singular-string)
 * [`with`](#with)
 * [`reverseStr`](#reversestr)
 
@@ -381,6 +382,22 @@ import { WrapPipe } from 'angular-pipes';
 <p>{{ 'foo' | wrap: '/' }}</p> <!--result: /foo/ -->
 <p>{{ 'foo' | wrap: '{{': '}}' }}</p> <!--result: {{foo}} -->
 ```
+
+#### make-singular-string
+make-singular-string pipe selectively make singular a word or the last word in a string of words
+Arguments: \( string, quantity\[optional\] \)
+##### File
+```typescript
+import { MakeSingularStringPipe } from 'angular-pipes';
+```
+##### Usage
+```html
+<span>{{'Paintings' | make-singular-string}}</span> <!-- Output: "Painting" -->
+<span>{{'Paintings' | make-singular-string: 1}}</span> <!-- Output: "Painting" -->
+<span>{{'One Painting' | make-singular-string: 1}}</span> <!-- Output: "One Painting" -->
+<span>{{'Paintings' | make-singular-string: 4}}</span> <!-- Output: "Paintings" -->
+<span>{{'Four Paintings' | make-singular-string: 4}}</span> <!-- Output: "Four Paintings" -->
+``` 
 
 #### with
 

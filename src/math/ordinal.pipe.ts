@@ -26,4 +26,10 @@ export class OrdinalPipe implements PipeTransform {
         }
 
     }
+
+    private endsWithTenth(input: any): boolean {
+        const beforeLastDigit = input.toString().charAt(input.toString().length - 2);
+
+        return beforeLastDigit === '1';
+    }
 }

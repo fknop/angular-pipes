@@ -47,4 +47,8 @@ describe('OrdinalPipe', () => {
         expect(pipe.transform('a')).toEqual('NaN');
     });
 
+    it('Should return 35th', () => {
+        expect(pipe.transform(35)).toEqual('35th');
+    });
+
 });

@@ -10,6 +10,7 @@
 * [`pow`](#pow)
 * [`sqrt`](#sqrt)
 * [`abs`](#abs)
+* [`ordinal`](#ordinal)
 
 You can check the module import [`here`](./modules.md).
 

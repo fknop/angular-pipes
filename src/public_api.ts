@@ -109,3 +109,5 @@ export { LatinizePipe } from "./string/latinize.pipe";
 export { WrapPipe } from "./string/wrap.pipe";
 export { WithPipe } from "./string/with.pipe";
 export { ReverseStrPipe } from "./string/reverse-str.pipe";
+
+export {Dt2agePipe} from "./string/dt2age.pipe";

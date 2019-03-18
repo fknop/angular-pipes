@@ -24,6 +24,7 @@
 * [`wrap`](#wrap)
 * [`with`](#with)
 * [`reverseStr`](#reversestr)
+* [`dt2age`](#dt2age)
 
 You can check the module import [`here`](./modules.md).
 
@@ -430,3 +431,19 @@ import { ReverseStrPipe } from 'angular-pipes';
 
 
 
+
+#### dt2age
+
+Date string to age.
+
+##### File
+
+```typescript
+import { Dt2agePipe } from 'angular-pipes';
+```
+
+##### Usage
+
+```html
+{{ '1976-05-13' | dt2age }} <!-- '42' -->
+```

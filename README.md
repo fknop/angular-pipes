@@ -19,6 +19,9 @@ Read the [contributing guidelines](./CONTRIBUTING.md)
 
 ## Pipes
 
+
+## Note - replace angular-pipes by gix-angular-pipes
+
 You can find the documentations in the [`docs`](./docs) folder or on [`GitBook`](https://fknop.gitbooks.io/angular-pipes/).
 
 ### Collections (array)

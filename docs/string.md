@@ -1,5 +1,7 @@
 # String
 
+## Note - replace angular-pipes by gix-angular-pipes
+
 * [`leftpad`](#leftpad)
 * [`rightpad`](#rightpad)
 * [`pad`](#pad)

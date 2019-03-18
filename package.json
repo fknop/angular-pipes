@@ -1,6 +1,6 @@
 {
   "name": "gix-angular-pipes",
-  "version": "9.0.2",
+  "version": "9.0.4",
   "description": "GIX Angular pipes library inherited from fknop.gitbooks.io/angular-pipes",
   "scripts": {
     "karma": "node_modules/.bin/karma start karma.conf.js",
@@ -27,7 +27,7 @@
   "devDependencies": {
     "@angular/compiler": "^7.0.0",
     "@angular/compiler-cli": "^7.0.0",
-    "@angular/core": "^7.0.0",
+    "@angular/core": "^7.2.9",
     "@angular/platform-server": "^7.0.0",
     "@types/jasmine": "^2.5.37",
     "core-js": "^2.4.1",

@@ -24,6 +24,7 @@ import {LatinizePipe} from "./latinize.pipe";
 import {WrapPipe} from "./wrap.pipe";
 import {WithPipe} from "./with.pipe";
 import {ReverseStrPipe} from "./reverse-str.pipe";
+import { Dt2agePipe } from './dt2age.pipe';
 
 
 @NgModule({
@@ -51,7 +52,8 @@ import {ReverseStrPipe} from "./reverse-str.pipe";
     LatinizePipe,
     WrapPipe,
     WithPipe,
-    ReverseStrPipe
+    ReverseStrPipe,
+    Dt2agePipe
   ],
   exports: [
     LeftPadPipe,

@@ -79,7 +79,8 @@ import { Dt2agePipe } from './dt2age.pipe';
     LatinizePipe,
     WrapPipe,
     WithPipe,
-    ReverseStrPipe
+    ReverseStrPipe,
+    Dt2agePipe
   ]
 })
 export class NgStringPipesModule {

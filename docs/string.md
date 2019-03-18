@@ -37,7 +37,7 @@ Returns a left-padded string.
 ##### File
 
 ```typescript
-import { LeftPadPipe } from 'angular-pipes';
+import { LeftPadPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -55,7 +55,7 @@ Returns a right-padded string.
 ##### File
 
 ```typescript
-import { RightPadPipe } from 'angular-pipes';
+import { RightPadPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -73,7 +73,7 @@ Returns a padded string. It starts with left and then right.
 ##### File
 
 ```typescript
-import { PadPipe } from 'angular-pipes';
+import { PadPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -91,7 +91,7 @@ Trims the string.
 ##### File
 
 ```typescript
-import { TrimPipe } from 'angular-pipes';
+import { TrimPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -109,7 +109,7 @@ Split a string into an array.
 ##### File
 
 ```typescript
-import { SplitPipe } from 'angular-pipes';
+import { SplitPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -127,7 +127,7 @@ This is the `String#replace()` function, if you want to know more about the argu
 ##### File
 
 ```typescript
-import { ReplacePipe } from 'angular-pipes';
+import { ReplacePipe } from 'gix-angular-pipes';
 ```
 
 #### match
@@ -137,7 +137,7 @@ This is the `String#match()` function, if you want to know more about the argume
 ##### File
 
 ```typescript
-import { MatchPipe } from 'angular-pipes';
+import { MatchPipe } from 'gix-angular-pipes';
 ```
 
 #### test
@@ -147,7 +147,7 @@ This is the `String#test()` function, if you want to know more about the argumen
 ##### File
 
 ```typescript
-import { TestPipe } from 'angular-pipes';
+import { TestPipe } from 'gix-angular-pipes';
 ```
 
 #### newlines
@@ -158,7 +158,7 @@ with the `[innerHTML]` binding.
 ##### File
 
 ```typescript
-import { NewlinesPipe } from 'angular-pipes';
+import { NewlinesPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -189,7 +189,7 @@ Capitalize the string. If the argument is true, all the words will be capitalize
 ##### File
 
 ```typescript
-import { CapitalizePipe } from 'angular-pipes';
+import { CapitalizePipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -207,7 +207,7 @@ Uppercase the first letter.
 ##### File
 
 ```typescript
-import { UpperFirstPipe } from 'angular-pipes';
+import { UpperFirstPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -223,7 +223,7 @@ Template string.
 ##### File
 
 ```typescript
-import { TemplatePipe } from 'angular-pipes';
+import { TemplatePipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -239,7 +239,7 @@ The encodeURI function.
 ##### File
 
 ```typescript
-import { EncodeURIPipe } from 'angular-pipes';
+import { EncodeURIPipe } from 'gix-angular-pipes';
 ```
 
 #### encodeuricomponent
@@ -249,7 +249,7 @@ The encodeURIComponent function.
 ##### File
 
 ```typescript
-import { EncodeURIComponentPipe } from 'angular-pipes';
+import { EncodeURIComponentPipe } from 'gix-angular-pipes';
 ```
 
 #### decodeuri
@@ -259,7 +259,7 @@ The decodeURI function.
 ##### File
 
 ```typescript
-import { DecodeURIPipe } from 'angular-pipes';
+import { DecodeURIPipe } from 'gix-angular-pipes';
 ```
 
 #### decodeuricomponent
@@ -269,7 +269,7 @@ The decodeURIComponent function.
 ##### File
 
 ```typescript
-import { DecodeURIComponentPipe } from 'angular-pipes';
+import { DecodeURIComponentPipe } from 'gix-angular-pipes';
 ```
 
 #### repeat
@@ -279,7 +279,7 @@ Repeats a string.
 ##### File
 
 ```typescript
-import { RepeatPipe } from 'angular-pipes';
+import { RepeatPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -298,7 +298,7 @@ Arguments: \(size, suffix, preserve\)
 ##### File
 
 ```typescript
-import { TruncatePipe } from 'angular-pipes';
+import { TruncatePipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -319,7 +319,7 @@ Arguments: \(string\)
 ##### File
 
 ```typescript
-import { SlugifyPipe } from 'angular-pipes';
+import { SlugifyPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -338,7 +338,7 @@ Arguments: \( string, ends, case-sensitive\[optional\] \)
 ##### File
 
 ```typescript
-import { StripTagsPipe } from 'angular-pipes';
+import { StripTagsPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -356,7 +356,7 @@ Remove accents/diacritics from a string
 ##### File
 
 ```typescript
-import { latinize } from 'angular-pipes';
+import { latinize } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -375,7 +375,7 @@ Arguments: \( string, string, string\[optional\] \)
 ##### File
 
 ```typescript
-import { WrapPipe } from 'angular-pipes';
+import { WrapPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -394,7 +394,7 @@ Arguments: \( string, start\[optional\], ends\[optional\], case-sensitive\[optio
 ##### File
 
 ```typescript
-import { WithPipe } from 'angular-pipes';
+import { WithPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -422,7 +422,7 @@ Reverse a string.
 ##### File
 
 ```typescript
-import { ReverseStrPipe } from 'angular-pipes';
+import { ReverseStrPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -441,7 +441,7 @@ Date string to age.
 ##### File
 
 ```typescript
-import { Dt2agePipe } from 'angular-pipes';
+import { Dt2agePipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage

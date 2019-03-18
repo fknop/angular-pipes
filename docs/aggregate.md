@@ -15,7 +15,7 @@ Returns the groupped data of the given array.
 ##### File
 
 ```typescript
-import { GroupByPipe } from 'angular-pipes';
+import { GroupByPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -47,7 +47,7 @@ Returns the minimum of the given array.
 ##### File
 
 ```typescript
-import { MinPipe } from 'angular-pipes';
+import { MinPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -64,7 +64,7 @@ Returns the maximum of the given array.
 ##### File
 
 ```typescript
-import { MaxPipe } from 'angular-pipes';
+import { MaxPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -81,7 +81,7 @@ Returns the mean of the given array.
 ##### File
 
 ```typescript
-import { MeanPipe } from 'angular-pipes';
+import { MeanPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -97,7 +97,7 @@ Returns the sum of the given array.
 ##### File
 
 ```typescript
-import { SumPipe } from 'angular-pipes';
+import { SumPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage

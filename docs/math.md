@@ -21,7 +21,7 @@ Returns the bytes to an human-readable format.
 ##### File
 
 ```typescript
-import { BytesPipe } from 'angular-pipes';
+import { BytesPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -48,7 +48,7 @@ Ceils a number with a given precision. Take a look at the official documentation
 ##### File
 
 ```typescript
-import { CeilPipe } from 'angular-pipes';
+import { CeilPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -67,7 +67,7 @@ Floor a number with a given precision. Take a look at the official documentation
 ##### File
 
 ```typescript
-import { FloorPipe } from 'angular-pipes';
+import { FloorPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -86,7 +86,7 @@ Rounds a number with a given precision. Take a look at the official documentatio
 ##### File
 
 ```typescript
-import { RoundPipe } from 'angular-pipes';
+import { RoundPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -107,7 +107,7 @@ Converts radians to degrees.
 ##### File
 
 ```typescript
-import { DegreesPipe } from 'angular-pipes';
+import { DegreesPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -128,7 +128,7 @@ Converts degrees to radians
 ##### File
 
 ```typescript
-import { RadiansPipe } from 'angular-pipes';
+import { RadiansPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -147,7 +147,7 @@ If only one argument is given, it will be the maximum.
 ##### File
 
 ```typescript
-import { RandomPipe } from 'angular-pipes';
+import { RandomPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -165,7 +165,7 @@ Returns the square root of a number.
 ##### File
 
 ```typescript
-import { SqrtPipe } from 'angular-pipes';
+import { SqrtPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -181,7 +181,7 @@ Returns the power of a number.
 ##### File
 
 ```typescript
-import { PowPipe } from 'angular-pipes';
+import { PowPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -198,7 +198,7 @@ Returns the absolute of a number.
 ##### File
 
 ```typescript
-import { AbsPipe } from 'angular-pipes';
+import { AbsPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -214,7 +214,7 @@ Returns the number with a suffix indicating the ordinal.
 ##### File
 
 ```typescript
-import { OrdinalPipe } from 'angular-pipes';
+import { OrdinalPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage

@@ -27,7 +27,7 @@ Returns true if the first value is greater than the second value.
 ##### File
 
 ```typescript
-import { IsGreaterPipe } from 'angular-pipes';
+import { IsGreaterPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -45,7 +45,7 @@ Returns true if the first value is greater or equal to the second value.
 ##### File
 
 ```typescript
-import { IsGreaterOrEqualPipe } from 'angular-pipes';
+import { IsGreaterOrEqualPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -63,7 +63,7 @@ Returns true if the first value is less than the second value.
 ##### File
 
 ```typescript
-import { IsLessPipe } from 'angular-pipes';
+import { IsLessPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -81,7 +81,7 @@ Returns true if the first value is less or equal to the second value.
 ##### File
 
 ```typescript
-import { IsLessOrEqualPipe } from 'angular-pipes';
+import { IsLessOrEqualPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -99,7 +99,7 @@ Returns true if the value are equal (operator `==`).
 ##### File
 
 ```typescript
-import { IsEqualPipe } from 'angular-pipes';
+import { IsEqualPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -117,7 +117,7 @@ Returns true if the value are not equal (operator `!=`).
 ##### File
 
 ```typescript
-import { IsNotEqualPipe } from 'angular-pipes';
+import { IsNotEqualPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -136,7 +136,7 @@ Returns true if the value are identical (operator `===`).
 ##### File
 
 ```typescript
-import { IsIdenticalPipe } from 'angular-pipes';
+import { IsIdenticalPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -155,7 +155,7 @@ Returns true if the value are not identical (operator `!==`).
 ##### File
 
 ```typescript
-import { IsNotIdenticalPipe } from 'angular-pipes';
+import { IsNotIdenticalPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -174,7 +174,7 @@ Returns true if the value if null.
 ##### File
 
 ```typescript
-import { IsNullPipe } from 'angular-pipes';
+import { IsNullPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -191,7 +191,7 @@ Returns true if the value if undefined.
 ##### File
 
 ```typescript
-import { IsUndefinedPipe } from 'angular-pipes';
+import { IsUndefinedPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -208,7 +208,7 @@ Returns true if the value if null or undefined.
 ##### File
 
 ```typescript
-import { IsNilPipe } from 'angular-pipes';
+import { IsNilPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -227,7 +227,7 @@ Returns true if the value is a number.
 ##### File
 
 ```typescript
-import { IsNumberPipe } from 'angular-pipes';
+import { IsNumberPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -244,7 +244,7 @@ Returns true if the value is a string.
 ##### File
 
 ```typescript
-import { IsStringPipe } from 'angular-pipes';
+import { IsStringPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -262,7 +262,7 @@ Returns true if the value is a function.
 ##### File
 
 ```typescript
-import { IsFunctionPipe } from 'angular-pipes';
+import { IsFunctionPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -286,7 +286,7 @@ Returns true if the value is an array.
 ##### File
 
 ```typescript
-import { IsArrayPipe } from 'angular-pipes';
+import { IsArrayPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -305,7 +305,7 @@ Returns true if the value is an object.
 ##### File
 
 ```typescript
-import { IsObjectPipe } from 'angular-pipes';
+import { IsObjectPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -324,7 +324,7 @@ Returns true if the value is defined (nor null nor undefined).
 ##### File
 
 ```typescript
-import { IsDefinedPipe } from 'angular-pipes';
+import { IsDefinedPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage

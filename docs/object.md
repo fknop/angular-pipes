@@ -13,7 +13,7 @@ Returns the array of keys of the given object or array.
 ##### File
 
 ```typescript
-import { KeysPipe } from 'angular-pipes';
+import { KeysPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -39,7 +39,7 @@ Transforms an object to an array
 ##### File
 
 ```typescript
-import { ToArrayPipe } from 'angular-pipes';
+import { ToArrayPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -68,7 +68,7 @@ to the defaults.
 ##### File
 
 ```typescript
-import { DefaultsPipe } from 'angular-pipes';
+import { DefaultsPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage

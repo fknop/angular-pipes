@@ -38,7 +38,7 @@ Returns true if the collection is empty.
 ##### File
 
 ```typescript
-import { EmptyPipe } from 'angular-pipes';
+import { EmptyPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -55,7 +55,7 @@ Returns the first element of the collection, or undefined if the collection is e
 ##### File
 
 ```typescript
-import { HeadPipe } from 'angular-pipes';
+import { HeadPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -72,7 +72,7 @@ Returns every element but the last of the collection or empty array if the colle
 ##### File
 
 ```typescript
-import { InitialPipe } from 'angular-pipes';
+import { InitialPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -90,7 +90,7 @@ Joins an array into a string.
 ##### File
 
 ```typescript
-import { JoinPipe } from 'angular-pipes';
+import { JoinPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -109,7 +109,7 @@ Returns the last element of the collection or undefined if the collection is emp
 ##### File
 
 ```typescript
-import { LastPipe } from 'angular-pipes';
+import { LastPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -127,7 +127,7 @@ Returns every elements but the first of the collection or empty array if the col
 ##### File
 
 ```typescript
-import { TailPipe } from 'angular-pipes';
+import { TailPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -145,7 +145,7 @@ Returns the collection keeping only one duplicate.
 ##### File
 
 ```typescript
-import { UniqPipe } from 'angular-pipes';
+import { UniqPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -162,7 +162,7 @@ Returns the collection without the specified elements.
 ##### File
 
 ```typescript
-import { WithoutPipe } from 'angular-pipes';
+import { WithoutPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -178,7 +178,7 @@ Returns the intersection of two collection, works with deep equal.
 ##### File
 
 ```typescript
-import { IntersectionPipe } from 'angular-pipes';
+import { IntersectionPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -198,7 +198,7 @@ Returns the union of two collection, works with deep equal.
 ##### File
 
 ```typescript
-import { UnionPipe } from 'angular-pipes';
+import { UnionPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -219,7 +219,7 @@ The value on the left hand size does not matter, it is ignored.
 ##### File
 
 ```typescript
-import { RangePipe } from 'angular-pipes';
+import { RangePipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -240,7 +240,7 @@ If no function is provided, the collection is returned unchanged.
 ##### File
 
 ```typescript
-import { MapPipe } from 'angular-pipes';
+import { MapPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -267,7 +267,7 @@ Returns an array of the given property of the object in the array.
 ##### File
 
 ```typescript
-import { PluckPipe } from 'angular-pipes';
+import { PluckPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -311,7 +311,7 @@ Filter an array with a given function or a property shorthand.
 ##### File
 
 ```typescript
-import { WherePipe } from 'angular-pipes';
+import { WherePipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -363,7 +363,7 @@ such element exists.
 ##### File
 
 ```typescript
-import { FirstOrDefaultPipe } from 'angular-pipes';
+import { FirstOrDefaultPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -415,7 +415,7 @@ Returns a new ordered array. You can order by multiple properties, ascending and
 ##### File
 
 ```typescript
-import { OrderByPipe } from 'angular-pipes';
+import { OrderByPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -449,7 +449,7 @@ Returns a reversed array.
 ##### File
 
 ```typescript
-import { ReversePipe } from 'angular-pipes';
+import { ReversePipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -467,7 +467,7 @@ Works also for object and string.
 ##### File
 
 ```typescript
-import { CountPipe } from 'angular-pipes';
+import { CountPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -484,7 +484,7 @@ Returns true if at least one of the item in the collections pass the predicate.
 ##### File
 
 ```typescript
-import { SomePipe } from 'angular-pipes';
+import { SomePipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -508,7 +508,7 @@ Returns true if every item in the collections pass the predicate.
 ##### File
 
 ```typescript
-import { EveryPipe } from 'angular-pipes';
+import { EveryPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -531,7 +531,7 @@ Shuffles a collection.
 ##### File
 
 ```typescript
-import { ShufflePipe } from 'angular-pipes';
+import { ShufflePipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -547,7 +547,7 @@ Take the top `n` items of an array.
 ##### File
 
 ```typescript
-import { TakePipe } from 'angular-pipes';
+import { TakePipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -565,7 +565,7 @@ Take until the condition is met.
 ##### File
 
 ```typescript
-import { TakeUntilPipe } from 'angular-pipes';
+import { TakeUntilPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -587,7 +587,7 @@ Take while the condition is met.
 ##### File
 
 ```typescript
-import { TakeWhilePipe } from 'angular-pipes';
+import { TakeWhilePipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -610,7 +610,7 @@ Drop the last `n` items of an array.
 ##### File
 
 ```typescript
-import { DropPipe } from 'angular-pipes';
+import { DropPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -629,7 +629,7 @@ with deep comparaisons.
 ##### File
 
 ```typescript
-import { DeepPipe } from 'angular-pipes';
+import { DeepPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -657,7 +657,7 @@ The `chunk` pipe breaks the array into multiple, smaller arrays of a given size:
 ##### File
 
 ```typescript
-import { ChunkPipe } from 'angular-pipes';
+import { ChunkPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage
@@ -675,7 +675,7 @@ The `flatten` flattens an array. It can be used with the `deep` pipe.
 ##### File
 
 ```typescript
-import { FlattenPipe } from 'angular-pipes';
+import { FlattenPipe } from 'gix-angular-pipes';
 ```
 
 ##### Usage

@@ -16,7 +16,7 @@ Each category of pipes has an exported module. And one module imports all these 
 ```typescript
 import { NgModule } from '@angular/core';
 
-import { NgArrayPipesModule, NgStringPipesModule } from 'angular-pipes';
+import { NgArrayPipesModule, NgStringPipesModule } from 'gix-angular-pipes';
 
 @NgModule({
     imports: [

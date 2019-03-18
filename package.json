@@ -6,7 +6,8 @@
     "karma": "node_modules/.bin/karma start karma.conf.js",
     "test": "npm run karma",
     "cover": "cat ./coverage/*/lcovonly | ./node_modules/.bin/coveralls",
-    "packagr": "ng-packagr -p ng-package.json"
+    "packagr": "ng-packagr -p ng-package.json",
+    "release":"npm run packagr && ( cd dist; npm publish)"
   },
   "author": "Florian Knop",
   "repository": {

@@ -1,7 +1,7 @@
 {
-  "name": "angular-pipes",
+  "name": "gix-angular-pipes",
   "version": "9.0.2",
-  "description": "Angular pipes library",
+  "description": "GIX Angular pipes library inherited from fknop.gitbooks.io/angular-pipes",
   "scripts": {
     "karma": "node_modules/.bin/karma start karma.conf.js",
     "test": "npm run karma",
@@ -11,7 +11,7 @@
   "author": "Florian Knop",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fknop/angular-pipes.git"
+    "url": "https://github.com/guillaumeisabelleevaluating/angular-pipes"
   },
   "keywords": [
     "ng2",

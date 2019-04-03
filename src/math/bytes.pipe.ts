@@ -44,12 +44,14 @@ export class BytesPipe implements PipeTransform {
         }
 
         for (const key in BytesPipe.formats) {
-            const format = BytesPipe.formats[key];
-            if (bytes < format.max) {
+            if (BytesPipe.formats.hasOwnProperty(key)) {
+                const format = BytesPipe.formats[key];
+                if (bytes < format.max) {
 
-                const result = toDecimal(BytesPipe.calculateResult(format, bytes), decimal);
+                    const result = toDecimal(BytesPipe.calculateResult(format, bytes), decimal);
 
-                return BytesPipe.formatResult(result, key);
+                    return BytesPipe.formatResult(result, key);
+                }
             }
         }
     }

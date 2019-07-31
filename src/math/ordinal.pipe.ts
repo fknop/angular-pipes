@@ -1,29 +1,38 @@
-import { Pipe, PipeTransform  } from '@angular/core';
+import { Pipe, PipeTransform } from '@angular/core';
 import { isNumberFinite } from '../utils/utils';
 
 @Pipe({
-  name: 'ordinal'
+    name: 'ordinal'
 })
 export class OrdinalPipe implements PipeTransform {
-  
-    transform (input: any): any {
+
+    transform(input: any): any {
 
         if (!isNumberFinite(input)) {
             return 'NaN';
         }
 
-        const cardinal = input.toString().charAt(input.toString().length - 1);
+        if (this.endsWithTenth(input)) {
+            return input + 'th';
+        } else {
+            const cardinal = input.toString().charAt(input.toString().length - 1);
 
-        switch(cardinal) {
-            case '1':
-                return input + 'st';
-            case '2':
-                return input + 'nd';
-            case '3':
-                return input + 'rd';
-            default: 
-                return input + 'th';
-        }
-        
+            switch (cardinal) {
+                case '1':
+                    return input + 'st';
+                case '2':
+                    return input + 'nd';
+                case '3':
+                    return input + 'rd';
+                default:
+                    return input + 'th';
+            }
+        } 
+    }
+            
+    private endsWithTenth(input: any): boolean {
+        const beforeLastDigit = input.toString().charAt(input.toString().length - 2);
+
+        return beforeLastDigit === '1';
     }
 }

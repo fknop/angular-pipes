@@ -1,12 +1,13 @@
 {
   "name": "angular-pipes",
-  "version": "9.0.2",
+  "version": "9.1.0",
   "description": "Angular pipes library",
   "scripts": {
     "karma": "node_modules/.bin/karma start karma.conf.js",
     "test": "npm run karma",
     "cover": "cat ./coverage/*/lcovonly | ./node_modules/.bin/coveralls",
-    "packagr": "ng-packagr -p ng-package.json"
+    "packagr": "ng-packagr -p package.json",
+    "publish-dist": "npm publish dist"
   },
   "author": "Florian Knop",
   "repository": {
@@ -25,25 +26,31 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "@angular/compiler": "^7.0.0",
-    "@angular/compiler-cli": "^7.0.0",
-    "@angular/core": "^7.0.0",
-    "@angular/platform-server": "^7.0.0",
-    "@types/jasmine": "^2.5.37",
-    "core-js": "^2.4.1",
-    "coveralls": "^2.11.15",
-    "jasmine-core": "^2.4.1",
-    "karma": "^0.13.22",
-    "karma-firefox-launcher": "^1.0.0",
-    "karma-jasmine": "^1.0.2",
-    "karma-spec-reporter": "0.0.26",
-    "karma-typescript": "^3.0.9",
-    "ng-packagr": "^4.3.1",
-    "reflect-metadata": "^0.1.3",
-    "rxjs": "^6.3.0",
-    "tsickle": "^0.33.0",
-    "typescript": "3.1.3",
-    "zone.js": "^0.8.26"
+    "@angular/compiler": "^8.1.3",
+    "@angular/compiler-cli": "^8.1.3",
+    "@angular/core": "^8.1.3",
+    "@angular/platform-server": "^8.1.3",
+    "@types/jasmine": "^3.3.16",
+    "core-js": "^3.1.4",
+    "coveralls": "^3.0.5",
+    "jasmine-core": "^3.4.0",
+    "karma": "^4.2.0",
+    "karma-firefox-launcher": "^1.1.0",
+    "karma-jasmine": "^2.0.1",
+    "karma-spec-reporter": "0.0.32",
+    "karma-typescript": "^4.1.1",
+    "ng-packagr": "^5.4.3",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^6.5.2",
+    "tsickle": "^0.36.0",
+    "typescript": "3.4.5",
+    "zone.js": "^0.10.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "$schema": "./node_modules/ng-packagr/package.schema.json",
+  "ngPackage": {
+    "lib": {
+      "entryFile": "src/public_api.ts"
+    }
+  }
 }

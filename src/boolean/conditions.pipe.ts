@@ -1,4 +1,4 @@
-import { Pipe, PipeTransform  } from '@angular/core';
+import { Pipe, PipeTransform } from '@angular/core';
 
 
 @Pipe({
@@ -51,7 +51,6 @@ export class IsLessOrEqualPipe implements PipeTransform {
 export class IsEqualPipe implements PipeTransform {
   
   transform (first: any, second: any): boolean {
-    
     return first == second;
   }
 }

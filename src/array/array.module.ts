@@ -1,95 +1,64 @@
 import { NgModule } from '@angular/core';
 
-import { EmptyPipe } from './empty.pipe';
-import { HeadPipe } from './head.pipe';
-import { InitialPipe } from './initial.pipe';
-import { LastPipe } from './last.pipe';
-import { JoinPipe } from './join.pipe';
-import { TailPipe } from './tail.pipe';
-import { UniqPipe } from './uniq.pipe';
-import { WithoutPipe } from './without.pipe';
-import { MapPipe } from './map.pipe';
-import { WherePipe } from './where.pipe';
-import { FirstOrDefaultPipe } from './first-or-default.pipe';
-import { RangePipe } from './range.pipe';
-import { PluckPipe } from './pluck.pipe';
-import { ReversePipe } from './reverse.pipe';
-import { OrderByPipe } from './order-by.pipe';
-import { CountPipe } from './count.pipe';
-import { SomePipe } from './some.pipe';
-import { EveryPipe } from './every.pipe';
-import { ShufflePipe } from './shuffle.pipe';
-import { TakePipe } from './take.pipe';
-import { DropPipe } from './drop.pipe';
-import { DeepPipe } from './deep.pipe';
-import { ChunkPipe } from './chunk.pipe';
-import { FlattenPipe } from './flatten.pipe';
-import { IntersectionPipe } from './intersection.pipe';
-import { UnionPipe } from './union.pipe';
-import { TakeWhilePipe } from './take-while.pipe';
-import { TakeUntilPipe } from './take-until.pipe';
-
+import { NgEmptyPipeModule } from './empty.pipe';
+import { NgHeadPipeModule } from './head.pipe';
+import { NgInitialPipeModule } from './initial.pipe';
+import { NgLastPipeModule } from './last.pipe';
+import { NgJoinPipeModule } from './join.pipe';
+import { NgTailPipeModule } from './tail.pipe';
+import { NgUniqPipeModule } from './uniq.pipe';
+import { NgWithoutPipeModule } from './without.pipe';
+import { NgMapPipeModule } from './map.pipe';
+import { NgWherePipeModule } from './where.pipe';
+import { NgFirstOrDefaultPipeModule } from './first-or-default.pipe';
+import { NgRangePipeModule } from './range.pipe';
+import { NgPluckPipeModule } from './pluck.pipe';
+import { NgReversePipeModule } from './reverse.pipe';
+import { NgOrderByPipeModule } from './order-by.pipe';
+import { NgCountPipeModule } from './count.pipe';
+import { NgSomePipeModule } from './some.pipe';
+import { NgEveryPipeModule } from './every.pipe';
+import { NgShufflePipeModule } from './shuffle.pipe';
+import { NgTakePipeModule } from './take.pipe';
+import { NgDropPipeModule } from './drop.pipe';
+import { NgDeepPipeModule } from './deep.pipe';
+import { NgChunkPipeModule } from './chunk.pipe';
+import { NgFlattenPipeModule } from './flatten.pipe';
+import { NgIntersectionPipeModule } from './intersection.pipe';
+import { NgUnionPipeModule } from './union.pipe';
+import { NgTakeWhilePipeModule } from './take-while.pipe';
+import { NgTakeUntilPipeModule } from './take-until.pipe';
 
 @NgModule({
-  declarations: [
-    EmptyPipe,
-    HeadPipe,
-    InitialPipe,
-    LastPipe,
-    JoinPipe,
-    TailPipe,
-    UniqPipe,
-    WithoutPipe,
-    MapPipe,
-    WherePipe,
-    RangePipe,
-    PluckPipe,
-    ReversePipe,
-    OrderByPipe,
-    CountPipe,
-    SomePipe,
-    EveryPipe,
-    ShufflePipe,
-    TakePipe,
-    DropPipe,
-    DeepPipe,
-    ChunkPipe,
-    FlattenPipe,
-    FirstOrDefaultPipe,
-    IntersectionPipe,
-    UnionPipe,
-    TakeWhilePipe,
-    TakeUntilPipe
+  imports: [
+    NgChunkPipeModule,
+    NgCountPipeModule,
+    NgDeepPipeModule,
+    NgDropPipeModule,
+    NgEmptyPipeModule,
+    NgEveryPipeModule,
+    NgFirstOrDefaultPipeModule,
+    NgFlattenPipeModule,
+    NgHeadPipeModule,
+    NgInitialPipeModule,
+    NgIntersectionPipeModule,
+    NgJoinPipeModule,
+    NgLastPipeModule,
+    NgMapPipeModule,
+    NgOrderByPipeModule,
+    NgPluckPipeModule,
+    NgRangePipeModule,
+    NgReversePipeModule,
+    NgShufflePipeModule,
+    NgSomePipeModule,
+    NgTailPipeModule,
+    NgTakeUntilPipeModule,
+    NgTakeWhilePipeModule,
+    NgTakePipeModule,
+    NgUnionPipeModule,
+    NgUniqPipeModule,
+    NgWherePipeModule,
+    NgWithoutPipeModule,
   ],
-  exports: [
-    EmptyPipe,
-    HeadPipe,
-    InitialPipe,
-    LastPipe,
-    JoinPipe,
-    TailPipe,
-    UniqPipe,
-    WithoutPipe,
-    MapPipe,
-    WherePipe,
-    RangePipe,
-    PluckPipe,
-    ReversePipe,
-    OrderByPipe,
-    CountPipe,
-    SomePipe,
-    EveryPipe,
-    ShufflePipe,
-    TakePipe,
-    DropPipe,
-    DeepPipe,
-    ChunkPipe,
-    FlattenPipe,
-    FirstOrDefaultPipe,
-    IntersectionPipe,
-    UnionPipe,
-    TakeWhilePipe,
-    TakeUntilPipe
-  ]
 })
 export class NgArrayPipesModule {}

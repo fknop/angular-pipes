@@ -7,7 +7,6 @@ import { NgMathPipesModule } from './math/math.module';
 import { NgObjectPipesModule } from './object/object.module';
 import { NgStringPipesModule } from './string/string.module';
 
-
 @NgModule({
   exports: [
     NgArrayPipesModule,
@@ -15,7 +14,7 @@ import { NgStringPipesModule } from './string/string.module';
     NgBooleanPipesModule,
     NgStringPipesModule,
     NgObjectPipesModule,
-    NgAggregatePipesModule
-  ]
+    NgAggregatePipesModule,
+  ],
 })
 export class NgPipesModule {}

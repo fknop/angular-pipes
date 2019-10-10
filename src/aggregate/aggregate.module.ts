@@ -1,27 +1,12 @@
 import { NgModule } from '@angular/core';
 
-import { GroupByPipe } from './group-by.pipe';
-import { MaxPipe } from './max.pipe';
-import { MeanPipe } from './mean.pipe';
-import { MinPipe } from './min.pipe';
-import { SumPipe } from './sum.pipe';
+import { NgGroupByPipeModule } from './group-by.pipe';
+import { NgMaxPipeModule } from './max.pipe';
+import { NgMeanPipeModule } from './mean.pipe';
+import { NgMinPipeModule } from './min.pipe';
+import { NgSumPipeModule } from './sum.pipe';
 
 @NgModule({
-  declarations: [
-    GroupByPipe,
-    MaxPipe,
-    MeanPipe,
-    MinPipe,
-    SumPipe
-  ],
-  exports: [
-    GroupByPipe,
-    MaxPipe,
-    MeanPipe,
-    MinPipe,
-    SumPipe
-  ]
+  imports: [NgGroupByPipeModule, NgMaxPipeModule, NgMeanPipeModule, NgMinPipeModule, NgSumPipeModule],
 })
 export class NgAggregatePipesModule {}
-
-

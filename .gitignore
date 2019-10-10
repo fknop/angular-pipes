@@ -10,3 +10,4 @@ src/**/*.d.ts
 .vscode
 coverage
 package-lock.json
+yarn.lock

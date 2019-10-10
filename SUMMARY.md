@@ -2,22 +2,21 @@
 
 ## Overview
 
-* [Introduction](README.md)
+- [Introduction](README.md)
 
 ## Documentation
 
-* [Overview](docs/README.md)
-* [Modules](docs/modules.md)
-* [Collections](docs/array.md)
-* [Boolean](docs/boolean.md)
-* [Math](docs/math.md)
-* [Aggregate](docs/aggregate.md)
-* [String](docs/string.md)
-* [Object](docs/object.md)
+- [Overview](docs/README.md)
+- [Modules](docs/modules.md)
+- [Collections](docs/array.md)
+- [Boolean](docs/boolean.md)
+- [Math](docs/math.md)
+- [Aggregate](docs/aggregate.md)
+- [String](docs/string.md)
+- [Object](docs/object.md)
 
 ## Other
 
-* [Contribute](CONTRIBUTING.md)
-* [Changelog](CHANGELOG.md)
-* [License](LICENSE.md)
-
+- [Contribute](CONTRIBUTING.md)
+- [Changelog](CHANGELOG.md)
+- [License](LICENSE.md)

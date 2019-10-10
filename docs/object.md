@@ -1,8 +1,8 @@
 # Object
 
-* [`keys`](#keys)
-* [`toArray`](#toarray)
-* [`defaults`](#defaults)
+- [`keys`](#keys)
+- [`toArray`](#toarray)
+- [`defaults`](#defaults)
 
 You can check the module import [`here`](./modules.md).
 
@@ -13,23 +13,24 @@ Returns the array of keys of the given object or array.
 ##### File
 
 ```typescript
-import { KeysPipe } from 'angular-pipes';
+import { NgKeysPipeModule } from 'angular-pipes';
 ```
 
 ##### Usage
 
 ```javascript
 const value = {
-    a: 1,
-    b: 2,
-    c: 3
+  a: 1,
+  b: 2,
+  c: 3,
 };
-
 ```
 
 ```html
-{{ value | keys }} <!-- ['a', 'b', 'c'] -->
-{{ [1, 2, 3] | keys }} <!-- ['0', '1', '2'] -->
+{{ value | keys }}
+<!-- ['a', 'b', 'c'] -->
+{{ [1, 2, 3] | keys }}
+<!-- ['0', '1', '2'] -->
 ```
 
 #### toArray
@@ -39,24 +40,23 @@ Transforms an object to an array
 ##### File
 
 ```typescript
-import { ToArrayPipe } from 'angular-pipes';
+import { NgToArrayPipeModule } from 'angular-pipes';
 ```
 
 ##### Usage
 
 ```javascript
 const value = {
-    a: 1,
-    b: 2,
-    c: 3
+  a: 1,
+  b: 2,
+  c: 3,
 };
-
 ```
 
 ```html
-{{ value | toArray }} <!-- [1, 2, 3] -->
+{{ value | toArray }}
+<!-- [1, 2, 3] -->
 ```
-
 
 #### defaults
 
@@ -68,32 +68,28 @@ to the defaults.
 ##### File
 
 ```typescript
-import { DefaultsPipe } from 'angular-pipes';
+import { NgDefaultsPipeModule } from 'angular-pipes';
 ```
 
 ##### Usage
 
 ```javascript
 const d = {
-    a: 1,
-    b: 2,
-    c: 3
+  a: 1,
+  b: 2,
+  c: 3,
 };
 
 const object = {
-    a: 2
-}
+  a: 2,
+};
 
-const array = [
-    { a: 2 },
-    null,
-    { b: 3 },
-    undefined
-];
-
+const array = [{ a: 2 }, null, { b: 3 }, undefined];
 ```
 
 ```html
-{{ object | defaults: d }} <!-- { a: 2, b: 2, c: 3 } -->
-{{ array | defaults: d }} <!-- [{ a: 2, b: 2, c: 3 }, { a: 1, b: 2, c: 3 }, { a: 1, b: 3, c: 3 }, { a: 1, b: 2, c: 3 }]-->
+{{ object | defaults: d }}
+<!-- { a: 2, b: 2, c: 3 } -->
+{{ array | defaults: d }}
+<!-- [{ a: 2, b: 2, c: 3 }, { a: 1, b: 2, c: 3 }, { a: 1, b: 3, c: 3 }, { a: 1, b: 2, c: 3 }]-->
 ```

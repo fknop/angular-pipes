@@ -1,13 +1,11 @@
-import { Pipe, PipeTransform } from '@angular/core';
+import { Pipe, PipeTransform, NgModule } from '@angular/core';
 import { getProperty, isArray, isUndefined } from '../utils/utils';
 
 @Pipe({
-  name: 'groupBy'
+  name: 'groupBy',
 })
 export class GroupByPipe implements PipeTransform {
-
   transform(input: any, prop: string): Array<any> {
-
     if (!isArray(input)) {
       return input;
     }
@@ -24,6 +22,12 @@ export class GroupByPipe implements PipeTransform {
       arr[field].push(value);
     }
 
-    return Object.keys(arr).map(key => ({ key, 'value': arr[key] }));
+    return Object.keys(arr).map(key => ({ key, value: arr[key] }));
   }
 }
+
+@NgModule({
+  declarations: [GroupByPipe],
+  exports: [GroupByPipe],
+})
+export class NgGroupByPipeModule {}

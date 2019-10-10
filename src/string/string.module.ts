@@ -1,84 +1,56 @@
-import {NgModule} from '@angular/core';
+import { NgModule } from '@angular/core';
 
-import {LeftPadPipe} from './left-pad.pipe';
-import {MatchPipe} from './match.pipe';
-import {PadPipe} from './pad.pipe';
-import {ReplacePipe} from './replace.pipe';
-import {RightPadPipe} from './right-pad.pipe';
-import {SplitPipe} from './split.pipe';
-import {TestPipe} from './test.pipe';
-import {TrimPipe} from './trim.pipe';
-import {NewlinesPipe} from './newlines.pipe';
-import {CapitalizePipe} from './capitalize.pipe';
-import {UpperFirstPipe} from './upperfirst.pipe';
-import {TemplatePipe} from './template.pipe';
-import {EncodeURIPipe} from './encode-uri.pipe';
-import {EncodeURIComponentPipe} from './encode-uri-component.pipe';
-import {DecodeURIPipe} from './decode-uri.pipe';
-import {DecodeURIComponentPipe} from './decode-uri-component.pipe';
-import {TruncatePipe} from './truncate.pipe';
-import {RepeatPipe} from './repeat.pipe';
-import {SlugifyPipe} from './slugify.pipe';
-import {StripTagsPipe} from "./strip-tags.pipe";
-import {LatinizePipe} from "./latinize.pipe";
-import {WrapPipe} from "./wrap.pipe";
-import {WithPipe} from "./with.pipe";
-import {ReverseStrPipe} from "./reverse-str.pipe";
-
+import { NgLeftPadPipeModule } from './left-pad.pipe';
+import { NgMatchPipeModule } from './match.pipe';
+import { NgPadPipeModule } from './pad.pipe';
+import { NgReplacePipeModule } from './replace.pipe';
+import { NgRightPadPipeModule } from './right-pad.pipe';
+import { NgSplitPipeModule } from './split.pipe';
+import { NgTestPipeModule } from './test.pipe';
+import { NgTrimPipeModule } from './trim.pipe';
+import { NgNewlinesPipeModule } from './newlines.pipe';
+import { NgCapitalizePipeModule } from './capitalize.pipe';
+import { NgUpperFirstPipeModule } from './upperfirst.pipe';
+import { NgTemplatePipeModule } from './template.pipe';
+import { NgEncodeURIPipeModule } from './encode-uri.pipe';
+import { NgEncodeURIComponentPipeModule } from './encode-uri-component.pipe';
+import { NgDecodeURIPipeModule } from './decode-uri.pipe';
+import { NgDecodeURIComponentPipeModule } from './decode-uri-component.pipe';
+import { NgTruncatePipeModule } from './truncate.pipe';
+import { NgRepeatPipeModule } from './repeat.pipe';
+import { NgSlugifyPipeModule } from './slugify.pipe';
+import { NgStripTagsPipeModule } from './strip-tags.pipe';
+import { NgLatinizePipeModule } from './latinize.pipe';
+import { NgWrapPipeModule } from './wrap.pipe';
+import { NgWithPipeModule } from './with.pipe';
+import { NgReverseStrPipeModule } from './reverse-str.pipe';
 
 @NgModule({
-  declarations: [
-    LeftPadPipe,
-    MatchPipe,
-    PadPipe,
-    ReplacePipe,
-    RightPadPipe,
-    SplitPipe,
-    TestPipe,
-    TrimPipe,
-    NewlinesPipe,
-    CapitalizePipe,
-    UpperFirstPipe,
-    TemplatePipe,
-    EncodeURIPipe,
-    EncodeURIComponentPipe,
-    DecodeURIPipe,
-    DecodeURIComponentPipe,
-    TruncatePipe,
-    RepeatPipe,
-    SlugifyPipe,
-    StripTagsPipe,
-    LatinizePipe,
-    WrapPipe,
-    WithPipe,
-    ReverseStrPipe
+  imports: [
+    NgCapitalizePipeModule,
+    NgDecodeURIComponentPipeModule,
+    NgDecodeURIPipeModule,
+    NgEncodeURIComponentPipeModule,
+    NgLeftPadPipeModule,
+    NgMatchPipeModule,
+    NgPadPipeModule,
+    NgReplacePipeModule,
+    NgRightPadPipeModule,
+    NgSplitPipeModule,
+    NgTestPipeModule,
+    NgTrimPipeModule,
+    NgNewlinesPipeModule,
+    NgUpperFirstPipeModule,
+    NgTemplatePipeModule,
+    NgEncodeURIPipeModule,
+    NgTruncatePipeModule,
+    NgRepeatPipeModule,
+    NgSlugifyPipeModule,
+    NgStripTagsPipeModule,
+    NgLatinizePipeModule,
+    NgWrapPipeModule,
+    NgWithPipeModule,
+    NgReverseStrPipeModule,
   ],
-  exports: [
-    LeftPadPipe,
-    MatchPipe,
-    PadPipe,
-    ReplacePipe,
-    RightPadPipe,
-    SplitPipe,
-    TestPipe,
-    TrimPipe,
-    NewlinesPipe,
-    CapitalizePipe,
-    UpperFirstPipe,
-    TemplatePipe,
-    EncodeURIPipe,
-    EncodeURIComponentPipe,
-    DecodeURIPipe,
-    DecodeURIComponentPipe,
-    TruncatePipe,
-    RepeatPipe,
-    SlugifyPipe,
-    StripTagsPipe,
-    LatinizePipe,
-    WrapPipe,
-    WithPipe,
-    ReverseStrPipe
-  ]
 })
-export class NgStringPipesModule {
-}
+export class NgStringPipesModule {}

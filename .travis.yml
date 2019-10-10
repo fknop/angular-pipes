@@ -8,7 +8,7 @@ node_js:
 services:
   - xvfb
 
-cache: 
+cache:
   yarn: true
   directories:
     - node_modules

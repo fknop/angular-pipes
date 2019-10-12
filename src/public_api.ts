@@ -1,3 +1,4 @@
+// tslint:disable:file-name-casing
 export * from './pipes.module';
 
 export * from './aggregate/aggregate.module';

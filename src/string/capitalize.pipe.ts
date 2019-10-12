@@ -5,20 +5,20 @@ import { isString, upperFirst } from '../utils/utils';
   name: 'capitalize',
 })
 export class CapitalizePipe implements PipeTransform {
-  transform(input: any, all: boolean = false): any {
+  transform(input: any, all = false): any {
     if (!isString(input)) {
       return input;
     }
 
     if (!all) {
       return upperFirst(input.toLowerCase());
-    } else {
-      return input
-        .toLowerCase()
-        .split(' ')
-        .map((value: string) => upperFirst(value))
-        .join(' ');
     }
+
+    return input
+      .toLowerCase()
+      .split(' ')
+      .map(upperFirst)
+      .join(' ');
   }
 }
 

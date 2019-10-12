@@ -5,17 +5,19 @@ import { isNumberFinite } from '../utils/utils';
   name: 'random',
 })
 export class RandomPipe implements PipeTransform {
-  transform(input: any, min: number = 0, max: number = 1): any {
-    if (!isNumberFinite(min) || !isNumberFinite(max)) {
+  transform(input: any, min = 0, max = 1): any {
+    let _min = min;
+    let _max = max;
+    if (!isNumberFinite(_min) || !isNumberFinite(_max)) {
       return input;
     }
 
-    if (min > max) {
-      max = min;
-      min = 0;
+    if (_min > _max) {
+      _max = _min;
+      _min = 0;
     }
 
-    return Math.random() * (max - min) + min;
+    return Math.random() * (_max - _min) + _min;
   }
 }
 

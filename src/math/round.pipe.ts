@@ -5,12 +5,13 @@ import { createRound, isString } from '../utils/utils';
   name: 'round',
 })
 export class RoundPipe implements PipeTransform {
-  transform(value: any, precision: any = 0): any {
+  transform(value: any, precision: any = 0, radix = 10): any {
+    let _precision = precision;
     if (isString(precision)) {
-      precision = parseInt(precision);
+      _precision = parseInt(precision, radix);
     }
 
-    return createRound('round')(value, precision);
+    return createRound('round')(value, _precision);
   }
 }
 

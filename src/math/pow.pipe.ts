@@ -5,7 +5,7 @@ import { isNumberFinite } from '../utils/utils';
   name: 'pow',
 })
 export class PowPipe implements PipeTransform {
-  transform(input: any, power: number = 2): any {
+  transform(input: any, power = 2): any {
     if (!isNumberFinite(input)) {
       return 'NaN';
     }

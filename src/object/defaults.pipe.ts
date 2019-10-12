@@ -15,7 +15,10 @@ export class DefaultsPipe implements PipeTransform {
     if (isArray(input)) {
       return input.map((item: any) => {
         if (isObject(item)) {
-          return Object.assign({}, defaults, item);
+          return {
+            ...defaults,
+            ...item,
+          };
         }
 
         if (isNil(item)) {
@@ -27,7 +30,10 @@ export class DefaultsPipe implements PipeTransform {
     }
 
     if (isObject(input)) {
-      return Object.assign({}, defaults, input);
+      return {
+        ...defaults,
+        ...input,
+      };
     }
 
     return input;

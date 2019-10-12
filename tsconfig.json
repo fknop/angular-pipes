@@ -1,21 +1,28 @@
 {
+  "compileOnSave": false,
   "compilerOptions": {
-    "target": "es5",
-    "module": "es6",
+    "baseUrl": "./",
+    "module": "esnext",
     "moduleResolution": "node",
+    "types": ["node"],
+    "typeRoots": ["node_modules/@types"], // don't look in parent folders
+    "lib": ["es2018", "dom", "dom.iterable", "esnext"],
+    "declaration": false,
     "sourceMap": true,
+    "downlevelIteration": true, // needed with ES5 target
+    "esModuleInterop": true, // https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-7.html#support-for-import-d-from-cjs-from-commonjs-modules-with---esmoduleinterop
+    "importHelpers": true, // https://github.com/Microsoft/TypeScript/wiki/What%27s-new-in-TypeScript#support-for-external-helpers-library-tslib
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "removeComments": false,
-    "noImplicitAny": true,
+    "allowSyntheticDefaultImports": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "suppressImplicitAnyIndexErrors": false,
-    "declaration": true,
-    "lib": ["es6", "dom"]
+    "target": "es6"
   },
   "exclude": ["node_modules", "**/*.spec.ts"],
   "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true,
     "skipTemplateCodegen": true
   }
 }

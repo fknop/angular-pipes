@@ -11,3 +11,6 @@ src/**/*.d.ts
 coverage
 package-lock.json
 yarn.lock
+.npmrc
+.nvmrc
+.yvmrc

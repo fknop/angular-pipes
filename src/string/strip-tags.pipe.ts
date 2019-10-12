@@ -8,7 +8,9 @@ import { isString, isUndefined } from '../utils/utils';
 })
 export class StripTagsPipe implements PipeTransform {
   transform(input: string): any {
-    if (!isString(input) || isUndefined(input)) return input;
+    if (!isString(input) || isUndefined(input)) {
+      return input;
+    }
 
     return input.replace(/<\S[^><]*>/g, '');
   }

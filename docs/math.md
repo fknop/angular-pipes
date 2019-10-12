@@ -1,16 +1,16 @@
 # Math
 
-* [`bytes`](#bytes)
-* [`ceil`](#ceil)
-* [`floor`](#floor)
-* [`round`](#round)
-* [`degrees`](#degrees)
-* [`radians`](#degrees)
-* [`random`](#random)
-* [`pow`](#pow)
-* [`sqrt`](#sqrt)
-* [`abs`](#abs)
-* [`ordinal`](#ordinal)
+- [`bytes`](#bytes)
+- [`ceil`](#ceil)
+- [`floor`](#floor)
+- [`round`](#round)
+- [`degrees`](#degrees)
+- [`radians`](#degrees)
+- [`random`](#random)
+- [`pow`](#pow)
+- [`sqrt`](#sqrt)
+- [`abs`](#abs)
+- [`ordinal`](#ordinal)
 
 You can check the module import [`here`](./modules.md).
 
@@ -21,25 +21,31 @@ Returns the bytes to an human-readable format.
 ##### File
 
 ```typescript
-import { BytesPipe } from 'angular-pipes';
+import { NgBytesPipeModule } from 'angular-pipes';
 ```
 
 ##### Usage
 
 ```html
-{{ 150 | bytes }} <!-- 150 B -->
-{{ 1024 | bytes }} <!-- 1 KB -->
-{{ 1048576 | bytes }} <!-- 1 MB -->
-{{ 1024 | bytes: 0 : 'KB' }} <!-- 1 MB -->
-{{ 1073741824 | bytes }} <!-- 1 GB -->
-{{ 1099511627776 | bytes }} <!-- 1 TB -->
-{{ 1073741824 | bytes : 0 : 'B' : 'MB' }} <!-- 1024 MB -->
+{{ 150 | bytes }}
+<!-- 150 B -->
+{{ 1024 | bytes }}
+<!-- 1 KB -->
+{{ 1048576 | bytes }}
+<!-- 1 MB -->
+{{ 1024 | bytes: 0 : 'KB' }}
+<!-- 1 MB -->
+{{ 1073741824 | bytes }}
+<!-- 1 GB -->
+{{ 1099511627776 | bytes }}
+<!-- 1 TB -->
+{{ 1073741824 | bytes : 0 : 'B' : 'MB' }}
+<!-- 1024 MB -->
 ```
 
 ##### Todo
 
-* Be able to change the input unit.
-
+- Be able to change the input unit.
 
 #### ceil
 
@@ -48,17 +54,19 @@ Ceils a number with a given precision. Take a look at the official documentation
 ##### File
 
 ```typescript
-import { CeilPipe } from 'angular-pipes';
+import { NgCeilPipeModule } from 'angular-pipes';
 ```
 
 ##### Usage
 
 ```html
-{{ 3.4 | ceil }} <!-- 4 -->
-{{ 1.5 | ceil: 1 }} <!-- 1.5 -->
-{{ 1.5444 | ceil: 2 }} <!-- 1.55 -->
+{{ 3.4 | ceil }}
+<!-- 4 -->
+{{ 1.5 | ceil: 1 }}
+<!-- 1.5 -->
+{{ 1.5444 | ceil: 2 }}
+<!-- 1.55 -->
 ```
-
 
 #### floor
 
@@ -67,17 +75,19 @@ Floor a number with a given precision. Take a look at the official documentation
 ##### File
 
 ```typescript
-import { FloorPipe } from 'angular-pipes';
+import { NgFloorPipeModule } from 'angular-pipes';
 ```
 
 ##### Usage
 
 ```html
-{{ 3.4 | floor }} <!-- 3 -->
-{{ 1.5 | floor: 1 }} <!-- 1.5 -->
-{{ 1.5444 | floor: 2 }} <!-- 1.54 -->
+{{ 3.4 | floor }}
+<!-- 3 -->
+{{ 1.5 | floor: 1 }}
+<!-- 1.5 -->
+{{ 1.5444 | floor: 2 }}
+<!-- 1.54 -->
 ```
-
 
 #### round
 
@@ -86,19 +96,23 @@ Rounds a number with a given precision. Take a look at the official documentatio
 ##### File
 
 ```typescript
-import { RoundPipe } from 'angular-pipes';
+import { NgRoundPipeModule } from 'angular-pipes';
 ```
 
 ##### Usage
 
 ```html
-{{ 3.4 | round }} <!-- 3 -->
-{{ 3.5 | round }} <!-- 4 -->
-{{ 1.5 | round: 1 }} <!-- 1.5 -->
-{{ 1.5444 | round: 2 }} <!-- 1.54 -->
-{{ 1.345 | round: 2 }} <!-- 1.35 -->
+{{ 3.4 | round }}
+<!-- 3 -->
+{{ 3.5 | round }}
+<!-- 4 -->
+{{ 1.5 | round: 1 }}
+<!-- 1.5 -->
+{{ 1.5444 | round: 2 }}
+<!-- 1.54 -->
+{{ 1.345 | round: 2 }}
+<!-- 1.35 -->
 ```
-
 
 #### degrees
 
@@ -107,7 +121,7 @@ Converts radians to degrees.
 ##### File
 
 ```typescript
-import { DegreesPipe } from 'angular-pipes';
+import { NgDegreesPipeModule } from 'angular-pipes';
 ```
 
 ##### Usage
@@ -117,9 +131,9 @@ this.value = Math.PI;
 ```
 
 ```html
-{{ value | degrees }} <!-- 180 -->
+{{ value | degrees }}
+<!-- 180 -->
 ```
-
 
 #### radians
 
@@ -128,15 +142,15 @@ Converts degrees to radians
 ##### File
 
 ```typescript
-import { RadiansPipe } from 'angular-pipes';
+import { NgRadiansPipeModule } from 'angular-pipes';
 ```
 
 ##### Usage
 
 ```html
-{{ 180 | radians }} <!-- PI -->
+{{ 180 | radians }}
+<!-- PI -->
 ```
-
 
 #### random
 
@@ -147,15 +161,18 @@ If only one argument is given, it will be the maximum.
 ##### File
 
 ```typescript
-import { RandomPipe } from 'angular-pipes';
+import { NgRandomPipeModule } from 'angular-pipes';
 ```
 
 ##### Usage
 
 ```html
-{{ {} | random: 0: 1 }} <!-- Random number between 0 and 1 -->
-{{ {} | random: 0: 10 }} <!-- Random number between 0 and 10 -->
-{{ {} | random: 10 }} <!-- Random number between 0 and 10 -->
+{{ {} | random: 0: 1 }}
+<!-- Random number between 0 and 1 -->
+{{ {} | random: 0: 10 }}
+<!-- Random number between 0 and 10 -->
+{{ {} | random: 10 }}
+<!-- Random number between 0 and 10 -->
 ```
 
 #### sqrt
@@ -165,13 +182,14 @@ Returns the square root of a number.
 ##### File
 
 ```typescript
-import { SqrtPipe } from 'angular-pipes';
+import { NgSqrtPipeModule } from 'angular-pipes';
 ```
 
 ##### Usage
 
 ```html
-{{ 81 | sqrt }} <!-- 9 -->
+{{ 81 | sqrt }}
+<!-- 9 -->
 ```
 
 #### pow
@@ -181,14 +199,16 @@ Returns the power of a number.
 ##### File
 
 ```typescript
-import { PowPipe } from 'angular-pipes';
+import { NgPowPipeModule } from 'angular-pipes';
 ```
 
 ##### Usage
 
 ```html
-{{ 2 | pow }} <!-- 4 -->
-{{ 2 | pow: 3 }} <!-- 8 -->
+{{ 2 | pow }}
+<!-- 4 -->
+{{ 2 | pow: 3 }}
+<!-- 8 -->
 ```
 
 #### abs
@@ -198,13 +218,14 @@ Returns the absolute of a number.
 ##### File
 
 ```typescript
-import { AbsPipe } from 'angular-pipes';
+import { NgAbsPipeModule } from 'angular-pipes';
 ```
 
 ##### Usage
 
 ```html
-{{ -2 | abs }} <!-- 2 -->
+{{ -2 | abs }}
+<!-- 2 -->
 ```
 
 #### ordinal
@@ -214,13 +235,16 @@ Returns the number with a suffix indicating the ordinal.
 ##### File
 
 ```typescript
-import { OrdinalPipe } from 'angular-pipes';
+import { NgOrdinalPipeModule } from 'angular-pipes';
 ```
 
 ##### Usage
 
 ```html
-{{ 1 | ordinal }} <!-- 1st -->
-{{ 523 | ordinal }} <!-- 523rd -->
-{{ 15 | ordinal }} <!-- 15th -->
+{{ 1 | ordinal }}
+<!-- 1st -->
+{{ 523 | ordinal }}
+<!-- 523rd -->
+{{ 15 | ordinal }}
+<!-- 15th -->
 ```

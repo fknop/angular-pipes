@@ -1,13 +1,15 @@
 {
   "name": "angular-pipes",
-  "version": "9.1.0",
+  "version": "10.0.0",
   "description": "Angular pipes library",
   "scripts": {
-    "karma": "node_modules/.bin/karma start karma.conf.js",
-    "test": "npm run karma",
     "cover": "cat ./coverage/*/lcovonly | ./node_modules/.bin/coveralls",
+    "karma": "node_modules/.bin/karma start karma.conf.js",
+    "pretty": "prettier --check '**/*.{ts,scss,js,json,yml,md,html}'",
+    "pretty:write": "yarn pretty --write",
     "packagr": "ng-packagr -p package.json",
-    "publish-dist": "npm publish dist"
+    "publish-dist": "npm publish dist",
+    "test": "npm run karma"
   },
   "author": "Florian Knop",
   "repository": {
@@ -26,9 +28,13 @@
   ],
   "license": "MIT",
   "devDependencies": {
+    "@angular/animations": "^8.1.3",
+    "@angular/common": "^8.1.3",
     "@angular/compiler": "^8.1.3",
     "@angular/compiler-cli": "^8.1.3",
     "@angular/core": "^8.1.3",
+    "@angular/platform-browser": "^8.1.3",
+    "@angular/platform-browser-dynamic": "^8.1.3",
     "@angular/platform-server": "^8.1.3",
     "@types/jasmine": "^3.3.16",
     "core-js": "^3.1.4",
@@ -40,13 +46,20 @@
     "karma-spec-reporter": "0.0.32",
     "karma-typescript": "^4.1.1",
     "ng-packagr": "^5.4.3",
+    "prettier": "^1.18.2",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^6.5.2",
     "tsickle": "^0.36.0",
-    "typescript": "3.4.5",
-    "zone.js": "^0.10.0"
+    "tslib": "^1.10.0",
+    "typescript": "3.5.3",
+    "zone.js": "~0.9.1"
   },
   "dependencies": {},
+  "prettier": {
+    "printWidth": 120,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
   "$schema": "./node_modules/ng-packagr/package.schema.json",
   "ngPackage": {
     "lib": {

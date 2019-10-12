@@ -1,18 +1,22 @@
-import { Pipe, PipeTransform  } from '@angular/core';
+import { Pipe, PipeTransform, NgModule } from '@angular/core';
 import { isString } from '../utils/utils';
 
 @Pipe({
-  name: 'match'
+  name: 'match',
 })
 export class MatchPipe implements PipeTransform {
-  
-  transform (input: any, pattern: any, flag: any): any {
-    
+  transform(input: any, pattern: any, flag: any): any {
     if (!isString(input)) {
       return input;
     }
-    
+
     const regexp = pattern instanceof RegExp ? pattern : new RegExp(pattern, flag);
     return input.match(regexp);
   }
 }
+
+@NgModule({
+  declarations: [MatchPipe],
+  exports: [MatchPipe],
+})
+export class NgMatchPipeModule {}

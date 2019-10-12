@@ -1,111 +1,101 @@
-export { NgAggregatePipesModule } from './aggregate/aggregate.module';
-export { NgArrayPipesModule } from './array/array.module';
-export { NgBooleanPipesModule } from './boolean/boolean.module';
-export { NgMathPipesModule } from './math/math.module';
-export { NgObjectPipesModule } from './object/object.module';
-export { NgStringPipesModule } from './string/string.module';
+export * from './pipes.module';
 
-export  { NgPipesModule } from './pipes.module';
+export * from './aggregate/aggregate.module';
+export * from './array/array.module';
+export * from './boolean/boolean.module';
+export * from './math/math.module';
+export * from './object/object.module';
+export * from './string/string.module';
 
+export * from './aggregate/group-by.pipe';
+export * from './aggregate/max.pipe';
+export * from './aggregate/mean.pipe';
+export * from './aggregate/min.pipe';
+export * from './aggregate/sum.pipe';
 
+export * from './array/empty.pipe';
+export * from './array/head.pipe';
+export * from './array/initial.pipe';
+export * from './array/last.pipe';
+export * from './array/join.pipe';
+export * from './array/tail.pipe';
+export * from './array/uniq.pipe';
+export * from './array/without.pipe';
+export * from './array/map.pipe';
+export * from './array/where.pipe';
+export * from './array/first-or-default.pipe';
+export * from './array/range.pipe';
+export * from './array/pluck.pipe';
+export * from './array/reverse.pipe';
+export * from './array/order-by.pipe';
+export * from './array/count.pipe';
+export * from './array/some.pipe';
+export * from './array/every.pipe';
+export * from './array/shuffle.pipe';
+export * from './array/take.pipe';
+export * from './array/drop.pipe';
+export * from './array/deep.pipe';
+export * from './array/chunk.pipe';
+export * from './array/flatten.pipe';
+export * from './array/intersection.pipe';
+export * from './array/union.pipe';
+export * from './array/take-while.pipe';
+export * from './array/take-until.pipe';
 
-export { GroupByPipe } from './aggregate/group-by.pipe';
-export { MaxPipe } from './aggregate/max.pipe';
-export { MeanPipe } from './aggregate/mean.pipe';
-export { MinPipe } from './aggregate/min.pipe';
-export { SumPipe } from './aggregate/sum.pipe';
+export * from './boolean/is-equal.pipe';
+export * from './boolean/is-greater-or-equal.pipe';
+export * from './boolean/is-greater.pipe';
+export * from './boolean/is-identical.pipe';
+export * from './boolean/is-less-or-equal.pipe';
+export * from './boolean/is-less.pipe';
+export * from './boolean/is-not-equal.pipe';
+export * from './boolean/is-not-identical.pipe';
+export * from './boolean/is-null.pipe';
+export * from './boolean/is-undefined.pipe';
+export * from './boolean/is-nil.pipe';
+export * from './boolean/is-function.pipe';
+export * from './boolean/is-number.pipe';
+export * from './boolean/is-string.pipe';
+export * from './boolean/is-array.pipe';
+export * from './boolean/is-object.pipe';
+export * from './boolean/is-defined.pipe';
 
-export { EmptyPipe } from './array/empty.pipe';
-export { HeadPipe } from './array/head.pipe';
-export { InitialPipe } from './array/initial.pipe';
-export { LastPipe } from './array/last.pipe';
-export { JoinPipe } from './array/join.pipe';
-export { TailPipe } from './array/tail.pipe';
-export { UniqPipe } from './array/uniq.pipe';
-export { WithoutPipe } from './array/without.pipe';
-export { MapPipe } from './array/map.pipe';
-export { WherePipe } from './array/where.pipe';
-export { FirstOrDefaultPipe } from './array/first-or-default.pipe';
-export { RangePipe } from './array/range.pipe';
-export { PluckPipe } from './array/pluck.pipe';
-export { ReversePipe } from './array/reverse.pipe';
-export { OrderByPipe } from './array/order-by.pipe';
-export { CountPipe } from './array/count.pipe';
-export { SomePipe } from './array/some.pipe';
-export { EveryPipe } from './array/every.pipe';
-export { ShufflePipe } from './array/shuffle.pipe';
-export { TakePipe } from './array/take.pipe';
-export { DropPipe } from './array/drop.pipe';
-export { DeepPipe } from './array/deep.pipe';
-export { ChunkPipe } from './array/chunk.pipe';
-export { FlattenPipe } from './array/flatten.pipe';
-export { IntersectionPipe } from './array/intersection.pipe';
-export { UnionPipe } from './array/union.pipe';
-export { TakeWhilePipe } from './array/take-while.pipe';
-export { TakeUntilPipe } from './array/take-until.pipe';
+export * from './math/bytes.pipe';
+export * from './math/ceil.pipe';
+export * from './math/floor.pipe';
+export * from './math/round.pipe';
+export * from './math/degrees.pipe';
+export * from './math/radians.pipe';
+export * from './math/random.pipe';
+export * from './math/sqrt.pipe';
+export * from './math/pow.pipe';
+export * from './math/abs.pipe';
+export * from './math/ordinal.pipe';
+export * from './object/keys.pipe';
+export * from './object/to-array.pipe';
+export * from './object/defaults.pipe';
 
-
-export { 
-  IsEqualPipe, 
-  IsGreaterOrEqualPipe, 
-  IsGreaterPipe, 
-  IsLessOrEqualPipe,
-  IsIdenticalPipe,
-  IsLessPipe,
-  IsNotEqualPipe,
-  IsNotIdenticalPipe
-} from './boolean/conditions.pipe';
-
-export {
-  IsArrayPipe,
-  IsDefinedPipe,
-  IsFunctionPipe,
-  IsNilPipe,
-  IsNullPipe,
-  IsNumberPipe,
-  IsObjectPipe,
-  IsStringPipe,
-  IsUndefinedPipe
-} from './boolean/types.pipe';
-
-
-export { BytesPipe } from './math/bytes.pipe';
-export { CeilPipe } from './math/ceil.pipe';
-export { FloorPipe } from './math/floor.pipe';
-export { RoundPipe } from './math/round.pipe';
-export { DegreesPipe } from './math/degrees.pipe';
-export { RadiansPipe } from './math/radians.pipe';
-export { RandomPipe } from './math/random.pipe';
-export { SqrtPipe } from './math/sqrt.pipe';
-export { PowPipe } from './math/pow.pipe';
-export { AbsPipe } from './math/abs.pipe';
-export { OrdinalPipe } from './math/ordinal.pipe';
-export { KeysPipe } from './object/keys.pipe';
-export { ToArrayPipe } from './object/to-array.pipe';
-export { DefaultsPipe } from './object/defaults.pipe';
-
-
-export { LeftPadPipe } from './string/left-pad.pipe';
-export { MatchPipe } from './string/match.pipe';
-export { PadPipe } from './string/pad.pipe';
-export { ReplacePipe } from './string/replace.pipe';
-export { RightPadPipe } from './string/right-pad.pipe';
-export { SplitPipe } from './string/split.pipe';
-export { TestPipe } from './string/test.pipe';
-export { TrimPipe } from './string/trim.pipe';
-export { NewlinesPipe } from './string/newlines.pipe';
-export { CapitalizePipe } from './string/capitalize.pipe';
-export { UpperFirstPipe } from './string/upperfirst.pipe';
-export { TemplatePipe } from './string/template.pipe';
-export { EncodeURIPipe } from './string/encode-uri.pipe';
-export { EncodeURIComponentPipe } from './string/encode-uri-component.pipe';
-export { DecodeURIPipe } from './string/decode-uri.pipe';
-export { DecodeURIComponentPipe } from './string/decode-uri-component.pipe';
-export { TruncatePipe } from './string/truncate.pipe';
-export { RepeatPipe } from './string/repeat.pipe';
-export { SlugifyPipe } from './string/slugify.pipe';
-export { StripTagsPipe } from "./string/strip-tags.pipe";
-export { LatinizePipe } from "./string/latinize.pipe";
-export { WrapPipe } from "./string/wrap.pipe";
-export { WithPipe } from "./string/with.pipe";
-export { ReverseStrPipe } from "./string/reverse-str.pipe";
+export * from './string/left-pad.pipe';
+export * from './string/match.pipe';
+export * from './string/pad.pipe';
+export * from './string/replace.pipe';
+export * from './string/right-pad.pipe';
+export * from './string/split.pipe';
+export * from './string/test.pipe';
+export * from './string/trim.pipe';
+export * from './string/newlines.pipe';
+export * from './string/capitalize.pipe';
+export * from './string/upperfirst.pipe';
+export * from './string/template.pipe';
+export * from './string/encode-uri.pipe';
+export * from './string/encode-uri-component.pipe';
+export * from './string/decode-uri.pipe';
+export * from './string/decode-uri-component.pipe';
+export * from './string/truncate.pipe';
+export * from './string/repeat.pipe';
+export * from './string/slugify.pipe';
+export * from './string/strip-tags.pipe';
+export * from './string/latinize.pipe';
+export * from './string/wrap.pipe';
+export * from './string/with.pipe';
+export * from './string/reverse-str.pipe';

@@ -1,43 +1,30 @@
 import { NgModule } from '@angular/core';
 
-import { BytesPipe } from './bytes.pipe';
-import { CeilPipe } from './ceil.pipe';
-import { FloorPipe } from './floor.pipe';
-import { RoundPipe } from './round.pipe';
-import { DegreesPipe } from './degrees.pipe';
-import { RadiansPipe } from './radians.pipe';
-import { RandomPipe } from './random.pipe';
-import { SqrtPipe } from './sqrt.pipe';
-import { PowPipe } from './pow.pipe';
-import { AbsPipe } from './abs.pipe';
-import { OrdinalPipe } from './ordinal.pipe';
+import { NgBytesPipeModule } from './bytes.pipe';
+import { NgCeilPipeModule } from './ceil.pipe';
+import { NgFloorPipeModule } from './floor.pipe';
+import { NgRoundPipeModule } from './round.pipe';
+import { NgDegreesPipeModule } from './degrees.pipe';
+import { NgRadiansPipeModule } from './radians.pipe';
+import { NgRandomPipeModule } from './random.pipe';
+import { NgSqrtPipeModule } from './sqrt.pipe';
+import { NgPowPipeModule } from './pow.pipe';
+import { NgAbsPipeModule } from './abs.pipe';
+import { NgOrdinalPipeModule } from './ordinal.pipe';
 
 @NgModule({
-  declarations: [
-    BytesPipe,
-    CeilPipe,
-    FloorPipe,
-    RoundPipe,
-    DegreesPipe,
-    RadiansPipe,
-    RandomPipe,
-    SqrtPipe,
-    PowPipe,
-    AbsPipe,
-    OrdinalPipe
+  imports: [
+    NgAbsPipeModule,
+    NgBytesPipeModule,
+    NgCeilPipeModule,
+    NgDegreesPipeModule,
+    NgFloorPipeModule,
+    NgOrdinalPipeModule,
+    NgPowPipeModule,
+    NgRadiansPipeModule,
+    NgRandomPipeModule,
+    NgRoundPipeModule,
+    NgSqrtPipeModule,
   ],
-  exports: [
-    BytesPipe,
-    CeilPipe,
-    FloorPipe,
-    RoundPipe,
-    DegreesPipe,
-    RadiansPipe,
-    RandomPipe,
-    SqrtPipe,
-    PowPipe,
-    AbsPipe,
-    OrdinalPipe
-  ]
 })
 export class NgMathPipesModule {}

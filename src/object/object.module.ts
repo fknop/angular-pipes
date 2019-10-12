@@ -1,19 +1,10 @@
 import { NgModule } from '@angular/core';
-import { KeysPipe } from './keys.pipe';
-import { ToArrayPipe } from './to-array.pipe';
-import { DefaultsPipe } from './defaults.pipe';
 
+import { NgKeysPipeModule } from './keys.pipe';
+import { NgToArrayPipeModule } from './to-array.pipe';
+import { NgDefaultsPipeModule } from './defaults.pipe';
 
 @NgModule({
-  declarations: [
-    KeysPipe,
-    ToArrayPipe,
-    DefaultsPipe
-  ],
-  exports: [
-    KeysPipe,
-    ToArrayPipe,
-    DefaultsPipe
-  ]
+  imports: [NgKeysPipeModule, NgToArrayPipeModule, NgDefaultsPipeModule],
 })
 export class NgObjectPipesModule {}

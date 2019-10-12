@@ -1,22 +1,22 @@
 # Boolean
 
-* [`greater`](#greater)
-* [`greaterOrEqual`](#greaterorequal)
-* [`less`](#less)
-* [`lessOrEqual`](#lessorequal)
-* [`equal`](#equal)
-* [`notEqual`](#notequal)
-* [`identical`](#identical)
-* [`notIdentical`](#notidentical)
-* [`isNull`](#isnull)
-* [`isUndefined`](#isundefined)
-* [`isNil`](#isnil)
-* [`isNumber`](#isnumber)
-* [`isString`](#isstring)
-* [`isFunction`](#isfunction)
-* [`isArray`](#isarray)
-* [`isObject`](#isobject)
-* [`isDefined`](#isdefined)
+- [`greater`](#greater)
+- [`greaterOrEqual`](#greaterorequal)
+- [`less`](#less)
+- [`lessOrEqual`](#lessorequal)
+- [`equal`](#equal)
+- [`notEqual`](#notequal)
+- [`identical`](#identical)
+- [`notIdentical`](#notidentical)
+- [`isNull`](#isnull)
+- [`isUndefined`](#isundefined)
+- [`isNil`](#isnil)
+- [`isNumber`](#isnumber)
+- [`isString`](#isstring)
+- [`isFunction`](#isfunction)
+- [`isArray`](#isarray)
+- [`isObject`](#isobject)
+- [`isDefined`](#isdefined)
 
 You can check the module import [`here`](./modules.md).
 
@@ -27,15 +27,18 @@ Returns true if the first value is greater than the second value.
 ##### File
 
 ```typescript
-import { IsGreaterPipe } from 'angular-pipes';
+import { NgIsGreaterPipeModule } from 'angular-pipes';
 ```
 
 ##### Usage
 
 ```html
-{{ 0 | greater: 1 }} <!-- false -->
-{{ 1 | greater: 0 }} <!-- true -->
-{{ 1 | greater: 1 }} <!-- false -->
+{{ 0 | greater: 1 }}
+<!-- false -->
+{{ 1 | greater: 0 }}
+<!-- true -->
+{{ 1 | greater: 1 }}
+<!-- false -->
 ```
 
 #### greaterOrEqual
@@ -45,15 +48,18 @@ Returns true if the first value is greater or equal to the second value.
 ##### File
 
 ```typescript
-import { IsGreaterOrEqualPipe } from 'angular-pipes';
+import { NgIsGreaterOrEqualPipeModule } from 'angular-pipes';
 ```
 
 ##### Usage
 
 ```html
-{{ 0 | greaterOrEqual: 1 }} <!-- false -->
-{{ 1 | greaterOrEqual: 0 }} <!-- true -->
-{{ 1 | greaterOrEqual: 1 }} <!-- true -->
+{{ 0 | greaterOrEqual: 1 }}
+<!-- false -->
+{{ 1 | greaterOrEqual: 0 }}
+<!-- true -->
+{{ 1 | greaterOrEqual: 1 }}
+<!-- true -->
 ```
 
 #### less
@@ -63,15 +69,18 @@ Returns true if the first value is less than the second value.
 ##### File
 
 ```typescript
-import { IsLessPipe } from 'angular-pipes';
+import { NgIsLessPipeModule } from 'angular-pipes';
 ```
 
 ##### Usage
 
 ```html
-{{ 0 | less: 1 }} <!-- true -->
-{{ 1 | less: 0 }} <!-- false -->
-{{ 1 | less: 1 }} <!-- false -->
+{{ 0 | less: 1 }}
+<!-- true -->
+{{ 1 | less: 0 }}
+<!-- false -->
+{{ 1 | less: 1 }}
+<!-- false -->
 ```
 
 #### lessOrEqual
@@ -81,15 +90,18 @@ Returns true if the first value is less or equal to the second value.
 ##### File
 
 ```typescript
-import { IsLessOrEqualPipe } from 'angular-pipes';
+import { NgIsLessOrEqualPipeModule } from 'angular-pipes';
 ```
 
 ##### Usage
 
 ```html
-{{ 0 | lessOrEqual: 1 }} <!-- true -->
-{{ 1 | lessOrEqual: 0 }} <!-- false -->
-{{ 1 | lessOrEqual: 1 }} <!-- true -->
+{{ 0 | lessOrEqual: 1 }}
+<!-- true -->
+{{ 1 | lessOrEqual: 0 }}
+<!-- false -->
+{{ 1 | lessOrEqual: 1 }}
+<!-- true -->
 ```
 
 #### equal
@@ -99,15 +111,18 @@ Returns true if the value are equal (operator `==`).
 ##### File
 
 ```typescript
-import { IsEqualPipe } from 'angular-pipes';
+import { NgIsEqualPipeModule } from 'angular-pipes';
 ```
 
 ##### Usage
 
 ```html
-{{ 0 | equal: 1 }} <!-- false -->
-{{ 1 | equal: '1' }} <!-- true -->
-{{ 1 | equal: 1 }} <!-- true -->
+{{ 0 | equal: 1 }}
+<!-- false -->
+{{ 1 | equal: '1' }}
+<!-- true -->
+{{ 1 | equal: 1 }}
+<!-- true -->
 ```
 
 #### notEqual
@@ -117,17 +132,19 @@ Returns true if the value are not equal (operator `!=`).
 ##### File
 
 ```typescript
-import { IsNotEqualPipe } from 'angular-pipes';
+import { NgIsNotEqualPipeModule } from 'angular-pipes';
 ```
 
 ##### Usage
 
 ```html
-{{ 0 | notEqual: 1 }} <!-- true -->
-{{ 1 | notEqual: '1' }} <!-- false -->
-{{ 1 | notEqual: 1 }} <!-- false -->
+{{ 0 | notEqual: 1 }}
+<!-- true -->
+{{ 1 | notEqual: '1' }}
+<!-- false -->
+{{ 1 | notEqual: 1 }}
+<!-- false -->
 ```
-
 
 #### identical
 
@@ -136,17 +153,19 @@ Returns true if the value are identical (operator `===`).
 ##### File
 
 ```typescript
-import { IsIdenticalPipe } from 'angular-pipes';
+import { NgIsIdenticalPipeModule } from 'angular-pipes';
 ```
 
 ##### Usage
 
 ```html
-{{ 0 | identical: 1 }} <!-- false -->
-{{ 1 | identical: '1' }} <!-- false -->
-{{ 1 | identical: 1 }} <!-- true -->
+{{ 0 | identical: 1 }}
+<!-- false -->
+{{ 1 | identical: '1' }}
+<!-- false -->
+{{ 1 | identical: 1 }}
+<!-- true -->
 ```
-
 
 #### notIdentical
 
@@ -155,17 +174,19 @@ Returns true if the value are not identical (operator `!==`).
 ##### File
 
 ```typescript
-import { IsNotIdenticalPipe } from 'angular-pipes';
+import { NgIsNotIdenticalPipeModule } from 'angular-pipes';
 ```
 
 ##### Usage
 
 ```html
-{{ 0 | notIdentical: 1 }} <!-- true -->
-{{ 1 | notIdentical: '1' }} <!-- true -->
-{{ 1 | notIdentical: 1 }} <!-- false -->
+{{ 0 | notIdentical: 1 }}
+<!-- true -->
+{{ 1 | notIdentical: '1' }}
+<!-- true -->
+{{ 1 | notIdentical: 1 }}
+<!-- false -->
 ```
-
 
 #### isNull
 
@@ -174,14 +195,16 @@ Returns true if the value if null.
 ##### File
 
 ```typescript
-import { IsNullPipe } from 'angular-pipes';
+import { NgIsNullPipeModule } from 'angular-pipes';
 ```
 
 ##### Usage
 
 ```html
-{{ null | isNull }} <!-- true -->
-{{ 1 | isNull }} <!-- false -->
+{{ null | isNull }}
+<!-- true -->
+{{ 1 | isNull }}
+<!-- false -->
 ```
 
 #### isUndefined
@@ -191,14 +214,16 @@ Returns true if the value if undefined.
 ##### File
 
 ```typescript
-import { IsUndefinedPipe } from 'angular-pipes';
+import { NgIsUndefinedPipeModule } from 'angular-pipes';
 ```
 
 ##### Usage
 
 ```html
-{{ a | isUndefined }} <!-- true if a does not exists -->
-{{ 1 | isUndefined }} <!-- false -->
+{{ a | isUndefined }}
+<!-- true if a does not exists -->
+{{ 1 | isUndefined }}
+<!-- false -->
 ```
 
 #### isNil
@@ -208,17 +233,19 @@ Returns true if the value if null or undefined.
 ##### File
 
 ```typescript
-import { IsNilPipe } from 'angular-pipes';
+import { NgIsNilPipeModule } from 'angular-pipes';
 ```
 
 ##### Usage
 
 ```html
-{{ a | isNil }} <!-- true if a does not exists -->
-{{ null | isNil }} <!-- true -->
-{{ 1 | isNil }} <!-- false -->
+{{ a | isNil }}
+<!-- true if a does not exists -->
+{{ null | isNil }}
+<!-- true -->
+{{ 1 | isNil }}
+<!-- false -->
 ```
-
 
 #### isNumber
 
@@ -227,14 +254,16 @@ Returns true if the value is a number.
 ##### File
 
 ```typescript
-import { IsNumberPipe } from 'angular-pipes';
+import { NgIsNumberPipeModule } from 'angular-pipes';
 ```
 
 ##### Usage
 
 ```html
-{{ 'a' | isNumber }} <!-- false -->
-{{ 1 | isNumber }} <!-- true -->
+{{ 'a' | isNumber }}
+<!-- false -->
+{{ 1 | isNumber }}
+<!-- true -->
 ```
 
 #### isString
@@ -244,16 +273,17 @@ Returns true if the value is a string.
 ##### File
 
 ```typescript
-import { IsStringPipe } from 'angular-pipes';
+import { NgIsStringPipeModule } from 'angular-pipes';
 ```
 
 ##### Usage
 
 ```html
-{{ 'a' | isString }} <!-- true -->
-{{ 1 | isString }} <!-- false -->
+{{ 'a' | isString }}
+<!-- true -->
+{{ 1 | isString }}
+<!-- false -->
 ```
-
 
 #### isFunction
 
@@ -262,7 +292,7 @@ Returns true if the value is a function.
 ##### File
 
 ```typescript
-import { IsFunctionPipe } from 'angular-pipes';
+import { NgIsFunctionPipeModule } from 'angular-pipes';
 ```
 
 ##### Usage
@@ -274,10 +304,11 @@ myFn() {
 ```
 
 ```html
-{{ 'a' | isFunction }} <!-- false -->
-{{ myFn | isFunction }} <!-- true -->
+{{ 'a' | isFunction }}
+<!-- false -->
+{{ myFn | isFunction }}
+<!-- true -->
 ```
-
 
 #### isArray
 
@@ -286,17 +317,17 @@ Returns true if the value is an array.
 ##### File
 
 ```typescript
-import { IsArrayPipe } from 'angular-pipes';
+import { NgIsArrayPipeModule } from 'angular-pipes';
 ```
 
 ##### Usage
 
-
 ```html
-{{ 'a' | isArray }} <!-- false -->
-{{ [] | isArray }} <!-- true -->
+{{ 'a' | isArray }}
+<!-- false -->
+{{ [] | isArray }}
+<!-- true -->
 ```
-
 
 #### isObject
 
@@ -305,17 +336,17 @@ Returns true if the value is an object.
 ##### File
 
 ```typescript
-import { IsObjectPipe } from 'angular-pipes';
+import { NgIsObjectPipeModule } from 'angular-pipes';
 ```
 
 ##### Usage
 
-
 ```html
-{{ 'a' | isObject }} <!-- false -->
-{{ {} | isObject }} <!-- true -->
+{{ 'a' | isObject }}
+<!-- false -->
+{{ {} | isObject }}
+<!-- true -->
 ```
-
 
 #### isDefined
 
@@ -324,14 +355,16 @@ Returns true if the value is defined (nor null nor undefined).
 ##### File
 
 ```typescript
-import { IsDefinedPipe } from 'angular-pipes';
+import { NgIsDefinedPipeModule } from 'angular-pipes';
 ```
 
 ##### Usage
 
-
 ```html
-{{ 'a' | isDefined }} <!-- true -->
-{{ null | isDefined }} <!-- false -->
-{{ a | isDefined }} <!-- false if a does not exists -->
+{{ 'a' | isDefined }}
+<!-- true -->
+{{ null | isDefined }}
+<!-- false -->
+{{ a | isDefined }}
+<!-- false if a does not exists -->
 ```

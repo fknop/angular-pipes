@@ -1,3 +1,7 @@
+# 10.0.0
+
+- Added a module for each pipe [#97](https://github.com/fknop/angular-pipes/pull/97)
+
 # 9.0.1
 
 - [`ordinal`](./docs/math.md#ordinal)

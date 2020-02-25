@@ -105,4 +105,6 @@ import { NgSumPipeModule } from 'angular-pipes';
 ```html
 {{ [5, 5, 1, 9] | sum }}
 <!-- 20 -->
+{{ [5, 5, 1, 9] | sum:15 }}
+<!-- 35 -->
 ```

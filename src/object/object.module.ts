@@ -5,6 +5,6 @@ import { NgToArrayPipeModule } from './to-array.pipe';
 import { NgDefaultsPipeModule } from './defaults.pipe';
 
 @NgModule({
-  imports: [NgKeysPipeModule, NgToArrayPipeModule, NgDefaultsPipeModule],
+  exports: [NgKeysPipeModule, NgToArrayPipeModule, NgDefaultsPipeModule],
 })
 export class NgObjectPipesModule {}

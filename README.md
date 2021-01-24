@@ -4,6 +4,8 @@
 [![Downloads](https://img.shields.io/npm/dt/angular-pipes.svg)](https://npmjs.org/package/angular-pipes)
 [![Downloads](https://img.shields.io/npm/dm/angular-pipes.svg)](https://npmjs.org/package/angular-pipes)
 
+# Not actively maintained
+
 # angular-pipes
 
 **angular-pipes** is a pipes library for `Angular`.

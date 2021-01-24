@@ -1,8 +1,10 @@
 [![NPM Version](https://img.shields.io/npm/v/angular-pipes.svg)](https://npmjs.org/package/angular-pipes)
-[![Build Status](https://travis-ci.org/fknop/angular-pipes.svg?branch=master)](https://travis-ci.org/fknop/angular-pipes)
-[![Coverage Status](https://coveralls.io/repos/github/fknop/angular-pipes/badge.svg?branch=master)](https://coveralls.io/github/fknop/angular-pipes?branch=master)
+[![Build Status](https://travis-ci.org/wizbii/angular-pipes.svg?branch=master)](https://travis-ci.org/wizbii/angular-pipes)
+[![Coverage Status](https://coveralls.io/repos/github/wizbii/angular-pipes/badge.svg?branch=master)](https://coveralls.io/github/wizbii/angular-pipes?branch=master)
 [![Downloads](https://img.shields.io/npm/dt/angular-pipes.svg)](https://npmjs.org/package/angular-pipes)
 [![Downloads](https://img.shields.io/npm/dm/angular-pipes.svg)](https://npmjs.org/package/angular-pipes)
+
+# Not actively maintained
 
 # angular-pipes
 

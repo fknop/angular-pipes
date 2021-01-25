@@ -7,6 +7,6 @@ import { NgMinPipeModule } from './min.pipe';
 import { NgSumPipeModule } from './sum.pipe';
 
 @NgModule({
-  imports: [NgGroupByPipeModule, NgMaxPipeModule, NgMeanPipeModule, NgMinPipeModule, NgSumPipeModule],
+  exports: [NgGroupByPipeModule, NgMaxPipeModule, NgMeanPipeModule, NgMinPipeModule, NgSumPipeModule],
 })
 export class NgAggregatePipesModule {}

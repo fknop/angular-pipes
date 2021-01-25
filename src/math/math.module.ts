@@ -13,7 +13,7 @@ import { NgAbsPipeModule } from './abs.pipe';
 import { NgOrdinalPipeModule } from './ordinal.pipe';
 
 @NgModule({
-  imports: [
+  exports: [
     NgAbsPipeModule,
     NgBytesPipeModule,
     NgCeilPipeModule,

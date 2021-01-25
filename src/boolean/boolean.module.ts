@@ -19,7 +19,7 @@ import { NgIsObjectPipeModule } from './is-object.pipe';
 import { NgIsDefinedPipeModule } from './is-defined.pipe';
 
 @NgModule({
-  imports: [
+  exports: [
     NgIsNullPipeModule,
     NgIsUndefinedPipeModule,
     NgIsNilPipeModule,
@@ -34,7 +34,7 @@ import { NgIsDefinedPipeModule } from './is-defined.pipe';
 export class NgTypesPipesModule {}
 
 @NgModule({
-  imports: [
+  exports: [
     NgIsEqualPipeModule,
     NgIsGreaterOrEqualPipeModule,
     NgIsGreaterPipeModule,
@@ -48,6 +48,6 @@ export class NgTypesPipesModule {}
 export class NgConditionsPipesModule {}
 
 @NgModule({
-  imports: [NgConditionsPipesModule, NgTypesPipesModule],
+  exports: [NgConditionsPipesModule, NgTypesPipesModule],
 })
 export class NgBooleanPipesModule {}

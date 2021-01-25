@@ -30,7 +30,7 @@ import { NgTakeWhilePipeModule } from './take-while.pipe';
 import { NgTakeUntilPipeModule } from './take-until.pipe';
 
 @NgModule({
-  imports: [
+  exports: [
     NgChunkPipeModule,
     NgCountPipeModule,
     NgDeepPipeModule,

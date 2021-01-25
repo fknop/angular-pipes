@@ -26,7 +26,7 @@ import { NgWithPipeModule } from './with.pipe';
 import { NgReverseStrPipeModule } from './reverse-str.pipe';
 
 @NgModule({
-  imports: [
+  exports: [
     NgCapitalizePipeModule,
     NgDecodeURIComponentPipeModule,
     NgDecodeURIPipeModule,

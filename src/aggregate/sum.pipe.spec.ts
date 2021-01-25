@@ -22,4 +22,16 @@ describe('SumPipe', () => {
   it('Should return 15', () => {
     expect(pipe.transform(15)).toEqual(15);
   });
+
+  it('Should return 22', () => {
+    expect(pipe.transform(15, 7)).toEqual(22);
+  });
+
+  it('Should return 33', () => {
+    expect(pipe.transform([15, 14], 4)).toEqual(33);
+  });
+
+  it('Should return 45', () => {
+    expect(pipe.transform([40], 5)).toEqual(45);
+  });
 });

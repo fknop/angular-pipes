@@ -7,27 +7,21 @@ import { isString, isUndefined } from '../utils/utils';
   name: 'truncate',
 })
 export class TruncatePipe implements PipeTransform {
-  transform(input: any, length?: number, suffix?: string, preserve?: boolean): any {
+  transform(input: any, length?: number, suffix = '', preserve = false): any {
     if (!isString(input)) {
       return input;
     }
 
-    length = isUndefined(length) ? input.length : length;
+    const _length = isUndefined(length) ? input.length : length;
 
-    if (input.length <= length) {
+    if (input.length <= _length) {
       return input;
     }
 
-    preserve = preserve || false;
-    suffix = suffix || '';
-    let index = length;
+    let index = _length;
 
     if (preserve) {
-      if (input.indexOf(' ', length) === -1) {
-        index = input.length;
-      } else {
-        index = input.indexOf(' ', length);
-      }
+      index = input.indexOf(' ', _length) === -1 ? input.length : input.indexOf(' ', _length);
     }
 
     return input.substring(0, index) + suffix;

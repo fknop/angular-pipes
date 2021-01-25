@@ -1,3 +1,7 @@
+# 10.1.0
+
+- Add linting [#98](https://github.com/fknop/angular-pipes/pull/98)
+
 # 10.0.0
 
 - Added a module for each pipe [#97](https://github.com/fknop/angular-pipes/pull/97)

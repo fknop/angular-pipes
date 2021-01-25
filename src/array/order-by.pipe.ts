@@ -1,3 +1,4 @@
+// tslint:disable:cognitive-complexity
 import { Pipe, PipeTransform, NgModule } from '@angular/core';
 import { isArray } from '../utils/utils';
 
@@ -41,35 +42,35 @@ export class OrderByPipe implements PipeTransform {
           const comparator = OrderByPipe._orderBy(a, b);
           return desc ? -comparator : comparator;
         });
-      } else {
-        // If contains + or -, substring the property
-        const property = first === '+' || desc ? propertyToCheck.substr(1) : propertyToCheck;
-
-        return [...input].sort((a: any, b: any) => {
-          const comparator = OrderByPipe._orderBy(a[property], b[property]);
-          return desc ? -comparator : comparator;
-        });
       }
-    } else {
-      // Config is an array of property
+
+      // If contains + or -, substring the property
+      const property = first === '+' || desc ? propertyToCheck.substr(1) : propertyToCheck;
 
       return [...input].sort((a: any, b: any) => {
-        for (let i: number = 0; i < config.length; ++i) {
-          const first = config[i].substr(0, 1);
-          const desc = first === '-';
-          const property = first === '+' || desc ? config[i].substr(1) : config[i];
-
-          const comparator = OrderByPipe._orderBy(a[property], b[property]);
-          const comparison = desc ? -comparator : comparator;
-
-          if (comparison !== 0) {
-            return comparison;
-          }
-        }
-
-        return 0;
+        const comparator = OrderByPipe._orderBy(a[property], b[property]);
+        return desc ? -comparator : comparator;
       });
     }
+
+    // Config is an array of property
+
+    return [...input].sort((a: any, b: any) => {
+      for (const conf of config) {
+        const first = conf.substr(0, 1);
+        const desc = first === '-';
+        const property = first === '+' || desc ? conf.substr(1) : conf;
+
+        const comparator = OrderByPipe._orderBy(a[property], b[property]);
+        const comparison = desc ? -comparator : comparator;
+
+        if (comparison !== 0) {
+          return comparison;
+        }
+      }
+
+      return 0;
+    });
   }
 }
 

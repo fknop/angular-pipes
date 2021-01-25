@@ -15,14 +15,16 @@ export class WherePipe implements PipeTransform {
 
     if (isFunction(fn)) {
       return input.filter(fn);
-    } else if (isArray(fn)) {
+    }
+    if (isArray(fn)) {
       const [key, value] = fn;
       return input.filter((item: any) => getProperty(item, key) === value);
-    } else if (fn) {
-      return input.filter((item: any) => item === fn);
-    } else {
-      return input;
     }
+    if (fn) {
+      return input.filter((item: any) => item === fn);
+    }
+
+    return input;
   }
 }
 

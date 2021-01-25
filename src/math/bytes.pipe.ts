@@ -16,7 +16,16 @@ export class BytesPipe implements PipeTransform {
     TB: { max: Number.MAX_SAFE_INTEGER, prev: 'GB' },
   };
 
-  transform(input: any, decimal: number = 0, from: ByteUnit = 'B', to?: ByteUnit): any {
+  static formatResult(result: number, unit: string): string {
+    return `${result} ${unit}`;
+  }
+
+  static calculateResult(format: { max: number; prev?: ByteUnit }, bytes: number) {
+    const prev = format.prev ? BytesPipe.formats[format.prev] : undefined;
+    return prev ? bytes / prev.max : bytes;
+  }
+
+  transform(input: any, decimal = 0, from: ByteUnit = 'B', to?: ByteUnit): any {
     if (!(isNumberFinite(input) && isNumberFinite(decimal) && isInteger(decimal) && isPositive(decimal))) {
       return input;
     }
@@ -25,7 +34,7 @@ export class BytesPipe implements PipeTransform {
     let unit = from;
     while (unit !== 'B') {
       bytes *= 1024;
-      unit = BytesPipe.formats[unit].prev!;
+      unit = BytesPipe.formats[unit].prev;
     }
 
     if (to) {
@@ -46,15 +55,6 @@ export class BytesPipe implements PipeTransform {
         }
       }
     }
-  }
-
-  static formatResult(result: number, unit: string): string {
-    return `${result} ${unit}`;
-  }
-
-  static calculateResult(format: { max: number; prev?: ByteUnit }, bytes: number) {
-    const prev = format.prev ? BytesPipe.formats[format.prev] : undefined;
-    return prev ? bytes / prev.max : bytes;
   }
 }
 

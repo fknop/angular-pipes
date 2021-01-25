@@ -11,20 +11,20 @@ export class OrdinalPipe implements PipeTransform {
     }
 
     if (this.endsWithTenth(input)) {
-      return input + 'th';
-    } else {
-      const cardinal = input.toString().charAt(input.toString().length - 1);
+      return `${input}th`;
+    }
 
-      switch (cardinal) {
-        case '1':
-          return input + 'st';
-        case '2':
-          return input + 'nd';
-        case '3':
-          return input + 'rd';
-        default:
-          return input + 'th';
-      }
+    const cardinal = input.toString().charAt(input.toString().length - 1);
+
+    switch (cardinal) {
+      case '1':
+        return `${input}st`;
+      case '2':
+        return `${input}nd`;
+      case '3':
+        return `${input}rd`;
+      default:
+        return `${input}th`;
     }
   }
 

@@ -5,12 +5,12 @@ import { getProperty, isArray, isUndefined } from '../utils/utils';
   name: 'groupBy',
 })
 export class GroupByPipe implements PipeTransform {
-  transform(input: any, prop: string): Array<any> {
+  transform(input: any, prop: string): any[] {
     if (!isArray(input)) {
       return input;
     }
 
-    const arr: { [key: string]: Array<any> } = {};
+    const arr: { [key: string]: any[] } = {};
 
     for (const value of input) {
       const field: any = getProperty(value, prop);

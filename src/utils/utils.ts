@@ -1,7 +1,7 @@
 export type CollectionPredicate = (item?: any, index?: number, collection?: any[]) => boolean;
 
 export function isUndefined(value: any): value is undefined {
-  return typeof value === 'undefined';
+  return value === undefined;
 }
 
 export function isNull(value: any): value is null {
@@ -27,7 +27,7 @@ export function isInteger(value: number): boolean {
 }
 
 export function isNil(value: any): value is null | undefined {
-  return value === null || typeof value === 'undefined';
+  return value === null || value == undefined;
 }
 
 export function isString(value: any): value is string {
@@ -54,84 +54,83 @@ export function upperFirst(value: string): string {
   return value.slice(0, 1).toUpperCase() + value.slice(1);
 }
 
+// tslint:disable:prefer-template restrict-plus-operands
 export function createRound(method: string): Function {
   // <any>Math to suppress error
-  const func: any = (<any>Math)[method];
-  return function(value: number, precision: number = 0) {
+  const func: any = (Math as any)[method];
+  return (value: number, precision = 0) => {
+    let _precision = precision;
     if (typeof value === 'string') {
       throw new TypeError('Rounding method needs a number');
     }
 
-    if (typeof precision !== 'number' || isNaN(precision)) {
-      precision = 0;
+    if (typeof _precision !== 'number' || isNaN(_precision)) {
+      _precision = 0;
     }
 
-    if (precision) {
+    if (_precision) {
       let pair = `${value}e`.split('e');
-      const val = func(`${pair[0]}e` + (+pair[1] + precision));
+      const val = func(`${pair[0]}e` + (+pair[1] + _precision));
 
       pair = `${val}e`.split('e');
-      return +(pair[0] + 'e' + (+pair[1] - precision));
+      return +(pair[0] + 'e' + (+pair[1] - _precision));
     }
 
     return func(value);
   };
 }
+// tslint:disable:prefer-template restrict-plus-operands
 
-export function leftPad(str: string, len: number = 0, ch: any = ' ') {
-  str = String(str);
-  ch = toString(ch);
+export function leftPad(str: string, len = 0, ch: any = ' ') {
+  let _str = String(str);
+  const _ch = toString(ch);
   let i = -1;
-  const length = len - str.length;
+  const length = len - _str.length;
 
-  while (++i < length && str.length + ch.length <= len) {
-    str = ch + str;
+  while (++i < length && _str.length + _ch.length <= len) {
+    _str = _ch + _str;
   }
 
-  return str;
+  return _str;
 }
 
-export function rightPad(str: string, len: number = 0, ch: any = ' ') {
-  str = String(str);
-  ch = toString(ch);
+export function rightPad(str: string, len = 0, ch: any = ' ') {
+  let _str = String(str);
+  const _ch = toString(ch);
 
   let i = -1;
-  const length = len - str.length;
+  const length = len - _str.length;
 
-  while (++i < length && str.length + ch.length <= len) {
-    str += ch;
+  while (++i < length && _str.length + _ch.length <= len) {
+    _str += _ch;
   }
 
-  return str;
+  return _str;
 }
 
 export function toString(value: number | string) {
   return `${value}`;
 }
 
-export function pad(str: string, len: number = 0, ch: any = ' '): string {
-  str = String(str);
-  ch = toString(ch);
+export function pad(str: string, len = 0, ch: any = ' '): string {
+  let _str = String(str);
+  const _ch = toString(ch);
   let i = -1;
-  const length = len - str.length;
+  const length = len - _str.length;
 
   let left = true;
   while (++i < length) {
-    const l = str.length + ch.length <= len ? str.length + ch.length : str.length + 1;
+    const l = _str.length + _ch.length <= len ? _str.length + _ch.length : _str.length + 1;
 
-    if (left) {
-      str = leftPad(str, l, ch);
-    } else {
-      str = rightPad(str, l, ch);
-    }
+    _str = left ? leftPad(_str, l, _ch) : rightPad(_str, l, _ch);
 
     left = !left;
   }
 
-  return str;
+  return _str;
 }
 
-export function flatten(input: any[], index: number = 0): any[] {
+export function flatten(input: any[], index = 0): any[] {
   if (index >= input.length) {
     return input;
   }
@@ -149,20 +148,20 @@ export function getProperty(value: { [key: string]: any }, key: string): any {
   }
 
   const keys: string[] = key.split('.');
-  let result: any = value[keys.shift()!];
+  let result: any = value[keys.shift()];
 
-  for (const key of keys) {
+  for (const keyFor of keys) {
     if (isNil(result) || !isObject(result)) {
       return undefined;
     }
 
-    result = result[key];
+    result = result[keyFor];
   }
 
   return result;
 }
 
-export function sum(input: Array<number>, initial = 0): number {
+export function sum(input: number[], initial = 0): number {
   return input.reduce((previous: number, current: number) => previous + current, initial);
 }
 
@@ -214,10 +213,9 @@ export function deepEqual(a: any, b: any) {
   }
 
   // Test for A's keys different from B.
-  var hasOwn = Object.prototype.hasOwnProperty;
-  for (let i = 0; i < keysA.length; i++) {
-    const key = keysA[i];
-    if (!hasOwn.call(b, keysA[i]) || !deepEqual(a[key], b[key])) {
+  const hasOwn = Object.prototype.hasOwnProperty;
+  for (const key of keysA) {
+    if (!hasOwn.call(b, key) || !deepEqual(a[key], b[key])) {
       return false;
     }
   }
@@ -242,7 +240,7 @@ export function unwrapDeep(object: any) {
 }
 
 export class DeepWrapper {
-  public __isDeepObject__: boolean = true;
+  __isDeepObject__ = true;
 
   constructor(public data: any) {}
 }

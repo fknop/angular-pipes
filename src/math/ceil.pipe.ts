@@ -5,12 +5,13 @@ import { createRound, isString } from '../utils/utils';
   name: 'ceil',
 })
 export class CeilPipe implements PipeTransform {
-  transform(value: any, precision: any = 0): any {
-    if (isString(precision)) {
-      precision = parseInt(precision);
+  transform(value: any, precision: any = 0, radix = 10): any {
+    let _precision = precision;
+    if (isString(_precision)) {
+      _precision = parseInt(_precision, radix);
     }
 
-    return createRound('ceil')(value, precision);
+    return createRound('ceil')(value, _precision);
   }
 }
 

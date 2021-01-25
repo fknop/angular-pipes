@@ -5,7 +5,7 @@ import { isArray } from '../utils/utils';
   name: 'join',
 })
 export class JoinPipe implements PipeTransform {
-  transform(input: any, character: string = ''): any {
+  transform(input: any, character = ''): any {
     if (!isArray(input)) {
       return input;
     }

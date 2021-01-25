@@ -9,8 +9,13 @@ services:
   - xvfb
 
 cache:
-  yarn: true
+  npm: true
   directories:
     - node_modules
+
+script:
+  - npm run lint
+  - npm run build
+  - npm run test
 
 after_success: npm run cover

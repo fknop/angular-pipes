@@ -18,7 +18,7 @@ export class FirstOrDefaultPipe implements PipeTransform {
       result = input[i];
     }
 
-    if (typeof result === 'undefined' && typeof defaultValue !== 'undefined') {
+    if (result == undefined && defaultValue != undefined) {
       result = defaultValue;
     }
 
@@ -31,15 +31,17 @@ export class FirstOrDefaultPipe implements PipeTransform {
     }
 
     if (isFunction(predicate)) {
-      return FirstOrDefaultPipe.find(input, <CollectionPredicate>predicate, defaultValue);
-    } else if (isArray(predicate)) {
-      const [key, value] = <string[]>predicate;
-      return FirstOrDefaultPipe.find(input, (item: any) => getProperty(item, key) === value, defaultValue);
-    } else if (predicate) {
-      return FirstOrDefaultPipe.find(input, item => item === <any>predicate, defaultValue);
-    } else {
-      return input;
+      return FirstOrDefaultPipe.find(input, predicate as CollectionPredicate, defaultValue);
     }
+    if (isArray(predicate)) {
+      const [key, value] = predicate as string[];
+      return FirstOrDefaultPipe.find(input, (item: any) => getProperty(item, key) === value, defaultValue);
+    }
+    if (predicate) {
+      return FirstOrDefaultPipe.find(input, item => item === predicate, defaultValue);
+    }
+
+    return input;
   }
 }
 

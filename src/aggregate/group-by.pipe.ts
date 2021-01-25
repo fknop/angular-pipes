@@ -1,11 +1,16 @@
 import { Pipe, PipeTransform, NgModule } from '@angular/core';
 import { getProperty, isArray, isUndefined } from '../utils/utils';
 
+class GroupByResult<T> {
+  value: Array<T>;
+  key: any;
+}
+
 @Pipe({
   name: 'groupBy',
 })
 export class GroupByPipe implements PipeTransform {
-  transform(input: any, prop: string): Array<any> {
+  transform<T>(input: Array<T>, prop: string): Array<GroupByResult<T>> {
     if (!isArray(input)) {
       return input;
     }

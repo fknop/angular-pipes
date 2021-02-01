@@ -1,11 +1,13 @@
 import { Pipe, PipeTransform, NgModule } from '@angular/core';
-import { isArray, isDeepObject, unwrapDeep, deepIndexOf } from '../utils/utils';
+import { isArray, isDeepObject, unwrapDeep } from '../utils/utils';
 
 @Pipe({
   name: 'merge',
 })
 export class MergePipe implements PipeTransform {
   transform(a?: any, b?: any): any {
+    a = a === null ? [] : a;
+    b = b === null ? [] : b;
     if ((!isArray(a) && !isDeepObject(a)) || !isArray(b)) {
       return [];
     }

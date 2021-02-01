@@ -25,6 +25,21 @@ describe('MergePipe', () => {
     expect(result).toEqual([1, 2, 3, 4]);
   });
 
+  it('Should merge with null value', () => {
+    const result = pipe.transform([1, 2], null);
+    expect(result).toEqual([1, 2]);
+  });
+
+  it('Should merge on null value', () => {
+    const result = pipe.transform(null, [1, 2]);
+    expect(result).toEqual([1, 2]);
+  });
+
+  it('Should merge null values', () => {
+    const result = pipe.transform(null, null);
+    expect(result).toEqual([]);
+  })
+
   it('Should return an empty array', () => {
     expect(pipe.transform('a')).toEqual([]);
     expect(pipe.transform([], 'a')).toEqual([]);

@@ -36,6 +36,7 @@ You can find the documentations in the [`docs`](./docs) folder or on [`GitBook`]
 - [`union`](./docs/array.md#union)
 - [`range`](./docs/array.md#range)
 - [`map`](./docs/array.md#map)
+- [`merge`](./docs/array.md#merge)
 - [`pluck`](./docs/array.md#pluck)
 - [`where`](./docs/array.md#where)
 - [`firstOrDefault`](./docs/array.md#firstordefault)

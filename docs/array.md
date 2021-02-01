@@ -12,6 +12,7 @@
 - [`union`](#union)
 - [`range`](#range)
 - [`map`](#map)
+- [`merge`](#merge)
 - [`pluck`](#pluck)
 - [`where`](#where)
 - [`firstOrDefault`](#firstordefault)
@@ -280,6 +281,29 @@ addOne (item) {
 ```html
 {{ [1, 2, 3] | map: addOne }}
 <!-- [2, 3, 4] -->
+```
+
+#### merge
+
+Returns the merge of two collection, works with deep equal.
+
+##### File
+
+```typescript
+import { NgMergePipeModule } from 'angular-pipes';
+```
+
+##### Usage
+
+```html
+{{ [1, 2, 3] | union: [1, 2] }}
+<!-- [1, 2, 3, 1, 2] -->
+{{ [1, 2] | union: [3, 4] }}
+<!-- [1, 2, 3, 4] -->
+{{ [{ a: 1 }, { a: 2 }] | union: [{ a: 1 }, { a: 3 }] }}
+<!-- [{ a: 1 }, { a: 2 }, { a: 1 }, { a: 3 }] (no deep here)-->
+{{ [{ a: 1 }, { a: 2 }] | deep | union: [{ a: 1 }, { a: 3 }] }}
+<!-- [{ a: 1 }, { a: 2 }, { a: 3 }, { a: 1 }, { a: 3 }] -->
 ```
 
 #### pluck

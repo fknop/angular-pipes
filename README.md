@@ -126,6 +126,7 @@ You can find the documentations in the [`docs`](./docs) folder or on [`GitBook`]
 - [`keys`](./docs/object.md#keys)
 - [`toArray`](./docs/object.md#toarray)
 - [`defaults`](./docs/object.md#defaults)
+- [`toKeyValuePairs`](./docs/object.md#tokeyvaluepairs)
 
 ## Install
 

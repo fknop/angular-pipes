@@ -74,6 +74,7 @@ export * from './math/ordinal.pipe';
 export * from './object/keys.pipe';
 export * from './object/to-array.pipe';
 export * from './object/defaults.pipe';
+export * from './object/to-key-value-pairs';
 
 export * from './string/left-pad.pipe';
 export * from './string/match.pipe';

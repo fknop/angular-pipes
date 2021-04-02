@@ -3,6 +3,7 @@
 - [`keys`](#keys)
 - [`toArray`](#toarray)
 - [`defaults`](#defaults)
+- [`toKeyValuePairs`](#tokeyvaluepairs)
 
 You can check the module import [`here`](./modules.md).
 
@@ -92,4 +93,29 @@ const array = [{ a: 2 }, null, { b: 3 }, undefined];
 <!-- { a: 2, b: 2, c: 3 } -->
 {{ array | defaults: d }}
 <!-- [{ a: 2, b: 2, c: 3 }, { a: 1, b: 2, c: 3 }, { a: 1, b: 3, c: 3 }, { a: 1, b: 2, c: 3 }]-->
+```
+
+#### toKeyValuePairs
+
+Transforms an object to an array of key-value pairs.
+
+##### File
+
+```typescript
+import { NgToKeyValuePairsModule } from 'angular-pipes';
+```
+
+##### Usage
+
+```javascript
+const value = {
+  a: 1,
+  b: 2,
+  c: 3,
+};
+```
+
+```html
+{{ object | toKeyValuePairs }}
+<!-- [{key: 'a', value: 1}, {key: 'b', value: 2}, {key: 'c', value: 3}] -->
 ```

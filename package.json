@@ -1,6 +1,6 @@
 {
   "name": "@wizbii/angular-pipes",
-  "version": "12.0.0",
+  "version": "12.0.2",
   "description": "Angular pipes library",
   "scripts": {
     "ng": "ng",

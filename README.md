@@ -2,11 +2,9 @@
 [![Build Status](https://github.com/wizbii/angular-pipes/actions/workflows/main.yml/badge.svg)](https://github.com/wizbii/angular-pipes/actions)
 [![Downloads](https://img.shields.io/npm/dt/@wizbii/angular-pipes.svg)](https://npmjs.org/package/@wizbii//angular-pipes)
 
-# Not actively maintained
+# @wizbii/angular-pipes
 
-# angular-pipes
-
-**angular-pipes** is a pipes library for `Angular`.
+**@wizbii/angular-pipes** is a pipes library for `Angular`.
 
 ## Changelog
 
@@ -127,10 +125,11 @@ You can find the documentations in the [`docs`](./docs) folder or on [`GitBook`]
 
 ## Install
 
-### npm
+### npm / yarn
 
 ```
-npm install angular-pipes --save
+npm install @wizbii/angular-pipes --save
+yarn add @wizbii/angular-pipes
 ```
 
 ## How to use
@@ -140,8 +139,8 @@ Check the [`documentation`](./docs) for how to import your pipes in your `NgModu
 ## Tests
 
 ```
-npm install
-npm test
+yarn
+yarn test
 ```
 
 ## License

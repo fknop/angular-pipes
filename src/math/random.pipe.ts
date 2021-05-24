@@ -5,7 +5,7 @@ import { isNumberFinite } from '../utils/utils';
   name: 'random',
 })
 export class RandomPipe implements PipeTransform {
-  transform(input: any, min: number = 0, max: number = 1): any {
+  transform(input: any, min = 0, max = 1): number {
     if (!isNumberFinite(min) || !isNumberFinite(max)) {
       return input;
     }

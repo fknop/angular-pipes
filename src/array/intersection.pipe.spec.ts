@@ -31,7 +31,12 @@ describe('IntersectionPipe', () => {
   });
 
   it('Should return the intersection with no deep equal', () => {
-    const collection = [{ a: 1, b: { c: 2 } }, { a: 2, b: { c: 3 } }, { a: 2, b: { c: 3 } }, { a: 1, b: { c: 2 } }];
+    const collection = [
+      { a: 1, b: { c: 2 } },
+      { a: 2, b: { c: 3 } },
+      { a: 2, b: { c: 3 } },
+      { a: 1, b: { c: 2 } },
+    ];
 
     const collection2 = [{ a: 1, b: { c: 2 } }];
 
@@ -39,12 +44,24 @@ describe('IntersectionPipe', () => {
   });
 
   it('Should return intersection with deep equal', () => {
-    const collection = [{ a: 1, b: { c: 2 } }, { a: 2, b: { c: 3 } }, { a: 2, b: { c: 3 } }, { a: 1, b: { c: 2 } }];
+    const collection = [
+      { a: 1, b: { c: 2 } },
+      { a: 2, b: { c: 3 } },
+      { a: 2, b: { c: 3 } },
+      { a: 1, b: { c: 2 } },
+    ];
 
-    const collection2 = [{ a: 1, b: { c: 2 } }, { a: 2, b: { c: 3 } }, { a: 3, b: { c: 2 } }];
+    const collection2 = [
+      { a: 1, b: { c: 2 } },
+      { a: 2, b: { c: 3 } },
+      { a: 3, b: { c: 2 } },
+    ];
 
     const deep = deepPipe.transform(collection);
 
-    expect(pipe.transform(deep, collection2)).toEqual([{ a: 1, b: { c: 2 } }, { a: 2, b: { c: 3 } }]);
+    expect(pipe.transform(deep, collection2)).toEqual([
+      { a: 1, b: { c: 2 } },
+      { a: 2, b: { c: 3 } },
+    ]);
   });
 });

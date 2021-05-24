@@ -8,7 +8,7 @@ describe('IsFunctionPipe', () => {
   });
 
   it('Should return true', () => {
-    expect(pipe.transform(function() {})).toEqual(true);
+    expect(pipe.transform(function () {})).toEqual(true);
   });
 
   it('Should return false', () => {

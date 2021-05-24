@@ -19,7 +19,10 @@ describe('ChunkPipe', () => {
   });
 
   it('Should return [[1, 2], [3, 4]]', () => {
-    expect(pipe.transform([1, 2, 3, 4], 2)).toEqual([[1, 2], [3, 4]]);
+    expect(pipe.transform([1, 2, 3, 4], 2)).toEqual([
+      [1, 2],
+      [3, 4],
+    ]);
   });
 
   it('Should return the value unchanged', () => {

@@ -31,7 +31,12 @@ describe('UnionPipe', () => {
   });
 
   it('Should return the union with no deep equal', () => {
-    const collection = [{ a: 1, b: { c: 2 } }, { a: 2, b: { c: 3 } }, { a: 2, b: { c: 3 } }, { a: 1, b: { c: 2 } }];
+    const collection = [
+      { a: 1, b: { c: 2 } },
+      { a: 2, b: { c: 3 } },
+      { a: 2, b: { c: 3 } },
+      { a: 1, b: { c: 2 } },
+    ];
 
     const collection2 = [{ a: 1, b: { c: 2 } }];
 
@@ -39,9 +44,18 @@ describe('UnionPipe', () => {
   });
 
   it('Should return union with deep equal', () => {
-    const collection = [{ a: 1, b: { c: 2 } }, { a: 2, b: { c: 3 } }, { a: 2, b: { c: 3 } }, { a: 1, b: { c: 2 } }];
+    const collection = [
+      { a: 1, b: { c: 2 } },
+      { a: 2, b: { c: 3 } },
+      { a: 2, b: { c: 3 } },
+      { a: 1, b: { c: 2 } },
+    ];
 
-    const collection2 = [{ a: 1, b: { c: 2 } }, { a: 2, b: { c: 3 } }, { a: 3, b: { c: 2 } }];
+    const collection2 = [
+      { a: 1, b: { c: 2 } },
+      { a: 2, b: { c: 3 } },
+      { a: 3, b: { c: 2 } },
+    ];
 
     const deep = deepPipe.transform(collection);
 

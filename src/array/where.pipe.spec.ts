@@ -31,7 +31,7 @@ describe('WherePipe', () => {
   });
 
   it('Should return only the 1 values', () => {
-    const fn = function(item: any) {
+    const fn = function (item: any) {
       return item === 1;
     };
 
@@ -41,7 +41,7 @@ describe('WherePipe', () => {
   });
 
   it('Should return the objects where a is 4', () => {
-    const fn = function(item: any) {
+    const fn = function (item: any) {
       return item.a === 4;
     };
 

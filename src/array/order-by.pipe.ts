@@ -54,7 +54,7 @@ export class OrderByPipe implements PipeTransform {
       // Config is an array of property
 
       return [...input].sort((a: any, b: any) => {
-        for (let i: number = 0; i < config.length; ++i) {
+        for (let i = 0; i < config.length; ++i) {
           const first = config[i].substr(0, 1);
           const desc = first === '-';
           const property = first === '+' || desc ? config[i].substr(1) : config[i];

@@ -22,7 +22,7 @@ export class GroupByPipe implements PipeTransform {
       arr[field].push(value);
     }
 
-    return Object.keys(arr).map(key => ({ key, value: arr[key] }));
+    return Object.keys(arr).map((key) => ({ key, value: arr[key] }));
   }
 }
 

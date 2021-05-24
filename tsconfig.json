@@ -1,21 +1,30 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "module": "es6",
+    "target": "es6",
+    "module": "commonjs",
     "moduleResolution": "node",
     "sourceMap": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "removeComments": false,
     "noImplicitAny": true,
+    "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "suppressImplicitAnyIndexErrors": false,
     "declaration": true,
-    "lib": ["es6", "dom"]
+    "lib": ["es7", "dom"]
   },
   "exclude": ["node_modules", "**/*.spec.ts"],
   "angularCompilerOptions": {
-    "skipTemplateCodegen": true
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true,
+    "strictInputTypes": true,
+    "strictNullInputTypes": true,
+    "strictOutputEventTypes": true,
+    "strictAttributeTypes": true,
+    "strictLiteralTypes": true
   }
 }

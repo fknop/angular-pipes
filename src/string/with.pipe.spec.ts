@@ -4,7 +4,7 @@ import { WithPipe } from './with.pipe';
 
 describe('WithPipe', () => {
   let pipe: WithPipe;
-  let text = 'The Flash Reverse';
+  const text = 'The Flash Reverse';
 
   beforeEach(() => {
     pipe = new WithPipe();

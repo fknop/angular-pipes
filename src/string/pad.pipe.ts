@@ -5,7 +5,7 @@ import { pad, isString } from '../utils/utils';
   name: 'pad',
 })
 export class PadPipe implements PipeTransform {
-  transform(input: any, length: number = 0, character: string = ' '): any {
+  transform(input: any, length = 0, character = ' '): any {
     if (!isString(input)) {
       return input;
     }

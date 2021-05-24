@@ -5,7 +5,7 @@ import { isString } from '../utils/utils';
   name: 'repeat',
 })
 export class RepeatPipe implements PipeTransform {
-  transform(input: any, times: number = 1, characters: string = ''): any {
+  transform(input: any, times = 1, characters = ''): any {
     if (!isString(input)) {
       return input;
     }

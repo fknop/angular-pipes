@@ -31,7 +31,7 @@ describe('FirstOrDefaultPipe', () => {
   });
 
   it('Should return only the 1 values', () => {
-    const fn = function(item: any) {
+    const fn = function (item: any) {
       return item === 1;
     };
 
@@ -40,7 +40,7 @@ describe('FirstOrDefaultPipe', () => {
   });
 
   it('Should return the objects where a is 4', () => {
-    const fn = function(item: any) {
+    const fn = function (item: any) {
       return item.a === 4;
     };
 
@@ -80,10 +80,10 @@ describe('FirstOrDefaultPipe', () => {
   });
 
   it('Should return the default value', () => {
-    expect(pipe.transform([1, 2, 3], item => item === 4, 5)).toEqual(5);
+    expect(pipe.transform([1, 2, 3], (item) => item === 4, 5)).toEqual(5);
   });
 
   it('Should not return the default value', () => {
-    expect(pipe.transform([1, 2, 3], item => item === 4)).toBeUndefined();
+    expect(pipe.transform([1, 2, 3], (item) => item === 4)).toBeUndefined();
   });
 });

@@ -6,7 +6,6 @@
     "ng": "ng",
     "karma": "node_modules/.bin/karma start karma.conf.js",
     "build": "ng-packagr -p package.json",
-    "publish-dist": "npm publish dist",
     "test": "yarn karma",
     "lint": "run-p -c lint:*",
     "lint:pretty": "prettier '**/*.{ts,scss,js,json,yml,md,html}' --list-different",

@@ -1,10 +1,6 @@
-[![NPM Version](https://img.shields.io/npm/v/angular-pipes.svg)](https://npmjs.org/package/angular-pipes)
-[![Build Status](https://travis-ci.org/wizbii/angular-pipes.svg?branch=master)](https://travis-ci.org/wizbii/angular-pipes)
-[![Coverage Status](https://coveralls.io/repos/github/wizbii/angular-pipes/badge.svg?branch=master)](https://coveralls.io/github/wizbii/angular-pipes?branch=master)
-[![Downloads](https://img.shields.io/npm/dt/angular-pipes.svg)](https://npmjs.org/package/angular-pipes)
-[![Downloads](https://img.shields.io/npm/dm/angular-pipes.svg)](https://npmjs.org/package/angular-pipes)
-
-# Not actively maintained
+[![NPM Version](https://img.shields.io/npm/v/@wizbii/angular-pipes.svg)](https://npmjs.org/package/angular-pipes)
+[![Build Status](https://github.com/wizbii/nest-bugsnag/actions/workflows/main.yml/badge.svg)](https://github.com/wizbii/angular-pipes/actions)
+[![Downloads](https://img.shields.io/npm/dt/@wizbii/angular-pipes.svg)](https://npmjs.org/package/@wizbii//angular-pipes)
 
 # angular-pipes
 

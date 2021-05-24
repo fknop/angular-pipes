@@ -10,9 +10,7 @@ export class ReverseStrPipe implements PipeTransform {
       return input;
     }
 
-    return Array.from(input)
-      .reverse()
-      .join('');
+    return Array.from(input).reverse().join('');
   }
 }
 

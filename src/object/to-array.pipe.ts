@@ -8,7 +8,7 @@ export class ToArrayPipe implements PipeTransform {
       return input;
     }
 
-    return Object.keys(input).map(value => input[value]);
+    return Object.keys(input).map((value) => input[value]);
   }
 }
 

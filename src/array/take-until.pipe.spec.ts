@@ -8,13 +8,13 @@ describe('TakeUntilPipe', () => {
   });
 
   it('Should return until the condition is met', () => {
-    const predicate = item => item === 1;
+    const predicate = (item) => item === 1;
 
     expect(pipe.transform([2, 3, 4, 5, 1, 7, 8], predicate)).toEqual([2, 3, 4, 5]);
   });
 
   it('Should return until the condition is met #2', () => {
-    const predicate = item => item === 1;
+    const predicate = (item) => item === 1;
 
     expect(pipe.transform([2, 3, 4, 5, 7, 8], predicate)).toEqual([2, 3, 4, 5, 7, 8]);
   });

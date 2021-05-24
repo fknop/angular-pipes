@@ -1,3 +1,8 @@
+# 12.0.0
+
+- Update dependencies
+- Add lint
+
 # 10.0.0
 
 - Added a module for each pipe [#97](https://github.com/fknop/angular-pipes/pull/97)

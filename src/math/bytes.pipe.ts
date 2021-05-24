@@ -16,7 +16,7 @@ export class BytesPipe implements PipeTransform {
     TB: { max: Number.MAX_SAFE_INTEGER, prev: 'GB' },
   };
 
-  transform(input: any, decimal: number = 0, from: ByteUnit = 'B', to?: ByteUnit): any {
+  transform(input: any, decimal = 0, from: ByteUnit = 'B', to?: ByteUnit): any {
     if (!(isNumberFinite(input) && isNumberFinite(decimal) && isInteger(decimal) && isPositive(decimal))) {
       return input;
     }
@@ -25,7 +25,7 @@ export class BytesPipe implements PipeTransform {
     let unit = from;
     while (unit !== 'B') {
       bytes *= 1024;
-      unit = BytesPipe.formats[unit].prev!;
+      unit = BytesPipe.formats[unit].prev as ByteUnit;
     }
 
     if (to) {

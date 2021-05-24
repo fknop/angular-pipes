@@ -9,7 +9,7 @@ describe('MapPipe', () => {
 
   it('Should return the modified array', () => {
     const array = [0, 1, 2, 3];
-    const fn = function(item: any) {
+    const fn = function (item: any) {
       return ++item;
     };
 

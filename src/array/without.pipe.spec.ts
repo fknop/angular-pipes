@@ -36,7 +36,12 @@ describe('WithoutPipe', () => {
   });
 
   it('Should return the values without ... with deep equal', () => {
-    const collection = [{ a: 1, b: { c: 2 } }, { a: 2, b: { c: 3 } }, { a: 2, b: { c: 5 } }, { a: 1, b: { c: 4 } }];
+    const collection = [
+      { a: 1, b: { c: 2 } },
+      { a: 2, b: { c: 3 } },
+      { a: 2, b: { c: 5 } },
+      { a: 1, b: { c: 4 } },
+    ];
 
     const deep = deepPipe.transform(collection);
 

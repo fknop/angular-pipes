@@ -3,7 +3,7 @@ import { SomePipe } from './some.pipe';
 describe('MapPipe', () => {
   let pipe: SomePipe;
 
-  const fn = function(item: any) {
+  const fn = function (item: any) {
     return item === 2;
   };
 

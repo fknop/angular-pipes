@@ -5,7 +5,7 @@ import { isString } from '../utils/utils';
   name: 'split',
 })
 export class SplitPipe implements PipeTransform {
-  transform(input: any, separator: string = ' ', limit?: number): any {
+  transform(input: any, separator = ' ', limit?: number): any {
     if (!isString(input)) {
       return input;
     }

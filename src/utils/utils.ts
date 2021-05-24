@@ -57,7 +57,7 @@ export function upperFirst(value: string): string {
 export function createRound(method: string): Function {
   // <any>Math to suppress error
   const func: any = (<any>Math)[method];
-  return function(value: number, precision: number = 0) {
+  return (value: number, precision = 0) => {
     if (typeof value === 'string') {
       throw new TypeError('Rounding method needs a number');
     }
@@ -78,7 +78,7 @@ export function createRound(method: string): Function {
   };
 }
 
-export function leftPad(str: string, len: number = 0, ch: any = ' ') {
+export function leftPad(str: string, len = 0, ch: any = ' ') {
   str = String(str);
   ch = toString(ch);
   let i = -1;
@@ -91,7 +91,7 @@ export function leftPad(str: string, len: number = 0, ch: any = ' ') {
   return str;
 }
 
-export function rightPad(str: string, len: number = 0, ch: any = ' ') {
+export function rightPad(str: string, len = 0, ch: any = ' ') {
   str = String(str);
   ch = toString(ch);
 
@@ -109,7 +109,7 @@ export function toString(value: number | string) {
   return `${value}`;
 }
 
-export function pad(str: string, len: number = 0, ch: any = ' '): string {
+export function pad(str: string, len = 0, ch: any = ' '): string {
   str = String(str);
   ch = toString(ch);
   let i = -1;
@@ -131,7 +131,7 @@ export function pad(str: string, len: number = 0, ch: any = ' '): string {
   return str;
 }
 
-export function flatten(input: any[], index: number = 0): any[] {
+export function flatten(input: any[], index = 0): any[] {
   if (index >= input.length) {
     return input;
   }
@@ -214,7 +214,7 @@ export function deepEqual(a: any, b: any) {
   }
 
   // Test for A's keys different from B.
-  var hasOwn = Object.prototype.hasOwnProperty;
+  const hasOwn = Object.prototype.hasOwnProperty;
   for (let i = 0; i < keysA.length; i++) {
     const key = keysA[i];
     if (!hasOwn.call(b, keysA[i]) || !deepEqual(a[key], b[key])) {
@@ -242,7 +242,7 @@ export function unwrapDeep(object: any) {
 }
 
 export class DeepWrapper {
-  public __isDeepObject__: boolean = true;
+  public __isDeepObject__ = true;
 
   constructor(public data: any) {}
 }
@@ -253,7 +253,7 @@ export function count(input: any): any {
   }
 
   if (isObject(input)) {
-    return Object.keys(input).map(value => input[value]).length;
+    return Object.keys(input).map((value) => input[value]).length;
   }
 
   return input.length;
@@ -293,5 +293,5 @@ export function takeUntil(input: any[], predicate: CollectionPredicate) {
 }
 
 export function takeWhile(input: any[], predicate: CollectionPredicate) {
-  return takeUntil(input, (item: any, index: number, collection: any[]) => !predicate(item, index, collection));
+  return takeUntil(input, (item?: any, index?: number, collection?: any[]) => !predicate(item, index, collection));
 }

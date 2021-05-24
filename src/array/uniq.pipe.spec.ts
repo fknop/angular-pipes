@@ -32,7 +32,12 @@ describe('UniqPipe', () => {
   });
 
   it('Should return the same values with no deep equal', () => {
-    const collection = [{ a: 1, b: { c: 2 } }, { a: 2, b: { c: 3 } }, { a: 2, b: { c: 3 } }, { a: 1, b: { c: 2 } }];
+    const collection = [
+      { a: 1, b: { c: 2 } },
+      { a: 2, b: { c: 3 } },
+      { a: 2, b: { c: 3 } },
+      { a: 1, b: { c: 2 } },
+    ];
 
     expect(pipe.transform(collection)).toEqual([
       { a: 1, b: { c: 2 } },
@@ -43,10 +48,18 @@ describe('UniqPipe', () => {
   });
 
   it('Should return unique values with deep equal', () => {
-    const collection = [{ a: 1, b: { c: 2 } }, { a: 2, b: { c: 3 } }, { a: 2, b: { c: 3 } }, { a: 1, b: { c: 2 } }];
+    const collection = [
+      { a: 1, b: { c: 2 } },
+      { a: 2, b: { c: 3 } },
+      { a: 2, b: { c: 3 } },
+      { a: 1, b: { c: 2 } },
+    ];
 
     const deep = deepPipe.transform(collection);
 
-    expect(pipe.transform(deep)).toEqual([{ a: 1, b: { c: 2 } }, { a: 2, b: { c: 3 } }]);
+    expect(pipe.transform(deep)).toEqual([
+      { a: 1, b: { c: 2 } },
+      { a: 2, b: { c: 3 } },
+    ]);
   });
 });

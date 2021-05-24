@@ -458,7 +458,12 @@ import { NgOrderByPipeModule } from 'angular-pipes';
 ##### Usage
 
 ```javascript
-const values = [{ a: 1, b: 2 }, { a: 2, b: 1 }, { a: 5, b: 3 }, { a: 4, b: 8 }];
+const values = [
+  { a: 1, b: 2 },
+  { a: 2, b: 1 },
+  { a: 5, b: 3 },
+  { a: 4, b: 8 },
+];
 ```
 
 ```html
@@ -530,7 +535,7 @@ import { NgSomePipeModule } from 'angular-pipes';
 ##### Usage
 
 ```javascript
-const predicate = function(item) {
+const predicate = function (item) {
   return item === 2;
 };
 ```
@@ -555,7 +560,7 @@ import { NgEveryPipeModule } from 'angular-pipes';
 ##### Usage
 
 ```javascript
-const predicate = function(item) {
+const predicate = function (item) {
   return item === 2;
 };
 ```

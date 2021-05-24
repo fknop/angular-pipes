@@ -3,7 +3,7 @@ import { EveryPipe } from './every.pipe';
 describe('MapPipe', () => {
   let pipe: EveryPipe;
 
-  const fn = function(item: any) {
+  const fn = function (item: any) {
     return item === 2;
   };
 

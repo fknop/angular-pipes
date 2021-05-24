@@ -10,7 +10,7 @@ export class LatinizePipe implements PipeTransform {
       return input;
     }
 
-    let replacementList = [
+    const replacementList = [
       { base: ' ', chars: '\u00A0' },
       { base: '0', chars: '\u07C0' },
       {
@@ -186,15 +186,15 @@ export class LatinizePipe implements PipeTransform {
       { base: 'z', chars: '\u24E9\uFF5A\u017A\u1E91\u017C\u017E\u1E93\u1E95\u01B6\u0225\u0240\u2C6C\uA763' },
     ];
 
-    let diacriticsMap: any = {};
+    const diacriticsMap: any = {};
     for (let i = 0; i < replacementList.length; i += 1) {
-      let chars = replacementList[i].chars;
+      const chars = replacementList[i].chars;
       for (let j = 0; j < chars.length; j += 1) {
         diacriticsMap[chars[j]] = replacementList[i].base;
       }
     }
 
-    return input.replace(/[^\u0000-\u007e]/g, c => diacriticsMap[c] || c);
+    return input.replace(/[^\u0000-\u007e]/g, (c) => diacriticsMap[c] || c);
   }
 }
 

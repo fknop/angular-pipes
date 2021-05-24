@@ -36,7 +36,7 @@ export class FirstOrDefaultPipe implements PipeTransform {
       const [key, value] = <string[]>predicate;
       return FirstOrDefaultPipe.find(input, (item: any) => getProperty(item, key) === value, defaultValue);
     } else if (predicate) {
-      return FirstOrDefaultPipe.find(input, item => item === <any>predicate, defaultValue);
+      return FirstOrDefaultPipe.find(input, (item) => item === <any>predicate, defaultValue);
     } else {
       return input;
     }

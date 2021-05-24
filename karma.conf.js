@@ -1,4 +1,4 @@
-module.exports = function(config) {
+module.exports = function (config) {
   config.set({
     basePath: './',
 
@@ -15,7 +15,7 @@ module.exports = function(config) {
     },
 
     frameworks: ['jasmine', 'karma-typescript'],
-    browsers: ['Firefox'],
+    browsers: ['FirefoxHeadless'],
     plugins: ['karma-jasmine', 'karma-spec-reporter', 'karma-firefox-launcher', 'karma-typescript'],
 
     karmaTypescriptConfig: {

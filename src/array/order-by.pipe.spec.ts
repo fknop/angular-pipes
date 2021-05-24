@@ -113,7 +113,13 @@ describe('OrderByPipe', () => {
   });
 
   it('Should return the same array', () => {
-    const values = [{ x: 1, y: 1 }, { x: 1, y: 1 }, { x: 1, y: 1 }, { x: 1, y: 1 }, { x: 1, y: 1 }];
+    const values = [
+      { x: 1, y: 1 },
+      { x: 1, y: 1 },
+      { x: 1, y: 1 },
+      { x: 1, y: 1 },
+      { x: 1, y: 1 },
+    ];
 
     expect(pipe.transform(values, ['+x', '-y'])).toEqual(values);
   });

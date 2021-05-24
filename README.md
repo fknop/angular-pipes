@@ -16,7 +16,7 @@ Read the [contributing guidelines](./CONTRIBUTING.md)
 
 ## Pipes
 
-You can find the documentations in the [`docs`](./docs) folder or on [`GitBook`](https://fknop.gitbooks.io/angular-pipes/).
+You can find the documentations in the [`docs`](./docs) folder.
 
 ### Collections (array)
 

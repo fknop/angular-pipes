@@ -1,5 +1,5 @@
 {
-  "name": "angular-pipes",
+  "name": "@wizbii/angular-pipes",
   "version": "12.0.0",
   "description": "Angular pipes library",
   "scripts": {
@@ -14,6 +14,11 @@
     "lint:spec": "eslint 'src/**/**.spec.ts' -c '.eslintrc.spec.js'"
   },
   "author": "Wizbii",
+  "url": "https://github.com/wizbii/angular-pipes",
+  "homepage": "https://github.com/wizbii/angular-pipes",
+  "bugs": {
+    "url": "https://github.com/wizbii/angular-pipes/issues"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/wizbii/angular-pipes.git"
@@ -29,6 +34,9 @@
     "library"
   ],
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@angular/animations": "^12.0.1",
     "@angular/cli": "^12.0.1",

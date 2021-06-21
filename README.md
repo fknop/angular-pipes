@@ -1,6 +1,6 @@
-[![NPM Version](https://img.shields.io/npm/v/@wizbii/angular-pipes.svg)](https://npmjs.org/package/angular-pipes)
+[![NPM Version](https://img.shields.io/npm/v/@wizbii/angular-pipes.svg)](https://npmjs.org/package/@wizbii/angular-pipes)
 [![Build Status](https://github.com/wizbii/angular-pipes/actions/workflows/main.yml/badge.svg)](https://github.com/wizbii/angular-pipes/actions)
-[![Downloads](https://img.shields.io/npm/dt/@wizbii/angular-pipes.svg)](https://npmjs.org/package/@wizbii//angular-pipes)
+[![Downloads](https://img.shields.io/npm/dt/@wizbii/angular-pipes.svg)](https://npmjs.org/package/@wizbii/angular-pipes)
 
 # @wizbii/angular-pipes
 

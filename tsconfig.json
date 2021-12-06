@@ -13,7 +13,8 @@
     "noUnusedParameters": true,
     "suppressImplicitAnyIndexErrors": false,
     "declaration": true,
-    "lib": ["es7", "dom"]
+    "lib": ["es7", "dom"],
+    "enableIvy": true
   },
   "exclude": ["node_modules", "**/*.spec.ts"],
   "angularCompilerOptions": {
